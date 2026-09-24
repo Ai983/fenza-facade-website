@@ -42,14 +42,48 @@ export const whatsappLink = (message?: string) =>
     message ? `?text=${encodeURIComponent(message)}` : ""
   }`;
 
-export const NAV: { label: string; to: string }[] = [
+/**
+ * Company registrations (profile page 44). `value: null` renders the honest
+ * "To be added" state, mirroring the CONTACT.*Confirmed pattern — flip each to
+ * a string once the registration is issued.
+ */
+export const REGISTRATIONS: { label: string; value: string | null }[] = [
+  { label: "Corporate Identity Number (CIN)", value: null },
+  { label: "GSTIN — Haryana", value: null },
+  { label: "PAN", value: null },
+];
+
+export const CERTIFICATIONS_NOTE =
+  "Held in Fenza's own name; being established.";
+
+export interface NavItem {
+  label: string;
+  to: string;
+  /** Shorter label for the desktop bar, where horizontal room is tight. */
+  short?: string;
+}
+
+/** Full navigation — drives the mobile overlay and the footer's Company column. */
+export const NAV: NavItem[] = [
   { label: "Systems", to: "/systems" },
+  { label: "Sectors", to: "/sectors" },
+  { label: "Projects", to: "/projects" },
   { label: "Manufacturing", to: "/manufacturing" },
+  { label: "Quality & Safety", to: "/quality-safety", short: "Quality" },
   { label: "Leadership", to: "/leadership" },
   { label: "About", to: "/about" },
   { label: "Resources", to: "/resources" },
   { label: "Contact", to: "/contact" },
 ];
+
+/**
+ * Desktop header bar only. Nine labels do not fit the 1180px content width, so
+ * two come out: Contact is already covered by the Enquire button, and Sectors
+ * is reachable from Systems, Projects and the footer.
+ */
+export const NAV_PRIMARY: NavItem[] = NAV.filter(
+  (n) => !["/contact", "/sectors"].includes(n.to)
+);
 
 export const ENQUIRY_SEGMENTS = [
   "Architect / PMC",

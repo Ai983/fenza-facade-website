@@ -26,6 +26,8 @@ export interface SystemFamily {
   summary: string;
   /** Catalogue lead copy. */
   lead: string;
+  /** Appendix "typical data" one-liner — the numbers a specifier scans for. */
+  typical: string;
   variants: string[];
   specs: SystemSpec[];
   /** 3:2 (or 1:1) page hero. */
@@ -48,6 +50,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Glazed Envelope",
     summary: "A curtain wall is a non-load-bearing aluminium-and-glass outer skin hung in front of a building's structure. Fenza fabricates mullion-and-transom curtain walling as a site-glazed stick system or semi-unitised cassettes, infilled with glass, ACP, stone or louvre, for commercial towers and high-rise facades.",
     lead: "Aluminium mullion-and-transom curtain walling, fabricated on our end-milling line so transoms seat square against mullions and the joint stays watertight. Site-glazed as a stick system, or part-assembled as semi-unitised cassettes to cut time on the scaffold.",
+    typical: "Mullion depth 50–150 mm · glazing 6–36 mm",
     variants: ["Stick system", "Semi-unitised", "Capped", "Capless / SSG"],
     specs: [
       { label: "System types", value: "Stick (site-glazed), semi-unitised" },
@@ -79,6 +82,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Glazed Envelope",
     summary: "Structural glazing is a flush glass facade where the glass is bonded with structural silicone to a concealed aluminium carrier frame, leaving only a fine silicone joint outside. Fenza fabricates two-side and four-side SSG systems in-house for clean, frameless-looking commercial elevations.",
     lead: "Flush glazed facades where the glass is bonded to a concealed aluminium carrier frame, leaving only a fine silicone joint on the outside. Two-side and four-side systems, with the back-up framing fabricated in-house.",
+    typical: "Silicone joint 12–20 mm · glazing 6–36 mm",
     variants: ["2-side SSG", "4-side SSG", "Semi-structural"],
     specs: [
       { label: "System types", value: "2-side and 4-side structural silicone glazing" },
@@ -109,6 +113,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Glazed Envelope",
     summary: "Spider glazing is a point-supported glass system where panes are carried on stainless-steel routel fittings rather than a continuous frame. Fenza supplies 2- and 4-arm spider systems on glass fins, tension rods or a steel back-structure for atria, lobbies, entrance screens and canopies.",
     lead: "Point-supported glazing for atria, lobbies and entrance screens, where the glass is carried on stainless routels rather than a frame. Supported on glass fins, tension rods or a steel back-structure.",
+    typical: "Glass 10–19 mm · SS 304 / 316 fittings",
     variants: ["2-arm routel", "4-arm routel", "Glass fin", "Tension rod"],
     specs: [
       { label: "Fitting types", value: "2-arm and 4-arm spider routels" },
@@ -138,6 +143,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Fenestration",
     summary: "Casement windows are hinged aluminium windows that open on side, top or bottom hinges. Fenza builds side-hung, top-hung, bottom-hung and fixed aluminium windows with 45-degree mitred, mechanically crimped corners and multi-point locking for a tight, weathertight seal.",
     lead: "Side-hung, top-hung and fixed aluminium windows built the traditional way — profiles cut to a 45° mitre, hardware prepped on the copy router, and corners mechanically crimped for a tight, square joint that does not rely on welding.",
+    typical: "Frame depth 45–70 mm · glazing 5–28 mm",
     variants: ["Side-hung", "Top-hung / awning", "Bottom-hung", "Fixed light", "Combination"],
     specs: [
       { label: "Opening types", value: "Side-hung, top-hung, bottom-hung, fixed" },
@@ -169,6 +175,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Fenestration",
     summary: "Sliding windows and doors move horizontally on tracks rather than swinging open, saving space. Fenza fabricates 2-, 3- and 4-track aluminium sliders (and lift-and-slide by system) on butt-jointed, end-milled frames with tandem rollers for smooth operation across large sash weights.",
     lead: "Two, three and four-track sliding systems on butt-jointed, end-milled frames. Tandem rollers and a brush-sealed interlock keep the action light across large sash weights.",
+    typical: "Frame depth 60–120 mm · glazing 5–28 mm",
     variants: ["2 track", "3 track", "4 track", "Lift & slide"],
     specs: [
       { label: "Configurations", value: "2, 3 and 4 track; lift & slide by system" },
@@ -200,6 +207,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Fenestration",
     summary: "Slide-and-fold (bi-fold) doors are multi-panel doors that concertina and stack clear of the opening. Fenza supplies 2- to 7-panel inward- or outward-folding aluminium doors on top-hung stainless carriages, so the floor track stays shallow — ideal for terraces, balconies and openable frontages.",
     lead: "Multi-panel folding doors that stack clear of the opening, for terraces, balconies and openable frontages. Top-hung carriages carry the sash weight so the floor track stays shallow.",
+    typical: "2–7 panels · frame depth 70–120 mm",
     variants: ["2–7 panel", "Inward fold", "Outward fold", "Top-hung"],
     specs: [
       { label: "Configurations", value: "2 to 7 panels, inward or outward folding" },
@@ -230,6 +238,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Fenestration",
     summary: "Frameless glass doors are toughened glass leaves held by minimal stainless patch fittings instead of a full frame. Fenza supplies patch-fitted single and double doors on floor springs, with matching fixed sidelights and fanlights, for lobbies and building entrances.",
     lead: "Patch-fitted toughened glass doors for lobbies and entrances, running on floor springs with stainless patch fittings top and bottom. Supplied with matching fixed sidelights and fanlights.",
+    typical: "10 / 12 mm toughened · SS 304 patch fittings",
     variants: ["Single leaf", "Double leaf", "With sidelight", "With fanlight"],
     specs: [
       { label: "Door type", value: "Patch-fitted toughened glass" },
@@ -259,6 +268,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Opaque Envelope",
     summary: "Metal and composite cladding is a non-glazed outer skin of panels — ACP, solid aluminium or HPL — fixed to an aluminium sub-frame. Fenza fabricates cassette and tray cladding to open or closed shadow-gap joints, with fire performance selected to the project requirement.",
     lead: "Cassette and tray cladding carried on an aluminium sub-frame fabricated on our line. Panels are selected to the project — composite, solid aluminium or high-pressure laminate — and set out to an open or closed joint.",
+    typical: "Shadow gap 10–20 mm · 3–4 mm composite",
     variants: ["ACP", "Solid aluminium", "HPL", "Zinc / copper composite"],
     specs: [
       { label: "Panel types", value: "ACP, solid aluminium, HPL, composite metals" },
@@ -289,6 +299,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Opaque Envelope",
     summary: "A rain-screen ventilated facade is a drained, back-ventilated outer skin fixed on a thermally isolated carrier, with an open cavity so moisture and heat escape behind the panel. Fenza builds rain-screen systems for ACP, solid aluminium, HPL, terracotta or stone panels over insulation.",
     lead: "A drained and back-ventilated outer skin on a thermally isolated carrier system, with the cavity left open so moisture and heat can escape behind the panel. Insulation and membrane to the facade consultant's build-up.",
+    typical: "Cavity 25–50 mm · mineral wool insulation",
     variants: ["Open joint", "Closed joint", "Concealed fix", "Visible fix"],
     specs: [
       { label: "System", value: "Drained and back-ventilated rainscreen" },
@@ -318,6 +329,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Solar Control",
     summary: "Louvers and sun-shading fins are extruded aluminium blades used for solar shading, plant screening and facade articulation. Fenza produces aerofoil, elliptical, rectangular and Z/C-type blades from 50 to 400 mm, run horizontally or vertically, fixed or operable.",
     lead: "Extruded aluminium blades for solar shading, plant screening and facade articulation. Aerofoil, elliptical and rectangular sections, run horizontally or vertically, fixed or operable.",
+    typical: "Blades 50–400 mm · fixed or operable",
     variants: ["Aerofoil", "Elliptical", "Rectangular", "Z & C type", "Operable"],
     specs: [
       { label: "Blade profiles", value: "Aerofoil, elliptical, rectangular, Z and C" },
@@ -348,6 +360,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Architectural Elements",
     summary: "Railings and balustrades provide edge protection for balconies, terraces and stairs. Fenza supplies structural glass balustrades on extruded aluminium base-shoe channel and aluminium post-and-rail systems, top- or fascia-mounted, with toughened laminated glass to the applicable code.",
     lead: "Structural glass balustrades on extruded base-shoe channel, and aluminium post-and-rail systems, for balconies, terraces, stairs and edge protection.",
+    typical: "Glass 12–21.5 mm · height 1000–1200 mm",
     variants: ["Glass, base shoe", "Post & rail", "Top mount", "Side / fascia mount"],
     specs: [
       { label: "Types", value: "Structural glass, aluminium post and rail" },
@@ -377,6 +390,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Architectural Elements",
     summary: "Skylights and canopies are overhead glazing and entrance covers on thermally isolated aluminium rafter-and-purlin framing. Fenza builds pyramid, ridge, barrel, flat and cantilever forms with internal gutters and condensation channels designed into the section, glazed with toughened laminated glass or DGU.",
     lead: "Overhead glazing and entrance canopies on thermally isolated aluminium rafter-and-purlin framing, with internal gutters and condensation channels designed into the section.",
+    typical: "Minimum 5° fall · laminated or DGU",
     variants: ["Pyramid", "Ridge", "Barrel", "Flat", "Cantilever canopy"],
     specs: [
       { label: "Forms", value: "Pyramid, ridge, barrel, flat, cantilever canopy" },
@@ -406,6 +420,7 @@ export const SYSTEMS: SystemFamily[] = [
     category: "Architectural Elements",
     summary: "Pergolas are aluminium overhead structures with fixed or adjustable aerofoil blades for outdoor shade. Fenza builds free-standing and wall-mounted pergolas drained through concealed gutter posts, with fixed, adjustable-louvered or motorised blades and optional LED and side screens.",
     lead: "Aluminium pergola structures with fixed or adjustable aerofoil blades, drained through the frame so rainwater runs down concealed gutter posts rather than off the edge.",
+    typical: "Indicative up to 4 m per bay",
     variants: ["Fixed blade", "Adjustable louvered", "Motorised", "Free-standing / wall-mounted"],
     specs: [
       { label: "Types", value: "Fixed blade, adjustable louvered, motorised" },

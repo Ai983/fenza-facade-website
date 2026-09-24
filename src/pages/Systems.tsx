@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import SystemCard from "@/components/SystemCard";
-import { SYSTEMS, SYSTEM_CATEGORIES } from "@/lib/systems";
+import { SYSTEMS, SYSTEM_CATEGORIES, INDICATIVE_NOTE } from "@/lib/systems";
 import { buildBreadcrumb, canonical } from "@/lib/seo";
 
 export default function Systems() {
@@ -82,20 +83,78 @@ export default function Systems() {
           );
         })}
 
-        <section className="border-t border-cream/10 py-20">
+        {/* System index — every code, category, variant set and typical data
+            in one table. Absorbs the old "Also fabricated" card's note. */}
+        <section className="border-t border-cream/10 bg-ink-soft py-20 md:py-24">
           <div className="container-content">
             <Reveal>
-              <div className="rounded-lg border border-cream/10 bg-ink-soft p-8 md:p-10">
-                <span className="eyebrow">Also fabricated</span>
-                <h3 className="mt-4 font-display text-2xl text-cream">
-                  Tilt & turn windows · Glazed office partitions · Insect and
-                  mesh screens
-                </h3>
-                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-cream/60">
-                  Fabricated on the same line to the same tolerances. Detailed
-                  system sheets are available on request.
-                </p>
+              <span className="eyebrow">Appendix</span>
+              <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
+                System index.
+              </h2>
+            </Reveal>
+
+            <Reveal delay={80}>
+              {/* Bleeds to the screen edge on phones so the table can scroll
+                  inside its own wrapper rather than moving the page. */}
+              <div className="-mx-6 mt-10 overflow-x-auto px-6 md:mx-0 md:px-0">
+                <table className="w-full min-w-[54rem] border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-cream/20">
+                      {[
+                        "Code",
+                        "System family",
+                        "Category",
+                        "Variants",
+                        "Typical data",
+                      ].map((h) => (
+                        <th
+                          key={h}
+                          scope="col"
+                          className="py-3 pr-6 text-left text-xs uppercase tracking-wide2 text-sand"
+                        >
+                          {h}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {SYSTEMS.map((s) => (
+                      <tr key={s.slug} className="border-b border-cream/10">
+                        <td className="whitespace-nowrap py-3.5 pr-6 align-top font-medium text-gold">
+                          {s.code}
+                        </td>
+                        <td className="py-3.5 pr-6 align-top">
+                          <Link
+                            to={`/systems/${s.slug}`}
+                            className="link-underline text-sm"
+                          >
+                            {s.name}
+                          </Link>
+                        </td>
+                        <td className="py-3.5 pr-6 align-top text-cream/65">
+                          {s.category}
+                        </td>
+                        <td className="py-3.5 pr-6 align-top text-cream/65">
+                          {s.variants.join(" · ")}
+                        </td>
+                        <td className="py-3.5 align-top text-cream/65">
+                          {s.typical}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
+            </Reveal>
+
+            <Reveal delay={160}>
+              <p className="mt-8 max-w-3xl text-xs leading-relaxed text-cream/45">
+                {INDICATIVE_NOTE} Tilt &amp; turn windows, glazed office
+                partitions and insect and mesh screens are also fabricated on
+                the same line to the same tolerances; detailed system sheets are
+                available on request.
+              </p>
             </Reveal>
           </div>
         </section>

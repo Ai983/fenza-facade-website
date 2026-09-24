@@ -7,7 +7,13 @@ import SectionHeading from "@/components/SectionHeading";
 import SystemCard from "@/components/SystemCard";
 import EnquiryForm from "@/components/EnquiryForm";
 import { SYSTEMS, imgUrl } from "@/lib/systems";
-import { PROCESS_STEPS, STANDARDS, AUDIENCE_SPLIT } from "@/lib/content";
+import {
+  PROCESS_STEPS,
+  STANDARDS,
+  AUDIENCE_SPLIT,
+  AT_A_GLANCE,
+  PARTNER_POINTS,
+} from "@/lib/content";
 import { BRAND } from "@/lib/site";
 import {
   buildFaqSchema,
@@ -122,6 +128,30 @@ export default function Home() {
       />
 
       <HomeHero />
+
+      {/* Fenza at a glance — the profile's headline figures. The 25+ years are
+          Akhilesh Kumar Singh's, not the company's; the note says so. */}
+      <section className="border-y border-cream/10 bg-ink-soft py-14">
+        <div className="container-content">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-3 lg:grid-cols-6">
+            {AT_A_GLANCE.map((s, i) => (
+              <Reveal key={s.label} delay={(i % 6) * 60}>
+                <div>
+                  <p className="font-display text-3xl leading-none text-gold md:text-4xl">
+                    {s.value}
+                  </p>
+                  <p className="mt-3 text-sm font-medium text-cream">
+                    {s.label}
+                  </p>
+                  <p className="mt-2 text-xs leading-relaxed text-cream/50">
+                    {s.note}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Capability + audience split */}
       <section className="bg-ink py-24 md:py-32">
@@ -315,8 +345,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Proof / standards */}
+      {/* Working with Fenza — partner proposition */}
       <section className="border-t border-cream/10 bg-ink-soft py-24 md:py-32">
+        <div className="container-content">
+          <SectionHeading
+            eyebrow="Working with Fenza"
+            title={
+              <>
+                One <span className="italic text-gold-soft">envelope scope.</span>
+              </>
+            }
+            intro="Engineered, fabricated on our own line and installed by our own teams."
+          />
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {PARTNER_POINTS.map((p, i) => (
+              <Reveal key={p.title} delay={(i % 4) * 80}>
+                <div className="h-full rounded-lg border border-cream/10 bg-ink p-7">
+                  <h3 className="font-display text-xl text-cream">{p.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-cream/60">
+                    {p.body}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Proof / standards */}
+      <section className="border-t border-cream/10 bg-ink py-24 md:py-32">
         <div className="container-content">
           <SectionHeading
             eyebrow="Quality & Standards"

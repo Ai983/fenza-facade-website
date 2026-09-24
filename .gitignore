@@ -13,3 +13,6 @@ dist-ssr
 
 # Generated deliverables (company-profile PDF/zip) - not website source
 Claude outputs/
+
+# Source profiles (large PDFs, not website source)
+Hagerstone_FACADE_Profile_2026.pdf

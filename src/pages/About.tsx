@@ -2,9 +2,14 @@ import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
-import { MESSAGING_PILLARS } from "@/lib/content";
-import { buildBreadcrumb } from "@/lib/seo";
-import { BRAND } from "@/lib/site";
+import { MESSAGING_PILLARS, TEAM_FUNCTIONS, TEAM_NOTE } from "@/lib/content";
+import { AUTHOR_NAME, buildBreadcrumb } from "@/lib/seo";
+import {
+  BRAND,
+  CONTACT,
+  CERTIFICATIONS_NOTE,
+  REGISTRATIONS,
+} from "@/lib/site";
 
 export default function About() {
   return (
@@ -106,8 +111,52 @@ export default function About() {
         </div>
       </section>
 
+      {/* Team structure */}
+      <section className="border-t border-cream/10 bg-ink py-20 md:py-28">
+        <div className="container-content">
+          <Reveal>
+            <span className="eyebrow">People &amp; structure</span>
+            <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
+              How the team is organised.
+            </h2>
+          </Reveal>
+
+          <Reveal delay={80}>
+            <div className="mt-10 rounded-lg border border-gold/20 bg-cream/[0.03] p-7">
+              <p className="font-display text-2xl text-cream">{AUTHOR_NAME}</p>
+              <p className="mt-2 text-sm uppercase tracking-wide2 text-gold">
+                Director — Facade Projects
+              </p>
+              <Link
+                to="/leadership"
+                className="link-underline mt-5 text-sm font-semibold"
+              >
+                Leadership &amp; projects →
+              </Link>
+            </div>
+          </Reveal>
+
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {TEAM_FUNCTIONS.map((f, i) => (
+              <Reveal key={f.title} delay={(i % 3) * 80}>
+                <div className="h-full rounded-lg border border-cream/10 bg-ink-soft p-7">
+                  <h3 className="font-display text-xl text-cream">{f.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-cream/60">
+                    {f.body}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <p className="mt-8 max-w-3xl text-xs leading-relaxed text-cream/45">
+            {TEAM_NOTE}
+          </p>
+        </div>
+      </section>
+
       {/* Group relationship note */}
-      <section className="border-t border-cream/10 bg-ink py-20 md:py-24">
+      <section className="border-t border-cream/10 bg-ink-soft py-20 md:py-24">
         <div className="container-content max-w-3xl">
           <Reveal>
             <div className="rounded-lg border border-gold/20 bg-cream/[0.03] p-8">
@@ -121,6 +170,50 @@ export default function About() {
               </p>
             </div>
           </Reveal>
+
+          {/* Company details & registrations */}
+          <Reveal delay={100}>
+            <dl className="mt-8 rounded-lg border border-cream/10 bg-ink p-7 text-sm">
+              {[
+                { label: "Entity", value: BRAND.legalName },
+                { label: "Manufacturing", value: BRAND.location },
+                { label: "Plus Code", value: CONTACT.plusCode },
+              ].map((row) => (
+                <div
+                  key={row.label}
+                  className="flex flex-wrap justify-between gap-x-4 gap-y-1 border-b border-cream/10 py-3"
+                >
+                  <dt className="text-sand">{row.label}</dt>
+                  <dd className="text-right text-cream">{row.value}</dd>
+                </div>
+              ))}
+              {REGISTRATIONS.map((r) => (
+                <div
+                  key={r.label}
+                  className="flex flex-wrap justify-between gap-x-4 gap-y-1 border-b border-cream/10 py-3"
+                >
+                  <dt className="text-sand">{r.label}</dt>
+                  <dd
+                    className={
+                      r.value ? "text-right text-cream" : "text-right text-cream/40"
+                    }
+                  >
+                    {r.value ?? "To be added"}
+                  </dd>
+                </div>
+              ))}
+              <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 py-3">
+                <dt className="text-sand">Certifications</dt>
+                <dd className="text-right text-cream/70">
+                  {CERTIFICATIONS_NOTE}
+                </dd>
+              </div>
+            </dl>
+            <p className="mt-4 text-xs text-cream/45">
+              Full postal address to be confirmed.
+            </p>
+          </Reveal>
+
           <Reveal delay={120}>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link to="/manufacturing" className="btn-gold">

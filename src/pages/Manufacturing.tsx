@@ -8,6 +8,9 @@ import {
   PLANT_GALLERY,
   FINISHES,
   STANDARDS,
+  CONSTRUCTION_METHODS,
+  QUALITY_CHECKS,
+  PRODUCTION_STEPS,
 } from "@/lib/content";
 import { buildBreadcrumb } from "@/lib/seo";
 import { BRAND } from "@/lib/site";
@@ -72,9 +75,11 @@ export default function Manufacturing() {
           <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
             Four machines, one tolerance discipline.
           </h2>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {/* 2-up, not 4-up: each card now carries the machine's capability
+              list from the company profile and needs the vertical room. */}
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {MACHINES.map((m, i) => (
-              <Reveal key={m.n} delay={(i % 4) * 80}>
+              <Reveal key={m.n} delay={(i % 2) * 80}>
                 <div className="h-full overflow-hidden rounded-lg border border-cream/10 bg-ink">
                   <div className="aspect-[3/2] overflow-hidden bg-white">
                     <img
@@ -84,7 +89,7 @@ export default function Manufacturing() {
                       className="h-full w-full object-contain p-3"
                     />
                   </div>
-                  <div className="p-5">
+                  <div className="p-6">
                     <span className="text-[0.6rem] font-semibold tracking-wide2 text-gold">
                       {m.n}
                     </span>
@@ -94,7 +99,88 @@ export default function Manufacturing() {
                     <p className="mt-2 text-sm leading-relaxed text-cream/55">
                       {m.body}
                     </p>
+                    <ul className="mt-5 space-y-2 border-t border-cream/10 pt-5">
+                      {m.points.map((pt) => (
+                        <li
+                          key={pt}
+                          className="flex gap-2.5 text-sm leading-relaxed text-cream/70"
+                        >
+                          <span aria-hidden className="text-gold">
+                            ·
+                          </span>
+                          <span>{pt}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Construction methods */}
+      <section className="border-t border-cream/10 bg-ink py-20 md:py-28">
+        <div className="container-content">
+          <Reveal>
+            <span className="eyebrow">Method</span>
+            <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
+              Two ways to{" "}
+              <span className="italic text-gold-soft">build a corner.</span>
+            </h2>
+            <p className="mt-6 max-w-2xl text-pretty leading-relaxed text-cream/70">
+              Our line covers the two construction methods that between them
+              account for almost all aluminium fenestration and curtain wall.
+            </p>
+          </Reveal>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            {CONSTRUCTION_METHODS.map((m, i) => (
+              <Reveal key={m.title} delay={(i % 2) * 80}>
+                <div className="h-full rounded-lg border border-cream/10 bg-ink-soft p-7 md:p-8">
+                  <h3 className="font-display text-2xl text-cream">
+                    {m.title}
+                  </h3>
+                  <p className="mt-4 text-pretty leading-relaxed text-cream/65">
+                    {m.body}
+                  </p>
+                  <p className="mt-6 border-t border-cream/10 pt-4 text-[0.62rem] uppercase tracking-wide2 text-sand">
+                    {m.caption}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Inside the production house */}
+      <section className="border-t border-cream/10 bg-ink-soft py-20 md:py-28">
+        <div className="container-content">
+          <Reveal>
+            <span className="eyebrow">Production house</span>
+            <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
+              Where tolerance{" "}
+              <span className="italic text-gold-soft">is set.</span>
+            </h2>
+            <p className="mt-6 max-w-2xl text-pretty leading-relaxed text-cream/70">
+              Precision at the profile level is what makes a facade watertight,
+              square and durable on site. This is the order the work runs in.
+            </p>
+          </Reveal>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {PRODUCTION_STEPS.map((s, i) => (
+              <Reveal key={s.n} delay={(i % 4) * 80}>
+                <div className="h-full rounded-lg border border-cream/10 bg-ink p-7">
+                  <span className="font-display text-2xl italic text-gold">
+                    {s.n}
+                  </span>
+                  <h3 className="mt-3 font-display text-xl text-cream">
+                    {s.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-cream/60">
+                    {s.body}
+                  </p>
                 </div>
               </Reveal>
             ))}
@@ -171,6 +257,28 @@ export default function Manufacturing() {
           <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
             Built to the reference standards.
           </h2>
+
+          {/* In-process control — the detail lives on /quality-safety. */}
+          <Reveal>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              {QUALITY_CHECKS.map((c) => (
+                <span
+                  key={c.n}
+                  className="rounded-full border border-gold/30 px-4 py-1.5 text-xs text-cream/75"
+                >
+                  {c.title}
+                </span>
+              ))}
+            </div>
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-cream/60">
+              Control is applied at the machine, across the batch and before
+              despatch.{" "}
+              <Link to="/quality-safety" className="link-underline text-sm">
+                Quality control &amp; site safety →
+              </Link>
+            </p>
+          </Reveal>
+
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {STANDARDS.map((s, i) => (
               <Reveal key={s.n} delay={(i % 4) * 80}>

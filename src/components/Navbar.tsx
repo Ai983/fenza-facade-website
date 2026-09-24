@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import clsx from "clsx";
 import Logo from "./Logo";
-import { NAV } from "@/lib/site";
+import { NAV, NAV_PRIMARY } from "@/lib/site";
 
 // Inline SVG icons (no icon-library dependency).
 function IconMenu() {
@@ -62,19 +62,21 @@ export default function Navbar() {
           <Logo />
         </Link>
 
-        <ul className="hidden items-center gap-8 lg:flex">
-          {NAV.map((item) => (
+        {/* Desktop bar carries NAV_PRIMARY — the full NAV does not fit the
+            1180px content width. Contact lives in the Enquire button. */}
+        <ul className="hidden items-center gap-6 xl:flex">
+          {NAV_PRIMARY.map((item) => (
             <li key={item.to}>
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
                   clsx(
-                    "text-[0.8rem] font-medium uppercase tracking-wide2 transition-colors",
+                    "text-[0.75rem] font-medium uppercase tracking-[0.14em] transition-colors",
                     isActive ? "text-gold" : "text-cream/75 hover:text-cream"
                   )
                 }
               >
-                {item.label}
+                {item.short ?? item.label}
               </NavLink>
             </li>
           ))}
@@ -89,7 +91,7 @@ export default function Navbar() {
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="-mr-2.5 inline-flex h-11 w-11 items-center justify-center text-cream lg:hidden"
+            className="-mr-2.5 inline-flex h-11 w-11 items-center justify-center text-cream xl:hidden"
           >
             {open ? <IconClose /> : <IconMenu />}
           </button>
@@ -100,7 +102,7 @@ export default function Navbar() {
       {/* Mobile overlay */}
       <div
         className={clsx(
-          "fixed inset-0 top-[74px] z-40 origin-top overflow-y-auto bg-ink transition-all duration-300 lg:hidden",
+          "fixed inset-0 top-[74px] z-40 origin-top overflow-y-auto bg-ink transition-all duration-300 xl:hidden",
           open ? "visible opacity-100" : "invisible opacity-0"
         )}
       >

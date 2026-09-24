@@ -60,6 +60,9 @@ export default function Contact() {
                 <div>
                   <span className="eyebrow">Manufacturing</span>
                   <p className="mt-3 text-lg text-cream">{BRAND.location}</p>
+                  <p className="mt-1 text-sm text-sand">
+                    Plus Code {CONTACT.plusCode}
+                  </p>
                   <p className="mt-1 text-sm text-cream/50">
                     Precise factory address is being confirmed.
                   </p>

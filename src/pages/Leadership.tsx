@@ -123,6 +123,12 @@ export default function Leadership() {
                 project portfolio is being built — completed work will be
                 published as Fenza's own as it is delivered.
               </p>
+              <Link
+                to="/projects"
+                className="link-underline mt-5 text-sm font-semibold"
+              >
+                See the ten developments in the record →
+              </Link>
             </div>
           </Reveal>
           <Reveal delay={120}>
@@ -130,8 +136,8 @@ export default function Leadership() {
               <Link to="/contact" className="btn-gold">
                 Work with the team
               </Link>
-              <Link to="/systems" className="btn-outline">
-                Explore systems
+              <Link to="/projects" className="btn-outline">
+                See the project record
               </Link>
             </div>
           </Reveal>
