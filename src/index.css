@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    @apply border-white/10;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    /* Suppress the grey flash iOS/Android paint over tapped links. */
+    -webkit-tap-highlight-color: rgba(198, 161, 91, 0.18);
+  }
+
+  /* Kill the legacy 300ms click delay on touch without disabling pinch-zoom. */
+  a,
+  button,
+  [role="button"],
+  input,
+  select,
+  textarea,
+  label {
+    touch-action: manipulation;
+  }
+
+  /* Lenis smooth scroll takes over native smooth scrolling when active. */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-ink text-cream font-sans antialiased;
+    margin: 0;
+    line-height: 1.62;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-medium;
+    line-height: 1.04;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: rgba(198, 161, 91, 0.28);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid #c6a15b;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-6 md:px-10;
+  }
+
+  .eyebrow {
+    @apply font-sans text-[0.66rem] font-semibold uppercase tracking-eyebrow text-gold;
+  }
+
+  /* Wordmark accent — the Z is always gold. */
+  .accent-z {
+    @apply text-gold;
+  }
+
+  .link-underline {
+    @apply relative inline-flex items-center gap-2 text-cream/80 transition-colors hover:text-cream;
+  }
+  /* Expands the touch region of these small text links to ~44px tall without
+     moving anything visually — the underline still tracks the text box. */
+  .link-underline::before {
+    content: "";
+    position: absolute;
+    inset: -12px -6px;
+  }
+  .link-underline::after {
+    content: "";
+    @apply absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-500;
+  }
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold uppercase tracking-wide2 text-ink transition-all duration-300 hover:bg-gold-soft hover:shadow-lift;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border px-7 py-3.5 text-sm font-semibold uppercase tracking-wide2 text-cream transition-all duration-300 hover:border-gold hover:text-gold;
+    border-color: rgba(243, 238, 227, 0.25);
+  }
+
+  .btn-outline-ink {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border px-7 py-3.5 text-sm font-semibold uppercase tracking-wide2 text-ink transition-all duration-300 hover:border-gold hover:text-gold-deep;
+    border-color: rgba(16, 14, 10, 0.25);
+  }
+
+  /* Same trick, for small links that are not .link-underline (footer lists,
+     breadcrumbs). Adds touch area only — zero layout shift. */
+  .tap-safe {
+    @apply relative;
+  }
+  .tap-safe::before {
+    content: "";
+    position: absolute;
+    inset: -11px -6px;
+  }
+
+  .hairline {
+    @apply h-px w-full;
+    background-color: rgba(243, 238, 227, 0.12);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Scroll reveal — SSR-safe, per-component, flash-free.
+ * Elements ship visible (`.reveal`) in the prerendered HTML, so crawlers
+ * and no-JS users always see full content. On the client, the Reveal
+ * component only adds `reveal-pending` to elements that are BELOW the fold
+ * (never on screen when hidden), then transitions them in on intersect.
+ * ------------------------------------------------------------------ */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+.reveal-animate {
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal-pending {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.reveal-pending.reveal--left {
+  transform: translateX(-34px);
+}
+.reveal-pending.reveal--scale {
+  transform: scale(0.96);
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  background: #c6a15b;
+  color: #100e0a;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .reveal-pending {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .animate-fade-up,
+  .animate-fade-in,
+  .animate-ken-burns,
+  .animate-scroll-cue {
+    animation: none !important;
+  }
+}
