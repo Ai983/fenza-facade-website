@@ -3,7 +3,7 @@ import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import { SECTORS, SECTORS_NOTE } from "@/lib/sectors";
-import { getSystem } from "@/lib/systems";
+import { getSystem, imgUrl } from "@/lib/systems";
 import { buildBreadcrumb, buildFaqSchema } from "@/lib/seo";
 
 const FAQS = [
@@ -50,7 +50,7 @@ export default function Sectors() {
       />
 
       <PageHero
-        image="cl-hero"
+        image="systems-hero"
         eyebrow="Sectors"
         title={
           <>
@@ -72,8 +72,17 @@ export default function Sectors() {
               <Reveal key={s.slug} delay={(i % 4) * 80}>
                 <article
                   id={s.slug}
-                  className="flex h-full flex-col rounded-lg border border-cream/10 bg-ink-soft p-7"
+                  className="flex h-full flex-col overflow-hidden rounded-lg border border-cream/10 bg-ink-soft"
                 >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={imgUrl(s.img)}
+                      alt={`${s.title} — ${s.blurb}`}
+                      loading={i < 4 ? "eager" : "lazy"}
+                      className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-7">
                   <h2 className="font-display text-xl text-cream">{s.title}</h2>
                   <p className="mt-3 text-sm leading-relaxed text-gold-soft">
                     {s.blurb}
@@ -101,6 +110,7 @@ export default function Sectors() {
                         );
                       })}
                     </ul>
+                  </div>
                   </div>
                 </article>
               </Reveal>

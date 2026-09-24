@@ -218,11 +218,13 @@ export const CONSTRUCTION_METHODS = [
     title: "Mitred and crimped",
     body: "Profiles cut to a 45° mitre, hardware prepped on the copy router, and corners mechanically crimped for a tight, square joint that does not rely on welding.",
     caption: "Mitred, mechanically crimped corner",
+    img: "method-crimp",
   },
   {
     title: "Butt-jointed, notch-and-tenon",
     body: "Mullion-to-transom assemblies cut with a notch-and-tenon end mill, so transoms seat square against mullions and the joint stays watertight.",
     caption: "Mullion–transom junction",
+    img: "method-junction",
   },
 ];
 

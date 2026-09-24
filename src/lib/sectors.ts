@@ -12,11 +12,14 @@ export interface Sector {
   detail: string;
   /** Slugs from SYSTEMS. Validated at module load below. */
   systems: string[];
+  /** Image key, following the company profile's own sector pairing. */
+  img: string;
 }
 
 export const SECTORS: Sector[] = [
   {
     slug: "commercial-towers",
+    img: "sec-towers",
     title: "Commercial towers",
     blurb: "High-rise curtain wall and glazed envelopes",
     detail:
@@ -25,6 +28,7 @@ export const SECTORS: Sector[] = [
   },
   {
     slug: "corporate-offices-it-parks",
+    img: "home-hero",
     title: "Corporate offices & IT parks",
     blurb: "Glazed and clad workplace elevations",
     detail:
@@ -33,6 +37,7 @@ export const SECTORS: Sector[] = [
   },
   {
     slug: "residential-high-rise",
+    img: "rl-hero",
     title: "Residential high-rise",
     blurb: "Windows, doors and balcony balustrades",
     detail:
@@ -41,6 +46,7 @@ export const SECTORS: Sector[] = [
   },
   {
     slug: "hospitality-serviced-apartments",
+    img: "sf-hero",
     title: "Hospitality & serviced apartments",
     blurb: "Terraces, slide & fold doors and glazed frontages",
     detail:
@@ -49,6 +55,7 @@ export const SECTORS: Sector[] = [
   },
   {
     slug: "retail-mixed-use",
+    img: "fd-hero",
     title: "Retail & mixed-use",
     blurb: "Entrance screens, frameless doors and canopies",
     detail:
@@ -57,6 +64,7 @@ export const SECTORS: Sector[] = [
   },
   {
     slug: "institutional-healthcare",
+    img: "rv-hero",
     title: "Institutional & healthcare",
     blurb: "Durable cladding and fenestration",
     detail:
@@ -65,6 +73,7 @@ export const SECTORS: Sector[] = [
   },
   {
     slug: "aviation-public-infrastructure",
+    img: "resources-hero",
     title: "Aviation & public infrastructure",
     blurb: "Large-span cladding, skylights and glazing",
     detail:
@@ -73,6 +82,7 @@ export const SECTORS: Sector[] = [
   },
   {
     slug: "industrial-factory",
+    img: "cl-hero",
     title: "Industrial & factory",
     blurb: "Metal cladding, louvers and glazing",
     detail:

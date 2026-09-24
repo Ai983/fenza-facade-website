@@ -3,6 +3,7 @@ import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import { QUALITY_CHECKS, SAFETY_GROUPS } from "@/lib/content";
+import { imgUrl } from "@/lib/systems";
 import { buildBreadcrumb, buildFaqSchema } from "@/lib/seo";
 
 const FAQS = [
@@ -73,6 +74,14 @@ export default function QualitySafety() {
                 the discipline that keeps a facade watertight, square and true
                 once it is up.
               </p>
+              <div className="mt-8 overflow-hidden rounded-lg border border-cream/10">
+                <img
+                  src={imgUrl("qc-profile")}
+                  alt="Aluminium profile section — drainage and joint detail held to tolerance"
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
             </Reveal>
 
             <div className="md:col-span-7">
@@ -114,6 +123,17 @@ export default function QualitySafety() {
               on our own line. The site teams are Fenza's own, and the controls
               below apply to every elevation they work on.
             </p>
+          </Reveal>
+
+          <Reveal delay={80}>
+            <div className="mt-10 overflow-hidden rounded-lg border border-cream/10">
+              <img
+                src={imgUrl("safety-site")}
+                alt="Glazing unit being installed at height, with harnessed site team and edge protection"
+                loading="lazy"
+                className="aspect-[16/7] w-full object-cover"
+              />
+            </div>
           </Reveal>
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

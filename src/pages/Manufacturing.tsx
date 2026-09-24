@@ -137,16 +137,26 @@ export default function Manufacturing() {
           <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {CONSTRUCTION_METHODS.map((m, i) => (
               <Reveal key={m.title} delay={(i % 2) * 80}>
-                <div className="h-full rounded-lg border border-cream/10 bg-ink-soft p-7 md:p-8">
-                  <h3 className="font-display text-2xl text-cream">
-                    {m.title}
-                  </h3>
-                  <p className="mt-4 text-pretty leading-relaxed text-cream/65">
-                    {m.body}
-                  </p>
-                  <p className="mt-6 border-t border-cream/10 pt-4 text-[0.62rem] uppercase tracking-wide2 text-sand">
-                    {m.caption}
-                  </p>
+                <div className="h-full overflow-hidden rounded-lg border border-cream/10 bg-ink-soft">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={imgUrl(m.img)}
+                      alt={m.caption}
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div className="p-7 md:p-8">
+                    <h3 className="font-display text-2xl text-cream">
+                      {m.title}
+                    </h3>
+                    <p className="mt-4 text-pretty leading-relaxed text-cream/65">
+                      {m.body}
+                    </p>
+                    <p className="mt-6 border-t border-cream/10 pt-4 text-[0.62rem] uppercase tracking-wide2 text-sand">
+                      {m.caption}
+                    </p>
+                  </div>
                 </div>
               </Reveal>
             ))}
