@@ -1,11 +1,13 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import SystemCard from "@/components/SystemCard";
 import EnquiryForm from "@/components/EnquiryForm";
+import AnatomyStory from "@/components/AnatomyStory";
 import { SYSTEMS, imgUrl } from "@/lib/systems";
 import {
   PROCESS_STEPS,
@@ -110,6 +112,16 @@ function HomeHero() {
 export default function Home() {
   return (
     <>
+      {/* Only the Home page shows this image above the fold, so only Home
+          preloads it (it used to be in index.html, i.e. on every page). */}
+      <Helmet>
+        <link
+          rel="preload"
+          as="image"
+          href={imgUrl("home-hero")}
+          {...({ fetchpriority: "high" } as Record<string, string>)}
+        />
+      </Helmet>
       <Seo
         title="Facade Manufacturer in Gurugram, India"
         description="Fenza Facade Engineering designs, fabricates and installs curtain wall, structural glazing, cladding, aluminium windows and doors, louvers and architectural elements — engineered on our own line in Gurugram."
@@ -194,6 +206,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Facade anatomy — pinned scroll story (desktop), stacked (phones) */}
+      <AnatomyStory />
+
       {/* System families */}
       <section className="border-t border-cream/10 bg-ink-soft py-24 md:py-32">
         <div className="container-content">
@@ -229,14 +244,24 @@ export default function Home() {
       {/* Manufacturing teaser */}
       <section className="relative overflow-hidden">
         <div className="grid lg:grid-cols-2">
-          <div className="relative min-h-[52vh] overflow-hidden">
-            <img
-              src={imgUrl("mc_cut")}
-              alt="Servo-driven double-head cutting on the Fenza aluminium line"
-              loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover"
+          {/* The cut-out on a dark spotlit stage (the source photo is a
+              white-background catalogue shot; covering the frame with it
+              read as a flat grey box). Same treatment as ManufacturingLine. */}
+          <div className="relative min-h-[52vh] overflow-hidden bg-ink-soft">
+            <div
+              aria-hidden
+              className="absolute inset-0 bg-[radial-gradient(60%_55%_at_50%_48%,rgba(216,188,134,0.15)_0%,rgba(216,188,134,0.04)_50%,transparent_75%)]"
             />
-            <div className="absolute inset-0 bg-ink/30" />
+            <div
+              aria-hidden
+              className="absolute inset-x-[14%] bottom-[16%] h-[12%] rounded-[100%] bg-[radial-gradient(50%_50%_at_50%_50%,rgba(243,238,227,0.09)_0%,transparent_100%)]"
+            />
+            <img
+              src={imgUrl("machine-cut")}
+              alt="Servo-driven double-head cutting machine on the Fenza aluminium line"
+              loading="lazy"
+              className="absolute inset-0 m-auto h-[70%] w-[88%] object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.55)]"
+            />
           </div>
           <div className="flex items-center bg-ink px-6 py-20 md:px-16">
             <div>

@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import SystemCard from "@/components/SystemCard";
 import EnquiryForm from "@/components/EnquiryForm";
+import AnatomyExplorer from "@/components/AnatomyExplorer";
 import NotFound from "./NotFound";
 import { SYSTEMS, getSystem, imgUrl, ogUrl, INDICATIVE_NOTE } from "@/lib/systems";
 import {
@@ -145,6 +146,21 @@ export default function SystemFamily() {
           </Reveal>
         </div>
       </section>
+
+      {/* Anatomy — the specimen photo is curtain wall, so only that page gets it. */}
+      {system.slug === "curtain-wall" && (
+        <section className="border-t border-cream/10 bg-ink py-20 md:py-28">
+          <div className="container-content">
+            <span className="eyebrow">Anatomy</span>
+            <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
+              The parts of the system
+            </h2>
+            <div className="mt-12">
+              <AnatomyExplorer showSystemLink={false} />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="border-t border-cream/10 bg-ink py-20 md:py-28">

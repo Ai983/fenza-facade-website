@@ -9,6 +9,7 @@ import QualitySafety from "@/pages/QualitySafety";
 import Leadership from "@/pages/Leadership";
 import About from "@/pages/About";
 import Resources from "@/pages/Resources";
+import Glossary from "@/pages/Glossary";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 
@@ -24,6 +25,7 @@ const AppRoutes = () => (
     <Route path="/leadership" element={<Leadership />} />
     <Route path="/about" element={<About />} />
     <Route path="/resources" element={<Resources />} />
+    <Route path="/glossary" element={<Glossary />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="*" element={<NotFound />} />
   </Routes>

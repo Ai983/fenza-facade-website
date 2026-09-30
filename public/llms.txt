@@ -28,6 +28,7 @@ Fenza is a separate legal entity within the Hagerstone group, focused exclusivel
 - [Leadership & Projects](https://fenzafacade.com/leadership): Akhilesh Kumar Singh, Director — Facade Projects, 25+ years in facade engineering, structural glazing, cladding and high-rise execution.
 - [About Fenza](https://fenzafacade.com/about): A facade-only manufacturer; the Hagerstone-group relationship stated as backing.
 - [Resources](https://fenzafacade.com/resources): Product catalogue download; system datasheets and test reports in preparation.
+- [Facade glossary](https://fenzafacade.com/glossary): More than sixty facade and curtain wall terms in plain language (mullion, transom, spandrel, U-value, structural glazing, rain-screen, ASTM E283/E330/E331 and more), each linked to the Fenza systems it relates to. General industry definitions; test standards are described by what they measure.
 - [Contact](https://fenzafacade.com/contact): Facade enquiries and RFQs. Manufacturing in Gurugram, Haryana.
 
 ## Notes

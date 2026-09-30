@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
+import ManufacturingLine from "@/components/ManufacturingLine";
 import { imgUrl } from "@/lib/systems";
 import {
   MACHINES,
@@ -68,53 +69,53 @@ export default function Manufacturing() {
         </div>
       </section>
 
-      {/* Machines */}
-      <section className="border-t border-cream/10 bg-ink-soft py-20 md:py-28">
-        <div className="container-content">
-          <span className="eyebrow">The Line</span>
-          <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">
-            Four machines, one tolerance discipline.
-          </h2>
-          {/* 2-up, not 4-up: each card now carries the machine's capability
-              list from the company profile and needs the vertical room. */}
-          <div className="mt-12 grid gap-5 sm:grid-cols-2">
-            {MACHINES.map((m, i) => (
-              <Reveal key={m.n} delay={(i % 2) * 80}>
-                <div className="h-full overflow-hidden rounded-lg border border-cream/10 bg-ink">
-                  <div className="aspect-[3/2] overflow-hidden bg-white">
-                    <img
-                      src={imgUrl(m.img)}
-                      alt={m.title}
-                      loading="lazy"
-                      className="h-full w-full object-contain p-3"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <span className="text-[0.6rem] font-semibold tracking-wide2 text-gold">
-                      {m.n}
-                    </span>
-                    <h3 className="mt-2 font-display text-lg text-cream">
-                      {m.title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-cream/55">
-                      {m.body}
-                    </p>
-                    <ul className="mt-5 space-y-2 border-t border-cream/10 pt-5">
-                      {m.points.map((pt) => (
-                        <li
-                          key={pt}
-                          className="flex gap-2.5 text-sm leading-relaxed text-cream/70"
-                        >
-                          <span aria-hidden className="text-gold">
-                            ·
-                          </span>
-                          <span>{pt}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </Reveal>
+      {/* The line — pinned scroll story (desktop), stacked (phones) */}
+      <ManufacturingLine />
+
+      {/* Full machine capability, one quiet disclosure per machine. Kept in
+          the HTML (crawlable, and there for engineers who want it) while the
+          story above stays short. */}
+      <section className="border-t border-cream/10 bg-ink-soft pb-20 pt-4 md:pb-28">
+        <div className="container-content grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <h2 className="font-display text-2xl text-cream md:text-3xl">
+              Machine specifications
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-cream/55">
+              Capability detail for each station on the line.
+            </p>
+          </div>
+          <div className="divide-y divide-cream/10 border-y border-cream/10 lg:col-span-8">
+            {MACHINES.map((m) => (
+              <details key={m.n} className="group">
+                <summary className="flex min-h-[60px] cursor-pointer list-none items-center gap-4 py-4 [&::-webkit-details-marker]:hidden">
+                  <span className="font-display text-lg italic text-gold">
+                    {m.n}
+                  </span>
+                  <span className="flex-1 font-display text-xl text-cream">
+                    {m.title}
+                  </span>
+                  <span
+                    aria-hidden
+                    className="text-xl text-gold transition-transform duration-300 group-open:rotate-45"
+                  >
+                    +
+                  </span>
+                </summary>
+                <ul className="grid gap-x-8 gap-y-2 pb-6 pl-10 sm:grid-cols-2">
+                  {m.points.map((pt) => (
+                    <li
+                      key={pt}
+                      className="flex gap-2.5 text-sm leading-relaxed text-cream/70"
+                    >
+                      <span aria-hidden className="text-gold">
+                        ·
+                      </span>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
             ))}
           </div>
         </div>

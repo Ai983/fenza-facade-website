@@ -18,7 +18,9 @@
       rel="stylesheet"
     />
 
-    <link rel="preload" as="image" href="/images/home-hero.webp" fetchpriority="high" />
+    <!-- The Home hero preload lives in Home.tsx, not here: this template is
+         shared by every page, and a global preload makes each of them
+         download an image they never show. -->
 
     <!--app-head-->
   </head>

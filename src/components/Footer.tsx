@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { SYSTEMS } from "@/lib/systems";
 import { BRAND, CONTACT, NAV, whatsappLink } from "@/lib/site";
+import { RESOURCE_ENTRIES } from "@/lib/resources";
 
 const year = new Date().getFullYear();
 
@@ -46,6 +47,21 @@ export default function Footer() {
                   className="tap-safe inline-block text-sm text-cream/60 transition-colors hover:text-gold"
                 >
                   {n.label}
+                </Link>
+              </li>
+            ))}
+            {/* The Resources family, from the shared list in lib/resources.ts:
+                a new page added there shows up here on its own. */}
+            <li aria-hidden className="pt-1">
+              <span className="block h-px w-8 bg-cream/15" />
+            </li>
+            {RESOURCE_ENTRIES.map((e) => (
+              <li key={e.to}>
+                <Link
+                  to={e.to}
+                  className="tap-safe inline-block text-sm text-cream/60 transition-colors hover:text-gold"
+                >
+                  {e.title}
                 </Link>
               </li>
             ))}

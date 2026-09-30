@@ -25,7 +25,7 @@ export const MACHINES: Machine[] = [
     n: "01",
     title: "Double Head Cutting",
     body: "Servo-driven, ±0.1 mm. Cuts aluminium profiles at any angle from 45° to 90°.",
-    img: "mc_cut",
+    img: "machine-cut",
     points: [
       "Servo drive holding ±0.1 mm",
       "Any angle from 45° to 90°",
@@ -40,7 +40,7 @@ export const MACHINES: Machine[] = [
     n: "02",
     title: "Copy Router",
     body: "Copy-milling, triple-arm drilling and drainage slots on a single machine.",
-    img: "mc_router",
+    img: "machine-route",
     points: [
       "Copy-milling, triple-arm drilling and drainage on one machine",
       "Pneumatic clamping for repeatable accuracy",
@@ -54,7 +54,10 @@ export const MACHINES: Machine[] = [
     n: "03",
     title: "Corner Crimping",
     body: "Two universal blades per head, three-axis adjustment, equal pressure both sides.",
-    img: "mc_crimp",
+    // machine-*.webp are cut-outs (transparent, graded for the dark page).
+    // Source files mc_crimp / mc_mill are named the wrong way round on disk;
+    // the machine-* names are correct.
+    img: "machine-crimp",
     points: [
       "Two universal crimping blades per head",
       "Press heads adjustable in three axes",
@@ -68,7 +71,7 @@ export const MACHINES: Machine[] = [
     n: "04",
     title: "End Milling",
     body: "Notch-and-tenon profile ends so transoms seat square against mullions.",
-    img: "mc_mill",
+    img: "machine-mill",
     points: [
       "Notch-and-tenon ends for mullion-to-transom joints",
       "Twin pneumatic cylinders driving the milling head",
@@ -79,6 +82,37 @@ export const MACHINES: Machine[] = [
     ],
   },
 ];
+
+/**
+ * Plain-language copy for the Manufacturing scroll story (ManufacturingLine),
+ * keyed by MACHINES[].n. One sentence and three short highlights each — the
+ * full capability lists above still render in the spec list below the story.
+ */
+export const MACHINE_STORY: Record<
+  string,
+  { short: string; line: string; highlights: string[] }
+> = {
+  "01": {
+    short: "Cut",
+    line: "Every profile starts here. Twin saw heads cut both ends at once, to a tenth of a millimetre.",
+    highlights: ["±0.1 mm, servo-driven", "Any angle, 45° to 90°", "Cut-lists straight from design software"],
+  },
+  "02": {
+    short: "Route",
+    line: "Holes, slots and drainage paths, machined into the profile before anything is assembled.",
+    highlights: ["Drilling, milling and drainage in one set-up", "Pneumatic clamping for repeat accuracy", "High-speed spindle"],
+  },
+  "03": {
+    short: "Crimp",
+    line: "Mitred corners pressed together from both sides at once, so the frame closes square.",
+    highlights: ["Equal pressure on both sides", "Heads adjustable in three axes", "No profile slip"],
+  },
+  "04": {
+    short: "Mill",
+    line: "Transom ends shaped to fit the mullion exactly: the joint that keeps a curtain wall tight.",
+    highlights: ["Notch-and-tenon ends", "Tooling for multiple profile sections", "Quick changeover between sections"],
+  },
+};
 
 export const PLANT_GALLERY = [
   { img: "mf_racked", caption: "Profile racking" },

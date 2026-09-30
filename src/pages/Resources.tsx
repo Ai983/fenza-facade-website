@@ -1,4 +1,6 @@
 import { useState, type FormEvent } from "react";
+import { Link } from "react-router-dom";
+import { RESOURCE_ENTRIES } from "@/lib/resources";
 import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
@@ -93,6 +95,9 @@ function CatalogueGate() {
   );
 }
 
+/** Entries this page does not already show in full (the catalogue has its own form here). */
+const MORE = RESOURCE_ENTRIES.filter((e) => !e.onResourcesPage);
+
 const UPCOMING = [
   {
     title: "System datasheets",
@@ -143,7 +148,7 @@ export default function Resources() {
         ]}
       />
 
-      <section className="bg-ink py-20 md:py-28">
+      <section id="catalogue" className="scroll-mt-24 bg-ink py-20 md:py-28">
         <div className="container-content grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-6">
             <span className="eyebrow">Available now</span>
@@ -164,7 +169,37 @@ export default function Resources() {
         </div>
       </section>
 
-      <section className="border-t border-cream/10 bg-ink-soft py-20 md:py-28">
+      {/* Every other page in the Resources family, from lib/resources.ts:
+          a new entry there becomes a new card here. */}
+      {MORE.length > 0 && (
+        <section className="border-t border-cream/10 bg-ink-soft py-16 md:py-20">
+          <div className="container-content">
+            <span className="eyebrow">Also available</span>
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {MORE.map((e, i) => (
+                <Reveal key={e.to} delay={(i % 3) * 80}>
+                  <Link
+                    to={e.to}
+                    className="group flex h-full flex-col justify-between rounded-lg border border-cream/10 bg-ink p-7 transition-all duration-500 hover:-translate-y-1 hover:border-gold/40"
+                  >
+                    <div>
+                      <h2 className="font-display text-2xl text-cream">{e.title}</h2>
+                      <p className="mt-3 text-sm leading-relaxed text-cream/60">
+                        {e.blurb}
+                      </p>
+                    </div>
+                    <span className="mt-6 text-sm font-semibold text-gold transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="border-t border-cream/10 bg-ink py-20 md:py-28">
         <div className="container-content">
           <span className="eyebrow">Coming as it is verified</span>
           <h2 className="mt-4 font-display text-3xl text-cream md:text-4xl">

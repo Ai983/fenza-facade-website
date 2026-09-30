@@ -14,6 +14,7 @@ export const STATIC_ROUTES = [
   "/leadership",
   "/about",
   "/resources",
+  "/glossary",
   "/contact",
 ];
 

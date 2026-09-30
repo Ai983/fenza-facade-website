@@ -100,6 +100,32 @@ export const buildFaqSchema = (items: FaqItem[]) => ({
   })),
 });
 
+/**
+ * Glossary as a schema.org DefinedTermSet, so search and AI answer engines can
+ * read each term and its definition directly. Each term's `url` is its own
+ * anchor on the glossary page.
+ */
+export const buildGlossarySchema = (opts: {
+  name: string;
+  description: string;
+  path: string;
+  terms: { slug: string; term: string; definition: string }[];
+}) => ({
+  "@type": "DefinedTermSet",
+  "@id": `${canonical(opts.path)}#glossary`,
+  name: opts.name,
+  description: opts.description,
+  url: canonical(opts.path),
+  publisher: { "@id": `${SITE_URL}/#organization` },
+  hasDefinedTerm: opts.terms.map((t) => ({
+    "@type": "DefinedTerm",
+    name: t.term,
+    description: t.definition,
+    url: `${canonical(opts.path)}#${t.slug}`,
+    inDefinedTermSet: { "@id": `${canonical(opts.path)}#glossary` },
+  })),
+});
+
 export const buildBreadcrumb = (trail: { name: string; path: string }[]) => ({
   "@type": "BreadcrumbList",
   itemListElement: trail.map((t, i) => ({
