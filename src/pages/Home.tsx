@@ -436,12 +436,12 @@ export default function Home() {
           <div className="lg:col-span-5">
             <span className="eyebrow">Enquiries</span>
             <h2 className="mt-4 font-display text-[clamp(2.2rem,4.4vw,3.6rem)] text-cream">
-              Send us the{" "}
-              <span className="italic text-gold-soft">elevation.</span>
+              Tell us what you{" "}
+              <span className="italic text-gold-soft">need.</span>
             </h2>
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-cream/70">
-              Share your drawings, elevation areas and system intent, and we will
-              come back with a measured scope and an itemised offer.
+              Share your requirements and contact details. Our team will get in
+              touch to discuss your project.
             </p>
             <div className="mt-8 space-y-1 text-sm text-cream/60">
               <p>{BRAND.legalName}</p>

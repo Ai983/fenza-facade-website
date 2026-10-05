@@ -421,7 +421,7 @@ export const AUDIENCE_SPLIT = [
   },
   {
     label: "Talk to us",
-    body: "Send us the elevation. We come back with a measured scope and an itemised offer.",
+    body: "Tell us what you need for your project. Our team will get in touch.",
     to: "/contact",
   },
 ];

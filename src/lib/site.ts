@@ -2,7 +2,7 @@
  * Single source of truth for brand, contact and navigation constants.
  *
  * Accuracy guardrails (Fenza master brief / PRD §12) encoded here:
- *  - Contact details are placeholders, clearly flagged, until confirmed.
+ *  - Unconfirmed address and WhatsApp details remain clearly flagged.
  *  - No borrowed certifications, no capacity figures, no misattributed projects.
  *  - Group relationship is stated as backing only.
  */
@@ -20,15 +20,14 @@ export const BRAND = {
 } as const;
 
 /**
- * Contact details are still being set up (PRD §11 / open question 6).
- * `confirmed: false` lets the UI show an honest "being confirmed" state
- * instead of publishing an unverified number or address.
+ * Published direct contact details. Address and WhatsApp remain unconfirmed.
  */
 export const CONTACT = {
-  email: "hello@fenzafacade.com",
-  emailConfirmed: false,
-  phone: "+91 00000 00000",
-  phoneConfirmed: false,
+  email: "akhilesh@fenzafacade.com",
+  emails: ["akhilesh@fenzafacade.com", "facade@fenzafacade.com"],
+  emailConfirmed: true,
+  phone: "+91 98730 21854",
+  phoneConfirmed: true,
   // WhatsApp number in international format without symbols (for wa.me links).
   whatsapp: "910000000000",
   whatsappConfirmed: false,
@@ -84,22 +83,6 @@ export const NAV: NavItem[] = [
 export const NAV_PRIMARY: NavItem[] = NAV.filter(
   (n) => !["/contact", "/sectors"].includes(n.to)
 );
-
-export const ENQUIRY_SEGMENTS = [
-  "Architect / PMC",
-  "Developer / Builder",
-  "Main contractor / Fabricator",
-  "Other",
-] as const;
-
-export const PROJECT_TYPES = [
-  "Commercial high-rise",
-  "Corporate office",
-  "Residential",
-  "Retail / hospitality",
-  "Institutional",
-  "Other",
-] as const;
 
 /** Optional runtime endpoint for form submissions (Supabase / n8n webhook). */
 export const ENQUIRY_ENDPOINT = import.meta.env.VITE_ENQUIRY_ENDPOINT as

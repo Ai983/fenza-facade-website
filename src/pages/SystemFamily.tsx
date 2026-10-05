@@ -219,8 +219,8 @@ export default function SystemFamily() {
               <span className="italic text-gold-soft">{system.name}.</span>
             </h2>
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-cream/70">
-              Share your elevation areas and system intent — we come back with a
-              measured scope, indicative specifications and an itemised offer.
+              Tell us what you need for your project. Our team will get in
+              touch to discuss the next steps.
             </p>
           </div>
           <div className="lg:col-span-7">

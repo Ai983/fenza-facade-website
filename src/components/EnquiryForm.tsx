@@ -1,14 +1,9 @@
 import { useState, type FormEvent } from "react";
 import clsx from "clsx";
-import {
-  ENQUIRY_SEGMENTS,
-  PROJECT_TYPES,
-  ENQUIRY_ENDPOINT,
-  CONTACT,
-} from "@/lib/site";
+import { ENQUIRY_ENDPOINT, CONTACT } from "@/lib/site";
 
 interface EnquiryFormProps {
-  /** Prefills the "system of interest" field for per-system RFQs (PRD §10). */
+  /** Carries the system context for enquiries from a system page. */
   defaultSystem?: string;
   className?: string;
 }
@@ -41,15 +36,11 @@ export default function EnquiryForm({
     }
 
     const data = {
-      segment: fd.get("segment"),
       name: fd.get("name"),
       email: fd.get("email"),
       phone: fd.get("phone"),
-      company: fd.get("company"),
-      projectType: fd.get("projectType"),
-      system: fd.get("system"),
+      system: defaultSystem || undefined,
       message: fd.get("message"),
-      source: fd.get("source"),
       submittedAt: new Date().toISOString(),
       page: typeof window !== "undefined" ? window.location.pathname : "",
     };
@@ -69,17 +60,16 @@ export default function EnquiryForm({
         // Graceful fallback until the enquiry webhook is wired (PRD §9).
         // Draft a prefilled email in the visitor's own mail client — a real,
         // working path that makes no claim about our own inbox status.
-        const subject = `Facade enquiry — ${data.segment ?? ""}`;
+        const subject = defaultSystem
+          ? `Facade enquiry — ${defaultSystem}`
+          : "Facade enquiry";
         const body = [
-          `I am a: ${data.segment ?? ""}`,
           `Name: ${data.name ?? ""}`,
           `Email: ${data.email ?? ""}`,
           `Phone: ${data.phone ?? ""}`,
-          `Company: ${data.company ?? ""}`,
-          `Project type: ${data.projectType ?? ""}`,
-          `System(s) of interest: ${data.system ?? ""}`,
+          ...(defaultSystem ? [`System of interest: ${defaultSystem}`] : []),
           "",
-          `${data.message ?? ""}`,
+          `Requirements: ${data.message ?? ""}`,
         ].join("\n");
         window.location.href = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
           subject
@@ -101,8 +91,7 @@ export default function EnquiryForm({
       >
         <h3 className="font-display text-2xl">Thank you — enquiry received.</h3>
         <p className="mt-3 text-sm text-muted">
-          We will come back with a measured scope and an itemised response.
-          For anything urgent, use the contact details on this page.
+          We will review your requirements and get in touch.
         </p>
         <button
           type="button"
@@ -131,34 +120,8 @@ export default function EnquiryForm({
       />
 
       <div>
-        <label className={labelCls} htmlFor="segment">
-          I am a
-        </label>
-        <select id="segment" name="segment" required className={field} defaultValue="">
-          <option value="" disabled>
-            Select one
-          </option>
-          {ENQUIRY_SEGMENTS.map((s) => (
-            <option key={s} value={s}>
-              {s}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <label className={labelCls} htmlFor="name">
-            Name
-          </label>
-          <input id="name" name="name" required className={field} autoComplete="name" />
-        </div>
-        <div>
-          <label className={labelCls} htmlFor="company">
-            Company / practice
-          </label>
-          <input id="company" name="company" className={field} autoComplete="organization" />
-        </div>
+        <label className={labelCls} htmlFor="name">Name</label>
+        <input id="name" name="name" required className={field} autoComplete="name" />
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
@@ -170,43 +133,15 @@ export default function EnquiryForm({
         </div>
         <div>
           <label className={labelCls} htmlFor="phone">
-            Phone / WhatsApp
+            Phone
           </label>
           <input id="phone" name="phone" type="tel" className={field} autoComplete="tel" />
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <label className={labelCls} htmlFor="projectType">
-            Project type
-          </label>
-          <select id="projectType" name="projectType" className={field} defaultValue="">
-            <option value="">Select (optional)</option>
-            {PROJECT_TYPES.map((p) => (
-              <option key={p} value={p}>
-                {p}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div>
-          <label className={labelCls} htmlFor="system">
-            System(s) of interest
-          </label>
-          <input
-            id="system"
-            name="system"
-            className={field}
-            defaultValue={defaultSystem}
-            placeholder="e.g. Curtain Wall"
-          />
-        </div>
-      </div>
-
       <div>
         <label className={labelCls} htmlFor="message">
-          Your enquiry
+          Your requirements
         </label>
         <textarea
           id="message"
@@ -214,19 +149,7 @@ export default function EnquiryForm({
           required
           rows={4}
           className={clsx(field, "resize-y")}
-          placeholder="Share your drawings, elevation areas and system intent."
-        />
-      </div>
-
-      <div>
-        <label className={labelCls} htmlFor="source">
-          How did you hear about us?
-        </label>
-        <input
-          id="source"
-          name="source"
-          className={field}
-          placeholder="Search, referral, AI assistant, social…"
+          placeholder="Tell us what you need for your project."
         />
       </div>
 

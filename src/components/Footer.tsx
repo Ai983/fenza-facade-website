@@ -72,18 +72,16 @@ export default function Footer() {
           <h3 className="eyebrow">Enquiries</h3>
           <ul className="mt-5 space-y-3 text-sm text-cream/60">
             <li>{BRAND.location}</li>
-            <li>
-              {CONTACT.emailConfirmed ? (
+            {CONTACT.emails.map((email) => (
+              <li key={email}>
                 <a
-                  href={`mailto:${CONTACT.email}`}
-                  className="tap-safe inline-block transition-colors hover:text-gold"
+                  href={`mailto:${email}`}
+                  className="tap-safe inline-block break-all transition-colors hover:text-gold"
                 >
-                  {CONTACT.email}
+                  {email}
                 </a>
-              ) : (
-                <span className="text-cream/40">Email — being confirmed</span>
-              )}
-            </li>
+              </li>
+            ))}
             <li>
               {CONTACT.phoneConfirmed ? (
                 <a

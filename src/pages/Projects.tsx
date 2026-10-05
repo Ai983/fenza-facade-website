@@ -227,11 +227,11 @@ export default function Projects() {
         <div className="container-content max-w-3xl">
           <Reveal>
             <h2 className="font-display text-3xl text-cream md:text-4xl">
-              Send us the elevation.
+              Tell us what you need.
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-cream/70">
-              Share your drawings, elevation areas and system intent, and Fenza
-              comes back with a measured scope and an itemised offer.
+              Share your requirements and contact details. Our team will get in
+              touch to discuss your project.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link to="/contact" className="btn-gold">

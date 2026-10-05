@@ -16,7 +16,7 @@ export default function Contact() {
     <>
       <Seo
         title="Contact & Enquiries"
-        description="Enquire about a facade project with Fenza. Send your drawings, elevation areas and system intent, and we come back with a measured scope and an itemised offer. Manufacturing in Gurugram, Haryana."
+        description="Tell Fenza Facade Engineering what you need for your project. Contact our team by email, phone or the simple enquiry form. Manufacturing in Gurugram, Haryana."
         path="/contact"
         image="/og/contact-hero.jpg"
         schema={[
@@ -33,11 +33,11 @@ export default function Contact() {
         eyebrow="Enquiries"
         title={
           <>
-            Send us the{" "}
-            <span className="italic text-gold-soft">elevation.</span>
+            Tell us what you{" "}
+            <span className="italic text-gold-soft">need.</span>
           </>
         }
-        intro="Share your drawings, elevation areas and system intent, and we will come back with a measured scope and an itemised offer."
+        intro="Share your requirements and contact details. Our team will get in touch to discuss your project."
         breadcrumb={[
           { name: "Home", to: "/" },
           { name: "Contact", to: "/contact" },
@@ -73,20 +73,16 @@ export default function Contact() {
                 <div>
                   <span className="eyebrow">Direct</span>
                   <ul className="mt-3 space-y-3 text-cream">
-                    <li>
-                      {CONTACT.emailConfirmed ? (
+                    {CONTACT.emails.map((email) => (
+                      <li key={email}>
                         <a
-                          href={`mailto:${CONTACT.email}`}
+                          href={`mailto:${email}`}
                           className="link-underline"
                         >
-                          {CONTACT.email}
+                          {email}
                         </a>
-                      ) : (
-                        <span className="text-cream/50">
-                          Email — being confirmed
-                        </span>
-                      )}
-                    </li>
+                      </li>
+                    ))}
                     <li>
                       {CONTACT.phoneConfirmed ? (
                         <a
@@ -123,9 +119,8 @@ export default function Contact() {
                 <div>
                   <span className="eyebrow">How we respond</span>
                   <p className="mt-3 text-pretty text-sm leading-relaxed text-cream/60">
-                    One point of contact is established for every project. We
-                    reply with a measured scope, indicative specifications and an
-                    itemised commercial offer against a frozen scope.
+                    Tell us about your requirements. Our team will review your
+                    enquiry and contact you to discuss the next steps.
                   </p>
                 </div>
               </div>
