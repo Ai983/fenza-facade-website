@@ -1,4 +1,5 @@
 import { SYSTEMS } from "./systems";
+import { JOURNAL } from "./journal";
 
 /** Every crawlable route, single source for the router and the prerenderer. */
 // NOTE: every path here needs a matching <Route> in src/AppRoutes.tsx.
@@ -15,13 +16,19 @@ export const STATIC_ROUTES = [
   "/about",
   "/resources",
   "/glossary",
+  "/testing",
+  "/journal",
   "/contact",
 ];
 
 export const getSystemPaths = (): string[] =>
   SYSTEMS.map((s) => `/systems/${s.slug}`);
 
+export const getJournalPaths = (): string[] =>
+  JOURNAL.map((a) => `/journal/${a.slug}`);
+
 export const getAllRoutes = (): string[] => [
   ...STATIC_ROUTES,
   ...getSystemPaths(),
+  ...getJournalPaths(),
 ];

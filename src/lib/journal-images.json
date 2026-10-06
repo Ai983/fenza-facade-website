@@ -1,0 +1,415 @@
+{
+  "stick-hero": {
+    "file": "j-stick-hero-v2",
+    "alt": "Glass facade modules glowing orange and deep blue in the evening light",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-building-facade-reflecting-sunset-colors-aaBwFOFjTbE"
+  },
+  "stick-card": {
+    "file": "j-stick-vs-unitised-curtain-wall-v2",
+    "alt": "Glass facade modules glowing orange and deep blue in the evening light",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-building-facade-reflecting-sunset-colors-aaBwFOFjTbE"
+  },
+  "stick-1": {
+    "file": "j-stick-1",
+    "alt": "Looking up two glass curtain wall faces that meet at a sharp corner",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/low-angle-photography-of-high-rise-building-ISQ3M9fPa0g"
+  },
+  "stick-2": {
+    "file": "j-stick-2",
+    "alt": "Glass facade corner rising to a point against a pale blue sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-tall-building-with-a-blue-sky-QPsJzQC4wQI"
+  },
+  "acp-hero": {
+    "file": "j-acp-hero",
+    "alt": "Folded metal cladding panels in grey and warm copper tones",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-concrete-building-during-daytime-k7DrfFvUEqU"
+  },
+  "acp-card": {
+    "file": "j-acp-vs-solid-aluminium-cladding",
+    "alt": "Folded metal cladding panels in grey and warm copper tones",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-concrete-building-during-daytime-k7DrfFvUEqU"
+  },
+  "acp-1": {
+    "file": "j-acp-1",
+    "alt": "Curved sheet-metal cladding sweeping across a building face",
+    "w": 1400,
+    "h": 934,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-a-curved-wall-fuKt3RgGm3o"
+  },
+  "acp-2": {
+    "file": "j-acp-2",
+    "alt": "Flat cladding panels with fine, even joints under soft light",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/blue-and-white-tiles-ZHVy20iPb7E"
+  },
+  "e331-hero": {
+    "file": "j-e331-hero",
+    "alt": "Rain droplets on a window pane with a pale building softly blurred behind",
+    "w": 2000,
+    "h": 1500,
+    "source": "https://unsplash.com/photos/droplets-on-windshield-tXZTdTmC51o"
+  },
+  "e331-card": {
+    "file": "j-what-astm-e331-tests",
+    "alt": "Rain droplets on a window pane with a pale building softly blurred behind",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/droplets-on-windshield-tXZTdTmC51o"
+  },
+  "e331-1": {
+    "file": "j-e331-1",
+    "alt": "Water beading on glass under a heavy grey sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/water-droplets-on-glass-panel-eehRmieZJvY"
+  },
+  "e331-2": {
+    "file": "j-e331-2",
+    "alt": "Rain on a window pane over a hazy city view",
+    "w": 1400,
+    "h": 1400,
+    "source": "https://unsplash.com/photos/raindrops-on-clear-window-Bu1zj2WbjHE"
+  },
+  "sg-hero": {
+    "file": "j-sg-hero",
+    "alt": "Glass facade with clouds reflected across a fine grid of frames",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-building-that-has-a-lot-of-windows-on-it-48yI_ZyzuLo"
+  },
+  "sg-card": {
+    "file": "j-structural-glazing-explained",
+    "alt": "Glass facade with clouds reflected across a fine grid of frames",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-building-that-has-a-lot-of-windows-on-it-48yI_ZyzuLo"
+  },
+  "sg-1": {
+    "file": "j-sg-1",
+    "alt": "Corner of a glazed facade with clouds reflected in the panes",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/white-clouds-and-blue-sky-during-daytime-P5nl2JsAHPw"
+  },
+  "sg-2": {
+    "file": "j-sg-2",
+    "alt": "Long glass facade running to a horizon under a pale sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-tall-glass-building-with-a-sky-in-the-background-3i2CvJXk4yA"
+  },
+  "spider-hero": {
+    "file": "j-spider-hero",
+    "alt": "Point-fixed glass panes held by slim steel spider fittings",
+    "w": 2000,
+    "h": 1491,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-window-with-a-sky-background-pelH3Z0O8f0"
+  },
+  "spider-card": {
+    "file": "j-spider-glazing-and-glass-fins",
+    "alt": "Point-fixed glass panes held by slim steel spider fittings",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-window-with-a-sky-background-pelH3Z0O8f0"
+  },
+  "spider-1": {
+    "file": "j-spider-1",
+    "alt": "Glass facade with small stainless fixings at each panel corner",
+    "w": 1400,
+    "h": 765,
+    "source": "https://unsplash.com/photos/a-tall-glass-building-with-a-sky-background-GBhh6nhbI5Q"
+  },
+  "spider-2": {
+    "file": "j-spider-2",
+    "alt": "Wide glass facade with fixings and slim horizontal bars",
+    "w": 1400,
+    "h": 765,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows--LCA5wDQdeo"
+  },
+  "rain-hero": {
+    "file": "j-rain-hero",
+    "alt": "Golden horizontal cladding battens against a deep blue sky",
+    "w": 2000,
+    "h": 1261,
+    "source": "https://unsplash.com/photos/low-angle-photography-of-building-facade-DZWYrOyej1I"
+  },
+  "rain-card": {
+    "file": "j-rain-screen-cladding-the-gap",
+    "alt": "Golden horizontal cladding battens against a deep blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/low-angle-photography-of-building-facade-DZWYrOyej1I"
+  },
+  "rain-1": {
+    "file": "j-rain-1",
+    "alt": "Timber-toned slatted cladding over a balconied facade",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/brown-and-white-concrete-building-nF2Fn_UNqzE"
+  },
+  "rain-2": {
+    "file": "j-rain-2",
+    "alt": "Timber fins and cladding under a white roof edge",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-wooden-blinds-DffR5VtlTFc"
+  },
+  "thermal-hero": {
+    "file": "j-thermal-hero-v2",
+    "alt": "Dark aluminium-clad facade with rows of slim-framed windows",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-8Oxy-__EjQc"
+  },
+  "thermal-card": {
+    "file": "j-thermal-breaks-in-aluminium-frames-v2",
+    "alt": "Dark aluminium-clad facade with rows of slim-framed windows",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-8Oxy-__EjQc"
+  },
+  "thermal-1": {
+    "file": "j-thermal-1",
+    "alt": "Dark-framed sliding window looking onto trees",
+    "w": 1400,
+    "h": 928,
+    "source": "https://unsplash.com/photos/a-window-with-a-view-of-green-trees-outside-zKGL4LThrdE"
+  },
+  "thermal-2": {
+    "file": "j-thermal-2",
+    "alt": "Grid of slim aluminium window frames with green beyond",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/rain-streaks-on-a-window-overlooking-lush-greenery-u-9dA84J0iI"
+  },
+  "glass-hero": {
+    "file": "j-glass-hero",
+    "alt": "Looking up glass towers with clouds reflected in every pane",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-GP6-P0QAEzY"
+  },
+  "glass-card": {
+    "file": "j-choosing-facade-glass",
+    "alt": "Looking up glass towers with clouds reflected in every pane",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-GP6-P0QAEzY"
+  },
+  "glass-1": {
+    "file": "j-glass-1",
+    "alt": "Window reflecting a neighbouring building and a blue sky",
+    "w": 1400,
+    "h": 937,
+    "source": "https://unsplash.com/photos/a-reflection-of-a-building-in-a-window-zUDjuv3NP_M"
+  },
+  "glass-2": {
+    "file": "j-glass-2",
+    "alt": "Glass facade reflecting a soft pink and blue sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/worms-eye-view-photo-of-glass-building-HFug8fv_1jw"
+  },
+  "casement-hero": {
+    "file": "j-casement-hero",
+    "alt": "Awning window opening outward from a concrete facade",
+    "w": 2000,
+    "h": 1500,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-open-windows-KL-IZsX51tc"
+  },
+  "casement-card": {
+    "file": "j-casement-or-sliding-windows",
+    "alt": "Awning window opening outward from a concrete facade",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-open-windows-KL-IZsX51tc"
+  },
+  "casement-1": {
+    "file": "j-casement-1",
+    "alt": "Blue glass facade with a few small openable windows",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/blue-glass-office-building-facade-nqXrIWXt8GY"
+  },
+  "casement-2": {
+    "file": "j-casement-2",
+    "alt": "Awning window in a wall of glass blocks looking onto green fields",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/open-window-in-glass-block-wall-overlooking-landscape-AgdrrfS6h9E"
+  },
+  "fold-hero": {
+    "file": "j-fold-hero",
+    "alt": "Folding glass doors opened fully onto a timber deck",
+    "w": 2000,
+    "h": 2000,
+    "source": "https://unsplash.com/photos/modern-home-with-folding-glass-doors-opening-to-deck-ckSnDzU_xOg"
+  },
+  "fold-card": {
+    "file": "j-slide-and-fold-doors-what-to-check",
+    "alt": "Folding glass doors opened fully onto a timber deck",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-home-with-folding-glass-doors-opening-to-deck-ckSnDzU_xOg"
+  },
+  "fold-1": {
+    "file": "j-fold-1",
+    "alt": "Sliding glazed doors opening to a balcony and the sea",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/balcony-overlooking-the-sea-and-coastal-town-N1DlQkl2V2c"
+  },
+  "fold-2": {
+    "file": "j-fold-2",
+    "alt": "Frameless sliding glazing on a balcony in golden evening light",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/photo-of-sliding-door-iQ9_1cVOwiQ"
+  },
+  "louver-hero": {
+    "file": "j-louver-hero",
+    "alt": "Vertical timber fins in front of a glazed building face",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-building-with-dark-facade-wooden-slats-and-glass-windows-rHe-M_q2y88"
+  },
+  "louver-card": {
+    "file": "j-louvers-and-sun-shading-fins",
+    "alt": "Vertical timber fins in front of a glazed building face",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-building-with-dark-facade-wooden-slats-and-glass-windows-rHe-M_q2y88"
+  },
+  "louver-1": {
+    "file": "j-louver-1",
+    "alt": "Horizontal louvres running along a green-framed glass facade",
+    "w": 1400,
+    "h": 1121,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-a-sky-background-BZ2R0TxWb7I"
+  },
+  "louver-2": {
+    "file": "j-louver-2",
+    "alt": "Dark horizontal louvres curving up under a cloudy sky",
+    "w": 1400,
+    "h": 932,
+    "source": "https://unsplash.com/photos/a-modern-buildings-exterior-lines-against-a-gray-sky-8Llz0ieRWOI"
+  },
+  "balus-hero": {
+    "file": "j-balus-hero",
+    "alt": "Glass balustrade along a terrace in front of a stone-clad building",
+    "w": 2000,
+    "h": 1331,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-glass-balcony-railing-TDP60dC388E"
+  },
+  "balus-card": {
+    "file": "j-glass-balustrades-what-to-check",
+    "alt": "Glass balustrade along a terrace in front of a stone-clad building",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-glass-balcony-railing-TDP60dC388E"
+  },
+  "balus-1": {
+    "file": "j-balus-1",
+    "alt": "Slim glass balustrade in front of a bright window wall, in black and white",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/modern-interior-with-horizontal-blinds-and-railing-8FB241JvXLc"
+  },
+  "balus-2": {
+    "file": "j-balus-2",
+    "alt": "Glass and steel railing along a landscaped walkway",
+    "w": 1400,
+    "h": 947,
+    "source": "https://unsplash.com/photos/modern-office-buildings-in-shanghai-rQEZZrGGmCI"
+  },
+  "joints-hero": {
+    "file": "j-joints-hero",
+    "alt": "Vertical metal ribs catching light and shadow across a facade",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-white-wall-with-vertical-blinds-on-it-un4Dp8OR-4U"
+  },
+  "joints-card": {
+    "file": "j-movement-joints-in-facades",
+    "alt": "Vertical metal ribs catching light and shadow across a facade",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-white-wall-with-vertical-blinds-on-it-un4Dp8OR-4U"
+  },
+  "joints-1": {
+    "file": "j-joints-1",
+    "alt": "Fine lines of panel joints across a pale glass facade",
+    "w": 1400,
+    "h": 875,
+    "source": "https://unsplash.com/photos/graphing-artwork-xnqVGsbXgV4"
+  },
+  "joints-2": {
+    "file": "j-joints-2",
+    "alt": "Regular rows of windows set in a stone-clad facade",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/mans-eye-view-of-multi-storey-building-Q-HmETwjW-A"
+  },
+  "finish-hero": {
+    "file": "j-finish-hero-v2",
+    "alt": "Copper-toned anodised cladding on rounded balconies against a teal sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-many-balconies-on-it-hK-jdvutWoU"
+  },
+  "finish-card": {
+    "file": "j-anodised-powder-coated-or-pvdf-v2",
+    "alt": "Copper-toned anodised cladding on rounded balconies against a teal sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-many-balconies-on-it-hK-jdvutWoU"
+  },
+  "finish-1": {
+    "file": "j-finish-1",
+    "alt": "Dark matte metal surface with a fine grain",
+    "w": 1400,
+    "h": 1120,
+    "source": "https://unsplash.com/photos/dark-grey-grainy-gradient-W9LTI6cKPfM"
+  },
+  "finish-2": {
+    "file": "j-finish-2",
+    "alt": "Facade panels in contrasting coloured finishes",
+    "w": 1400,
+    "h": 1051,
+    "source": "https://unsplash.com/photos/a-multicolored-building-with-a-clock-on-the-side-of-it-PK1aUKM9DrA"
+  },
+  "quote-hero": {
+    "file": "j-quote-hero",
+    "alt": "Technical drawings and measuring tools laid out on a dark wooden table",
+    "w": 2000,
+    "h": 1500,
+    "source": "https://unsplash.com/photos/a-wooden-table-topped-with-a-piece-of-paper-and-a-pair-of-scissors-OspMUpCBeqQ"
+  },
+  "quote-card": {
+    "file": "j-what-to-send-a-facade-manufacturer",
+    "alt": "Technical drawings and measuring tools laid out on a dark wooden table",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-wooden-table-topped-with-a-piece-of-paper-and-a-pair-of-scissors-OspMUpCBeqQ"
+  },
+  "quote-1": {
+    "file": "j-quote-1",
+    "alt": "Close-up of a dimensioned drawing with a pencil and scale rule",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo"
+  }
+}

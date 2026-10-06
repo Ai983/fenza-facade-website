@@ -6,9 +6,8 @@
 // itself still needs its own route (src/lib/routes.ts + src/AppRoutes.tsx).
 //
 // The header panel also has an optional "spotlight" — the image card on its
-// right. Point RESOURCE_SPOTLIGHT at whatever deserves the eye: today the new
-// glossary; later, the latest Journal article (set title/blurb/to/image from
-// the article's data). Set it to null and the panel drops back to entries only.
+// right. RESOURCE_SPOTLIGHT features the newest Journal article (checked by the audit); set it to
+// null and the panel drops back to entries only.
 
 import { GLOSSARY } from "./glossary";
 
@@ -35,6 +34,16 @@ export const RESOURCE_ENTRIES: ResourceEntry[] = [
     to: "/glossary",
     blurb: `${GLOSSARY.length} facade terms, in plain language.`,
   },
+  {
+    title: "Testing",
+    to: "/testing",
+    blurb: "How a facade is proven: air, water and wind, in order.",
+  },
+  {
+    title: "Journal",
+    to: "/journal",
+    blurb: "Plain-language guides to facade systems and specification.",
+  },
 ];
 
 export interface ResourceSpotlight {
@@ -47,13 +56,28 @@ export interface ResourceSpotlight {
   alt: string;
 }
 
+/**
+ * The image card in the header panel features the newest Journal article (the first in JOURNAL).
+ * It is written out here, not read from journal.ts, on purpose: importing the Journal would put
+ * all 15 articles' text into the main script that every page downloads. The audit
+ * (npm run audit) fails if this block ever differs from the first article, so it cannot drift.
+ * Set RESOURCE_SPOTLIGHT to null to drop the card.
+ */
+const FEATURED = {
+  slug: "stick-vs-unitised-curtain-wall",
+  title: "Stick vs. unitised curtain wall: how to choose",
+  teaser: "Site time, quality control and cost: where the work happens.",
+  /** The card image: its file and alt text, copied from journal-images.json (slot "stick-card"). */
+  image: "j-stick-vs-unitised-curtain-wall-v2",
+  alt: "Glass facade modules glowing orange and deep blue in the evening light",
+};
 export const RESOURCE_SPOTLIGHT: ResourceSpotlight | null = {
-  eyebrow: "New",
-  title: "The facade glossary",
-  blurb: "Mullion, transom, spandrel, U-value: the terms explained without the jargon.",
-  to: "/glossary",
-  image: "spotlight-glossary",
-  alt: "Cut section of an aluminium curtain wall profile with glazing unit and gaskets",
+  eyebrow: "Journal",
+  title: FEATURED.title,
+  blurb: FEATURED.teaser,
+  to: `/journal/${FEATURED.slug}`,
+  image: FEATURED.image,
+  alt: FEATURED.alt,
 };
 
 export const RESOURCES_HEADING = {

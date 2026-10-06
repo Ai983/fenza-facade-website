@@ -30,7 +30,7 @@ npm run check      # typecheck + build + link/SEO audit + browser crawl (run aft
 
 `npm run build` produces static HTML for every route (home, /systems, the 13
 system family pages, sectors, projects, manufacturing, quality-safety, leadership,
-about, resources, glossary, contact, 404), plus `sitemap.xml`.
+about, resources, glossary, testing, journal + 15 articles, contact, 404), plus `sitemap.xml`.
 
 ## Quality checks (read before changing anything)
 
@@ -49,6 +49,8 @@ gotchas). `CLAUDE.md` gives the same summary to AI coding sessions.
 - `src/lib/resources.ts` — **one list** for the Resources family (catalogue, glossary, and
   future Testing / Journal pages) that feeds the header panel, the phone menu screen, the
   footer and the Resources page. Adding a page = one entry.
+- `src/lib/journal.ts` + `journal-articles/` + `journal-images.json` — the Journal (one file per
+  article; photos and credits in the JSON). Loads on demand; see the runbook (6b).
 - `src/lib/anatomy.ts` — parts, positions and captions for the curtain-wall anatomy sections.
 - `src/lib/site.ts` — brand + **contact placeholders** (see below).
 - `public/images/*` — facade imagery. **These are the final images**; no new photography is

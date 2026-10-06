@@ -33,6 +33,10 @@ Vercel from GitHub. Search engines and AI answer engines read the **prerendered 
 - `src/lib/resources.ts`: **one list** feeding the header Resources panel (desktop), the phone
   Resources screen, the footer and the Resources page. Adding a resource page = one entry.
 - `src/lib/routes.ts` + `src/AppRoutes.tsx`: a new page must be registered in **both**.
+- Journal: one file per article in `src/lib/journal-articles/`, all photos in `src/lib/journal-images.json`
+  (see runbook 6b). It loads on demand: keep it out of anything the main script imports. Journal photos
+  are free Unsplash photos (no credit needed), listed in `docs/journal-photos.md`; to move one to Supabase
+  set `"url"` on its slot. Never scrape or copy photos from other companies' sites.
 - `src/pages`, `src/components`: pages and UI. `public/`: images, `llms.txt`, `robots.txt`, OG images.
 - `index.html` is shared by every page: never put page-specific tags there.
 - `scripts/`: `audit-links.mjs` and `crawl-pages.mjs` (the checks above).

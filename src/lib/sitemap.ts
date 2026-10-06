@@ -1,6 +1,7 @@
 import { SITE_URL } from "./site";
 import { getAllRoutes } from "./routes";
 import { SYSTEMS, imgUrl } from "./systems";
+import { JOURNAL, articleImages } from "./journal";
 
 const loc = (path: string) => `${SITE_URL}${path === "/" ? "" : path}`;
 
@@ -10,9 +11,15 @@ const priority = (path: string) =>
 export function buildSitemapXml(lastmod: string): string {
   const rows = getAllRoutes().map((path) => {
     const sys = SYSTEMS.find((s) => `/systems/${s.slug}` === path);
-    const images = sys
+    const art = JOURNAL.find((a) => `/journal/${a.slug}` === path);
+    const imageKeys = sys
+      ? [sys.hero, ...sys.gallery.map((g) => g.img)]
+      : art
+        ? articleImages(art)
+        : null;
+    const images = imageKeys
       ? "\n" +
-        [sys.hero, ...sys.gallery.map((g) => g.img)]
+        [...new Set(imageKeys)]
           .map(
             (k) =>
               `    <image:image><image:loc>${SITE_URL}${imgUrl(k)}</image:loc></image:image>`

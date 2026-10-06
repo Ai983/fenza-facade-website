@@ -195,8 +195,21 @@ export default function Glossary() {
                         {t.definition}
                       </dd>
 
-                      {!!(t.systems?.length || t.see?.length) && (
+                      {!!(t.systems?.length || t.see?.length || t.learnMore) && (
                         <dd className="mt-4 flex flex-col gap-2 text-sm">
+                          {t.learnMore && (
+                            <p className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                              <span className="text-[0.66rem] uppercase tracking-wide2 text-cream/40">
+                                Learn more
+                              </span>
+                              <Link
+                                to={t.learnMore.to}
+                                className="tap-safe text-gold transition-colors hover:text-gold-soft"
+                              >
+                                {t.learnMore.label} →
+                              </Link>
+                            </p>
+                          )}
                           {!!t.systems?.length && (
                             <p className="flex flex-wrap items-center gap-x-4 gap-y-1">
                               <span className="text-[0.66rem] uppercase tracking-wide2 text-cream/40">

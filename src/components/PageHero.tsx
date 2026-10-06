@@ -23,7 +23,7 @@ export default function PageHero({
   children,
   align = "left",
 }: PageHeroProps) {
-  const src = image.startsWith("/") ? image : imgUrl(image);
+  const src = /^(\/|https?:)/.test(image) ? image : imgUrl(image);
   return (
     <section className="relative flex min-h-[62vh] items-end overflow-hidden pt-[74px]">
       <div className="absolute inset-0">

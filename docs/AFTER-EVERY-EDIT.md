@@ -195,13 +195,28 @@ Options: `CRAWL_URL=https://fenzafacade.com npm run crawl` (a deployed site),
 3. **Link to it** so it is not an orphan: header/footer, related pages, or, if it is a
    knowledge/resource page (Testing, Journal, Downloads...), add **one entry** to
    `RESOURCE_ENTRIES` in `src/lib/resources.ts`. That single entry adds it to the desktop
-   Resources panel, the phone Resources screen, the footer and the Resources page.
+   Resources panel, the phone Resources screen, the footer and the Resources page. If the page
+   explains glossary terms, add `learnMore: { to, label }` to those terms in `src/lib/glossary.ts`
+   so the glossary links back to it (the Testing page does this for the ASTM terms).
 4. **`public/llms.txt`:** add a line describing it.
 5. **Social image:** `image="/og/<existing>.jpg"` must exist in `public/og/`.
 6. **Structured data:** at least a BreadcrumbList; add other types only where honest.
 7. **Content:** obey section 3. Unique title and description (section 4.5).
 8. `npm run check`, then look at it at 1440 / 390.
 9. After deploy: section 7.
+
+## 6b. Adding a Journal article
+
+1. Copy any file in `src/lib/journal-articles/` (the file name is the URL slug) and edit it: title, a
+   120-160 character `description`, `excerpt`, `teaser` (under 85 chars), `topic`, and the body blocks.
+   Aim for **1,300-1,800 words** (a 6-8 minute read); the audit fails anything that reads under 6 minutes.
+2. Add its photos to `src/lib/journal-images.json` (slots `<short>-hero`, `-card`, `-1`, `-2`) with real
+   size, alt text, credit, source and licence (see the photo rules in section 8).
+3. Import it in `src/lib/journal.ts` and add it to `JOURNAL` (order = display order; the first is featured).
+   If it is the newest, update `FEATURED` in `src/lib/resources.ts` to match (the audit tells you).
+4. Add 3-5 `faq` items (real buyer questions; answers restate only what the article says). Add a line to `public/llms.txt`. Routes and the sitemap pick it up automatically.
+5. Link inside the text with `{{glossary-slug|label}}` or `{{/path|label}}`; the audit checks every link.
+6. `npm run check`, then read it on a phone-width screen.
 
 ## 7. After deploying (Vercel builds from the GitHub `main` branch)
 
@@ -225,9 +240,13 @@ buy links, or publish claims the company cannot back.
 
 ## 8. Known state and baselines (update this when it changes)
 
-**Baselines (2026-09-30):** 24 pages + 404, 65 glossary terms, 13 systems.
-JS `dist/assets/index.js` **500 KB raw / 151 KB gzip** (one file, no route splitting; Vite warns
-above 500 KB), CSS 44 KB / 8 KB gzip. Heaviest image 206 KB. Audit: 0 problems, 30 warnings.
+**Baselines (2026-10-06):** 41 pages + 404 (42 prerendered): 13 systems, 65 glossary terms, the Testing
+page, and a Journal of 15 articles (6-8 min reads, about 20,000 words). Scripts: the main
+`dist/assets/index.js` **517 KB raw / 155 KB gzip** (the audit fails above 175 KB gzip), plus
+`JournalPages.js` 158 KB / 51 KB gzip that ONLY Journal pages download; CSS 46 KB / 8 KB gzip.
+Heaviest image 384 KB (j-e331-hero). Audit: 0 problems; the warnings are the meta-description lengths below.
+Earlier baselines: 25 pages / 154 KB gzip (before the Journal), 24 pages /
+151 KB gzip (2026-09-30).
 
 **Open warnings (SEO copy, not broken):** 23 of the 24 pages have meta descriptions of about
 195-312 characters (aim for 120-160; Google truncates around 155-160) and 6 titles run 72-79
@@ -241,7 +260,15 @@ the copy is next reviewed; do not add new long ones.
   Function or n8n webhook) a submit opens the visitor's mail app addressed to an *unconfirmed*
   address. Do not launch until it is set in Vercel's environment variables.
 - Company registrations (CIN, GSTIN, PAN) show "to be added".
-- Engineering review of technical copy (glossary definitions, anatomy captions, machine captions).
+- Engineering review of technical copy (glossary definitions, anatomy captions, machine captions,
+  and the **Testing page** at `/testing`: test descriptions, order and the `STANDARDS_TABLE`).
+- **Journal photos are real Unsplash photos** (44 photos + 15 card crops, all in `public/images/j-*.webp`,
+  mapped to their Unsplash pages in `docs/journal-photos.md`). No credit is required. To host one elsewhere
+  (e.g. Supabase storage) set `"url"` on its slot in `src/lib/journal-images.json`; the local `file` stays as
+  the fallback and the audit still checks it. Cards are 720x480 crops of each hero. Social-share (`og:`)
+  images for the articles still reuse /og/*.jpg; make one per article from its banner.
+- **Journal copy needs engineering review** (about 20,000 words under Fenza's name, credited to the
+  company, not to a person). Do not credit Akhilesh or anyone else without their approval.
 - Machine photos show the ALLUMATIK logo (decision pending); `01-cut` has a thin dark cut-out edge.
 - `cw-1.webp` is only 900 px; `cw-1-hd.webp` is a resized, lightly sharpened copy used for the
   zoomed sections. Do not zoom that photo further.
@@ -281,6 +308,12 @@ the copy is next reviewed; do not add new long ones.
 - **Vercel uses `cleanUrls`:** link to `/glossary`, not `/glossary.html`.
 - **The image files `mc_crimp.webp` / `mc_mill.webp` have each other's names on disk**; the site
   uses the correct `machine-*.webp` cut-outs. The `mc_*` files are the untouched originals.
+- **The Journal must stay OUT of the main script.** `lib/journal.ts`, `journal-articles/*` and
+  `journal-images.json` hold ~20,000 words; the pages load on demand through `pages/JournalRoute.tsx`
+  (the prerender registers them eagerly, `main.tsx` preloads them before hydrating a /journal URL).
+  Never import them from anything the main bundle uses (Navbar, Footer, resources.ts, App...), or every
+  page gets 50 KB gzip heavier. That is why `FEATURED` in resources.ts is written out by hand; the audit
+  verifies it matches the first article and enforces the 175 KB gzip budget on the main script.
 - **Windows Application Control blocked SWC's native binary** on the dev machine, so the build uses
   `@vitejs/plugin-react` (Babel). Do not switch back to `@vitejs/plugin-react-swc` without testing.
 

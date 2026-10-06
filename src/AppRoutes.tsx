@@ -10,6 +10,8 @@ import Leadership from "@/pages/Leadership";
 import About from "@/pages/About";
 import Resources from "@/pages/Resources";
 import Glossary from "@/pages/Glossary";
+import Testing from "@/pages/Testing";
+import JournalRoute from "@/pages/JournalRoute";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 
@@ -26,6 +28,9 @@ const AppRoutes = () => (
     <Route path="/about" element={<About />} />
     <Route path="/resources" element={<Resources />} />
     <Route path="/glossary" element={<Glossary />} />
+    <Route path="/testing" element={<Testing />} />
+    <Route path="/journal" element={<JournalRoute page="index" />} />
+    <Route path="/journal/:slug" element={<JournalRoute page="article" />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="*" element={<NotFound />} />
   </Routes>

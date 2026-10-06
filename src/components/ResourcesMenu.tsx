@@ -225,9 +225,11 @@ export default function ResourcesMenu({ label, onOpenChange }: ResourcesMenuProp
           {spot && (
             <Link
               to={spot.to}
-              className="group relative col-span-4 block overflow-hidden rounded-lg border border-cream/10 bg-ink-soft"
+              // The photo fills the card whatever its height: the card stretches
+              // to the entries beside it, so it grows as pages are added.
+              className="group relative col-span-4 block min-h-[15.5rem] overflow-hidden rounded-lg border border-cream/10 bg-ink-soft"
             >
-              <div className="aspect-[3/2]">
+              <div className="absolute inset-0">
                 {armed && (
                   <img
                     src={imgUrl(spot.image)}

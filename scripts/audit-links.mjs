@@ -62,6 +62,7 @@ const splitUrl = (u) => {
   return { p: rest, hash };
 };
 
+const readTimes = [];
 const stats = { links: 0, external: new Map(), hashes: 0, assets: 0, jsonld: 0, imgs: 0 };
 const inbound = new Map(); // route -> Set of routes linking to it
 
@@ -233,9 +234,138 @@ const staticRoutes = [...fs.readFileSync(path.join(ROOT, "src/lib/routes.ts"), "
 for (const r of staticRoutes) if (!declared.includes(r)) bad("routes", `${r} is in STATIC_ROUTES but has no <Route> in AppRoutes.tsx`);
 for (const d of declared) if (d !== "*" && !d.includes(":") && !staticRoutes.includes(d)) bad("routes", `<Route path="${d}"> is not in STATIC_ROUTES (it would not be prerendered)`);
 
+// ---------- 11. Journal source data (things the built HTML cannot reveal) ----------
+// Each article is one file in src/lib/journal-articles/. Checked from source: inline {{target|label}}
+// links point at real glossary terms / pages; every image slot exists in journal-images.json with a real
+// file of the declared size, a proper alt text and (for real photos) a credit; the card/hero/OG files
+// exist; descriptions/titles are the right length; and the article is a proper long read (6-10 min).
+const jdir = path.join(ROOT, "src/lib/journal-articles");
+if (fs.existsSync(jdir)) {
+  const glossarySlugs = new Set([...fs.readFileSync(path.join(ROOT, "src/lib/glossary.ts"), "utf8").matchAll(/^\s{4}slug: "([^"]+)"/gm)].map((m) => m[1]));
+  const sitePaths = new Set(["/", ...pages.keys()]);
+  const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "src/lib/journal-images.json"), "utf8"));
+  const webpSize = (file) => {
+    const f = path.join(ROOT, "public/images", `${file}.webp`);
+    if (!fs.existsSync(f)) return null;
+    const b = fs.readFileSync(f);
+    const tag = b.toString("ascii", 12, 16);
+    if (tag === "VP8X") return [1 + b.readUIntLE(24, 3), 1 + b.readUIntLE(27, 3)];
+    if (tag === "VP8 ") return [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
+    if (tag === "VP8L") { const v = b.readUInt32LE(21); return [1 + (v & 0x3fff), 1 + ((v >> 14) & 0x3fff)]; }
+    return null;
+  };
+  const checkedSlots = new Set();
+  const checkSlot = (w, id, role) => {
+    const img = manifest[id];
+    if (!img) { bad(w, `${role} image slot "${id}" is not in journal-images.json`); return null; }
+    if (!checkedSlots.has(id)) {
+      checkedSlots.add(id);
+      const sz = webpSize(img.file);
+      if (!sz) bad(`journal-images.json/${id}`, `file "${img.file}.webp" is missing from public/images`);
+      else if (sz[0] !== img.w || sz[1] !== img.h) bad(`journal-images.json/${id}`, `file is ${sz.join("x")} but the entry says ${img.w}x${img.h}`);
+      if (!img.alt || img.alt.trim().length < 15) bad(`journal-images.json/${id}`, "alt text is missing or too short");
+      if (!img.placeholder && !img.url && !img.source) bad(`journal-images.json/${id}`, "a photo needs its source page (or a url) recorded");
+    }
+    return img;
+  };
+  const files = fs.readdirSync(jdir).filter((f) => f.endsWith(".ts"));
+  const seenSlugs = new Set();
+  let nImgs = 0, nLinks = 0;
+  for (const f of files) {
+    const src = fs.readFileSync(path.join(jdir, f), "utf8");
+    const w = `journal/${f.replace(/\.ts$/, "")}`;
+    const one = (k) => new RegExp(`\\b${k}:\\s*"((?:[^"\\\\]|\\\\.)*)"`).exec(src)?.[1];
+    const slug = one("slug");
+    if (slug !== f.replace(/\.ts$/, "")) bad(w, `slug "${slug}" does not match the file name`);
+    if (seenSlugs.has(slug)) bad(w, "duplicate slug");
+    seenSlugs.add(slug);
+    const desc = one("description") ?? "", seoTitle = one("seoTitle") ?? "", teaser = one("teaser") ?? "";
+    if (desc.length < 120 || desc.length > 160) bad(w, `description is ${desc.length} chars (want 120-160)`);
+    if (seoTitle.length > 43) bad(w, `seoTitle is ${seoTitle.length} chars (want <= 43)`);
+    if (teaser.length > 85) bad(w, `teaser is ${teaser.length} chars (want <= 85)`);
+
+    const heroImg = checkSlot(w, one("hero"), "hero");
+    if (heroImg && Math.max(heroImg.w, heroImg.h) < 1200) bad(w, `hero is only ${heroImg.w}x${heroImg.h} (want 1200px+ on the long side)`);
+    const cardImg = checkSlot(w, one("card"), "card");
+    if (cardImg && (cardImg.w !== 720 || cardImg.h !== 480)) bad(w, `card image should be 720x480, it is ${cardImg.w}x${cardImg.h}`);
+    const inline = [...src.matchAll(/t:\s*"img",\s*id:\s*"([^"]+)"/g)].map((m) => m[1]);
+    if (inline.length < 1 || inline.length > 3) bad(w, `has ${inline.length} inline images (want 1-3)`);
+    for (const id of inline) { nImgs++; checkSlot(w, id, "inline"); }
+    const ids = [one("hero"), one("card"), ...inline];
+    if (new Set(ids).size !== ids.length) bad(w, "uses the same image slot twice");
+    const nFaq = (src.match(/\bquestion:\s*"/g) || []).length;
+    if (nFaq < 3 || nFaq > 5) bad(w, `has ${nFaq} FAQ items (want 3-5)`);
+    else {
+      const built = path.join(ROOT, "dist", "journal", `${slug}.html`);
+      if (fs.existsSync(built)) {
+        const html = fs.readFileSync(built, "utf8");
+        if (!html.includes('"@type":"FAQPage"')) bad(w, "FAQPage JSON-LD is missing from the built page");
+        if (!/Frequently asked/.test(html)) bad(w, "the visible 'Frequently asked' section is missing");
+      }
+    }
+    const og = one("og");
+    if (!og || !fileExists(og)) bad(w, `og image ${og} is missing`);
+
+    for (const m of src.matchAll(/\{\{([^|}]*)(?:\|([^}]*))?\}\}/g)) {
+      nLinks++;
+      const [raw, target, label] = m;
+      if (!label || !label.trim()) bad(w, `link without a label: ${raw}`);
+      else if (target.startsWith("/")) { if (!sitePaths.has(target.replace(/\/$/, ""))) bad(w, `link to a page that does not exist: ${target}`); }
+      else if (!glossarySlugs.has(target)) bad(w, `link to an unknown glossary term: ${target}`);
+    }
+    for (const m of src.matchAll(/terms:\s*\[([^\]]*)\]/g)) for (const t of [...m[1].matchAll(/"([^"]+)"/g)].map((x) => x[1])) if (!glossarySlugs.has(t)) bad(w, `related term "${t}" is not in the glossary`);
+    if (src.replace(/\{\{[^}]*\}\}/g, "").match(/\{\{|\}\}/)) bad(w, "unbalanced {{ }} in the text");
+
+    // Reading time, as the page prints it ("N min read"): a proper long read is 6-10 minutes.
+    const html = pages.get(`/journal/${slug}`)?.html ?? "";
+    // React prints the number and the words as two text nodes: "7<!-- --> min read".
+    const mins = Number(/(\d+)(?:<!-- -->)?\s*min read/.exec(html)?.[1]);
+    if (!mins) bad(w, "could not find the printed reading time in the built page");
+    else if (mins < 6) bad(w, `reads in ${mins} min (articles should be 6-10 min, about 1,200-2,000 words)`);
+    else if (mins > 10) warn.push(`${w}: reads in ${mins} min (target is 6-10)`);
+    readTimes.push(mins || 0);
+  }
+  // The Resources panel's image card is written out in resources.ts (so the main script does not
+  // import the whole Journal). It must describe the FIRST article in JOURNAL exactly.
+  const jsrc = fs.readFileSync(path.join(ROOT, "src/lib/journal.ts"), "utf8");
+  const firstName = /export const JOURNAL: Article\[\] = \[\s*(\w+),/.exec(jsrc)?.[1];
+  const firstFile = new RegExp(`import ${firstName} from "\\./journal-articles/([^"]+)"`).exec(jsrc)?.[1];
+  const rsrc = fs.readFileSync(path.join(ROOT, "src/lib/resources.ts"), "utf8");
+  const feat = (k) => new RegExp(`\\b${k}:\\s*"((?:[^"\\\\]|\\\\.)*)"`).exec(rsrc.slice(rsrc.indexOf("const FEATURED")))?.[1];
+  if (!firstFile) bad("resources.ts", "could not work out the first article in JOURNAL");
+  else {
+    const fsrc = fs.readFileSync(path.join(jdir, `${firstFile}.ts`), "utf8");
+    const art = (k) => new RegExp(`\\b${k}:\\s*"((?:[^"\\\\]|\\\\.)*)"`).exec(fsrc)?.[1];
+    const card = manifest[art("card")];
+    for (const [k, want] of [["slug", art("slug")], ["title", art("title")], ["teaser", art("teaser")], ["image", card?.file], ["alt", card?.alt]]) {
+      if (feat(k) !== want) bad("resources.ts", `the featured Journal card has ${k} "${feat(k)}" but the first article says "${want}". Update FEATURED in src/lib/resources.ts`);
+    }
+  }
+  const placeholders = Object.entries(manifest).filter(([, i]) => i.placeholder).map(([id]) => id);
+  stats.journal = `${files.length} articles (${Math.min(...readTimes)}-${Math.max(...readTimes)} min reads), ${nImgs} inline images, ${nLinks} inline links, ${Object.keys(manifest).length} image slots`;
+  if (placeholders.length) warn.push(`JOURNAL PHOTOS: ${placeholders.length} of ${Object.keys(manifest).length} image slots are still PLACEHOLDERS (site images standing in). Replace them with licensed photos in src/lib/journal-images.json before launch.`);
+  if (files.length < 2) warn.push("journal: fewer than 2 articles");
+}
+
+// ---------- 12. script weight (the main script is downloaded by EVERY page) ----------
+// Baseline 2026-10-06: ~154 KB gzip. Content that only some pages need (the Journal) loads on demand.
+import zlib from "node:zlib";
+const assetsDir = path.join(DIST, "assets");
+const MAIN_GZ_BUDGET_KB = 175;
+if (fs.existsSync(assetsDir)) {
+  const js = fs.readdirSync(assetsDir).filter((f) => f.endsWith(".js")).map((f) => ({
+    f, gz: zlib.gzipSync(fs.readFileSync(path.join(assetsDir, f))).length / 1024,
+  })).sort((a, b) => b.gz - a.gz);
+  stats.scripts = js.map((j) => `${j.f.replace(/-[\w-]{8}\.js$/, ".js")} ${j.gz.toFixed(0)} KB gzip`).join(", ");
+  const main = js.find((j) => /^index-/.test(j.f)) ?? js[0];
+  if (main && main.gz > MAIN_GZ_BUDGET_KB) bad("scripts", `the main script is ${main.gz.toFixed(0)} KB gzip (budget ${MAIN_GZ_BUDGET_KB} KB). Something large is being imported by every page: load it on demand (see src/pages/JournalRoute.tsx).`);
+}
+
 // ---------- report ----------
 console.log(`pages audited: ${contentPages.length} (+404)   links: ${stats.links}   anchors/hash links: ${stats.hashes}   asset refs: ${stats.assets}   images: ${stats.imgs}   JSON-LD blocks: ${stats.jsonld}`);
 console.log(`sitemap: ${pageLocs.length} pages, ${imgLocs.length} images   llms.txt URLs: ${llmsUrls.length}   declared routes: ${declared.length}`);
+if (stats.journal) console.log(`journal source: ${stats.journal}`);
+if (stats.scripts) console.log(`scripts: ${stats.scripts}`);
 if (stats.external.size) { console.log(`external links (${stats.external.size} distinct):`); for (const [u, n] of stats.external) console.log(`   ${n}x ${u}`); }
 console.log(warn.length ? `\nWARNINGS (${warn.length}) - not blocking, but worth fixing:\n  ` + [...new Set(warn)].join("\n  ") : "\nno warnings");
 if (problems.length) {

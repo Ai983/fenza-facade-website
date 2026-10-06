@@ -126,6 +126,55 @@ export const buildGlossarySchema = (opts: {
   })),
 });
 
+/**
+ * A Journal article. Published by the Organization (articles are credited to the company, not to a
+ * named person), with the article's own hero as its image.
+ */
+export const buildArticleSchema = (opts: {
+  headline: string;
+  description: string;
+  path: string;
+  image: string;
+  datePublished: string;
+  keywords: string[];
+}) => ({
+  "@type": "Article",
+  "@id": `${canonical(opts.path)}#article`,
+  headline: opts.headline,
+  description: opts.description,
+  mainEntityOfPage: canonical(opts.path),
+  image: absoluteUrl(opts.image),
+  datePublished: opts.datePublished,
+  dateModified: opts.datePublished,
+  keywords: opts.keywords.join(", "),
+  author: { "@id": `${SITE_URL}/#organization` },
+  publisher: { "@id": `${SITE_URL}/#organization` },
+});
+
+/** The Journal index as a CollectionPage listing its articles. */
+export const buildCollectionSchema = (opts: {
+  name: string;
+  description: string;
+  path: string;
+  items: { name: string; path: string }[];
+}) => ({
+  "@type": "CollectionPage",
+  "@id": `${canonical(opts.path)}#collection`,
+  name: opts.name,
+  description: opts.description,
+  url: canonical(opts.path),
+  isPartOf: { "@id": `${SITE_URL}/#website` },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: opts.items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      url: canonical(it.path),
+    })),
+  },
+});
+
 export const buildBreadcrumb = (trail: { name: string; path: string }[]) => ({
   "@type": "BreadcrumbList",
   itemListElement: trail.map((t, i) => ({

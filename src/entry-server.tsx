@@ -1,6 +1,11 @@
 import ReactDOMServer from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import ServerApp from "./ServerApp";
+import * as JournalPages from "./pages/JournalPages";
+import { setJournalModule } from "./pages/JournalRoute";
+
+// The Journal loads on demand in the browser, but the prerender renders it eagerly (see JournalRoute.tsx).
+setJournalModule(JournalPages);
 
 export { getAllRoutes } from "./lib/routes";
 export { buildSitemapXml } from "./lib/sitemap";

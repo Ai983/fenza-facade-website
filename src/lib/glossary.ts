@@ -19,6 +19,8 @@ export interface GlossaryTerm {
   systems?: string[];
   /** Slugs of other glossary terms worth reading next. */
   see?: string[];
+  /** A longer explanation elsewhere on the site. */
+  learnMore?: { to: string; label: string };
 }
 
 export const GLOSSARY: GlossaryTerm[] = [
@@ -37,6 +39,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Air leaking in or out through the joints and seals of a facade. Keeping it low saves energy and keeps the building comfortable.",
     see: ["astm-e283", "gasket"],
+    learnMore: { to: "/testing", label: "How facades are tested" },
   },
   {
     slug: "anchor",
@@ -60,6 +63,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A standard test method that measures how much air leaks through a facade specimen under a set pressure difference.",
     see: ["air-infiltration", "mock-up"],
+    learnMore: { to: "/testing", label: "How facades are tested" },
   },
   {
     slug: "astm-e330",
@@ -67,6 +71,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A standard test method for structural performance. A facade specimen is loaded with air pressure, simulating wind, to check it holds up and does not bend too far.",
     see: ["wind-load", "deflection", "mock-up"],
+    learnMore: { to: "/testing", label: "How facades are tested" },
   },
   {
     slug: "astm-e331",
@@ -74,6 +79,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A standard test method for water penetration. Water is sprayed on the outside of a facade specimen while air pressure is applied, to check that none gets through.",
     see: ["mock-up", "drainage-slot"],
+    learnMore: { to: "/testing", label: "How facades are tested" },
   },
   {
     slug: "balustrade",
@@ -295,6 +301,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A full-size sample of a section of the facade, built and tested before production starts. It proves the design performs and lets everyone agree how it will look.",
     see: ["astm-e283", "astm-e331", "astm-e330", "facade-consultant"],
+    learnMore: { to: "/testing", label: "How facades are tested" },
   },
   {
     slug: "movement-joint",
@@ -521,6 +528,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "The pressure and suction wind puts on a facade. It depends on the building's height, location and shape, and the facade is designed to resist it.",
     see: ["deflection", "astm-e330", "anchor"],
+    learnMore: { to: "/testing", label: "How facades are tested" },
   },
 ];
 
