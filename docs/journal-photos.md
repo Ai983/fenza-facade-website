@@ -85,7 +85,7 @@ Card thumbnails (`j-<article-slug>.webp`, 720x480) are crops of each article's h
 ## Structural glazing: how glass is held without a visible frame
 `/journal/structural-glazing-explained`
 
-- `sg-hero` -> `public/images/j-sg-hero.webp` (2000x1333) - Glass facade with clouds reflected across a fine grid of frames - https://unsplash.com/photos/a-building-that-has-a-lot-of-windows-on-it-48yI_ZyzuLo
+- `sg-hero` -> `public/images/j-sg-hero-v2.webp` (2000x1333) - Glass pavilion glowing warm at dusk behind a nearly frameless glass wall
 - `sg-1` -> `public/images/j-sg-1.webp` (1400x933) - Corner of a glazed facade with clouds reflected in the panes - https://unsplash.com/photos/white-clouds-and-blue-sky-during-daytime-P5nl2JsAHPw
 - `sg-2` -> `public/images/j-sg-2.webp` (1400x933) - Long glass facade running to a horizon under a pale sky - https://unsplash.com/photos/a-tall-glass-building-with-a-sky-in-the-background-3i2CvJXk4yA
 

@@ -84,18 +84,18 @@
     "source": "https://unsplash.com/photos/raindrops-on-clear-window-Bu1zj2WbjHE"
   },
   "sg-hero": {
-    "file": "j-sg-hero",
-    "alt": "Glass facade with clouds reflected across a fine grid of frames",
+    "file": "j-sg-hero-v2",
+    "alt": "Glass pavilion glowing warm at dusk behind a nearly frameless glass wall",
     "w": 2000,
     "h": 1333,
-    "source": "https://unsplash.com/photos/a-building-that-has-a-lot-of-windows-on-it-48yI_ZyzuLo"
+    "source": "https://unsplash.com/photos/clear-glass-walled-building-during-daytime-GupQWNEkBNc"
   },
   "sg-card": {
-    "file": "j-structural-glazing-explained",
-    "alt": "Glass facade with clouds reflected across a fine grid of frames",
+    "file": "j-structural-glazing-explained-v2",
+    "alt": "Glass pavilion glowing warm at dusk behind a nearly frameless glass wall",
     "w": 720,
     "h": 480,
-    "source": "https://unsplash.com/photos/a-building-that-has-a-lot-of-windows-on-it-48yI_ZyzuLo"
+    "source": "https://unsplash.com/photos/clear-glass-walled-building-during-daytime-GupQWNEkBNc"
   },
   "sg-1": {
     "file": "j-sg-1",
