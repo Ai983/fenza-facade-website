@@ -263,10 +263,10 @@ buy links, or publish claims the company cannot back.
 
 ## 8. Known state and baselines (update this when it changes)
 
-**Baselines (2026-10-07):** 63 pages + 404 (64 prerendered): 13 systems, 65 glossary terms, the Testing
-page, a Journal of 18 articles (6-8 min reads, about 25,000 words), and 18 city pages plus the
+**Baselines (2026-10-07):** 73 pages + 404 (74 prerendered): 13 systems, 65 glossary terms, the Testing
+page, a Journal of 28 articles (6-8 min reads, about 37,000 words), and 18 city pages plus the
 `/locations` index. Scripts: the main `dist/assets/index.js` **159 KB gzip** (the audit fails above
-175 KB gzip), plus `JournalPages.js` 69 KB gzip that ONLY Journal pages download and
+175 KB gzip), plus `JournalPages.js` 99 KB gzip that ONLY Journal pages download and
 `Location.js` 19 KB gzip that ONLY city pages download; CSS 49 KB / 9 KB gzip.
 Heaviest image 384 KB (j-e331-hero). Audit: 0 problems; the warnings are the meta-description lengths below.
 Earlier baselines: 25 pages / 154 KB gzip (before the Journal), 24 pages /
@@ -302,7 +302,7 @@ the copy is next reviewed; do not add new long ones.
   (e.g. Supabase storage) set `"url"` on its slot in `src/lib/journal-images.json`; the local `file` stays as
   the fallback and the audit still checks it. Cards are 720x480 crops of each hero. Social-share (`og:`)
   images for the articles still reuse /og/*.jpg; make one per article from its banner.
-- **Journal copy needs engineering review** (about 20,000 words under Fenza's name, credited to the
+- **Journal copy needs engineering review** (about 37,000 words under Fenza's name, credited to the
   company, not to a person). Do not credit Akhilesh or anyone else without their approval.
 - Machine photos show the ALLUMATIK logo (decision pending); `01-cut` has a thin dark cut-out edge.
 - `cw-1.webp` is only 900 px; `cw-1-hd.webp` is a resized, lightly sharpened copy used for the

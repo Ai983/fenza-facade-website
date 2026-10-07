@@ -146,9 +146,15 @@ async function crawlMode(mode, port) {
   let badClicks = 0;
   for (const h of hrefs) {
     await js(`(() => { const a = [...document.querySelectorAll(${JSON.stringify(SEL)})].find((x) => x.getAttribute('href') === ${JSON.stringify(h)}); a.click(); })()`);
-    await sleep(700);
-    const r = await js(`({ path: location.pathname, h1: (document.querySelector('h1')?.textContent ?? '').trim().slice(0, 40), notFound: /this elevation doesn.t exist/i.test(document.body.innerText) })`);
     const want = h.split("#")[0].replace(/\/$/, "") || "/";
+    // Journal and city routes load their JS on first visit. Wait for the destination heading,
+    // rather than sampling an intentional loading placeholder at a fixed 700 ms.
+    let r;
+    for (let i = 0; i < 50; i++) {
+      r = await js(`({ path: location.pathname, h1: (document.querySelector('h1')?.textContent ?? '').trim().slice(0, 40), notFound: /this elevation doesn.t exist/i.test(document.body.innerText) })`);
+      if (r.path === want && r.h1 && !r.notFound) break;
+      await sleep(100);
+    }
     if (r.path !== want || !r.h1 || r.notFound) { badClicks++; console.log(`FAIL click ${h} -> ${r.path} h1="${r.h1}" notFound=${r.notFound}`); }
     await send("Page.navigate", { url: BASE + "/" });
     await sleep(900);

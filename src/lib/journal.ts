@@ -36,6 +36,16 @@ import quote from "./journal-articles/what-to-send-a-facade-manufacturer";
 import climates from "./journal-articles/facades-for-indian-climates";
 import contractor from "./journal-articles/choosing-a-facade-contractor-in-india";
 import monsoon from "./journal-articles/monsoon-proof-facades-and-windows";
+import maintenance from "./journal-articles/facade-maintenance-checklist";
+import drawings from "./journal-articles/reading-facade-shop-drawings";
+import acoustic from "./journal-articles/acoustic-glazing-for-noisy-sites";
+import condensation from "./journal-articles/condensation-on-windows-and-facades";
+import skylightDesign from "./journal-articles/skylight-design-and-drainage";
+import anchors from "./journal-articles/curtain-wall-anchors-and-slab-edges";
+import mockUps from "./journal-articles/facade-mock-up-review";
+import windowDrainage from "./journal-articles/window-drainage-and-weep-holes";
+import solarControl from "./journal-articles/solar-control-glass-and-shading";
+import glassReplacement from "./journal-articles/replacing-damaged-facade-glass";
 import { journalImage } from "./journal-images";
 
 export type Block =
@@ -94,6 +104,16 @@ export const JOURNAL: Article[] = [
   climates,
   contractor,
   monsoon,
+  maintenance,
+  drawings,
+  acoustic,
+  condensation,
+  skylightDesign,
+  anchors,
+  mockUps,
+  windowDrainage,
+  solarControl,
+  glassReplacement,
   stickVsUnitised,
   acpVsSolid,
   astmE331,

@@ -59,7 +59,7 @@ export interface ResourceSpotlight {
 /**
  * The image card in the header panel features the newest Journal article (the first in JOURNAL).
  * It is written out here, not read from journal.ts, on purpose: importing the Journal would put
- * all 15 articles' text into the main script that every page downloads. The audit
+ * all article text into the main script that every page downloads. The audit
  * (npm run audit) fails if this block ever differs from the first article, so it cannot drift.
  * Set RESOURCE_SPOTLIGHT to null to drop the card.
  */

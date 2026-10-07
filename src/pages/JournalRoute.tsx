@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 type JournalModule = typeof import("./JournalPages");
 
 /**
- * The Journal holds about 20,000 words of article text. Shipping that inside the main script would
+ * The Journal holds about 37,000 words of article text. Shipping that inside the main script would
  * make every page on the site heavier, so the Journal loads on demand instead:
  *
  *  - Server / prerender: entry-server.tsx registers the module up front (setJournalModule), so the
