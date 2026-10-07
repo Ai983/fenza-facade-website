@@ -46,7 +46,10 @@ weaken them.
   cladding, louvers, railings, skylights, pergolas). No interiors, fit-out, MEP, PEB or civil work.
 - **Projects** shown on the site are **Akhilesh Kumar Singh's own career record, not Fenza's**.
   Fenza is newly established. Any page rendering `PROJECTS` must also render `RECORD_DISCLAIMER`,
-  and the JSON-LD must attach to the **Person**, never the Organization.
+  and the JSON-LD must attach to the **Person**, never the Organization. The homepage scrolling
+  strip (`ProjectRecordStrip`) is this record: never retitle it "Trusted by" or "Our clients", and
+  do not add client logos (no logo files with publishing rights exist; the Hagerstone profile's
+  logo wall is Hagerstone's clients, not Fenza's).
 - **No borrowed certifications** (Hagerstone group certificates are not Fenza's). Registrations
   and certifications are "being established".
 - **No capacity, output or facility figures** (no "X tonnes/month", no "N projects delivered").
@@ -242,8 +245,9 @@ buy links, or publish claims the company cannot back.
 
 **Baselines (2026-10-06):** 41 pages + 404 (42 prerendered): 13 systems, 65 glossary terms, the Testing
 page, and a Journal of 15 articles (6-8 min reads, about 20,000 words). Scripts: the main
-`dist/assets/index.js` **517 KB raw / 155 KB gzip** (the audit fails above 175 KB gzip), plus
-`JournalPages.js` 158 KB / 51 KB gzip that ONLY Journal pages download; CSS 46 KB / 8 KB gzip.
+`dist/assets/index.js` **156 KB gzip** (2026-10-07, after the homepage project strip; the audit
+fails above 175 KB gzip), plus `JournalPages.js` 57 KB gzip that ONLY Journal pages download;
+CSS 46 KB / 8 KB gzip.
 Heaviest image 384 KB (j-e331-hero). Audit: 0 problems; the warnings are the meta-description lengths below.
 Earlier baselines: 25 pages / 154 KB gzip (before the Journal), 24 pages /
 151 KB gzip (2026-09-30).

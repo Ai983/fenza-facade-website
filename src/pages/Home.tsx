@@ -8,6 +8,7 @@ import SectionHeading from "@/components/SectionHeading";
 import SystemCard from "@/components/SystemCard";
 import EnquiryForm from "@/components/EnquiryForm";
 import AnatomyStory from "@/components/AnatomyStory";
+import ProjectRecordStrip from "@/components/ProjectRecordStrip";
 import { SYSTEMS, imgUrl } from "@/lib/systems";
 import {
   PROCESS_STEPS,
@@ -165,8 +166,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Project record strip — Akhilesh's career, carries its own disclaimer */}
+      <ProjectRecordStrip />
+
       {/* Capability + audience split */}
-      <section className="bg-ink py-24 md:py-32">
+      <section className="border-t border-cream/10 bg-ink py-24 md:py-32">
         <div className="container-content">
           <SectionHeading
             eyebrow="A facade manufacturer, and nothing else"

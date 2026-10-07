@@ -62,12 +62,19 @@ export default {
           "0%,100%": { transform: "translateY(0)", opacity: "0.4" },
           "50%": { transform: "translateY(8px)", opacity: "1" },
         },
+        // The track holds the list twice; -50% lands copy 2 exactly where
+        // copy 1 started, so the loop has no visible jump.
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.9s cubic-bezier(0.16,1,0.3,1) both",
         "fade-in": "fade-in 1.2s ease both",
         "ken-burns": "ken-burns 18s ease-out both",
         "scroll-cue": "scroll-cue 1.8s ease-in-out infinite",
+        marquee: "marquee 50s linear infinite",
       },
     },
   },
