@@ -16,7 +16,7 @@ export default function About() {
     <>
       <Seo
         title="About Fenza"
-        description="Fenza Facade Engineering is a dedicated building-envelope manufacturer in Gurugram — a separate legal entity within the Hagerstone group, focused exclusively on facades, with its own registrations held in its own name."
+        description="Fenza Facade Engineering is a facade-only manufacturer serving projects across India from its Gurugram line, a separate legal entity within the Hagerstone group."
         path="/about"
         image="/og/about-hero.jpg"
         schema={[

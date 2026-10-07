@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import { SYSTEMS } from "@/lib/systems";
 import { BRAND, CONTACT, NAV, whatsappLink } from "@/lib/site";
 import { RESOURCE_ENTRIES } from "@/lib/resources";
+import { LOCATION_INDEX } from "@/lib/location-index";
 
 const year = new Date().getFullYear();
 
@@ -13,9 +14,22 @@ export default function Footer() {
         <div className="md:col-span-4">
           <Logo withTagline size="text-2xl" />
           <p className="mt-6 max-w-xs text-pretty text-sm leading-relaxed text-cream/60">
-            {BRAND.tagline} {BRAND.descriptor} Engineered and made in{" "}
-            {BRAND.location}.
+            {BRAND.tagline} {BRAND.descriptor} Made on our own line in
+            Gurugram, for projects across India.
           </p>
+          <h3 className="eyebrow mt-8">Locations</h3>
+          <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
+            {LOCATION_INDEX.map((l) => (
+              <li key={l.slug}>
+                <Link
+                  to={`/locations/${l.slug}`}
+                  className="tap-safe inline-block text-sm text-cream/60 transition-colors hover:text-gold"
+                >
+                  {l.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <p className="mt-6 text-xs leading-relaxed text-cream/40">
             {BRAND.legalName} is a separate legal entity within {BRAND.group}.
           </p>
@@ -71,7 +85,15 @@ export default function Footer() {
         <div className="md:col-span-2">
           <h3 className="eyebrow">Enquiries</h3>
           <ul className="mt-5 space-y-3 text-sm text-cream/60">
-            <li>{BRAND.location}</li>
+            <li>Factory: {BRAND.location}</li>
+            <li>
+              <Link
+                to="/locations"
+                className="tap-safe inline-block transition-colors hover:text-gold"
+              >
+                Projects across India
+              </Link>
+            </li>
             {CONTACT.emails.map((email) => (
               <li key={email}>
                 <a

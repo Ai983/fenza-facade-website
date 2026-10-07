@@ -64,12 +64,12 @@ export interface ResourceSpotlight {
  * Set RESOURCE_SPOTLIGHT to null to drop the card.
  */
 const FEATURED = {
-  slug: "stick-vs-unitised-curtain-wall",
-  title: "Stick vs. unitised curtain wall: how to choose",
-  teaser: "Site time, quality control and cost: where the work happens.",
-  /** The card image: its file and alt text, copied from journal-images.json (slot "stick-card"). */
-  image: "j-stick-vs-unitised-curtain-wall-v2",
-  alt: "Glass facade modules glowing orange and deep blue in the evening light",
+  slug: "facades-for-indian-climates",
+  title: "Facades for India's climates: what changes from Delhi to Bengaluru",
+  teaser: "Glass, shading, drainage and finishes, matched to the local climate.",
+  /** The card image: its file and alt text, copied from journal-images.json (slot "climate-card"). */
+  image: "j-facades-for-indian-climates",
+  alt: "Horizontal louvres running along a green-framed glass facade",
 };
 export const RESOURCE_SPOTLIGHT: ResourceSpotlight | null = {
   eyebrow: "Journal",

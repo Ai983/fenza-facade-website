@@ -50,6 +50,12 @@ weaken them.
   strip (`ProjectRecordStrip`) is this record: never retitle it "Trusted by" or "Our clients", and
   do not add client logos (no logo files with publishing rights exist; the Hagerstone profile's
   logo wall is Hagerstone's clients, not Fenza's).
+- **Locations (pan-India):** Fenza has ONE facility, in Gurugram, and takes projects across India.
+  City pages (`/locations/<city>`) say so: never invent a local office, address, team, distance or
+  lead time, and never give a city its own LocalBusiness markup (the schema is a Service with
+  `areaServed`). Gurugram appears as the factory location, not as the company's whole market.
+  City text is general design guidance about that city's buildings and climate; a city's career
+  record entries come only from `projects.ts`, with the disclaimer.
 - **No borrowed certifications** (Hagerstone group certificates are not Fenza's). Registrations
   and certifications are "being established".
 - **No capacity, output or facility figures** (no "X tonnes/month", no "N projects delivered").
@@ -221,6 +227,20 @@ Options: `CRAWL_URL=https://fenzafacade.com npm run crawl` (a deployed site),
 5. Link inside the text with `{{glossary-slug|label}}` or `{{/path|label}}`; the audit checks every link.
 6. `npm run check`, then read it on a phone-width screen.
 
+## 6c. Adding a city (location page)
+
+1. Add the light entry (slug, city, name, state, region, hero, card) to `LOCATION_INDEX` in
+   `src/lib/location-index.ts`. That one entry adds it to the footer, the homepage "Across India"
+   chips, the `/locations` index, the routes, the sitemap and the Organization `areaServed`.
+2. Add its page text under the same slug in `CONTENT` in `src/lib/locations.ts` (the build fails
+   if one is missing): an SEO title of 43 characters or less (avoid `&`, it counts as 5), a 120-160
+   character description, the city's buildings and climate, 3-5 suitable systems, any real
+   `record` entries from `projects.ts`, reading links and 4 FAQs. Write it for that city; do not
+   copy another city and swap the name (doorway pages are penalised and ignored by AI engines).
+3. Add a line to the Locations section of `public/llms.txt` and update `SERVED_SENTENCE` in
+   `location-index.ts` if the city should be named in the site-wide copy.
+4. `npm run check`, then read the page at 390 px.
+
 ## 7. After deploying (Vercel builds from the GitHub `main` branch)
 
 - [ ] Vercel build finished green; open the deployment and click through.
@@ -243,23 +263,32 @@ buy links, or publish claims the company cannot back.
 
 ## 8. Known state and baselines (update this when it changes)
 
-**Baselines (2026-10-06):** 41 pages + 404 (42 prerendered): 13 systems, 65 glossary terms, the Testing
-page, and a Journal of 15 articles (6-8 min reads, about 20,000 words). Scripts: the main
-`dist/assets/index.js` **156 KB gzip** (2026-10-07, after the homepage project strip; the audit
-fails above 175 KB gzip), plus `JournalPages.js` 57 KB gzip that ONLY Journal pages download;
-CSS 46 KB / 8 KB gzip.
+**Baselines (2026-10-07):** 53 pages + 404 (54 prerendered): 13 systems, 65 glossary terms, the Testing
+page, a Journal of 18 articles (6-8 min reads, about 25,000 words), and 8 city pages plus the
+`/locations` index. Scripts: the main `dist/assets/index.js` **159 KB gzip** (the audit fails above
+175 KB gzip), plus `JournalPages.js` 69 KB gzip that ONLY Journal pages download and
+`Location.js` 12 KB gzip that ONLY city pages download; CSS 46 KB / 8 KB gzip.
 Heaviest image 384 KB (j-e331-hero). Audit: 0 problems; the warnings are the meta-description lengths below.
 Earlier baselines: 25 pages / 154 KB gzip (before the Journal), 24 pages /
 151 KB gzip (2026-09-30).
 
-**Open warnings (SEO copy, not broken):** 23 of the 24 pages have meta descriptions of about
+**Open warnings (SEO copy, not broken):** 27 as of 2026-10-07, all pre-existing pages (the new
+city pages, articles, Home, About and Contact are within limits). Originally 23 of the 24 pages had meta descriptions of about
 195-312 characters (aim for 120-160; Google truncates around 155-160) and 6 titles run 72-79
 characters (aim for about 60): Leadership, Projects, and the Cladding, Louvers, Rain-Screen and
 Spider Glazing system pages. System pages reuse a long `summary` as the description. Trim when
 the copy is next reviewed; do not add new long ones.
 
 **Open items before launch:**
-- Contact email/phone/WhatsApp are placeholders (`src/lib/site.ts`, `*Confirmed` flags).
+- Email and phone are confirmed and live; WhatsApp and the precise factory address are still
+  unconfirmed (`src/lib/site.ts`, `*Confirmed` flags).
+- **City pages (2026-10-07)** say Fenza takes projects in Delhi, Gurugram, Noida, Chandigarh,
+  Ludhiana/Punjab, Ahmedabad/Gujarat, Pune and Bengaluru, per the director's brief. Their climate
+  and building notes need engineering review like the Journal.
+- **Off-site AEO work (not code):** Google Business Profile for the Gurugram facility, Bing Places,
+  LinkedIn company page, IndiaMART/JustDial listings with identical name, phone and address; then
+  add the live profile URLs to `sameAs` in `organizationSchema`. Submit the sitemap in Google
+  Search Console and Bing Webmaster Tools (ChatGPT search draws on Bing).
 - **Enquiry forms have no destination.** Without `VITE_ENQUIRY_ENDPOINT` (a Supabase Edge
   Function or n8n webhook) a submit opens the visitor's mail app addressed to an *unconfirmed*
   address. Do not launch until it is set in Vercel's environment variables.
@@ -318,6 +347,10 @@ the copy is next reviewed; do not add new long ones.
   Never import them from anything the main bundle uses (Navbar, Footer, resources.ts, App...), or every
   page gets 50 KB gzip heavier. That is why `FEATURED` in resources.ts is written out by hand; the audit
   verifies it matches the first article and enforces the 175 KB gzip budget on the main script.
+- **The city page text must stay OUT of the main script too.** `lib/locations.ts` (the full
+  text) loads on demand through `pages/LocationRoute.tsx`, exactly like the Journal; everything
+  else imports the light `lib/location-index.ts`. Importing `locations.ts` from the Footer, Home,
+  `seo.ts` or `routes.ts` once added 13 KB gzip to every page.
 - **Windows Application Control blocked SWC's native binary** on the dev machine, so the build uses
   `@vitejs/plugin-react` (Babel). Do not switch back to `@vitejs/plugin-react-swc` without testing.
 

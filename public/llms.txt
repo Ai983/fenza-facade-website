@@ -1,6 +1,6 @@
 # Fenza Facade Engineering
 
-> Fenza Facade Engineering is a dedicated building-envelope manufacturer in Gurugram, Haryana, India, producing curtain wall, structural glazing, aluminium windows and doors, cladding, louvers and architectural elements — engineered and fabricated on its own aluminium line.
+> Fenza Facade Engineering is a dedicated building-envelope manufacturer serving projects across India, producing curtain wall, structural glazing, aluminium windows and doors, cladding, louvers and architectural elements — engineered and fabricated on its own aluminium line in Gurugram, Haryana. It takes on projects in Delhi, Gurugram, Noida, Chandigarh, Ludhiana and Punjab, Ahmedabad and Gujarat, Pune and Bengaluru, among others.
 
 Fenza is a separate legal entity within the Hagerstone group, focused exclusively on facades. Its registrations and certifications are held in its own name. Technical values published by Fenza are indicative until confirmed per project against the approved system and the facade consultant's specification. Project experience attributed to Akhilesh Kumar Singh (Director — Facade Projects) is his own career record; Fenza's own project portfolio is being built.
 
@@ -31,6 +31,9 @@ Fenza is a separate legal entity within the Hagerstone group, focused exclusivel
 - [Facade glossary](https://fenzafacade.com/glossary): More than sixty facade and curtain wall terms in plain language (mullion, transom, spandrel, U-value, structural glazing, rain-screen, ASTM E283/E330/E331 and more), each linked to the Fenza systems it relates to. General industry definitions; test standards are described by what they measure.
 - [How facades are tested](https://fenzafacade.com/testing): The facade mock-up and the three tests usually run on it, in order: air leakage (ASTM E283), water penetration (ASTM E331) and structural / wind load (ASTM E330), explained by what each one measures. General explanation only, not a statement of Fenza's test results; applicable standards and pressures are set per project by the specification and the facade consultant.
 - [Journal](https://fenzafacade.com/journal): Plain-language guides for specifiers and developers on facade systems, testing and specification. General guidance, not a specification; standards and values are confirmed per project.
+- [Facades for India's climates: what changes from Delhi to Bengaluru](https://fenzafacade.com/journal/facades-for-indian-climates): A facade that works well in Delhi NCR can struggle on the coast. How glass, shading, frames, drainage and finishes should change across India's composite, hot-dry, coastal, heavy-monsoon and moderate climates.
+- [How to choose a facade contractor in India: a checklist](https://fenzafacade.com/journal/choosing-a-facade-contractor-in-india): What to check before you appoint a facade contractor anywhere in India, from who actually fabricates to testing, installation, quotes and what the contract should say.
+- [Monsoon-proof facades and windows: how to keep the rain out](https://fenzafacade.com/journal/monsoon-proof-facades-and-windows): Most monsoon leaks have ordinary causes: wind-driven rain, blocked drainage, failed sealant and poor sill details. How to design, test, install and maintain facades and windows so they stay dry.
 - [Stick vs. unitised curtain wall: how to choose](https://fenzafacade.com/journal/stick-vs-unitised-curtain-wall): Curtain wall is not one product but a family of ways to build the same glazed skin. The main choice is where the work happens: on the building, or in the factory.
 - [ACP vs. solid aluminium cladding: which one?](https://fenzafacade.com/journal/acp-vs-solid-aluminium-cladding): Two cladding panels can look identical from the street and still be very different products. Here is how ACP and solid aluminium compare, and how to choose.
 - [What ASTM E331 actually tests](https://fenzafacade.com/journal/what-astm-e331-tests): A leaking facade is rarely a surprise: it is usually something a water test would have caught. Here is what the standard test does, and what it does not tell you.
@@ -46,7 +49,19 @@ Fenza is a separate legal entity within the Hagerstone group, focused exclusivel
 - [Movement joints: why a facade must be allowed to move](https://fenzafacade.com/journal/movement-joints-in-facades): A facade looks fixed, but it is not still. Heat, wind and the building's own settlement all move it. Movement joints are how it gets through that without damage.
 - [Anodised, powder-coated or PVDF: choosing an aluminium finish](https://fenzafacade.com/journal/anodised-powder-coated-or-pvdf): Three finishes cover almost every aluminium facade. They look different, behave differently outdoors and cost differently. Here is how they compare.
 - [What to send a facade manufacturer for an accurate quote](https://fenzafacade.com/journal/what-to-send-a-facade-manufacturer): A quote is only as good as the information behind it. This checklist covers what a facade manufacturer needs from you, and what to do when you do not have it all yet.
-- [Contact](https://fenzafacade.com/contact): Facade enquiries and RFQs. Manufacturing in Gurugram, Haryana.
+- [Contact](https://fenzafacade.com/contact): Facade enquiries and RFQs from anywhere in India. Manufacturing in Gurugram, Haryana.
+
+## Locations
+Every Fenza facade is engineered and fabricated on its one aluminium line in Gurugram; Fenza has no offices in other cities. Each page covers the city's buildings, climate, the facade systems that suit it and common questions.
+- [Locations across India](https://fenzafacade.com/locations): Index of the cities and regions Fenza takes facade projects in.
+- [Facades in Delhi](https://fenzafacade.com/locations/delhi): Curtain wall, structural glazing, windows, cladding and louvers for Delhi's hospitals, institutions, offices and homes; composite climate with summer heat, dust and a short, heavy monsoon.
+- [Facades in Gurugram (Gurgaon)](https://fenzafacade.com/locations/gurugram): Home of Fenza's fabrication line; curtain wall and glazing for office towers and IT campuses, and balcony doors, windows and railings for high-rise residences.
+- [Facades in Noida](https://fenzafacade.com/locations/noida): Glazed offices and IT campuses, insulated factory envelopes and high-rise housing across Noida and Greater Noida.
+- [Facades in Chandigarh](https://fenzafacade.com/locations/chandigarh): Windows, doors, structural glazing, cladding and railings across Chandigarh, Mohali and Panchkula, with architectural controls and cold winters in mind.
+- [Facades in Ludhiana & Punjab](https://fenzafacade.com/locations/ludhiana): Showroom glazing, factory cladding and premium-home windows, doors and pergolas in Ludhiana, Jalandhar, Amritsar, Patiala and across Punjab.
+- [Facades in Ahmedabad & Gujarat](https://fenzafacade.com/locations/ahmedabad): Solar-control glazing, louvers, curtain wall and cladding for a hot, dry climate in Ahmedabad, Gandhinagar, GIFT City, Vadodara, Surat, Rajkot and Kutch.
+- [Facades in Pune](https://fenzafacade.com/locations/pune): Monsoon-ready curtain wall, windows, rain-screen cladding and louvers for IT parks, factories and residential towers.
+- [Facades in Bengaluru (Bangalore)](https://fenzafacade.com/locations/bengaluru): Curtain wall, structural and spider glazing, louvers and skylights for tech campuses, offices and homes in a mild, rainy climate.
 
 ## Notes
 - Fenza manufactures the building envelope only; it does not undertake interiors, fit-out, MEP, PEB or civil work.

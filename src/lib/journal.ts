@@ -33,6 +33,9 @@ import balustrades from "./journal-articles/glass-balustrades-what-to-check";
 import movementJoints from "./journal-articles/movement-joints-in-facades";
 import finishes from "./journal-articles/anodised-powder-coated-or-pvdf";
 import quote from "./journal-articles/what-to-send-a-facade-manufacturer";
+import climates from "./journal-articles/facades-for-indian-climates";
+import contractor from "./journal-articles/choosing-a-facade-contractor-in-india";
+import monsoon from "./journal-articles/monsoon-proof-facades-and-windows";
 import { journalImage } from "./journal-images";
 
 export type Block =
@@ -88,6 +91,9 @@ export type Topic = (typeof TOPICS)[number];
 
 /** Display order. Newest or most important first; the first is featured. */
 export const JOURNAL: Article[] = [
+  climates,
+  contractor,
+  monsoon,
   stickVsUnitised,
   acpVsSolid,
   astmE331,

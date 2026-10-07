@@ -3,9 +3,13 @@ import { StaticRouter } from "react-router-dom/server";
 import ServerApp from "./ServerApp";
 import * as JournalPages from "./pages/JournalPages";
 import { setJournalModule } from "./pages/JournalRoute";
+import * as LocationPage from "./pages/Location";
+import { setLocationModule } from "./pages/LocationRoute";
 
 // The Journal loads on demand in the browser, but the prerender renders it eagerly (see JournalRoute.tsx).
 setJournalModule(JournalPages);
+// Likewise the city pages (see LocationRoute.tsx).
+setLocationModule(LocationPage);
 
 export { getAllRoutes } from "./lib/routes";
 export { buildSitemapXml } from "./lib/sitemap";

@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
 import { preloadJournal } from "./pages/JournalRoute";
+import { preloadLocation } from "./pages/LocationRoute";
 import "./index.css";
 
 const tree = (
@@ -21,6 +22,10 @@ async function start() {
     // prerendered HTML. Other pages never download the Journal.
     if (window.location.pathname.startsWith("/journal")) {
       await preloadJournal().catch(() => undefined);
+    }
+    // Same for a city page (/locations/<city>); the /locations index is in the main script.
+    if (window.location.pathname.startsWith("/locations/")) {
+      await preloadLocation().catch(() => undefined);
     }
     hydrateRoot(root, tree);
   } else {

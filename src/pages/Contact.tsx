@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import EnquiryForm from "@/components/EnquiryForm";
 import { buildBreadcrumb, canonical } from "@/lib/seo";
 import { BRAND, CONTACT, whatsappLink } from "@/lib/site";
+import { SERVED_SENTENCE } from "@/lib/location-index";
 
 export default function Contact() {
   const contactSchema = {
@@ -16,7 +18,7 @@ export default function Contact() {
     <>
       <Seo
         title="Contact & Enquiries"
-        description="Tell Fenza Facade Engineering what you need for your project. Contact our team by email, phone or the simple enquiry form. Manufacturing in Gurugram, Haryana."
+        description="Tell Fenza Facade Engineering about your project, anywhere in India. Reach our team by email, phone or the enquiry form. Manufacturing in Gurugram, Haryana."
         path="/contact"
         image="/og/contact-hero.jpg"
         schema={[
@@ -66,6 +68,18 @@ export default function Contact() {
                   <p className="mt-1 text-sm text-cream/50">
                     Precise factory address is being confirmed.
                   </p>
+                </div>
+
+                <div className="hairline" />
+
+                <div>
+                  <span className="eyebrow">Where we work</span>
+                  <p className="mt-3 text-pretty leading-relaxed text-cream/70">
+                    Projects across India, including {SERVED_SENTENCE}.
+                  </p>
+                  <Link to="/locations" className="link-underline mt-3 text-sm font-semibold">
+                    Facades by location →
+                  </Link>
                 </div>
 
                 <div className="hairline" />

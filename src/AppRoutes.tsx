@@ -12,6 +12,8 @@ import Resources from "@/pages/Resources";
 import Glossary from "@/pages/Glossary";
 import Testing from "@/pages/Testing";
 import JournalRoute from "@/pages/JournalRoute";
+import Locations from "@/pages/Locations";
+import LocationRoute from "@/pages/LocationRoute";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
 
@@ -31,6 +33,8 @@ const AppRoutes = () => (
     <Route path="/testing" element={<Testing />} />
     <Route path="/journal" element={<JournalRoute page="index" />} />
     <Route path="/journal/:slug" element={<JournalRoute page="article" />} />
+    <Route path="/locations" element={<Locations />} />
+    <Route path="/locations/:slug" element={<LocationRoute />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="*" element={<NotFound />} />
   </Routes>

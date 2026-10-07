@@ -18,6 +18,7 @@ import {
   PARTNER_POINTS,
 } from "@/lib/content";
 import { BRAND } from "@/lib/site";
+import { LOCATION_INDEX, SERVED_SENTENCE } from "@/lib/location-index";
 import {
   buildFaqSchema,
   buildSystemSchema,
@@ -31,9 +32,8 @@ const HOME_FAQS = [
       "Fenza is a dedicated building-envelope manufacturer. We design, fabricate and install curtain wall, structural glazing, spider glazing, aluminium windows and doors, cladding, rain-screen facades, louvers, railings, skylights and pergolas — thirteen system families in all.",
   },
   {
-    question: "Where is Fenza located?",
-    answer:
-      "Fenza fabricates from its facility in Gurugram, Haryana, India, and serves projects across the country.",
+    question: "Where does Fenza Facade Engineering work?",
+    answer: `Fenza takes on facade projects across India, including ${SERVED_SENTENCE}. Every facade is engineered and fabricated on Fenza's own aluminium line in Gurugram, Haryana.`,
   },
   {
     question: "Is Fenza part of a larger group?",
@@ -71,7 +71,7 @@ function HomeHero() {
 
       <div className="container-content relative z-10 pt-[74px]">
         <span className="eyebrow animate-fade-up">
-          Facade Engineering · {BRAND.location}
+          Facade Engineering · Across India
         </span>
         <h1
           className="mt-5 max-w-4xl font-display text-[clamp(2.8rem,7vw,5.4rem)] leading-[1.02] text-cream animate-fade-up"
@@ -85,8 +85,8 @@ function HomeHero() {
           style={{ animationDelay: "160ms" }}
         >
           {BRAND.short} designs, fabricates and installs curtain wall, glazing,
-          cladding and architectural elements — precision-made on our own
-          aluminium line in {BRAND.location}.
+          cladding and architectural elements for projects across India —
+          precision-made on our own aluminium line in Gurugram.
         </p>
         <div
           className="mt-9 flex flex-wrap gap-4 animate-fade-up"
@@ -124,8 +124,8 @@ export default function Home() {
         />
       </Helmet>
       <Seo
-        title="Facade Manufacturer in Gurugram, India"
-        description="Fenza Facade Engineering designs, fabricates and installs curtain wall, structural glazing, cladding, aluminium windows and doors, louvers and architectural elements — engineered on our own line in Gurugram."
+        title="Facade Manufacturer and Contractor in India"
+        description="Curtain wall, structural glazing, cladding, aluminium windows, doors and louvers for projects across India, engineered and made on Fenza's own aluminium line."
         path="/"
         image="/og/home-hero.jpg"
         schema={[
@@ -374,6 +374,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Across India — one line in Gurugram, projects nationwide */}
+      <section className="border-t border-cream/10 bg-ink py-20 md:py-24">
+        <div className="container-content grid items-end gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <span className="eyebrow">Across India</span>
+            <Reveal>
+              <h2 className="mt-4 font-display text-[clamp(2rem,3.6vw,3rem)] text-cream">
+                One line in Gurugram.{" "}
+                <span className="italic text-gold-soft">Projects across India.</span>
+              </h2>
+            </Reveal>
+            <Reveal delay={100}>
+              <p className="mt-5 max-w-md text-pretty leading-relaxed text-cream/65">
+                Every facade is engineered and fabricated on our own line, then
+                delivered to site in the order the installation needs. Each city
+                brings its own climate and its own buildings.
+              </p>
+            </Reveal>
+          </div>
+          <div className="lg:col-span-7">
+            <Reveal delay={120}>
+              <ul className="flex flex-wrap gap-3">
+                {LOCATION_INDEX.map((l) => (
+                  <li key={l.slug}>
+                    <Link
+                      to={`/locations/${l.slug}`}
+                      className="inline-flex min-h-[44px] items-center rounded-full border border-cream/15 px-5 text-sm text-cream/80 transition-colors hover:border-gold hover:text-gold"
+                    >
+                      Facades in {l.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <Link to="/locations" className="link-underline mt-8 text-sm font-semibold">
+                All locations →
+              </Link>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* Working with Fenza — partner proposition */}
       <section className="border-t border-cream/10 bg-ink-soft py-24 md:py-32">
         <div className="container-content">
@@ -449,7 +490,8 @@ export default function Home() {
             </p>
             <div className="mt-8 space-y-1 text-sm text-cream/60">
               <p>{BRAND.legalName}</p>
-              <p>{BRAND.location}</p>
+              <p>Factory: {BRAND.location}</p>
+              <p>Projects across India</p>
             </div>
           </div>
           <div className="lg:col-span-7">

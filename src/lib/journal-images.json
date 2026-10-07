@@ -411,5 +411,89 @@
     "w": 1400,
     "h": 933,
     "source": "https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo"
+  },
+  "climate-hero": {
+    "file": "j-louver-1",
+    "alt": "Horizontal louvres running along a green-framed glass facade",
+    "w": 1400,
+    "h": 1121,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-a-sky-background-BZ2R0TxWb7I"
+  },
+  "climate-1": {
+    "file": "j-thermal-2",
+    "alt": "Grid of slim aluminium window frames with green beyond",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/rain-streaks-on-a-window-overlooking-lush-greenery-u-9dA84J0iI"
+  },
+  "climate-2": {
+    "file": "j-e331-1",
+    "alt": "Water beading on glass under a heavy grey sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/water-droplets-on-glass-panel-eehRmieZJvY"
+  },
+  "climate-card": {
+    "file": "j-facades-for-indian-climates",
+    "alt": "Horizontal louvres running along a green-framed glass facade",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-a-sky-background-BZ2R0TxWb7I"
+  },
+  "monsoon-hero": {
+    "file": "j-e331-1",
+    "alt": "Water beading on glass under a heavy grey sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/water-droplets-on-glass-panel-eehRmieZJvY"
+  },
+  "monsoon-1": {
+    "file": "j-rain-1",
+    "alt": "Timber-toned slatted cladding over a balconied facade",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/brown-and-white-concrete-building-nF2Fn_UNqzE"
+  },
+  "monsoon-2": {
+    "file": "j-thermal-1",
+    "alt": "Dark-framed sliding window looking onto trees",
+    "w": 1400,
+    "h": 928,
+    "source": "https://unsplash.com/photos/a-window-with-a-view-of-green-trees-outside-zKGL4LThrdE"
+  },
+  "monsoon-card": {
+    "file": "j-monsoon-proof-facades-and-windows",
+    "alt": "Water beading on glass under a heavy grey sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/water-droplets-on-glass-panel-eehRmieZJvY"
+  },
+  "contractor-hero": {
+    "file": "j-quote-1",
+    "alt": "Close-up of a dimensioned drawing with a pencil and scale rule",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo"
+  },
+  "contractor-1": {
+    "file": "j-stick-1",
+    "alt": "Looking up two glass curtain wall faces that meet at a sharp corner",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/low-angle-photography-of-high-rise-building-ISQ3M9fPa0g"
+  },
+  "contractor-2": {
+    "file": "j-joints-1",
+    "alt": "Fine lines of panel joints across a pale glass facade",
+    "w": 1400,
+    "h": 875,
+    "source": "https://unsplash.com/photos/graphing-artwork-xnqVGsbXgV4"
+  },
+  "contractor-card": {
+    "file": "j-choosing-a-facade-contractor-in-india",
+    "alt": "Close-up of a dimensioned drawing with a pencil and scale rule",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo"
   }
 }

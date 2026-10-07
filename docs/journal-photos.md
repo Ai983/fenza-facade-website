@@ -5,6 +5,19 @@ Each file below is a copy in `public/images/`. To move one to Supabase storage: 
 upload it, then set `"url": "https://..."` on that slot in `src/lib/journal-images.json` (the `file` is then ignored).
 Card thumbnails (`j-<article-slug>.webp`, 720x480) are crops of each article's hero.
 
+## The three India articles (2026-10-07): reused photos
+These articles reuse photos already listed below (same files, same Unsplash pages); only their
+card thumbnails are new crops. The manifest file `j-e331-2` was never added to `public/images`, so
+nothing may use slot `e331-2` until it is.
+
+- `/journal/facades-for-indian-climates`: `climate-hero` = `j-louver-1`, `climate-1` = `j-thermal-2`,
+  `climate-2` = `j-e331-1`, card `j-facades-for-indian-climates.webp` (crop of `j-louver-1`).
+- `/journal/monsoon-proof-facades-and-windows`: `monsoon-hero` = `j-e331-1`, `monsoon-1` = `j-rain-1`,
+  `monsoon-2` = `j-thermal-1`, card `j-monsoon-proof-facades-and-windows.webp` (crop of `j-e331-1`).
+- `/journal/choosing-a-facade-contractor-in-india`: `contractor-hero` = `j-quote-1`,
+  `contractor-1` = `j-stick-1`, `contractor-2` = `j-joints-1`, card
+  `j-choosing-a-facade-contractor-in-india.webp` (crop of `j-quote-1`).
+
 ## ACP vs. solid aluminium cladding: which one?
 `/journal/acp-vs-solid-aluminium-cladding`
 

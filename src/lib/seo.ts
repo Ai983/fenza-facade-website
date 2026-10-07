@@ -7,6 +7,8 @@
  * the group relationship stated only as backing.
  */
 import { SITE_URL, BRAND, CONTACT } from "./site";
+import { LOCATION_INDEX, locationPlaces } from "./location-index";
+import type { Location } from "./locations";
 
 export { SITE_URL };
 
@@ -40,7 +42,13 @@ export const organizationSchema = {
   logo: `${SITE_URL}/fenza-logo-sheet.png`,
   slogan: BRAND.tagline,
   description:
-    "Dedicated building-envelope manufacturer in Gurugram, India — curtain wall, structural glazing, fenestration, cladding, louvers and architectural elements, engineered and fabricated on our own aluminium line.",
+    "Dedicated building-envelope manufacturer serving projects across India — curtain wall, structural glazing, fenestration, cladding, louvers and architectural elements, engineered and fabricated on our own aluminium line in Gurugram, Haryana.",
+  // The one real address is the Gurugram facility; the rest of India is areaServed, never a
+  // second address (there are no other offices).
+  areaServed: [
+    { "@type": "Country", name: "India" },
+    ...LOCATION_INDEX.flatMap(locationPlaces),
+  ],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Gurugram",
@@ -173,6 +181,21 @@ export const buildCollectionSchema = (opts: {
       url: canonical(it.path),
     })),
   },
+});
+
+/**
+ * A location page: the Organization's facade service, offered in one city or state. Deliberately
+ * not a LocalBusiness: Fenza has no premises there, and a per-city address would be false.
+ */
+export const buildLocationSchema = (l: Location, path: string) => ({
+  "@type": "Service",
+  "@id": `${canonical(path)}#service`,
+  name: `Facade engineering in ${l.name}`,
+  serviceType: "Facade design, fabrication and installation",
+  description: l.description,
+  url: canonical(path),
+  provider: { "@id": `${SITE_URL}/#organization` },
+  areaServed: locationPlaces(l),
 });
 
 export const buildBreadcrumb = (trail: { name: string; path: string }[]) => ({
