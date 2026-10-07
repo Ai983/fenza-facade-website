@@ -65,7 +65,7 @@ const FAR_DELIVERY = (city: string) =>
 
 const CONTENT: Record<string, LocationContent> = {
   delhi: {
-    covers: ["New Delhi", "South Delhi", "Dwarka", "Aerocity", "Faridabad"],
+    covers: ["New Delhi", "South Delhi", "Dwarka", "Aerocity", "Rohini"],
     seoTitle: "Facade & Curtain Wall Company in Delhi",
     description:
       "Curtain wall, structural glazing, aluminium windows, cladding and louvers for Delhi projects, engineered and fabricated on Fenza's own line in nearby Gurugram.",
@@ -185,7 +185,7 @@ const CONTENT: Record<string, LocationContent> = {
     ],
   },
   noida: {
-    covers: ["Greater Noida", "Noida–Greater Noida Expressway", "Ghaziabad"],
+    covers: ["Greater Noida", "Noida–Greater Noida Expressway", "Noida Extension"],
     seoTitle: "Facade & Curtain Wall Company in Noida",
     description:
       "Curtain wall, structural glazing, cladding and insulated panels for offices, factories and housing in Noida and Greater Noida, made on Fenza's NCR line.",
@@ -303,7 +303,7 @@ const CONTENT: Record<string, LocationContent> = {
     ],
   },
   ludhiana: {
-    covers: ["Ludhiana", "Jalandhar", "Amritsar", "Patiala", "Bathinda"],
+    covers: ["Ludhiana", "Patiala", "Bathinda", "Moga", "Khanna"],
     seoTitle: "Facade Company in Ludhiana & Punjab",
     description:
       "Showroom glazing, factory cladding, aluminium windows, doors and railings for Ludhiana and across Punjab, engineered and made on Fenza's own aluminium line.",
@@ -533,6 +533,598 @@ const CONTENT: Record<string, LocationContent> = {
       },
       {
         question: "How is a project in Bengaluru delivered from Gurugram?",
+        answer:
+          "Facades are engineered and fabricated on Fenza's line in Gurugram, then delivered to site in the sequence the installation needs. The site visit, delivery plan and installation are agreed at the quote stage.",
+      },
+    ],
+  },
+  faridabad: {
+    covers: ["Greater Faridabad", "Ballabgarh", "Faridabad industrial areas", "Palwal"],
+    seoTitle: "Facade and Glazing Company in Faridabad",
+    description:
+      "Curtain wall, glazing, cladding, windows and doors for factories, offices and high-rise homes in Faridabad, fabricated on Fenza's own line in the NCR.",
+    og: "/og/sectors.jpg",
+    intro:
+      "Glazed office and admin fronts, cladding for industrial buildings, and windows, doors and railings for Faridabad's new high-rise housing, made on our own line in the NCR.",
+    context: [
+      "Faridabad is one of Haryana's oldest industrial cities, and much of its building stock is industrial: engineering works, component makers and warehouses, each with an office or administration block that faces the road. Around the old city, Greater Faridabad has added large residential towers, and commercial buildings have followed along the main roads into Delhi.",
+      "That mix shapes the envelope. A factory wants a weather-tight, insulated skin and good daylight inside; its office block wants a presentable glazed front. A residential tower wants balcony doors, windows and railings in large repeated quantities, delivered in the order the floors are finished.",
+    ],
+    climate: {
+      summary:
+        "The NCR's composite climate: very hot summers, cold winters, a short heavy monsoon, and dust from roads and industry.",
+      points: [
+        "Industrial walls need continuous insulation and airtight joints so heat and dust stay out of the working space.",
+        "Glazed admin fronts face the same summer sun as Delhi, so solar-control or {{low-e-coating|low-E}} glass and {{thermal-break|thermally broken}} frames pay back.",
+        "Dust settles in sliding tracks and drainage paths. Profiles and {{drainage-slot|drainage slots}} should be easy to clean.",
+        "On residential towers, balcony doors face wind-driven monsoon rain, so sills and tracks need a proper drainage route.",
+      ],
+    },
+    systems: [
+      { slug: "cladding", why: "Metal and composite cladding for factories, warehouses and podiums." },
+      { slug: "structural-glazing", why: "Flush glazed fronts for office and administration blocks." },
+      { slug: "sliding-windows-doors", why: "Balcony doors and windows for high-rise housing, with drained tracks." },
+      { slug: "railings", why: "Glass and aluminium railings for balconies and terraces." },
+      { slug: "skylights", why: "Daylight into production halls and atria." },
+    ],
+    record: [],
+    delivery: NCR_DELIVERY,
+    reading: [
+      { to: "/journal/acp-vs-solid-aluminium-cladding", label: "ACP vs. solid aluminium cladding" },
+      { to: "/journal/casement-or-sliding-windows", label: "Casement or sliding windows" },
+      { to: "/journal/choosing-a-facade-contractor-in-india", label: "Choosing a facade contractor" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Faridabad?",
+        answer:
+          "Yes. Fenza takes on cladding, structural glazing, curtain wall, windows, doors and railings for factories, offices and housing in Faridabad and Greater Faridabad. Fabrication is on Fenza's own line in Gurugram, in the same NCR.",
+      },
+      {
+        question: "What facade suits a factory office block in Faridabad?",
+        answer:
+          "Usually a glazed or structurally glazed front for the office, cladding for the rest of the building, and solar-control glass to keep the office cool. The production hall itself often needs insulated cladding and skylights rather than glass.",
+      },
+      {
+        question: "Which windows suit high-rise flats in Faridabad?",
+        answer:
+          "Sliding doors and windows are common on balconies because they save space; casement windows seal tighter against dust and noise. Either way, drained sills and good gaskets matter for monsoon rain on upper floors.",
+      },
+      {
+        question: "How do I get a facade quote for a Faridabad project?",
+        answer:
+          "Send elevations and sections, the facade areas by type, the building height and any performance requirements through the enquiry form or by email. A partial package is enough for a first scope and budget range.",
+      },
+    ],
+  },
+  ghaziabad: {
+    covers: ["Indirapuram", "Vaishali", "Raj Nagar Extension", "Sahibabad", "Crossings Republik"],
+    seoTitle: "Facade and Glazing Company in Ghaziabad",
+    description:
+      "Windows, balcony doors, railings, curtain wall and cladding for high-rise housing, commercial and industrial buildings in Ghaziabad, made on Fenza's NCR line.",
+    og: "/og/railings.jpg",
+    intro:
+      "Windows, balcony doors and railings for Ghaziabad's residential towers, and glazing and cladding for its commercial and industrial buildings.",
+    context: [
+      "East of Delhi, Ghaziabad has grown into one of the NCR's largest housing markets. Indirapuram, Vaishali, Raj Nagar Extension and Crossings Republik are dense with residential towers, and commercial centres have grown up around them. Older industrial areas such as Sahibabad sit alongside.",
+      "Housing at this scale makes the facade a production job. Thousands of near-identical windows, balcony doors and railings have to be made consistently, delivered floor by floor and installed safely at height. Small details, such as how a sill drains or how a railing is fixed to the slab edge, are repeated hundreds of times, so they are worth getting right on the first floor.",
+    ],
+    climate: {
+      summary:
+        "The NCR's composite climate: very hot summers, cold winters, monsoon rain and dust.",
+      points: [
+        "Upper floors of towers see stronger wind and wind-driven rain than the street suggests, so windows and doors need drained sills and continuous {{gasket|gaskets}}.",
+        "West-facing flats overheat in summer. {{low-e-coating|Low-E}} glass and shading on the worst elevations make a real difference to comfort.",
+        "Glass {{balustrade|balustrades}} at height must be designed for wind and for impact, with the right safety glass and fixings.",
+        "Traffic dust and pollution call for profiles and tracks that are easy to clean.",
+      ],
+    },
+    systems: [
+      { slug: "sliding-windows-doors", why: "Space-saving balcony doors and windows for flats, in large repeated quantities." },
+      { slug: "casement-windows", why: "Windows that seal tightly against dust, noise and driving rain." },
+      { slug: "railings", why: "Glass balustrades and aluminium railings for balconies, terraces and podiums." },
+      { slug: "curtain-wall", why: "Glazed elevations for commercial and office buildings." },
+      { slug: "cladding", why: "Cladding for podiums, service cores and industrial buildings." },
+    ],
+    record: [],
+    delivery: NCR_DELIVERY,
+    reading: [
+      { to: "/journal/glass-balustrades-what-to-check", label: "Glass balustrades: what to check" },
+      { to: "/journal/casement-or-sliding-windows", label: "Casement or sliding windows" },
+      { to: "/journal/monsoon-proof-facades-and-windows", label: "Monsoon-proof facades and windows" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering work in Ghaziabad?",
+        answer:
+          "Yes. Fenza takes on windows, balcony doors, railings, curtain wall and cladding for residential towers, commercial and industrial buildings across Ghaziabad. Fabrication is on Fenza's own line in Gurugram, in the same NCR.",
+      },
+      {
+        question: "What should I check in glass balustrades for a high-rise in Ghaziabad?",
+        answer:
+          "Check that the glass is a safety glass suitable for the height and the fixing method, usually laminated, and that the base shoe or posts are designed for the loads set by the engineer. Ask how the railing behaves if a pane breaks.",
+      },
+      {
+        question: "Sliding or casement windows for a flat?",
+        answer:
+          "Sliding windows save space and suit balconies; casement windows seal tighter against dust, noise and rain. Many projects use sliding doors to the balcony and casement windows in bedrooms.",
+      },
+      {
+        question: "How do I get a facade quote for a Ghaziabad project?",
+        answer:
+          "Send elevations and sections, window and door schedules if you have them, the building height and the finish you want through the enquiry form or by email. A partial package is enough for a first scope.",
+      },
+    ],
+  },
+  sonipat: {
+    covers: ["Sonipat", "Kundli", "Rai", "Panipat", "Samalkha", "Karnal"],
+    seoTitle: "Facade Company in Sonipat and Panipat",
+    description:
+      "Glazing, curtain wall, cladding, windows and doors for campuses, factories and homes in Sonipat, Kundli and Panipat, made on Fenza's own aluminium line.",
+    og: "/og/leadership-hero.jpg",
+    intro:
+      "Glazed campus buildings, factory envelopes and homes along the GT Road corridor, from Kundli and Sonipat to Panipat.",
+    context: [
+      "North of Delhi, Sonipat has become an education city. Large private university campuses have been built around it, alongside new housing and the industrial estates of Kundli and Rai. Further up the GT Road, Panipat is known for its textile and handloom industry, with mills, warehouses and export houses.",
+      "Campus buildings ask for generous glazing, daylight and durable, low-maintenance finishes, because they are used hard and maintained on tight budgets. Factories and mills want insulated, weather-tight walls, ventilation and daylight, with a presentable front for the office.",
+    ],
+    climate: {
+      summary:
+        "A composite climate on the Haryana plains: very hot summers, cold and often foggy winters, monsoon rain and dust.",
+      points: [
+        "Large campus glazing needs solar-control or {{low-e-coating|low-E}} glass and shading on east and west faces to keep classrooms and libraries comfortable.",
+        "Winter fog and cold make {{thermal-break|thermally broken}} frames with {{double-glazed-unit|double glazing}} worthwhile in buildings used all year.",
+        "Mills and factories need continuous insulation, airtight joints and {{louver|louvers}} for controlled ventilation.",
+        "Durable finishes such as {{pvdf-coating|PVDF}} or {{anodising|anodising}} keep maintenance down on buildings that are cleaned rarely.",
+      ],
+    },
+    systems: [
+      { slug: "curtain-wall", why: "Glazed academic and administrative buildings with daylight and solar control." },
+      { slug: "spider-glazing", why: "Point-fixed glass for campus lobbies, libraries and entrance halls." },
+      { slug: "cladding", why: "Metal and composite cladding for mills, factories and warehouses." },
+      { slug: "louvers", why: "Shading for glazed campus elevations and ventilation for industrial buildings." },
+      { slug: "casement-windows", why: "Windows for hostels, homes and offices that seal well through foggy winters." },
+    ],
+    record: [],
+    delivery: NCR_DELIVERY,
+    reading: [
+      { to: "/journal/spider-glazing-and-glass-fins", label: "Spider glazing and glass fins" },
+      { to: "/journal/louvers-and-sun-shading-fins", label: "Louvers and sun-shading fins" },
+      { to: "/journal/anodised-powder-coated-or-pvdf", label: "Anodised, powder-coated or PVDF" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Sonipat and Panipat?",
+        answer:
+          "Yes. Fenza takes on curtain wall, spider glazing, cladding, louvers, windows and doors for campuses, factories and homes in Sonipat, Kundli, Rai, Panipat and along the GT Road corridor. Fabrication is on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "What facade suits a university or school building?",
+        answer:
+          "Glazing chosen for daylight with solar control, shading on east and west faces, openable windows where natural ventilation helps, and durable finishes that need little maintenance. Entrance halls and libraries often use spider or structural glazing.",
+      },
+      {
+        question: "What facade suits a textile mill or factory in Panipat?",
+        answer:
+          "Usually insulated wall cladding for the production hall, louvers for ventilation, skylights or high-level glazing for daylight, and a glazed front for the office. The specification depends on the process inside.",
+      },
+      {
+        question: "How do I get a facade quote for a project near Sonipat or Panipat?",
+        answer:
+          "Send elevations and sections, the facade areas by type and the building use through the enquiry form or by email. A partial package is enough for a first scope and budget range.",
+      },
+    ],
+  },
+  amritsar: {
+    covers: ["Amritsar", "Ranjit Avenue", "the airport road", "Jalandhar", "Batala"],
+    seoTitle: "Facade and Glazing Company in Amritsar",
+    description:
+      "Hotel and commercial glazing, glass entrance doors, windows, slide-and-fold doors and railings for Amritsar and nearby Punjab, made on Fenza's aluminium line.",
+    og: "/og/slide-and-fold-doors.jpg",
+    intro:
+      "Glazed hotel and commercial fronts, entrance doors, and windows and folding doors for premium homes across Amritsar and nearby Punjab.",
+    context: [
+      "Amritsar is one of India's great pilgrimage cities, and that drives much of its building: hotels and guest houses close to the Golden Temple and along the main roads, restaurants and showrooms, and commercial complexes. Around them, the city has a strong tradition of large private homes built to a high specification.",
+      "Hotels and showrooms want an inviting glazed front and an entrance that works hard all day. Homes want windows that keep out a cold Punjab winter, and wide doors that open to lawns and terraces in good weather.",
+    ],
+    climate: {
+      summary:
+        "A composite climate on the Punjab plains, with cold and foggy winters, hot summers and monsoon rain.",
+      points: [
+        "Cold winters make {{thermal-break|thermally broken}} frames and {{double-glazed-unit|double glazing}} worthwhile in hotel rooms and homes, cutting heat loss and condensation.",
+        "Glazed fronts face hot summer sun, so solar-control or {{low-e-coating|low-E}} glass protects comfort inside.",
+        "Busy entrances need robust doors: patch-fitted glass doors on floor springs, with {{toughened-glass|toughened}} or {{laminated-glass|laminated}} safety glass.",
+        "Dust from busy roads calls for well-sealed openings and finishes that are easy to clean.",
+      ],
+    },
+    systems: [
+      { slug: "frameless-glass-doors", why: "Patch-fitted glass entrance doors for hotels, restaurants and showrooms." },
+      { slug: "structural-glazing", why: "Flush glazed fronts for hotels and commercial buildings." },
+      { slug: "casement-windows", why: "Windows that seal tightly through cold, foggy winters." },
+      { slug: "slide-and-fold-doors", why: "Wide openings from living rooms to lawns and terraces in premium homes." },
+      { slug: "railings", why: "Glass and aluminium railings for balconies, terraces and stairs." },
+    ],
+    record: [],
+    delivery: FAR_DELIVERY("Amritsar"),
+    reading: [
+      { to: "/journal/slide-and-fold-doors-what-to-check", label: "Slide-and-fold doors: what to check" },
+      { to: "/journal/choosing-facade-glass", label: "Choosing facade glass" },
+      { to: "/journal/thermal-breaks-in-aluminium-frames", label: "Thermal breaks in aluminium frames" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Amritsar?",
+        answer:
+          "Yes. Fenza takes on structural glazing, frameless glass doors, windows, slide-and-fold doors and railings for hotels, commercial buildings and homes in Amritsar and nearby Punjab. Facades are engineered and fabricated on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "What entrance doors suit a hotel in Amritsar?",
+        answer:
+          "Patch-fitted frameless glass doors on floor springs are common for hotel and showroom entrances. They need the right safety glass and hardware rated for heavy daily use.",
+      },
+      {
+        question: "Which windows keep a Punjab home warm in winter?",
+        answer:
+          "As general guidance, thermally broken aluminium frames with double-glazed units and good seals. Casement windows usually seal tighter than sliding ones on cold, windy days.",
+      },
+      {
+        question: "How is a project in Amritsar delivered from Gurugram?",
+        answer:
+          "Facades are engineered and fabricated on Fenza's line in Gurugram, then delivered to site in the sequence the installation needs. The site visit, delivery plan and installation are agreed at the quote stage.",
+      },
+    ],
+  },
+  shimla: {
+    covers: ["Shimla", "Solan", "Kasauli", "Baddi", "Manali", "Dharamshala"],
+    seoTitle: "Facade Company in Shimla and Himachal",
+    description:
+      "Windows, glazing, skylights, cladding and railings for hotels, homes and industry in Shimla and across Himachal Pradesh, made on Fenza's aluminium line.",
+    og: "/og/structural-glazing.jpg",
+    intro:
+      "Windows, glazing, skylights and cladding for hill hotels, homes and institutions, and for the industrial belt around Baddi.",
+    context: [
+      "Building in Himachal Pradesh is shaped by the hills. Hotels and resorts in Shimla, Kasauli, Manali and Dharamshala want big views and warm rooms at the same time. Homes and institutions are built on steep, tight sites. In the south of the state, Baddi and the surrounding industrial area are a major centre for pharmaceutical and other manufacturing, with factory envelopes to match.",
+      "Planning rules in hill towns, including Shimla, can limit building height and construction in some areas, so confirm with your architect what applies to the site before the facade is designed. Access matters too: the size of unit that can reach a hill site, and how it is lifted into place, can decide the facade system.",
+    ],
+    climate: {
+      summary:
+        "A cold hill climate in the upper towns, with snow in winter and heavy monsoon rain, and a warmer climate in the lower valleys and Baddi.",
+      points: [
+        "Keeping heat in comes first in the hills. {{thermal-break|Thermally broken}} frames, {{double-glazed-unit|double glazing}} and airtight seals cut heat loss and condensation.",
+        "Snow load on {{skylight|skylights}}, canopies and pergolas is set by the structural engineer for the site, and the framing and glass are sized to it.",
+        "Heavy monsoon rain on exposed slopes calls for drained frames, well-detailed sills and proper flashing where the facade meets the roof.",
+        "The region is earthquake-prone, so brackets and {{movement-joint|movement joints}} must accommodate the building movement the structural engineer sets.",
+      ],
+    },
+    systems: [
+      { slug: "casement-windows", why: "Tight-sealing, thermally broken windows for cold hill winters." },
+      { slug: "sliding-windows-doors", why: "Large sliding openings for views from hotels and homes, with drained tracks." },
+      { slug: "skylights", why: "Daylight for hotel atria and lobbies, framed for the site's snow load." },
+      { slug: "cladding", why: "Metal cladding for factories and warehouses in the Baddi industrial area." },
+      { slug: "railings", why: "Glass and aluminium railings for balconies and terraces with a view." },
+    ],
+    record: [],
+    delivery:
+      "Every Fenza facade is engineered and fabricated on our own line in Gurugram. Hill sites change the logistics: road access, the size of unit that can reach the site and how it is lifted into place are planned with you at the quote stage, so the programme is clear before anything is made.",
+    reading: [
+      { to: "/journal/thermal-breaks-in-aluminium-frames", label: "Thermal breaks in aluminium frames" },
+      { to: "/journal/movement-joints-in-facades", label: "Movement joints in facades" },
+      { to: "/journal/facades-for-indian-climates", label: "Facades for India's climates" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Himachal Pradesh?",
+        answer:
+          "Yes. Fenza takes on windows, glazing, skylights, cladding and railings for hotels, homes, institutions and factories in Shimla, Solan, Kasauli, Baddi, Manali, Dharamshala and across Himachal Pradesh. Facades are engineered and fabricated on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "Which windows suit a hotel or home in the hills?",
+        answer:
+          "As general guidance, thermally broken aluminium frames with double-glazed units and airtight seals, to keep rooms warm and limit condensation. Large view windows need glass and frames sized for the site's wind exposure.",
+      },
+      {
+        question: "Can skylights be used where it snows?",
+        answer:
+          "Yes, if the framing and glass are designed for the snow load the structural engineer sets for the site, with laminated glass overhead and proper drainage and condensation channels.",
+      },
+      {
+        question: "How is a facade delivered to a hill site?",
+        answer:
+          "Facades are fabricated in Gurugram and delivered in the sequence the site needs. Road access, unit sizes and lifting are planned at the quote stage, which can affect the choice of system.",
+      },
+    ],
+  },
+  dehradun: {
+    covers: ["Dehradun", "Mussoorie", "Rishikesh", "Haridwar", "the Haridwar industrial estate"],
+    seoTitle: "Facade Company in Dehradun and Haridwar",
+    description:
+      "Monsoon-ready windows, glazing, cladding and skylights for institutions, hotels, homes and factories in Dehradun, Haridwar and Rishikesh, made by Fenza.",
+    og: "/og/skylights.jpg",
+    intro:
+      "Windows, glazing, cladding and skylights for schools and institutions, hotels, homes and factories in the Doon valley and around Haridwar.",
+    context: [
+      "Dehradun, the capital of Uttarakhand, is known for its schools, colleges and national institutions, and it has grown fast with housing and commercial buildings. Mussoorie and Rishikesh draw hotels and resorts, and Haridwar adds a large industrial estate alongside its pilgrimage trade.",
+      "Each brings a different envelope: durable, daylit buildings for institutions; hotels that want views and comfortable rooms; and factories that need weather-tight, insulated walls. Across all of them, the monsoon is the defining test.",
+    ],
+    climate: {
+      summary:
+        "A wet foothill climate: a long and heavy monsoon, warm summers and cool winters, in an earthquake-prone part of the Himalaya.",
+      points: [
+        "Heavy, sustained monsoon rain makes water management the priority: drained, pressure-equalised frames, {{drainage-slot|drainage slots}} that stay clear, and a {{rain-screen|rain-screen}} for solid walls.",
+        "Water-tightness should be proved on a {{mock-up|mock-up}} before production, with a site water check on the first installed areas.",
+        "Cool winters make {{thermal-break|thermally broken}} frames with {{double-glazed-unit|double glazing}} worthwhile in homes, hostels and hotels.",
+        "The Himalayan foothills are earthquake-prone, so brackets and {{movement-joint|movement joints}} must accommodate the building movement the structural engineer sets.",
+      ],
+    },
+    systems: [
+      { slug: "casement-windows", why: "Windows that seal against driving rain, for institutions, hostels and homes." },
+      { slug: "rain-screen-facade", why: "A drained, ventilated outer skin that handles a long, wet monsoon." },
+      { slug: "curtain-wall", why: "Glazed elevations for institutional and commercial buildings, with drained joints." },
+      { slug: "cladding", why: "Cladding for factories in the Haridwar industrial estate." },
+      { slug: "skylights", why: "Daylight for atria, halls and corridors, with internal gutters for heavy rain." },
+    ],
+    record: [],
+    delivery: FAR_DELIVERY("Dehradun, Haridwar and Rishikesh"),
+    reading: [
+      { to: "/journal/monsoon-proof-facades-and-windows", label: "Monsoon-proof facades and windows" },
+      { to: "/journal/rain-screen-cladding-the-gap", label: "Rain-screen cladding: why the gap matters" },
+      { to: "/journal/what-astm-e331-tests", label: "What ASTM E331 actually tests" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Dehradun and Haridwar?",
+        answer:
+          "Yes. Fenza takes on windows, curtain wall, rain-screen cladding, cladding and skylights for institutions, hotels, homes and factories in Dehradun, Mussoorie, Rishikesh, Haridwar and across Uttarakhand. Facades are engineered and fabricated on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "How do you keep a facade dry in Dehradun's monsoon?",
+        answer:
+          "Use drained, pressure-equalised windows and curtain wall so water that passes the outer seal drains back out, a rain-screen for solid walls, and prove water-tightness on a mock-up before production.",
+      },
+      {
+        question: "What facade suits a school or institutional building?",
+        answer:
+          "Durable, low-maintenance finishes, daylight with glare control, openable windows that seal well against rain, and a drained facade system. Atria and corridors can use skylights with internal gutters.",
+      },
+      {
+        question: "How is a project in Uttarakhand delivered from Gurugram?",
+        answer:
+          "Facades are engineered and fabricated on Fenza's line in Gurugram, then delivered to site in the sequence the installation needs. The site visit, delivery plan and installation are agreed at the quote stage.",
+      },
+    ],
+  },
+  jaipur: {
+    covers: ["Jaipur", "Tonk Road", "Malviya Nagar", "Sitapura", "Mahindra World City"],
+    seoTitle: "Facade and Glazing Company in Jaipur",
+    description:
+      "Louvers, solar-control glazing, curtain wall, cladding and pergolas for hotels, offices and homes in Jaipur, designed for heat and made on Fenza's own line.",
+    og: "/og/pergolas.jpg",
+    intro:
+      "Shading, solar-control glazing, cladding and pergolas for hotels, offices, institutions and homes in Rajasthan's capital.",
+    context: [
+      "Jaipur's buildings carry a strong sense of place. The walled city has its own rules on how building fronts look, and much new work, especially hotels, borrows from the city's heritage of screens, courtyards and shade. Beyond the old city, offices, institutions and housing have spread along the main roads, and Sitapura and Mahindra World City add industry and IT.",
+      "Before choosing a facade near the old city or a protected monument, confirm with the architect which controls apply. Elsewhere, the brief is about heat: glass that keeps rooms cool, shading that works with the architecture, and finishes that survive strong sun.",
+    ],
+    climate: {
+      summary:
+        "A hot, semi-arid climate: long, intense summers, strong sun, dust storms before the monsoon, and cool winter nights.",
+      points: [
+        "Stop the sun outside the glass. Fixed {{louver|louvers}}, fins and screens on east, west and south faces cut {{solar-heat-gain|solar heat gain}} and echo Jaipur's tradition of shade.",
+        "Solar-control or {{low-e-coating|low-E}} {{double-glazed-unit|double glazing}}, chosen with the facade consultant, keeps rooms cool without darkening them.",
+        "Strong ultraviolet light fades weaker coatings. {{pvdf-coating|PVDF}} and good {{anodising|anodising}} hold their colour longer.",
+        "Dust storms test every seal. Continuous {{gasket|gaskets}} and drainage paths that are easy to clear keep the facade sealed.",
+      ],
+    },
+    systems: [
+      { slug: "louvers", why: "Sun-shading fins and louvers, the first defence against Rajasthan's heat." },
+      { slug: "curtain-wall", why: "Glazed office and institutional elevations with solar-control glass." },
+      { slug: "pergolas", why: "Aluminium pergolas for hotel terraces, courtyards and rooftops." },
+      { slug: "cladding", why: "Durable metal cladding in colours that hold up to strong sun." },
+      { slug: "frameless-glass-doors", why: "Glass entrance doors for hotels, restaurants and showrooms." },
+    ],
+    record: [],
+    delivery: FAR_DELIVERY("Jaipur"),
+    reading: [
+      { to: "/journal/louvers-and-sun-shading-fins", label: "Louvers and sun-shading fins" },
+      { to: "/journal/facades-for-indian-climates", label: "Facades for India's climates" },
+      { to: "/journal/anodised-powder-coated-or-pvdf", label: "Anodised, powder-coated or PVDF" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Jaipur?",
+        answer:
+          "Yes. Fenza takes on louvers, curtain wall, cladding, pergolas, glass doors, windows and other envelope work for hotels, offices, institutions and homes in Jaipur and across Rajasthan. Facades are engineered and fabricated on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "How do you keep a glazed building cool in Jaipur?",
+        answer:
+          "Combine external shading such as louvers, fins or screens with solar-control or low-E double glazing and thermally broken frames. Shading outside the glass is the most effective step.",
+      },
+      {
+        question: "Are there rules on facades near Jaipur's old city?",
+        answer:
+          "Often, yes. The walled city and areas near protected monuments have controls on how buildings look and what can be built. Your architect will confirm what applies to the plot before the facade is designed.",
+      },
+      {
+        question: "How is a project in Jaipur delivered from Gurugram?",
+        answer:
+          "Facades are engineered and fabricated on Fenza's line in Gurugram, then delivered to site in the sequence the installation needs. The site visit, delivery plan and installation are agreed at the quote stage.",
+      },
+    ],
+  },
+  bhiwadi: {
+    covers: ["Bhiwadi", "Neemrana", "Khushkhera", "Chopanki", "Dharuhera"],
+    seoTitle: "Facade Company in Bhiwadi and Neemrana",
+    description:
+      "Industrial cladding, skylights, louvers and glazed admin fronts for factories in Bhiwadi, Neemrana and the Delhi–Jaipur belt, made on Fenza's nearby line.",
+    og: "/og/cladding.jpg",
+    intro:
+      "Cladding, skylights, louvers and glazed office fronts for factories and warehouses along the Delhi–Jaipur industrial belt.",
+    context: [
+      "Bhiwadi and Neemrana, on Rajasthan's side of the Delhi–Jaipur corridor, are factory towns. Their industrial areas host automotive, component, consumer-goods and warehousing plants, and Neemrana is known for its Japanese investment zone. Most buildings here are production halls and warehouses, each with an office or administration block.",
+      "Factory envelopes are judged on practical things: how well the walls keep out heat and dust, how much daylight reaches the floor, how the building is ventilated, and how quickly it can be closed in so production can start. The admin block is the company's face, so it usually gets a glazed front.",
+    ],
+    climate: {
+      summary:
+        "A hot, semi-arid climate at the edge of Rajasthan: very hot summers, dust, monsoon downpours and cool winters.",
+      points: [
+        "Insulated wall cladding and airtight joints keep heat and dust out of production halls.",
+        "{{skylight|Skylights}} and high-level glazing bring daylight to the factory floor, cutting daytime lighting.",
+        "{{louver|Louvers}} handle ventilation and screen plant while keeping rain out.",
+        "Glazed admin fronts need solar-control or {{low-e-coating|low-E}} glass and {{thermal-break|thermally broken}} frames for the summer sun.",
+      ],
+    },
+    systems: [
+      { slug: "cladding", why: "Metal and composite cladding for production halls and warehouses." },
+      { slug: "skylights", why: "Daylight for the factory floor, with internal gutters for monsoon rain." },
+      { slug: "louvers", why: "Ventilation and plant screening for industrial buildings." },
+      { slug: "structural-glazing", why: "Flush glazed fronts for office and administration blocks." },
+      { slug: "frameless-glass-doors", why: "Glass entrance doors for reception and visitor areas." },
+    ],
+    record: [],
+    delivery:
+      "Bhiwadi and Neemrana are within easy road reach of our fabrication line in Gurugram. Site visits, the measured survey and mock-up reviews are straightforward to arrange, and fabricated frames and panels reach site in the sequence the installation needs.",
+    reading: [
+      { to: "/journal/acp-vs-solid-aluminium-cladding", label: "ACP vs. solid aluminium cladding" },
+      { to: "/journal/louvers-and-sun-shading-fins", label: "Louvers and sun-shading fins" },
+      { to: "/journal/choosing-a-facade-contractor-in-india", label: "Choosing a facade contractor" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering work in Bhiwadi and Neemrana?",
+        answer:
+          "Yes. Fenza takes on cladding, skylights, louvers, structural glazing and glass doors for factories, warehouses and admin blocks in Bhiwadi, Neemrana, Khushkhera, Chopanki and along the Delhi–Jaipur industrial belt. Fabrication is on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "What facade suits a factory in Bhiwadi or Neemrana?",
+        answer:
+          "Usually insulated wall cladding for the production hall, skylights for daylight, louvers for ventilation, and a glazed front for the admin block. The specification depends on the process and the climate inside.",
+      },
+      {
+        question: "Can skylights keep a factory cool enough?",
+        answer:
+          "Skylights should be sized and glazed for daylight without excess heat: solar-control glazing, the right area for the floor, and shading where needed. The design is balanced with the building's ventilation.",
+      },
+      {
+        question: "How do I get a facade quote for a factory project?",
+        answer:
+          "Send the building drawings, the facade and roof-light areas, the building use and any performance requirements through the enquiry form or by email. A partial package is enough for a first scope and budget range.",
+      },
+    ],
+  },
+  lucknow: {
+    covers: ["Gomti Nagar", "Shaheed Path", "Hazratganj", "Sushant Golf City", "Kanpur"],
+    seoTitle: "Facade and Glazing Company in Lucknow",
+    description:
+      "Curtain wall, structural glazing, skylights, windows and cladding for government, institutional, hospital and commercial buildings in Lucknow, made by Fenza.",
+    og: "/og/resources-hero.jpg",
+    intro:
+      "Curtain wall, glazing, skylights, windows and cladding for Lucknow's government and institutional buildings, hospitals, offices and homes.",
+    context: [
+      "Lucknow, the capital of Uttar Pradesh, builds for government, institutions and healthcare as much as for commerce. Public buildings, universities, hospitals and offices sit alongside malls, hotels and a fast-growing residential belt around Gomti Nagar and Shaheed Path. The city's architectural heritage also shapes taste: arches, domes and generous public spaces.",
+      "Institutional and public buildings are built to last and are often maintained on fixed budgets, so durability and ease of maintenance matter more than novelty. Large halls, atria and malls bring skylights and big glazed spans into the brief.",
+    ],
+    climate: {
+      summary:
+        "A composite climate on the Gangetic plain: very hot summers, cold and foggy winters, a humid monsoon and dust.",
+      points: [
+        "Large glazed elevations need solar-control or {{low-e-coating|low-E}} glass and shading on east and west faces.",
+        "{{thermal-break|Thermally broken}} frames help in both seasons, keeping summer heat out and winter warmth in.",
+        "{{skylight|Skylights}} over atria and halls need internal gutters and condensation channels for a humid monsoon.",
+        "Durable finishes such as {{pvdf-coating|PVDF}} or {{anodising|anodising}} reduce maintenance on public buildings.",
+      ],
+    },
+    systems: [
+      { slug: "curtain-wall", why: "Glazed elevations for offices, institutions and hospitals." },
+      { slug: "structural-glazing", why: "Flush glazed fronts for public buildings, hotels and malls." },
+      { slug: "skylights", why: "Daylight for atria, halls and malls, with drainage designed in." },
+      { slug: "casement-windows", why: "Openable windows that seal well, for hospitals, hostels and homes." },
+      { slug: "cladding", why: "Durable metal cladding for institutional and commercial buildings." },
+    ],
+    record: [],
+    delivery: FAR_DELIVERY("Lucknow"),
+    reading: [
+      { to: "/journal/structural-glazing-explained", label: "Structural glazing explained" },
+      { to: "/journal/choosing-facade-glass", label: "Choosing facade glass" },
+      { to: "/journal/choosing-a-facade-contractor-in-india", label: "Choosing a facade contractor" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Lucknow?",
+        answer:
+          "Yes. Fenza takes on curtain wall, structural glazing, skylights, windows, doors and cladding for government, institutional, hospital, commercial and residential buildings in Lucknow and across Uttar Pradesh. Facades are engineered and fabricated on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "What facade suits a hospital or institutional building?",
+        answer:
+          "Windows and glazing that seal well against dust and noise, glass that controls heat without darkening rooms, durable finishes that are easy to clean, and safe access for maintenance. The specification is set with the facade consultant.",
+      },
+      {
+        question: "What should I check before specifying a large skylight?",
+        answer:
+          "Check the glass type for overhead use, usually laminated, the drainage and condensation channels in the framing, how it will be cleaned, and how it handles heat gain in summer.",
+      },
+      {
+        question: "How is a project in Lucknow delivered from Gurugram?",
+        answer:
+          "Facades are engineered and fabricated on Fenza's line in Gurugram, then delivered to site in the sequence the installation needs. The site visit, delivery plan and installation are agreed at the quote stage.",
+      },
+    ],
+  },
+  agra: {
+    covers: ["Agra", "Fatehabad Road", "Sikandra", "Mathura", "Vrindavan"],
+    seoTitle: "Facade and Glazing Company in Agra",
+    description:
+      "Hotel glazing, glass entrance doors, windows, louvers and pergolas for hotels, commercial buildings and homes in Agra, Mathura and Vrindavan, made by Fenza.",
+    og: "/og/contact-hero.jpg",
+    intro:
+      "Glazing, entrance doors, windows, louvers and pergolas for Agra's hotels, commercial buildings and homes, and for Mathura and Vrindavan nearby.",
+    context: [
+      "Agra is defined by the Taj Mahal and the visitors it draws. Hotels, from large properties to boutique stays, line the roads towards the monuments, along with restaurants, showrooms and craft emporiums. Mathura and Vrindavan nearby add pilgrimage hotels, ashrams and guest houses.",
+      "Construction near protected monuments is regulated, and the area around the Taj has its own environmental controls. Before choosing a facade, confirm with the architect what applies to the site. For hotels, the envelope is part of the guest experience: welcoming entrances, quiet, comfortable rooms and terraces that make the most of the view.",
+    ],
+    climate: {
+      summary:
+        "A composite climate on the Yamuna plain: very hot summers, cold winter nights, monsoon rain and dust.",
+      points: [
+        "Solar-control or {{low-e-coating|low-E}} glass and external shading keep hotel rooms and lobbies cool through long summers.",
+        "Good seals and {{double-glazed-unit|double glazing}} keep out dust and road noise, which matters as much to hotel guests as temperature.",
+        "Terraces and rooftops gain from {{pergola|pergolas}} and fins that shade without closing in the view.",
+        "Entrances used all day need robust hardware and safety glass.",
+      ],
+    },
+    systems: [
+      { slug: "frameless-glass-doors", why: "Patch-fitted glass entrance doors for hotel lobbies and showrooms." },
+      { slug: "structural-glazing", why: "Flush glazed fronts for hotels and commercial buildings." },
+      { slug: "casement-windows", why: "Quiet, tight-sealing windows for hotel rooms and homes." },
+      { slug: "louvers", why: "Shading for sun-facing elevations that keeps the architecture light." },
+      { slug: "pergolas", why: "Aluminium pergolas for rooftop restaurants and terraces." },
+    ],
+    record: [],
+    delivery: FAR_DELIVERY("Agra, Mathura and Vrindavan"),
+    reading: [
+      { to: "/journal/choosing-facade-glass", label: "Choosing facade glass" },
+      { to: "/journal/louvers-and-sun-shading-fins", label: "Louvers and sun-shading fins" },
+      { to: "/journal/casement-or-sliding-windows", label: "Casement or sliding windows" },
+    ],
+    faq: [
+      {
+        question: "Does Fenza Facade Engineering take on projects in Agra?",
+        answer:
+          "Yes. Fenza takes on structural glazing, frameless glass doors, windows, louvers and pergolas for hotels, commercial buildings and homes in Agra, Mathura and Vrindavan. Facades are engineered and fabricated on Fenza's own line in Gurugram.",
+      },
+      {
+        question: "Are there rules on building near the Taj Mahal?",
+        answer:
+          "Yes. Construction near protected monuments is regulated, and the area around the Taj has environmental controls. Your architect will confirm what applies to the site before the facade is designed.",
+      },
+      {
+        question: "Which windows keep a hotel room quiet and cool?",
+        answer:
+          "As general guidance, double-glazed units with solar-control or low-E glass in well-sealed frames. Casement windows usually seal tighter than sliding ones, which helps with both noise and dust.",
+      },
+      {
+        question: "How is a project in Agra delivered from Gurugram?",
         answer:
           "Facades are engineered and fabricated on Fenza's line in Gurugram, then delivered to site in the sequence the installation needs. The site visit, delivery plan and installation are agreed at the quote stage.",
       },

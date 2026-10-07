@@ -44,7 +44,7 @@ export default function Locations() {
     <>
       <Seo
         title="Facade Company Across India: Locations"
-        description="Fenza engineers and fabricates facades in Gurugram for projects across India: Delhi, Noida, Chandigarh, Punjab, Gujarat, Pune and Bengaluru."
+        description="Facades made in Gurugram for projects across India: Delhi NCR, Punjab, Himachal, Uttarakhand, Rajasthan, Uttar Pradesh, Gujarat, Pune and Bengaluru."
         path="/locations"
         image="/og/systems-hero.jpg"
         schema={[
@@ -66,7 +66,7 @@ export default function Locations() {
             <span className="italic text-gold-soft">across India.</span>
           </>
         }
-        intro="One aluminium line in Gurugram, and projects from Delhi NCR to Punjab, Gujarat, Pune and Bengaluru. Each city brings its own climate and its own buildings; here is what that means for the facade."
+        intro="One aluminium line in Gurugram, and projects from Delhi NCR to Punjab, the hills, Rajasthan, Uttar Pradesh, Gujarat, Pune and Bengaluru. Each city brings its own climate and its own buildings; here is what that means for the facade."
         breadcrumb={[
           { name: "Home", to: "/" },
           { name: "Locations", to: "/locations" },

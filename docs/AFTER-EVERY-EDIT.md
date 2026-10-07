@@ -263,11 +263,11 @@ buy links, or publish claims the company cannot back.
 
 ## 8. Known state and baselines (update this when it changes)
 
-**Baselines (2026-10-07):** 53 pages + 404 (54 prerendered): 13 systems, 65 glossary terms, the Testing
-page, a Journal of 18 articles (6-8 min reads, about 25,000 words), and 8 city pages plus the
+**Baselines (2026-10-07):** 63 pages + 404 (64 prerendered): 13 systems, 65 glossary terms, the Testing
+page, a Journal of 18 articles (6-8 min reads, about 25,000 words), and 18 city pages plus the
 `/locations` index. Scripts: the main `dist/assets/index.js` **159 KB gzip** (the audit fails above
 175 KB gzip), plus `JournalPages.js` 69 KB gzip that ONLY Journal pages download and
-`Location.js` 12 KB gzip that ONLY city pages download; CSS 46 KB / 8 KB gzip.
+`Location.js` 19 KB gzip that ONLY city pages download; CSS 49 KB / 9 KB gzip.
 Heaviest image 384 KB (j-e331-hero). Audit: 0 problems; the warnings are the meta-description lengths below.
 Earlier baselines: 25 pages / 154 KB gzip (before the Journal), 24 pages /
 151 KB gzip (2026-09-30).
@@ -283,7 +283,9 @@ the copy is next reviewed; do not add new long ones.
 - Email and phone are confirmed and live; WhatsApp and the precise factory address are still
   unconfirmed (`src/lib/site.ts`, `*Confirmed` flags).
 - **City pages (2026-10-07)** say Fenza takes projects in Delhi, Gurugram, Noida, Chandigarh,
-  Ludhiana/Punjab, Ahmedabad/Gujarat, Pune and Bengaluru, per the director's brief. Their climate
+  Ludhiana/Punjab, Ahmedabad/Gujarat, Pune and Bengaluru (the director's list), plus Faridabad,
+  Ghaziabad, Sonipat/Panipat, Amritsar, Shimla/Himachal, Dehradun/Haridwar, Jaipur,
+  Bhiwadi/Neemrana, Lucknow and Agra (added on request). The company should confirm all of them. Their climate
   and building notes need engineering review like the Journal.
 - **Off-site AEO work (not code):** Google Business Profile for the Gurugram facility, Bing Places,
   LinkedIn company page, IndiaMART/JustDial listings with identical name, phone and address; then
