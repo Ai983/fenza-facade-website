@@ -68,8 +68,8 @@ const FEATURED = {
   title: "Facades for India's climates: what changes from Delhi to Bengaluru",
   teaser: "Glass, shading, drainage and finishes, matched to the local climate.",
   /** The card image: its file and alt text, copied from journal-images.json (slot "climate-card"). */
-  image: "j-facades-for-indian-climates",
-  alt: "Horizontal louvres running along a green-framed glass facade",
+  image: "j-facades-for-indian-climates-v2",
+  alt: "Low sun flaring across a balconied brick and glass facade",
 };
 export const RESOURCE_SPOTLIGHT: ResourceSpotlight | null = {
   eyebrow: "Journal",

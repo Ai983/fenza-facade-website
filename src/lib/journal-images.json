@@ -413,87 +413,717 @@
     "source": "https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo"
   },
   "climate-hero": {
-    "file": "j-louver-1",
-    "alt": "Horizontal louvres running along a green-framed glass facade",
-    "w": 1400,
-    "h": 1121,
-    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-a-sky-background-BZ2R0TxWb7I"
+    "file": "j-climate-hero-v2",
+    "alt": "Low sun flaring across a balconied brick and glass facade",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-tall-brick-building-with-windows-and-balconies-omDM3mA7Gy4"
   },
   "climate-1": {
-    "file": "j-thermal-2",
-    "alt": "Grid of slim aluminium window frames with green beyond",
+    "file": "j-climate-1-v2",
+    "alt": "Dappled shadows across a warm-toned building face",
     "w": 1400,
     "h": 933,
-    "source": "https://unsplash.com/photos/rain-streaks-on-a-window-overlooking-lush-greenery-u-9dA84J0iI"
+    "source": "https://unsplash.com/photos/a-tall-building-with-lots-of-windows-next-to-a-street-eT9d3CznqLg"
   },
   "climate-2": {
-    "file": "j-e331-1",
-    "alt": "Water beading on glass under a heavy grey sky",
+    "file": "j-climate-2-v2",
+    "alt": "Modern white-framed house among palm trees",
     "w": 1400,
     "h": 933,
-    "source": "https://unsplash.com/photos/water-droplets-on-glass-panel-eehRmieZJvY"
+    "source": "https://unsplash.com/photos/a-modern-luxurious-house-sits-among-palm-trees-_tEBCVrEnyo"
   },
   "climate-card": {
-    "file": "j-facades-for-indian-climates",
-    "alt": "Horizontal louvres running along a green-framed glass facade",
+    "file": "j-facades-for-indian-climates-v2",
+    "alt": "Low sun flaring across a balconied brick and glass facade",
     "w": 720,
     "h": 480,
-    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-a-sky-background-BZ2R0TxWb7I"
+    "source": "https://unsplash.com/photos/a-tall-brick-building-with-windows-and-balconies-omDM3mA7Gy4"
   },
   "monsoon-hero": {
-    "file": "j-e331-1",
-    "alt": "Water beading on glass under a heavy grey sky",
-    "w": 1400,
-    "h": 933,
-    "source": "https://unsplash.com/photos/water-droplets-on-glass-panel-eehRmieZJvY"
+    "file": "j-monsoon-hero-v2",
+    "alt": "Rainwater dripping from a roof edge over green foliage",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-rain-gutter-with-water-running-down-it-sEjMrYwLSC4"
   },
   "monsoon-1": {
-    "file": "j-rain-1",
-    "alt": "Timber-toned slatted cladding over a balconied facade",
+    "file": "j-monsoon-1-v2",
+    "alt": "Wet city street at dusk with lights reflected in the rain",
     "w": 1400,
-    "h": 933,
-    "source": "https://unsplash.com/photos/brown-and-white-concrete-building-nF2Fn_UNqzE"
+    "h": 966,
+    "source": "https://unsplash.com/photos/people-walking-on-street-during-daytime-cWtZ_6ysd94"
   },
   "monsoon-2": {
-    "file": "j-thermal-1",
-    "alt": "Dark-framed sliding window looking onto trees",
-    "w": 1400,
-    "h": 928,
-    "source": "https://unsplash.com/photos/a-window-with-a-view-of-green-trees-outside-zKGL4LThrdE"
-  },
-  "monsoon-card": {
-    "file": "j-monsoon-proof-facades-and-windows",
-    "alt": "Water beading on glass under a heavy grey sky",
-    "w": 720,
-    "h": 480,
-    "source": "https://unsplash.com/photos/water-droplets-on-glass-panel-eehRmieZJvY"
-  },
-  "contractor-hero": {
-    "file": "j-quote-1",
-    "alt": "Close-up of a dimensioned drawing with a pencil and scale rule",
+    "file": "j-monsoon-2-v2",
+    "alt": "Rain falling on a sloped roof among leaves",
     "w": 1400,
     "h": 933,
-    "source": "https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo"
+    "source": "https://unsplash.com/photos/a-wooden-bridge-over-a-river-I1ZgbZZK5_M"
   },
-  "contractor-1": {
-    "file": "j-stick-1",
-    "alt": "Looking up two glass curtain wall faces that meet at a sharp corner",
-    "w": 1400,
-    "h": 1050,
-    "source": "https://unsplash.com/photos/low-angle-photography-of-high-rise-building-ISQ3M9fPa0g"
-  },
-  "contractor-2": {
-    "file": "j-joints-1",
-    "alt": "Fine lines of panel joints across a pale glass facade",
-    "w": 1400,
-    "h": 875,
-    "source": "https://unsplash.com/photos/graphing-artwork-xnqVGsbXgV4"
-  },
-  "contractor-card": {
-    "file": "j-choosing-a-facade-contractor-in-india",
-    "alt": "Close-up of a dimensioned drawing with a pencil and scale rule",
+  "monsoon-card": {
+    "file": "j-monsoon-proof-facades-and-windows-v2",
+    "alt": "Rainwater dripping from a roof edge over green foliage",
     "w": 720,
     "h": 480,
-    "source": "https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo"
+    "source": "https://unsplash.com/photos/a-rain-gutter-with-water-running-down-it-sEjMrYwLSC4"
+  },
+  "contractor-hero": {
+    "file": "j-contractor-hero-v2",
+    "alt": "Multi-storey building under construction glowing at night",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-large-building-with-a-crane-on-top-of-it-6ZshT5udWxs"
+  },
+  "contractor-1": {
+    "file": "j-contractor-1-v2",
+    "alt": "Scaffolded building during construction",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/concrete-building-under-construction-hfI0pr6g4yw"
+  },
+  "contractor-2": {
+    "file": "j-contractor-2-v2",
+    "alt": "Tower crane beside a building taking shape",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/construction-of-a-building-in-progress-3GdHDDtHJ-4"
+  },
+  "contractor-card": {
+    "file": "j-choosing-a-facade-contractor-in-india-v2",
+    "alt": "Multi-storey building under construction glowing at night",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-large-building-with-a-crane-on-top-of-it-6ZshT5udWxs"
+  },
+  "acoustic-hero": {
+    "file": "j-acoustic-hero",
+    "alt": "Residential building glowing in warm evening light beside a road",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-apartment-building-bathed-in-warm-sunset-light-4klaqVDV_eY"
+  },
+  "acoustic-card": {
+    "file": "j-acoustic-glazing-for-noisy-sites",
+    "alt": "Residential building glowing in warm evening light beside a road",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-apartment-building-bathed-in-warm-sunset-light-4klaqVDV_eY"
+  },
+  "acoustic-1": {
+    "file": "j-acoustic-1",
+    "alt": "Lit apartment block above streaking traffic lights at night",
+    "w": 1400,
+    "h": 788,
+    "source": "https://unsplash.com/photos/light-trails-beside-modern-apartment-buildings-8_zdt4xKJoE"
+  },
+  "condens-hero": {
+    "file": "j-condens-hero",
+    "alt": "Warm light behind a glass pane beaded with condensation",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-window-with-rain-drops-on-it-RQcdF00-iIg"
+  },
+  "condens-card": {
+    "file": "j-condensation-on-windows-and-facades",
+    "alt": "Warm light behind a glass pane beaded with condensation",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-window-with-rain-drops-on-it-RQcdF00-iIg"
+  },
+  "condens-1": {
+    "file": "j-condens-1",
+    "alt": "Frosted window pane with a pale view beyond",
+    "w": 1400,
+    "h": 930,
+    "source": "https://unsplash.com/photos/shallow-focus-photography-of-window-hwM-qMrGW0I"
+  },
+  "anchor-hero": {
+    "file": "j-anchor-hero",
+    "alt": "Balconied building with strong horizontal slab edges under a blue sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-concrete-building-with-reflective-glass-windows-N0kLynkvQ9k"
+  },
+  "anchor-card": {
+    "file": "j-curtain-wall-anchors-and-slab-edges",
+    "alt": "Balconied building with strong horizontal slab edges under a blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-concrete-building-with-reflective-glass-windows-N0kLynkvQ9k"
+  },
+  "anchor-1": {
+    "file": "j-anchor-1",
+    "alt": "Curved floor slab edges rising to the top of a glazed building",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/modern-skyscraper-with-glass-facade-against-clear-blue-sky-6DXYD_gGeAw"
+  },
+  "maint-hero": {
+    "file": "j-maint-hero",
+    "alt": "Sweeping metal cladding curve against a pale sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/gray-and-white-building-roof-at-day-time-_UuN_2ixJvA"
+  },
+  "maint-card": {
+    "file": "j-facade-maintenance-checklist",
+    "alt": "Sweeping metal cladding curve against a pale sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/gray-and-white-building-roof-at-day-time-_UuN_2ixJvA"
+  },
+  "maint-1": {
+    "file": "j-maint-1",
+    "alt": "Curved glazed office facade under a clear blue sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/white-and-blue-glass-walled-building-Wm8opOd-MDE"
+  },
+  "mockup-hero": {
+    "file": "j-mockup-hero",
+    "alt": "Large warm-toned cladding panels framed against the sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/brown-and-gray-concrete-building-Deg7cdm9oH4"
+  },
+  "mockup-card": {
+    "file": "j-facade-mock-up-review",
+    "alt": "Large warm-toned cladding panels framed against the sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/brown-and-gray-concrete-building-Deg7cdm9oH4"
+  },
+  "mockup-1": {
+    "file": "j-mockup-1",
+    "alt": "Folded metal cladding panels catching the light",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-a-lot-of-papers-stuck-to-it-AoXxb_FSQ-s"
+  },
+  "shopdwg-hero": {
+    "file": "j-shopdwg-hero",
+    "alt": "Hand-drawn building elevation in warm watercolour tones",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-drawing-of-a-building-with-two-benches-in-front-of-it-YpSr2YJSuUY"
+  },
+  "shopdwg-card": {
+    "file": "j-reading-facade-shop-drawings",
+    "alt": "Hand-drawn building elevation in warm watercolour tones",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-drawing-of-a-building-with-two-benches-in-front-of-it-YpSr2YJSuUY"
+  },
+  "shopdwg-1": {
+    "file": "j-shopdwg-1",
+    "alt": "Sheets of building drawings spread on a wooden table",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-wooden-table-topped-with-lots-of-papers-IzFXEH0jb0w"
+  },
+  "replace-hero": {
+    "file": "j-replace-hero",
+    "alt": "Cracked glass pane with warm light behind it",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-broken-glass-window-j9-2LIZ2_Rc"
+  },
+  "replace-card": {
+    "file": "j-replacing-damaged-facade-glass",
+    "alt": "Cracked glass pane with warm light behind it",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-broken-glass-window-j9-2LIZ2_Rc"
+  },
+  "replace-1": {
+    "file": "j-replace-1",
+    "alt": "Shattered glass reflecting a cloudy sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-broken-glass-window-dVOq_uij30c"
+  },
+  "skylight-hero": {
+    "file": "j-skylight-hero",
+    "alt": "Glass roof grid seen from below against a pale blue sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/glass-ceiling-with-a-geometric-pattern-cy6XFD1ZiOU"
+  },
+  "skylight-card": {
+    "file": "j-skylight-design-and-drainage",
+    "alt": "Glass roof grid seen from below against a pale blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/glass-ceiling-with-a-geometric-pattern-cy6XFD1ZiOU"
+  },
+  "skylight-1": {
+    "file": "j-skylight-1",
+    "alt": "Looking up through a stepped glass lantern roof",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-KlGCqgF7SCE"
+  },
+  "solar-hero": {
+    "file": "j-solar-hero",
+    "alt": "Sunlit white shading panels against blue sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-white-fabric-screens-aBxb72gChjk"
+  },
+  "solar-card": {
+    "file": "j-solar-control-glass-and-shading",
+    "alt": "Sunlit white shading panels against blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-white-fabric-screens-aBxb72gChjk"
+  },
+  "solar-1": {
+    "file": "j-solar-1",
+    "alt": "Angled glass fins on a facade reflecting the sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-reflective-glass-panels-Taz-U34oXFw"
+  },
+  "weep-hero": {
+    "file": "j-weep-hero",
+    "alt": "Timber-lined window opening with a pale sky beyond",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/window-frame-with-vertical-wooden-slats-e3nT9w9mRJ8"
+  },
+  "weep-card": {
+    "file": "j-window-drainage-and-weep-holes",
+    "alt": "Timber-lined window opening with a pale sky beyond",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/window-frame-with-vertical-wooden-slats-e3nT9w9mRJ8"
+  },
+  "weep-1": {
+    "file": "j-weep-1",
+    "alt": "Slim-framed sliding window set in a white wall",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/window-reflects-the-sky-and-trees-Q3B8qLjahdo"
+  },
+  "wind-hero": {
+    "file": "j-wind-hero",
+    "alt": "Dark glass towers rising into a stormy blue sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-couple-of-tall-buildings-under-a-cloudy-sky-FkVLAB3HJ3A"
+  },
+  "wind-card": {
+    "file": "j-wind-load-on-facades-what-it-means",
+    "alt": "Dark glass towers rising into a stormy blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-couple-of-tall-buildings-under-a-cloudy-sky-FkVLAB3HJ3A"
+  },
+  "wind-1": {
+    "file": "j-wind-1",
+    "alt": "Glass tower reflecting clouds as it climbs",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/blue-glass-building-under-blue-sky-during-daytime-__LQBBYGULo"
+  },
+  "firestop-hero": {
+    "file": "j-firestop-hero",
+    "alt": "Blue glass facade meeting a clean corner under a clear sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-tall-blue-building-with-a-sky-in-the-background-MNkJpgjDfHo"
+  },
+  "firestop-card": {
+    "file": "j-firestopping-at-curtain-wall-slab-edges",
+    "alt": "Blue glass facade meeting a clean corner under a clear sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-tall-blue-building-with-a-sky-in-the-background-MNkJpgjDfHo"
+  },
+  "firestop-1": {
+    "file": "j-firestop-1",
+    "alt": "Glazed corridor running beside a concrete wall",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/empty-building-alley-7mD1JA7gl4E"
+  },
+  "gthick-hero": {
+    "file": "j-gthick-hero",
+    "alt": "Stacked glass sheets showing their pale green edges",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/green-and-white-line-paper-PreLE0ZJVQ0"
+  },
+  "gthick-card": {
+    "file": "j-how-facade-glass-thickness-is-chosen",
+    "alt": "Stacked glass sheets showing their pale green edges",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/green-and-white-line-paper-PreLE0ZJVQ0"
+  },
+  "gthick-1": {
+    "file": "j-gthick-1",
+    "alt": "Close view of a thick glass edge",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-piece-of-food-on-a-table-ukAnAaQi0q8"
+  },
+  "lamtough-1": {
+    "file": "j-lamtough-1",
+    "alt": "Balconies with glass railings against a clear sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/white-and-brown-concrete-building-yz8_w9qtwZY"
+  },
+  "igu-1": {
+    "file": "j-igu-1",
+    "alt": "Opening window with a teal frame and glass beyond",
+    "w": 1400,
+    "h": 932,
+    "source": "https://unsplash.com/photos/grey-metal-framed-glass-window-closed-Dsms8jjMVQo"
+  },
+  "lowe-hero": {
+    "file": "j-lowe-hero",
+    "alt": "Glass tower reflecting a cloudy sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/low-angle-photo-of-high-rise-building-H0vuplqoX0c"
+  },
+  "lowe-card": {
+    "file": "j-low-e-coatings-explained-for-facades",
+    "alt": "Glass tower reflecting a cloudy sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/low-angle-photo-of-high-rise-building-H0vuplqoX0c"
+  },
+  "lowe-1": {
+    "file": "j-lowe-1",
+    "alt": "Facade fins catching pink and purple light",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/modern-building-facade-with-angled-windows-against-sky-EKy-whG4tBE"
+  },
+  "sealant-hero": {
+    "file": "j-sealant-hero",
+    "alt": "Window set in a sunlit brick wall",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-window-sill-sitting-next-to-a-brick-building-t-wHtgv4FiA"
+  },
+  "sealant-card": {
+    "file": "j-sealants-and-gaskets-in-facades",
+    "alt": "Window set in a sunlit brick wall",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-window-sill-sitting-next-to-a-brick-building-t-wHtgv4FiA"
+  },
+  "sealant-1": {
+    "file": "j-sealant-1",
+    "alt": "Close view of a window edge and its seal",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-window-with-a-glass-OqDeyqXbGFQ"
+  },
+  "extol-hero": {
+    "file": "j-extol-hero",
+    "alt": "Fine parallel metal ribs in raking light",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/black-and-white-striped-textile-gRDgwHDrcNI"
+  },
+  "extol-card": {
+    "file": "j-aluminium-extrusion-tolerances-explained",
+    "alt": "Fine parallel metal ribs in raking light",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/black-and-white-striped-textile-gRDgwHDrcNI"
+  },
+  "extol-1": {
+    "file": "j-extol-1",
+    "alt": "Aluminium extruded sections in a chevron pattern",
+    "w": 1400,
+    "h": 967,
+    "source": "https://unsplash.com/photos/a-stack-of-metal-sheets-stacked-on-top-of-each-other-GsJwAFOtAG4"
+  },
+  "install-hero": {
+    "file": "j-install-hero",
+    "alt": "Crane reflected in the glass of a rising facade",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-tall-building-with-a-glass-front-aeRa0u7apC8"
+  },
+  "install-card": {
+    "file": "j-facade-installation-sequence-on-site",
+    "alt": "Crane reflected in the glass of a rising facade",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-tall-building-with-a-glass-front-aeRa0u7apC8"
+  },
+  "install-1": {
+    "file": "j-install-1",
+    "alt": "Tower crane mirrored in a glazed wall",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/white-concrete-glass-building-qNXLyx_1daY"
+  },
+  "warranty-hero": {
+    "file": "j-warranty-hero",
+    "alt": "Dark-framed glass building under a soft cloudy sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-tall-building-with-lots-of-windows-on-top-of-it-8UDnSkjGqGU"
+  },
+  "warranty-card": {
+    "file": "j-facade-warranty-and-defect-liability",
+    "alt": "Dark-framed glass building under a soft cloudy sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-tall-building-with-lots-of-windows-on-top-of-it-8UDnSkjGqGU"
+  },
+  "warranty-1": {
+    "file": "j-warranty-1",
+    "alt": "Finished office building with a regular window grid",
+    "w": 1400,
+    "h": 788,
+    "source": "https://unsplash.com/photos/a-building-with-many-windows-FjagHmZAq38"
+  },
+  "terra-hero": {
+    "file": "j-terra-hero",
+    "alt": "Sweeping terracotta-toned cladding against the sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/curving-terracotta-facade-against-a-blue-sky-3Duo5nIxCQQ"
+  },
+  "terra-card": {
+    "file": "j-terracotta-hpl-or-acp-cladding",
+    "alt": "Sweeping terracotta-toned cladding against the sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/curving-terracotta-facade-against-a-blue-sky-3Duo5nIxCQQ"
+  },
+  "terra-1": {
+    "file": "j-terra-1",
+    "alt": "Terracotta lattice screen in warm light",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/terracotta-patterned-screen-with-geometric-shapes-fPt8OXRsGeQ"
+  },
+  "perf-hero": {
+    "file": "j-perf-hero",
+    "alt": "Perforated gold-toned facade with a lace-like canopy",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-building-with-metal-lattice-roof-r03JZhy1-Y8"
+  },
+  "perf-card": {
+    "file": "j-perforated-metal-screens-on-facades",
+    "alt": "Perforated gold-toned facade with a lace-like canopy",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-building-with-metal-lattice-roof-r03JZhy1-Y8"
+  },
+  "perf-1": {
+    "file": "j-perf-1",
+    "alt": "White perforated panel with warm cut-outs",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/white-perforated-surface-with-small-holes-and-larger-square-cutouts-_tpEVVFozmc"
+  },
+  "dsf-hero": {
+    "file": "j-dsf-hero",
+    "alt": "Layered glass panels held on bolted fixings",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-metal-building-frame-n7wW6xVpVJo"
+  },
+  "dsf-card": {
+    "file": "j-double-skin-facades-explained",
+    "alt": "Layered glass panels held on bolted fixings",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-metal-building-frame-n7wW6xVpVJo"
+  },
+  "glare-hero": {
+    "file": "j-glare-hero",
+    "alt": "Mirror-glass building reflecting clouds and sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/blue-and-white-glass-building-under-blue-sky-during-daytime-D5l_ka0rbEo"
+  },
+  "glare-card": {
+    "file": "j-glass-reflectivity-and-glare-for-neighbours",
+    "alt": "Mirror-glass building reflecting clouds and sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/blue-and-white-glass-building-under-blue-sky-during-daytime-D5l_ka0rbEo"
+  },
+  "glare-1": {
+    "file": "j-glare-1",
+    "alt": "Golden glass facade catching the sun",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/bright-sun-reflected-in-a-modern-buildings-golden-glass-facade-Eueh0Io1CIQ"
+  },
+  "airleak-hero": {
+    "file": "j-airleak-hero",
+    "alt": "Recessed window reflecting a cloudy sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/black-framed-glass-window-on-gray-concrete-wall-WhWyHsj9ULQ"
+  },
+  "airleak-card": {
+    "file": "j-air-leakage-in-facades-what-is-measured",
+    "alt": "Recessed window reflecting a cloudy sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/black-framed-glass-window-on-gray-concrete-wall-WhWyHsj9ULQ"
+  },
+  "airleak-1": {
+    "file": "j-airleak-1",
+    "alt": "Open window frame with grass beyond",
+    "w": 1400,
+    "h": 934,
+    "source": "https://unsplash.com/photos/the-shadow-of-a-person-standing-in-front-of-a-window-9xT47v-dn2U"
+  },
+  "structest-hero": {
+    "file": "j-structest-hero",
+    "alt": "Curved glass tower against a clear blue sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-very-tall-glass-building-with-a-blue-sky-in-the-background-3icQ4FbvyWQ"
+  },
+  "structest-card": {
+    "file": "j-structural-and-deflection-tests-for-facades",
+    "alt": "Curved glass tower against a clear blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-very-tall-glass-building-with-a-blue-sky-in-the-background-3icQ4FbvyWQ"
+  },
+  "structest-1": {
+    "file": "j-structest-1",
+    "alt": "Woven metal facade sweeping across the sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-building-with-wavy-lines-on-it-against-a-blue-sky-T5nXYXCf50I"
+  },
+  "timeline-hero": {
+    "file": "j-timeline-hero",
+    "alt": "Timber architectural model of a building on a dark base",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-wooden-3-layer-shelf-hoIkcgbU2R8"
+  },
+  "timeline-card": {
+    "file": "j-facade-design-timeline-concept-to-handover",
+    "alt": "Timber architectural model of a building on a dark base",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-wooden-3-layer-shelf-hoIkcgbU2R8"
+  },
+  "timeline-1": {
+    "file": "j-timeline-1",
+    "alt": "Architectural model of a low building among trees",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/brown-wooden-building-scale-model-panPsvU_y0Q"
+  },
+  "ve-hero": {
+    "file": "j-ve-hero",
+    "alt": "Dark curved metal cladding against a pale sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/gray-concrete-building-wall-gtBVNF6pCU8"
+  },
+  "ve-card": {
+    "file": "j-value-engineering-a-facade-without-losing-performance",
+    "alt": "Dark curved metal cladding against a pale sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/gray-concrete-building-wall-gtBVNF6pCU8"
+  },
+  "ve-1": {
+    "file": "j-ve-1",
+    "alt": "White cladding panels in a regular grid",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-many-windows-TGKpLRIGVrM"
+  },
+  "fgdoor-hero": {
+    "file": "j-fgdoor-hero",
+    "alt": "Tall pivoting glass door opening to a bright interior",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-restaurant-with-glass-walls-and-tables-and-chairs-iKcYogjuMeY"
+  },
+  "fgdoor-card": {
+    "file": "j-frameless-glass-doors-hardware-floor-and-header",
+    "alt": "Tall pivoting glass door opening to a bright interior",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-restaurant-with-glass-walls-and-tables-and-chairs-iKcYogjuMeY"
+  },
+  "fgdoor-1": {
+    "file": "j-fgdoor-1",
+    "alt": "Frameless glass entrance with planting beyond",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/modern-building-entrance-with-glass-doors-and-a-green-wall-W9JLJQ47hU8"
+  },
+  "pergola-hero": {
+    "file": "j-pergola-hero",
+    "alt": "White louvred pergola roof against a blue sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-and-blue-concrete-building-9quXVKeBJjA"
+  },
+  "pergola-card": {
+    "file": "j-pergolas-and-glass-canopies-weather-and-drainage",
+    "alt": "White louvred pergola roof against a blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-and-blue-concrete-building-9quXVKeBJjA"
+  },
+  "pergola-1": {
+    "file": "j-pergola-1",
+    "alt": "Covered terrace with a flat white roof at golden hour",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/black-metal-table-and-chairs-on-green-grass-field-during-daytime-Kwg6xKwBNGA"
+  },
+  "lamtough-hero": {
+    "file": "j-lamtough-hero",
+    "alt": "Balconies with glass railings in warm late light",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/black-metal-framed-glass-window-XuB5C7xKks0"
+  },
+  "lamtough-card": {
+    "file": "j-laminated-or-toughened-glass-for-facades",
+    "alt": "Balconies with glass railings in warm late light",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/black-metal-framed-glass-window-XuB5C7xKks0"
+  },
+  "igu-hero": {
+    "file": "j-igu-hero",
+    "alt": "Slim-framed window grid with soft cloud beyond",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-glass-wall-oRyZNAzM6gM"
+  },
+  "igu-card": {
+    "file": "j-insulated-glass-units-what-is-inside",
+    "alt": "Slim-framed window grid with soft cloud beyond",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-black-and-white-photo-of-a-glass-wall-oRyZNAzM6gM"
+  },
+  "dsf-1": {
+    "file": "j-dsf-1",
+    "alt": "Glass curtain wall with fine mullion lines in daylight",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/modern-building-with-glass-and-red-facade-ll_Lcvg0E9I"
   }
 }

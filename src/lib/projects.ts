@@ -176,20 +176,30 @@ export const GEOGRAPHY: GeographyEntry[] = [
 export const GEOGRAPHY_NOTE = "Locations shown approximately. Map not to scale.";
 
 /**
- * NO PROJECT GALLERY — deliberate.
- *
- * The profile's "Selected envelopes" gallery draws on an image pool that is
- * mostly AI-generated renders (f_031_069, f_032_072, f_034_078, f_036_084,
- * f_037_087, f_038_090, f_039_093 and others), mixed with a few genuine
- * photographs (f_028_057 / f_035_081 — DLF WeWork, with tenant signage
- * visible). Publishing that mix under a "project imagery as supplied" caption
- * would assert real project photography we cannot stand behind, which is the
- * exact misrepresentation the record framing above exists to prevent.
- *
- * Publishing rights for the genuine photographs are also unconfirmed, and they
- * carry third-party trademarks. If Fenza confirms both which images are real
- * photographs and that it may publish them, add the gallery then.
+ * NO "GALLERY" PAGE. The profile's portfolio images are a mix of genuine photographs and AI/architectural
+ * renders, and publishing rights are unconfirmed. They appear only as small reference images on each
+ * record card (see PROJECT_IMAGES), labelled "Image from the company profile", never as proof of
+ * Fenza's own completed work.
  */
+
+/**
+ * One image per record, taken from the company profile's facade portfolio pages (29-38). The profile
+ * mixes real photographs and architectural renders; the page labels them "Image from the company
+ * profile". Third-party names (WeWork, Max) are visible in two of them: remove those two if the owners
+ * object. Keys are project slugs.
+ */
+export const PROJECT_IMAGES: Record<string, { file: string; w: number; h: number; alt: string }> = {
+  "dlf-building-8": { file: "proj-dlf-building-8", w: 836, h: 914, alt: "Glass and aluminium-clad office building at DLF Cyber City, Gurgaon" },
+  "anygraphics-factory": { file: "proj-anygraphics-factory", w: 522, h: 400, alt: "Render of the dark-clad Anygraphics factory building in Noida" },
+  "adani-samsara-vilasa": { file: "proj-adani-samsara-vilasa", w: 822, h: 900, alt: "Render of a terraced residential building at dusk, Adani Samsara Vilasa" },
+  "broadway-service-apartment": { file: "proj-broadway-service-apartment", w: 836, h: 916, alt: "Render of glass office towers and a retail podium on Dwarka Expressway" },
+  "rajiv-gandhi-international-airport": { file: "proj-rajiv-gandhi-international-airport", w: 836, h: 913, alt: "Terminal approach and control tower at Rajiv Gandhi International Airport, Hyderabad" },
+  "krisumi-waterfall-residences": { file: "proj-krisumi-waterfall-residences", w: 836, h: 914, alt: "Render of two residential towers at dusk, Krisumi Waterfall Residences" },
+  "dlf-wework": { file: "proj-dlf-wework", w: 822, h: 854, alt: "Curved aluminium-clad facade of the DLF WeWork building" },
+  "max-hospital-saket": { file: "proj-max-hospital-saket", w: 899, h: 915, alt: "Render of a hospital facade lit at dusk, Max Hospital Saket" },
+  "m3m-sector-79": { file: "proj-m3m-sector-79", w: 1000, h: 895, alt: "Looking up a vertical-finned tower at sunset, M3M Sector 79" },
+  "dee-development": { file: "proj-dee-development", w: 833, h: 926, alt: "Render of a pale multi-storey industrial building in Bhuj" },
+};
 
 export const projectsByGroup = (group: ProjectGroup): ProjectRecord[] =>
   PROJECTS.filter((p) => p.group === group);

@@ -40,6 +40,26 @@ import maintenance from "./journal-articles/facade-maintenance-checklist";
 import drawings from "./journal-articles/reading-facade-shop-drawings";
 import acoustic from "./journal-articles/acoustic-glazing-for-noisy-sites";
 import condensation from "./journal-articles/condensation-on-windows-and-facades";
+import a_windLoadOnFacadesWhatItMeans from "./journal-articles/wind-load-on-facades-what-it-means";
+import a_firestoppingAtCurtainWallSlabEdges from "./journal-articles/firestopping-at-curtain-wall-slab-edges";
+import a_howFacadeGlassThicknessIsChosen from "./journal-articles/how-facade-glass-thickness-is-chosen";
+import a_laminatedOrToughenedGlassForFacades from "./journal-articles/laminated-or-toughened-glass-for-facades";
+import a_insulatedGlassUnitsWhatIsInside from "./journal-articles/insulated-glass-units-what-is-inside";
+import a_lowECoatingsExplainedForFacades from "./journal-articles/low-e-coatings-explained-for-facades";
+import a_sealantsAndGasketsInFacades from "./journal-articles/sealants-and-gaskets-in-facades";
+import a_aluminiumExtrusionTolerancesExplained from "./journal-articles/aluminium-extrusion-tolerances-explained";
+import a_facadeInstallationSequenceOnSite from "./journal-articles/facade-installation-sequence-on-site";
+import a_facadeWarrantyAndDefectLiability from "./journal-articles/facade-warranty-and-defect-liability";
+import a_terracottaHplOrAcpCladding from "./journal-articles/terracotta-hpl-or-acp-cladding";
+import a_perforatedMetalScreensOnFacades from "./journal-articles/perforated-metal-screens-on-facades";
+import a_doubleSkinFacadesExplained from "./journal-articles/double-skin-facades-explained";
+import a_glassReflectivityAndGlareForNeighbours from "./journal-articles/glass-reflectivity-and-glare-for-neighbours";
+import a_airLeakageInFacadesWhatIsMeasured from "./journal-articles/air-leakage-in-facades-what-is-measured";
+import a_structuralAndDeflectionTestsForFacades from "./journal-articles/structural-and-deflection-tests-for-facades";
+import a_facadeDesignTimelineConceptToHandover from "./journal-articles/facade-design-timeline-concept-to-handover";
+import a_valueEngineeringAFacadeWithoutLosingPerformance from "./journal-articles/value-engineering-a-facade-without-losing-performance";
+import a_framelessGlassDoorsHardwareFloorAndHeader from "./journal-articles/frameless-glass-doors-hardware-floor-and-header";
+import a_pergolasAndGlassCanopiesWeatherAndDrainage from "./journal-articles/pergolas-and-glass-canopies-weather-and-drainage";
 import skylightDesign from "./journal-articles/skylight-design-and-drainage";
 import anchors from "./journal-articles/curtain-wall-anchors-and-slab-edges";
 import mockUps from "./journal-articles/facade-mock-up-review";
@@ -108,6 +128,26 @@ export const JOURNAL: Article[] = [
   drawings,
   acoustic,
   condensation,
+  a_windLoadOnFacadesWhatItMeans,
+  a_firestoppingAtCurtainWallSlabEdges,
+  a_howFacadeGlassThicknessIsChosen,
+  a_laminatedOrToughenedGlassForFacades,
+  a_insulatedGlassUnitsWhatIsInside,
+  a_lowECoatingsExplainedForFacades,
+  a_sealantsAndGasketsInFacades,
+  a_aluminiumExtrusionTolerancesExplained,
+  a_facadeInstallationSequenceOnSite,
+  a_facadeWarrantyAndDefectLiability,
+  a_terracottaHplOrAcpCladding,
+  a_perforatedMetalScreensOnFacades,
+  a_doubleSkinFacadesExplained,
+  a_glassReflectivityAndGlareForNeighbours,
+  a_airLeakageInFacadesWhatIsMeasured,
+  a_structuralAndDeflectionTestsForFacades,
+  a_facadeDesignTimelineConceptToHandover,
+  a_valueEngineeringAFacadeWithoutLosingPerformance,
+  a_framelessGlassDoorsHardwareFloorAndHeader,
+  a_pergolasAndGlassCanopiesWeatherAndDrainage,
   skylightDesign,
   anchors,
   mockUps,

@@ -13,6 +13,7 @@ import {
   RECORD_DISCLAIMER,
   RECORD_LEAD,
   projectsByGroup,
+  PROJECT_IMAGES,
 } from "@/lib/projects";
 
 export default function Projects() {
@@ -108,13 +109,29 @@ export default function Projects() {
                   </div>
                 </Reveal>
 
-                <div className="grid gap-5 sm:grid-cols-2">
+                <div className="grid gap-5">
                   {items.map((p, i) => (
                     <Reveal key={p.slug} delay={(i % 2) * 80}>
                       <article
                         id={p.slug}
-                        className="h-full rounded-lg border border-cream/10 bg-ink-soft p-7"
+                        className="flex h-full flex-col overflow-hidden rounded-lg border border-cream/10 bg-ink-soft md:flex-row"
                       >
+                        {PROJECT_IMAGES[p.slug] && (
+                          <figure className="relative aspect-[4/3] shrink-0 md:aspect-auto md:w-[38%]">
+                            <img
+                              src={`/images/${PROJECT_IMAGES[p.slug].file}.webp`}
+                              alt={PROJECT_IMAGES[p.slug].alt}
+                              width={PROJECT_IMAGES[p.slug].w}
+                              height={PROJECT_IMAGES[p.slug].h}
+                              loading="lazy"
+                              className="absolute inset-0 h-full w-full object-cover"
+                            />
+                            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 to-transparent px-4 pb-3 pt-8 text-[0.6rem] uppercase tracking-wide2 text-cream/70">
+                              Image from the company profile
+                            </figcaption>
+                          </figure>
+                        )}
+                        <div className="flex-1 p-7">
                         <h3 className="font-display text-xl text-cream md:text-2xl">
                           {p.name}
                         </h3>
@@ -140,6 +157,7 @@ export default function Projects() {
                             ))}
                           </tbody>
                         </table>
+                        </div>
                       </article>
                     </Reveal>
                   ))}
