@@ -7,7 +7,6 @@ import { BRAND, CONTACT } from "@/lib/site";
 import {
   GEOGRAPHY,
   GEOGRAPHY_NOTE,
-  GROUP_NOTE,
   PROJECT_GROUPS,
   PROJECTS,
   RECORD_DISCLAIMER,
@@ -103,9 +102,6 @@ export default function Projects() {
                       {group}
                     </h2>
                     <span className="hidden h-px flex-1 bg-cream/12 sm:block" />
-                    <span className="rounded-full border border-gold/30 px-3 py-1 text-[0.62rem] uppercase tracking-wide2 text-gold">
-                      {GROUP_NOTE}
-                    </span>
                   </div>
                 </Reveal>
 
