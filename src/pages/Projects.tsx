@@ -69,20 +69,6 @@ export default function Projects() {
         ]}
       />
 
-      {/* Attribution note — deliberately ABOVE the record, not buried below it. */}
-      <section className="border-t border-cream/10 bg-ink py-16">
-        <div className="container-content max-w-3xl">
-          <Reveal>
-            <div className="rounded-lg border border-gold/20 bg-cream/[0.03] p-8">
-              <span className="eyebrow">A note on attribution</span>
-              <p className="mt-4 text-pretty leading-relaxed text-cream/75">
-                {RECORD_DISCLAIMER}
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
       {/* The record, grouped as the company profile groups it. */}
       <div className="bg-ink">
         {PROJECT_GROUPS.map((group, gi) => {
