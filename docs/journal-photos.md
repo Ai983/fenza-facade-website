@@ -122,7 +122,7 @@ nothing may use slot `e331-2` until it is.
 - `quote-hero` -> `public/images/j-quote-hero.webp` (2000x1500) - Technical drawings and measuring tools laid out on a dark wooden table - https://unsplash.com/photos/a-wooden-table-topped-with-a-piece-of-paper-and-a-pair-of-scissors-OspMUpCBeqQ
 - `quote-1` -> `public/images/j-quote-1.webp` (1400x933) - Close-up of a dimensioned drawing with a pencil and scale rule - https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo
 
-## Later articles, batch 2 (photos chosen 2026-10-08)
+## Later articles (photos chosen 2026-10-08 and 2026-10-13)
 
 ### /journal/acoustic-glazing-for-noisy-sites
 
@@ -293,4 +293,81 @@ nothing may use slot `e331-2` until it is.
 
 - `pergola-hero` -> `public/images/j-pergola-hero.webp` (2000x1333) - White louvred pergola roof against a blue sky - https://unsplash.com/photos/white-and-blue-concrete-building-9quXVKeBJjA
 - `pergola-1` -> `public/images/j-pergola-1.webp` (1400x933) - Covered terrace with a flat white roof at golden hour - https://unsplash.com/photos/black-metal-table-and-chairs-on-green-grass-field-during-daytime-Kwg6xKwBNGA
+
+## Later articles (photos chosen 2026-10-08)
+
+### /journal/corrosion-and-coastal-exposure-for-aluminium-facades
+
+- `coastal-hero` -> `public/images/j-coastal-hero.webp` (2000x1333) - Apartment building beside the sea in soft morning light - https://unsplash.com/photos/apartment-buildings-overlooking-the-sea-WuyR34c3qJA
+- `coastal-1` -> `public/images/j-coastal-1.webp` (1400x1050) - Palm trees and balconies under a deep blue sky - https://unsplash.com/photos/modern-buildings-with-palm-trees-against-blue-sky-uU7STW59esE
+
+### /journal/brackets-and-fasteners-behind-a-facade
+
+- `fastener-hero` -> `public/images/j-fastener-hero.webp` (2000x1333) - Steel bolts and nuts on a warm timber surface - https://unsplash.com/photos/a-close-up-of-a-screwdriver-zX8TjvwJofo
+- `fastener-1` -> `public/images/j-fastener-1.webp` (1400x932) - Stainless bolts and nuts on a white surface - https://unsplash.com/photos/silver-and-black-metal-tools-qHhJkxare7A
+
+### /journal/designing-a-facade-you-can-clean-and-maintain
+
+- `access-hero` -> `public/images/j-access-hero.webp` (2000x1333) - Tower facade with stepped balconies against a teal sky - https://unsplash.com/photos/window-cleaners-work-on-a-modern-skyscraper-facade-fhdD4w2V06E
+- `access-1` -> `public/images/j-access-1.webp` (1400x1053) - Dark glazed tower rising in black and white - https://unsplash.com/photos/window-cleaners-on-tall-glass-skyscraper-R6axnJUHf4Q
+
+### /journal/u-values-for-facades-what-the-number-includes
+
+- `uval-hero` -> `public/images/j-uval-hero.webp` (2000x1333) - Dark-framed window looking onto a snowy garden - https://unsplash.com/photos/white-and-black-tree-covered-with-snow-DQEZzyCSNaI
+- `uval-1` -> `public/images/j-uval-1.webp` (1400x956) - Large window with snow on the roof beyond - https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-large-window-EkcoLhD5WBo
+
+### /journal/glass-on-site-handling-storage-and-protection
+
+- `handling-hero` -> `public/images/j-handling-hero.webp` (2000x1333) - Glass shelves held on polished point fixings - https://unsplash.com/photos/a-close-up-of-a-glass-window-with-a-blurry-background-JPRtz2UPOaI
+- `handling-1` -> `public/images/j-handling-1.webp` (1400x788) - Panes of glass overlapping in blue light - https://unsplash.com/photos/a-glass-wall-with-a-reflection-of-a-building-in-it-zuozxDNtYUQ
+
+### /journal/bird-friendly-glass-on-facades
+
+- `bird-hero` -> `public/images/j-bird-hero.webp` (2000x1333) - Pale tower corner with birds flying above it - https://unsplash.com/photos/birds-flying-over-a-building-ApR1HL26ZAI
+- `bird-1` -> `public/images/j-bird-1.webp` (1400x1053) - Tall facade with birds crossing a blue sky - https://unsplash.com/photos/a-group-of-birds-flying-around-a-tall-building-7H48FTNdUXM
+
+### /journal/curved-and-cold-bent-glass-facades
+
+- `curved-hero` -> `public/images/j-curved-hero.webp` (2000x1333) - Arched glass roofline against deep blue sky - https://unsplash.com/photos/white-and-blue-glass-building-VLsz0biVGSU
+- `curved-1` -> `public/images/j-curved-1.webp` (1400x964) - Glass terrace edge following a long curve - https://unsplash.com/photos/a-couple-of-tall-buildings-sitting-next-to-each-other-C4VXUygp-fo
+
+### /journal/balcony-sliding-doors-tracks-thresholds-and-drainage
+
+- `balcony-hero` -> `public/images/j-balcony-hero.webp` (2000x1333) - Curved apartment balconies with glass balustrades - https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-iwJKvese3bE
+- `balcony-1` -> `public/images/j-balcony-1.webp` (1400x933) - Glass sliding doors opening to a city terrace - https://unsplash.com/photos/white-concrete-building-under-blue-sky-during-daytime-2ejojNrOypw
+
+### /journal/window-hardware-handles-hinges-and-locks
+
+- `hardware-hero` -> `public/images/j-hardware-hero.webp` (2000x1333) - Window handle with a blurred city beyond - https://unsplash.com/photos/black-wooden-framed-glass-door-aAVNrP3DcWc
+- `hardware-1` -> `public/images/j-hardware-1.webp` (1400x1007) - Brass window handle against green foliage - https://unsplash.com/photos/a-door-handle-with-a-butterfly-on-it-Uf7isFqTxBk
+
+### /journal/stone-gfrc-or-metal-cladding
+
+- `stone-hero` -> `public/images/j-stone-hero.webp` (2000x1333) - Stone-clad building with a stepped roofline - https://unsplash.com/photos/a-large-building-with-a-green-lawn-in-front-of-it-y7VEZE_eEoU
+- `stone-1` -> `public/images/j-stone-1.webp` (1400x1050) - Pale stone corner against a deep blue sky - https://unsplash.com/photos/a-stark-architectural-composition-with-blue-sky-and-concrete-walls-bWd33LAgaV0
+
+### /journal/facade-lighting-without-leaks
+
+- `lighting-hero` -> `public/images/j-lighting-hero.webp` (2000x1333) - Gold edge lighting tracing stepped balconies at night - https://unsplash.com/photos/modern-building-corner-with-glowing-balconies-t0OhE_UZfwA
+- `lighting-1` -> `public/images/j-lighting-1.webp` (1400x1050) - Concealed linear light grazing a striped wall - https://unsplash.com/photos/blue-and-white-striped-wall-1hBCbpmsqRs
+
+### /journal/hoisting-and-transporting-unitised-facade-panels
+
+- `hoist-hero` -> `public/images/j-hoist-hero.webp` (2000x1333) - Crane reaching beside a blue glass tower at dusk - https://unsplash.com/photos/a-tall-building-with-a-crane-on-top-of-it-ILREcFyk1vw
+- `hoist-1` -> `public/images/j-hoist-1.webp` (1400x933) - Tower cranes against a purple evening sky - https://unsplash.com/photos/a-group-of-cranes-are-silhouetted-against-a-purple-sky-YnDs229vBh4
+
+### /journal/surveying-an-existing-facade-before-refurbishment
+
+- `refurb-hero` -> `public/images/j-refurb-hero.webp` (2000x1333) - Older building beside a new blue glass extension - https://unsplash.com/photos/old-weathered-building-next-to-modern-glass-facade-vnRpcr6PPtE
+- `refurb-1` -> `public/images/j-refurb-1.webp` (1400x1050) - Red brick and glass buildings in evening light - https://unsplash.com/photos/red-brick-building-with-glass-shafts-zBpLfpzSW1w
+
+### /journal/aluminium-facades-and-embodied-carbon
+
+- `carbon-hero` -> `public/images/j-carbon-hero.webp` (2000x1333) - Green-tinted glass facade sweeping into a point - https://unsplash.com/photos/green-and-gray-high-rise-building-VDoLq_k9sPo
+- `carbon-1` -> `public/images/j-carbon-1.webp` (1400x1050) - Planted facade with deep glazed openings - https://unsplash.com/photos/brown-and-white-concrete-building-OFDrwleTtdE
+
+### /journal/reading-a-facade-test-report
+
+- `report-hero` -> `public/images/j-report-hero.webp` (2000x1333) - Pale concrete building with a green planted edge - https://unsplash.com/photos/a-modern-building-with-greenery-_31CHxjO0ks
+- `report-1` -> `public/images/j-report-1.webp` (1400x1050) - White building with a tall chimney in clear light - https://unsplash.com/photos/a-building-with-a-clock-tower-in-the-background-hL_E33kFSSQ
 

@@ -1125,5 +1125,320 @@
     "w": 1400,
     "h": 933,
     "source": "https://unsplash.com/photos/modern-building-with-glass-and-red-facade-ll_Lcvg0E9I"
+  },
+  "coastal-hero": {
+    "file": "j-coastal-hero",
+    "alt": "Apartment building beside the sea in soft morning light",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/apartment-buildings-overlooking-the-sea-WuyR34c3qJA"
+  },
+  "coastal-card": {
+    "file": "j-corrosion-and-coastal-exposure-for-aluminium-facades",
+    "alt": "Apartment building beside the sea in soft morning light",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/apartment-buildings-overlooking-the-sea-WuyR34c3qJA"
+  },
+  "coastal-1": {
+    "file": "j-coastal-1",
+    "alt": "Palm trees and balconies under a deep blue sky",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/modern-buildings-with-palm-trees-against-blue-sky-uU7STW59esE"
+  },
+  "fastener-hero": {
+    "file": "j-fastener-hero",
+    "alt": "Steel bolts and nuts on a warm timber surface",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-screwdriver-zX8TjvwJofo"
+  },
+  "fastener-card": {
+    "file": "j-brackets-and-fasteners-behind-a-facade",
+    "alt": "Steel bolts and nuts on a warm timber surface",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-screwdriver-zX8TjvwJofo"
+  },
+  "fastener-1": {
+    "file": "j-fastener-1",
+    "alt": "Stainless bolts and nuts on a white surface",
+    "w": 1400,
+    "h": 932,
+    "source": "https://unsplash.com/photos/silver-and-black-metal-tools-qHhJkxare7A"
+  },
+  "access-hero": {
+    "file": "j-access-hero",
+    "alt": "Tower facade with stepped balconies against a teal sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/window-cleaners-work-on-a-modern-skyscraper-facade-fhdD4w2V06E"
+  },
+  "access-card": {
+    "file": "j-designing-a-facade-you-can-clean-and-maintain",
+    "alt": "Tower facade with stepped balconies against a teal sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/window-cleaners-work-on-a-modern-skyscraper-facade-fhdD4w2V06E"
+  },
+  "access-1": {
+    "file": "j-access-1",
+    "alt": "Dark glazed tower rising in black and white",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/window-cleaners-on-tall-glass-skyscraper-R6axnJUHf4Q"
+  },
+  "uval-hero": {
+    "file": "j-uval-hero",
+    "alt": "Dark-framed window looking onto a snowy garden",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-and-black-tree-covered-with-snow-DQEZzyCSNaI"
+  },
+  "uval-card": {
+    "file": "j-u-values-for-facades-what-the-number-includes",
+    "alt": "Dark-framed window looking onto a snowy garden",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-and-black-tree-covered-with-snow-DQEZzyCSNaI"
+  },
+  "uval-1": {
+    "file": "j-uval-1",
+    "alt": "Large window with snow on the roof beyond",
+    "w": 1400,
+    "h": 956,
+    "source": "https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-large-window-EkcoLhD5WBo"
+  },
+  "handling-hero": {
+    "file": "j-handling-hero",
+    "alt": "Glass shelves held on polished point fixings",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-glass-window-with-a-blurry-background-JPRtz2UPOaI"
+  },
+  "handling-card": {
+    "file": "j-glass-on-site-handling-storage-and-protection",
+    "alt": "Glass shelves held on polished point fixings",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-glass-window-with-a-blurry-background-JPRtz2UPOaI"
+  },
+  "handling-1": {
+    "file": "j-handling-1",
+    "alt": "Panes of glass overlapping in blue light",
+    "w": 1400,
+    "h": 788,
+    "source": "https://unsplash.com/photos/a-glass-wall-with-a-reflection-of-a-building-in-it-zuozxDNtYUQ"
+  },
+  "bird-hero": {
+    "file": "j-bird-hero",
+    "alt": "Pale tower corner with birds flying above it",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/birds-flying-over-a-building-ApR1HL26ZAI"
+  },
+  "bird-card": {
+    "file": "j-bird-friendly-glass-on-facades",
+    "alt": "Pale tower corner with birds flying above it",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/birds-flying-over-a-building-ApR1HL26ZAI"
+  },
+  "bird-1": {
+    "file": "j-bird-1",
+    "alt": "Tall facade with birds crossing a blue sky",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/a-group-of-birds-flying-around-a-tall-building-7H48FTNdUXM"
+  },
+  "curved-hero": {
+    "file": "j-curved-hero",
+    "alt": "Arched glass roofline against deep blue sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-and-blue-glass-building-VLsz0biVGSU"
+  },
+  "curved-card": {
+    "file": "j-curved-and-cold-bent-glass-facades",
+    "alt": "Arched glass roofline against deep blue sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-and-blue-glass-building-VLsz0biVGSU"
+  },
+  "curved-1": {
+    "file": "j-curved-1",
+    "alt": "Glass terrace edge following a long curve",
+    "w": 1400,
+    "h": 964,
+    "source": "https://unsplash.com/photos/a-couple-of-tall-buildings-sitting-next-to-each-other-C4VXUygp-fo"
+  },
+  "balcony-hero": {
+    "file": "j-balcony-hero",
+    "alt": "Curved apartment balconies with glass balustrades",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-iwJKvese3bE"
+  },
+  "balcony-card": {
+    "file": "j-balcony-sliding-doors-tracks-thresholds-and-drainage",
+    "alt": "Curved apartment balconies with glass balustrades",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-iwJKvese3bE"
+  },
+  "balcony-1": {
+    "file": "j-balcony-1",
+    "alt": "Glass sliding doors opening to a city terrace",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/white-concrete-building-under-blue-sky-during-daytime-2ejojNrOypw"
+  },
+  "hardware-hero": {
+    "file": "j-hardware-hero",
+    "alt": "Window handle with a blurred city beyond",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/black-wooden-framed-glass-door-aAVNrP3DcWc"
+  },
+  "hardware-card": {
+    "file": "j-window-hardware-handles-hinges-and-locks",
+    "alt": "Window handle with a blurred city beyond",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/black-wooden-framed-glass-door-aAVNrP3DcWc"
+  },
+  "hardware-1": {
+    "file": "j-hardware-1",
+    "alt": "Brass window handle against green foliage",
+    "w": 1400,
+    "h": 1007,
+    "source": "https://unsplash.com/photos/a-door-handle-with-a-butterfly-on-it-Uf7isFqTxBk"
+  },
+  "stone-hero": {
+    "file": "j-stone-hero",
+    "alt": "Stone-clad building with a stepped roofline",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-large-building-with-a-green-lawn-in-front-of-it-y7VEZE_eEoU"
+  },
+  "stone-card": {
+    "file": "j-stone-gfrc-or-metal-cladding",
+    "alt": "Stone-clad building with a stepped roofline",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-large-building-with-a-green-lawn-in-front-of-it-y7VEZE_eEoU"
+  },
+  "stone-1": {
+    "file": "j-stone-1",
+    "alt": "Pale stone corner against a deep blue sky",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/a-stark-architectural-composition-with-blue-sky-and-concrete-walls-bWd33LAgaV0"
+  },
+  "lighting-hero": {
+    "file": "j-lighting-hero",
+    "alt": "Gold edge lighting tracing stepped balconies at night",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-building-corner-with-glowing-balconies-t0OhE_UZfwA"
+  },
+  "lighting-card": {
+    "file": "j-facade-lighting-without-leaks",
+    "alt": "Gold edge lighting tracing stepped balconies at night",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-building-corner-with-glowing-balconies-t0OhE_UZfwA"
+  },
+  "lighting-1": {
+    "file": "j-lighting-1",
+    "alt": "Concealed linear light grazing a striped wall",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/blue-and-white-striped-wall-1hBCbpmsqRs"
+  },
+  "hoist-hero": {
+    "file": "j-hoist-hero",
+    "alt": "Crane reaching beside a blue glass tower at dusk",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-tall-building-with-a-crane-on-top-of-it-ILREcFyk1vw"
+  },
+  "hoist-card": {
+    "file": "j-hoisting-and-transporting-unitised-facade-panels",
+    "alt": "Crane reaching beside a blue glass tower at dusk",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-tall-building-with-a-crane-on-top-of-it-ILREcFyk1vw"
+  },
+  "hoist-1": {
+    "file": "j-hoist-1",
+    "alt": "Tower cranes against a purple evening sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-group-of-cranes-are-silhouetted-against-a-purple-sky-YnDs229vBh4"
+  },
+  "refurb-hero": {
+    "file": "j-refurb-hero",
+    "alt": "Older building beside a new blue glass extension",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/old-weathered-building-next-to-modern-glass-facade-vnRpcr6PPtE"
+  },
+  "refurb-card": {
+    "file": "j-surveying-an-existing-facade-before-refurbishment",
+    "alt": "Older building beside a new blue glass extension",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/old-weathered-building-next-to-modern-glass-facade-vnRpcr6PPtE"
+  },
+  "refurb-1": {
+    "file": "j-refurb-1",
+    "alt": "Red brick and glass buildings in evening light",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/red-brick-building-with-glass-shafts-zBpLfpzSW1w"
+  },
+  "carbon-hero": {
+    "file": "j-carbon-hero",
+    "alt": "Green-tinted glass facade sweeping into a point",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/green-and-gray-high-rise-building-VDoLq_k9sPo"
+  },
+  "carbon-card": {
+    "file": "j-aluminium-facades-and-embodied-carbon",
+    "alt": "Green-tinted glass facade sweeping into a point",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/green-and-gray-high-rise-building-VDoLq_k9sPo"
+  },
+  "carbon-1": {
+    "file": "j-carbon-1",
+    "alt": "Planted facade with deep glazed openings",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/brown-and-white-concrete-building-OFDrwleTtdE"
+  },
+  "report-hero": {
+    "file": "j-report-hero",
+    "alt": "Pale concrete building with a green planted edge",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-modern-building-with-greenery-_31CHxjO0ks"
+  },
+  "report-card": {
+    "file": "j-reading-a-facade-test-report",
+    "alt": "Pale concrete building with a green planted edge",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-modern-building-with-greenery-_31CHxjO0ks"
+  },
+  "report-1": {
+    "file": "j-report-1",
+    "alt": "White building with a tall chimney in clear light",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/a-building-with-a-clock-tower-in-the-background-hL_E33kFSSQ"
   }
 }

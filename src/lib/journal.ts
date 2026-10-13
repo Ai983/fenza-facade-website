@@ -60,6 +60,21 @@ import a_facadeDesignTimelineConceptToHandover from "./journal-articles/facade-d
 import a_valueEngineeringAFacadeWithoutLosingPerformance from "./journal-articles/value-engineering-a-facade-without-losing-performance";
 import a_framelessGlassDoorsHardwareFloorAndHeader from "./journal-articles/frameless-glass-doors-hardware-floor-and-header";
 import a_pergolasAndGlassCanopiesWeatherAndDrainage from "./journal-articles/pergolas-and-glass-canopies-weather-and-drainage";
+import b_corrosionAndCoastalExposureForAluminiumFacades from "./journal-articles/corrosion-and-coastal-exposure-for-aluminium-facades";
+import b_bracketsAndFastenersBehindAFacade from "./journal-articles/brackets-and-fasteners-behind-a-facade";
+import b_designingAFacadeYouCanCleanAndMaintain from "./journal-articles/designing-a-facade-you-can-clean-and-maintain";
+import b_uValuesForFacadesWhatTheNumberIncludes from "./journal-articles/u-values-for-facades-what-the-number-includes";
+import b_glassOnSiteHandlingStorageAndProtection from "./journal-articles/glass-on-site-handling-storage-and-protection";
+import b_birdFriendlyGlassOnFacades from "./journal-articles/bird-friendly-glass-on-facades";
+import b_curvedAndColdBentGlassFacades from "./journal-articles/curved-and-cold-bent-glass-facades";
+import b_balconySlidingDoorsTracksThresholdsAndDrainage from "./journal-articles/balcony-sliding-doors-tracks-thresholds-and-drainage";
+import b_windowHardwareHandlesHingesAndLocks from "./journal-articles/window-hardware-handles-hinges-and-locks";
+import b_stoneGfrcOrMetalCladding from "./journal-articles/stone-gfrc-or-metal-cladding";
+import b_facadeLightingWithoutLeaks from "./journal-articles/facade-lighting-without-leaks";
+import b_hoistingAndTransportingUnitisedFacadePanels from "./journal-articles/hoisting-and-transporting-unitised-facade-panels";
+import b_surveyingAnExistingFacadeBeforeRefurbishment from "./journal-articles/surveying-an-existing-facade-before-refurbishment";
+import b_aluminiumFacadesAndEmbodiedCarbon from "./journal-articles/aluminium-facades-and-embodied-carbon";
+import b_readingAFacadeTestReport from "./journal-articles/reading-a-facade-test-report";
 import skylightDesign from "./journal-articles/skylight-design-and-drainage";
 import anchors from "./journal-articles/curtain-wall-anchors-and-slab-edges";
 import mockUps from "./journal-articles/facade-mock-up-review";
@@ -148,6 +163,21 @@ export const JOURNAL: Article[] = [
   a_valueEngineeringAFacadeWithoutLosingPerformance,
   a_framelessGlassDoorsHardwareFloorAndHeader,
   a_pergolasAndGlassCanopiesWeatherAndDrainage,
+  b_corrosionAndCoastalExposureForAluminiumFacades,
+  b_bracketsAndFastenersBehindAFacade,
+  b_designingAFacadeYouCanCleanAndMaintain,
+  b_uValuesForFacadesWhatTheNumberIncludes,
+  b_glassOnSiteHandlingStorageAndProtection,
+  b_birdFriendlyGlassOnFacades,
+  b_curvedAndColdBentGlassFacades,
+  b_balconySlidingDoorsTracksThresholdsAndDrainage,
+  b_windowHardwareHandlesHingesAndLocks,
+  b_stoneGfrcOrMetalCladding,
+  b_facadeLightingWithoutLeaks,
+  b_hoistingAndTransportingUnitisedFacadePanels,
+  b_surveyingAnExistingFacadeBeforeRefurbishment,
+  b_aluminiumFacadesAndEmbodiedCarbon,
+  b_readingAFacadeTestReport,
   skylightDesign,
   anchors,
   mockUps,
