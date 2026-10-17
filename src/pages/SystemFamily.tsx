@@ -14,6 +14,23 @@ import {
   buildFaqSchema,
 } from "@/lib/seo";
 
+/** Search-result descriptions (120-160 chars); the full summary stays on the page. */
+const SYSTEM_META: Record<string, string> = {
+  "curtain-wall": "Aluminium curtain wall for commercial towers and high-rise facades: site-glazed stick or semi-unitised cassettes, infilled with glass, ACP, stone or louvre.",
+  "structural-glazing": "Structural glazing: glass bonded with structural silicone to a concealed frame for clean, flush elevations. Two-side and four-side systems, fabricated in-house.",
+  "spider-glazing": "Spider glazing: panes carried on stainless-steel fittings instead of a continuous frame, on glass fins, tension rods or steel, for atria, lobbies and canopies.",
+  "casement-windows": "Aluminium casement windows: side-, top- and bottom-hung and fixed, with mitred, mechanically crimped corners and multi-point locking for a weathertight seal.",
+  "sliding-windows-doors": "Aluminium sliding windows and doors: 2-, 3- and 4-track systems on end-milled frames with tandem rollers, saving space and handling large sash weights.",
+  "slide-and-fold-doors": "Slide-and-fold aluminium doors: 2- to 7-panel folding systems on top-hung carriages with a shallow floor track, for terraces, balconies and openable frontages.",
+  "frameless-glass-doors": "Frameless glass doors: toughened glass leaves held by minimal stainless patch fittings, with matching sidelights and fanlights for lobbies and entrances.",
+  "cladding": "Metal and composite cladding: ACP, solid aluminium or HPL panels on an aluminium sub-frame, in cassette and tray forms with open or closed shadow-gap joints.",
+  "rain-screen-facade": "Rain-screen ventilated facades: a drained, back-ventilated outer skin for ACP, aluminium, HPL, terracotta or stone panels fixed over insulation.",
+  "louvers": "Aluminium louvers and sun-shading fins: aerofoil, elliptical, rectangular and Z/C blades for solar shading, plant screening and facade articulation.",
+  "railings": "Railings and balustrades: structural glass on aluminium base-shoe channel and post-and-rail systems, with toughened laminated glass to the applicable code.",
+  "skylights": "Skylights and canopies on thermally isolated aluminium framing: pyramid, ridge, barrel, flat and cantilever forms with drainage designed into the section.",
+  "pergolas": "Aluminium pergolas with fixed or adjustable aerofoil blades, drained through concealed gutter posts, with optional motorised blades, LED and side screens."
+};
+
 export default function SystemFamily() {
   const { slug } = useParams<{ slug: string }>();
   const system = slug ? getSystem(slug) : undefined;
@@ -32,8 +49,8 @@ export default function SystemFamily() {
   return (
     <>
       <Seo
-        title={`${system.name} — Facade System`}
-        description={system.summary}
+        title={system.name.length <= 18 ? `${system.name} — Facade System` : system.name}
+        description={SYSTEM_META[system.slug] ?? system.summary}
         path={`/systems/${system.slug}`}
         image={ogUrl(system.slug)}
         schema={[

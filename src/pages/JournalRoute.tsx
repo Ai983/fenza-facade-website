@@ -23,7 +23,7 @@ export const setJournalModule = (m: JournalModule) => {
 export const preloadJournal = (): Promise<JournalModule> =>
   (loading ??= import("./JournalPages").then((m) => (loaded = m)));
 
-export default function JournalRoute({ page }: { page: "index" | "article" }) {
+export default function JournalRoute({ page }: { page: "index" | "article" | "topic" }) {
   const [mod, setMod] = useState<JournalModule | undefined>(loaded);
 
   useEffect(() => {
@@ -36,6 +36,6 @@ export default function JournalRoute({ page }: { page: "index" | "article" }) {
   }, [mod]);
 
   if (!mod) return <div aria-hidden className="min-h-[70vh] bg-ink" />;
-  const Page = page === "index" ? mod.Journal : mod.JournalArticle;
+  const Page = page === "index" ? mod.Journal : page === "topic" ? mod.JournalTopic : mod.JournalArticle;
   return <Page />;
 }

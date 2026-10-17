@@ -40,6 +40,16 @@ export const RESOURCE_ENTRIES: ResourceEntry[] = [
     blurb: "How a facade is proven: air, water and wind, in order.",
   },
   {
+    title: "System selector",
+    to: "/system-selector",
+    blurb: "A few questions, then the systems worth looking at first.",
+  },
+  {
+    title: "Compare systems",
+    to: "/compare-systems",
+    blurb: "Put any two system families side by side.",
+  },
+  {
     title: "Journal",
     to: "/journal",
     blurb: "Plain-language guides to facade systems and specification.",

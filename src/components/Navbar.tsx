@@ -132,14 +132,16 @@ export default function Navbar() {
       <div
         className={clsx(
           "fixed inset-0 top-[74px] z-40 origin-top overflow-hidden bg-ink transition-all duration-300 xl:hidden",
-          open ? "visible opacity-100" : "invisible opacity-0"
+          open ? "visible opacity-100" : "pointer-events-none invisible opacity-0"
         )}
       >
         {/* Screen 1: the menu */}
         <div
           className={clsx(
             "absolute inset-0 overflow-y-auto transition-[transform,visibility] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none",
-            sub ? "invisible -translate-x-full" : "visible translate-x-0"
+            !open || sub
+              ? "invisible -translate-x-full"
+              : "visible translate-x-0"
           )}
         >
           <ul className="container-content flex flex-col gap-1 py-8">
@@ -187,7 +189,9 @@ export default function Navbar() {
         <div
           className={clsx(
             "absolute inset-0 overflow-y-auto transition-[transform,visibility] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none",
-            sub ? "visible translate-x-0" : "invisible translate-x-full"
+            open && sub
+              ? "visible translate-x-0"
+              : "invisible translate-x-full"
           )}
         >
           <div className="container-content py-6">

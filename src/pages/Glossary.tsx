@@ -37,7 +37,7 @@ export default function Glossary() {
     <>
       <Seo
         title="Facade Glossary — Terms in Plain Language"
-        description="A plain-language glossary of facade and curtain wall terms: mullion, transom, spandrel, U-value, structural glazing, rain-screen, ASTM E331 and more, with each term linked to the systems it relates to."
+        description="A plain-language glossary of facade terms: mullion, transom, spandrel, U-value, structural glazing, rain-screen, ASTM E331 and more."
         path="/glossary"
         image="/og/resources-hero.jpg"
         schema={[

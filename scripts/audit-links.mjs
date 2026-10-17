@@ -303,8 +303,8 @@ if (fs.existsSync(jdir)) {
         if (!/Frequently asked/.test(html)) bad(w, "the visible 'Frequently asked' section is missing");
       }
     }
-    const og = one("og");
-    if (!og || !fileExists(og)) bad(w, `og image ${og} is missing`);
+    const og = `/og/j-${slug}.jpg`;
+    if (!fileExists(og)) bad(w, `share image ${og} is missing: run python scripts/make-journal-og.py`);
 
     for (const m of src.matchAll(/\{\{([^|}]*)(?:\|([^}]*))?\}\}/g)) {
       nLinks++;

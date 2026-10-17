@@ -31,8 +31,8 @@ export default function Leadership() {
   return (
     <>
       <Seo
-        title="Leadership & Projects — Akhilesh Kumar Singh"
-        description="Akhilesh Kumar Singh, Director — Facade Projects at Fenza, brings 25+ years in facade engineering, structural glazing, cladding and high-rise exterior execution. His career record sets Fenza's engineering standard."
+        title="Akhilesh Kumar Singh, Director"
+        description="Akhilesh Kumar Singh, Director, Facade Projects: 25+ years in facade engineering, structural glazing, cladding and high-rise exterior execution."
         path="/leadership"
         image="/og/leadership-hero.jpg"
         schema={[

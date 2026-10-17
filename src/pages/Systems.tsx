@@ -22,7 +22,7 @@ export default function Systems() {
     <>
       <Seo
         title="Facade Systems — 13 Families"
-        description="Explore Fenza's thirteen facade system families: curtain wall, structural glazing, spider glazing, aluminium windows and doors, cladding, rain-screen, louvers, railings, skylights and pergolas."
+        description="Explore Fenza's thirteen facade system families: curtain wall, glazing, aluminium windows and doors, cladding, rain-screen, louvers, railings and more."
         path="/systems"
         image="/og/systems-hero.jpg"
         schema={[
@@ -50,6 +50,36 @@ export default function Systems() {
         ]}
       />
 
+      {/* Quiet pointer to the two tools: same ink as the page, no box, no filled buttons. */}
+      <div className="bg-ink pt-14 md:pt-16">
+        <div className="container-content">
+          <Reveal>
+            <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+              <p className="max-w-[40rem] text-balance font-display text-2xl leading-snug text-cream/90 md:text-[1.7rem]">
+                Not sure where to start?{" "}
+                <span className="italic text-gold-soft">Let us point you to the right system.</span>
+              </p>
+              <div className="flex flex-wrap gap-x-9 gap-y-3">
+                <Link
+                  to="/system-selector"
+                  className="group inline-flex items-center gap-2 border-b border-gold/40 pb-1 text-xs font-semibold uppercase tracking-wide2 text-gold transition-colors hover:border-gold hover:text-gold-soft"
+                >
+                  System selector
+                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </Link>
+                <Link
+                  to="/compare-systems"
+                  className="group inline-flex items-center gap-2 border-b border-gold/40 pb-1 text-xs font-semibold uppercase tracking-wide2 text-gold transition-colors hover:border-gold hover:text-gold-soft"
+                >
+                  Compare systems
+                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </Link>
+              </div>
+            </div>
+            <div className="mt-10 h-px w-full bg-gradient-to-r from-gold/30 via-cream/10 to-transparent" />
+          </Reveal>
+        </div>
+      </div>
       <div className="bg-ink">
         {SYSTEM_CATEGORIES.map((cat) => {
           const items = SYSTEMS.filter((s) => s.category === cat);

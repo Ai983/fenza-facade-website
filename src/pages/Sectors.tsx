@@ -36,7 +36,7 @@ export default function Sectors() {
     <>
       <Seo
         title="Sectors — Facades by Building Type"
-        description="Fenza Facade Engineering builds envelopes across eight building types — commercial towers, corporate offices and IT parks, residential high-rise, hospitality and serviced apartments, retail and mixed-use, institutional and healthcare, aviation and public infrastructure, and industrial and factory."
+        description="Fenza builds facade envelopes across eight building types, from commercial towers and IT parks to hospitality, healthcare, aviation, retail and industrial."
         path="/sectors"
         image="/og/sectors.jpg"
         schema={[

@@ -223,7 +223,7 @@ Options: `CRAWL_URL=https://fenzafacade.com npm run crawl` (a deployed site),
    size, alt text, credit, source and licence (see the photo rules in section 8).
 3. Import it in `src/lib/journal.ts` and add it to `JOURNAL` (order = display order; the first is featured).
    If it is the newest, update `FEATURED` in `src/lib/resources.ts` to match (the audit tells you).
-4. Add 3-5 `faq` items (real buyer questions; answers restate only what the article says). Add a line to `public/llms.txt`. Routes and the sitemap pick it up automatically.
+4. Run `python scripts/make-journal-og.py` to make the article's 1200x630 share image (`public/og/j-<slug>.jpg`, built from its hero; the audit fails if it is missing). Add 3-5 `faq` items (real buyer questions; answers restate only what the article says). Add a line to `public/llms.txt`. Routes and the sitemap pick it up automatically.
 5. Link inside the text with `{{glossary-slug|label}}` or `{{/path|label}}`; the audit checks every link.
 6. `npm run check`, then read it on a phone-width screen.
 
@@ -343,6 +343,8 @@ the copy is next reviewed; do not add new long ones.
 - **Vercel uses `cleanUrls`:** link to `/glossary`, not `/glossary.html`.
 - **The image files `mc_crimp.webp` / `mc_mill.webp` have each other's names on disk**; the site
   uses the correct `machine-*.webp` cut-outs. The `mc_*` files are the untouched originals.
+- **Journal topic pages and glossary tooltips.** `/journal/topic/<slug>` pages come from `TOPICS` in `lib/journal.ts` (copy in `TOPIC_COPY`; add copy when you add a topic). `GlossLink` shows a definition card on hover/focus, and on touch the first tap opens it, the second goes to the glossary. The card is client-only, so the HTML is a plain link.
+- **Invisible mobile menu bug (fixed 2026-10).** The closed phone menu in `Navbar.tsx` used `visibility: visible` on its inner screens, which overrides the parent's `invisible` and let hidden links catch taps. Keep the closed overlay `pointer-events-none` and its screens tied to `open`.
 - **The Journal must stay OUT of the main script.** `lib/journal.ts`, `journal-articles/*` and
   `journal-images.json` hold ~20,000 words; the pages load on demand through `pages/JournalRoute.tsx`
   (the prerender registers them eagerly, `main.tsx` preloads them before hydrating a /journal URL).

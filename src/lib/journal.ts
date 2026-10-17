@@ -134,6 +134,64 @@ export const TOPICS = [
 ] as const;
 export type Topic = (typeof TOPICS)[number];
 
+/** URL slug of a topic: "Windows & doors" -> "windows-doors". Topic pages live at /journal/topic/<slug>. */
+export const topicSlug = (t: string): string =>
+  t.toLowerCase().replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+export const topicFromSlug = (slug: string): Topic | undefined =>
+  TOPICS.find((t) => topicSlug(t) === slug);
+
+/** Heading, search description (120-160 chars) and intro for each topic page. General guidance only. */
+export const TOPIC_COPY: Record<Topic, { title: string; description: string; intro: string }> = {
+  "Curtain wall": {
+    title: "Curtain wall guides",
+    description: "Plain-language guides to curtain wall: stick versus unitised systems, anchors, slab edges, glazing and what to check before you specify one.",
+    intro: "Curtain wall is the glazed skin hung in front of a building's structure. These guides explain how the systems differ, how they are anchored and what to review before one is specified.",
+  },
+  Cladding: {
+    title: "Facade cladding guides",
+    description: "Guides to facade cladding: ACP, solid aluminium, terracotta, HPL, stone and rain-screen systems, with what to compare before choosing a skin.",
+    intro: "Cladding is the non-glazed outer skin of a facade. These guides compare the main panel materials and explain the ventilated cavity behind them.",
+  },
+  Glazing: {
+    title: "Facade glazing guides",
+    description: "Facade glass explained: thickness, laminated and toughened glass, insulated units, coatings, structural and spider glazing, and replacing damaged panes.",
+    intro: "Glass does more than fill an opening. These guides cover how facade glass is chosen, built up and held in place, from coatings to structural and point-fixed glazing.",
+  },
+  "Windows & doors": {
+    title: "Aluminium windows and doors guides",
+    description: "Guides to aluminium windows and doors: casement and sliding types, slide-and-fold and frameless doors, drainage, hardware and balcony details.",
+    intro: "Windows and doors are the moving parts of a facade. These guides explain how each type works, where water goes and which details decide how long they last.",
+  },
+  Performance: {
+    title: "Facade performance guides",
+    description: "Facade performance in plain language: wind load, U-values, condensation, solar control, glare, acoustics, monsoon exposure, maintenance and carbon.",
+    intro: "A facade has to keep out weather, manage heat and light and stay serviceable for years. These guides explain the main performance questions and what each number includes.",
+  },
+  Elements: {
+    title: "Facade elements and details",
+    description: "Guides to facade components and details: sealants, gaskets, brackets, firestopping, extrusions, louvers, skylights, balustrades and pergolas.",
+    intro: "Much of a facade's behaviour is decided in small details. These guides look at individual components and the places where they meet.",
+  },
+  Testing: {
+    title: "Facade testing guides",
+    description: "What facade tests measure and how to read them: water penetration, air leakage, structural load, mock-ups and test reports, explained without jargon.",
+    intro: "Facade tests are only useful when you know what they measure. These guides describe the standard tests, mock-up reviews and how to read a report.",
+  },
+  Finishes: {
+    title: "Aluminium finishes guides",
+    description: "Guides to aluminium facade finishes: anodised, powder-coated and PVDF coatings, and how coastal exposure and maintenance affect them.",
+    intro: "A finish decides how an aluminium facade looks after years outdoors. These guides compare the main coating options and what to ask about each.",
+  },
+  Enquiries: {
+    title: "Facade enquiry and procurement guides",
+    description: "Practical guides for buyers: what to send a facade manufacturer, shop drawings, warranty, installation sequence, timelines, value engineering and refurbishment.",
+    intro: "A smoother facade project starts with a clear brief. These guides cover what to send, what to review and what to expect from enquiry to handover.",
+  },
+};
+
+export const articlesByTopic = (t: Topic): Article[] => JOURNAL.filter((a) => a.topic === t);
+
 /** Display order. Newest or most important first; the first is featured. */
 export const JOURNAL: Article[] = [
   climates,

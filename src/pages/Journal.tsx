@@ -1,12 +1,11 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import clsx from "clsx";
 import Seo from "@/components/Seo";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import JournalCard from "@/components/JournalCard";
 import { buildBreadcrumb, buildCollectionSchema } from "@/lib/seo";
-import { JOURNAL, TOPICS } from "@/lib/journal";
+import { JOURNAL, TOPICS, topicSlug } from "@/lib/journal";
 
 // Topics that actually have articles, in the order defined in journal.ts.
 const USED = TOPICS.filter((t) => JOURNAL.some((a) => a.topic === t));
@@ -16,13 +15,19 @@ const USED = TOPICS.filter((t) => JOURNAL.some((a) => a.topic === t));
  * filter only narrows the grid in the browser, so crawlers and no-JS readers get the full page.
  */
 export default function Journal() {
-  const [topic, setTopic] = useState<string>("All");
+  const [query, setQuery] = useState("");
   const [featured, ...rest] = JOURNAL;
+  const q = query.trim().toLowerCase();
   const shown = useMemo(
-    () => (topic === "All" ? rest : JOURNAL.filter((a) => a.topic === topic)),
-    [topic, rest]
+    () =>
+      q
+        ? JOURNAL.filter((a) =>
+            [a.title, a.excerpt, a.topic].some((s) => s.toLowerCase().includes(q))
+          )
+        : rest,
+    [q, rest]
   );
-  const showFeatured = topic === "All";
+  const showFeatured = !q;
 
   return (
     <>
@@ -64,31 +69,37 @@ export default function Journal() {
         ]}
       />
 
-      {/* Topic filter. A real <button> group; "All" is the default and the crawled state. */}
+      {/* Search (client-side, narrows the grid) and topic links (real pages, crawlable). */}
       <div className="sticky top-[74px] z-30 border-b border-cream/10 bg-ink/90 backdrop-blur-md">
         <div className="container-content">
-          <div
-            role="group"
-            aria-label="Filter articles by topic"
-            className="-mx-6 flex gap-2 overflow-x-auto px-6 py-3 md:mx-0 md:flex-wrap md:overflow-visible md:px-0"
+          <div className="py-3">
+            <label className="sr-only" htmlFor="journal-search">
+              Search the Journal
+            </label>
+            <input
+              id="journal-search"
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search the Journal, e.g. curtain wall, drainage, glass"
+              autoComplete="off"
+              className="w-full rounded-full border border-cream/20 bg-ink-soft px-5 py-3 text-sm text-cream placeholder:text-cream/40 focus:border-gold focus:outline-none"
+            />
+          </div>
+          <nav
+            aria-label="Browse articles by topic"
+            className="-mx-6 flex gap-2 overflow-x-auto px-6 pb-3 md:mx-0 md:flex-wrap md:overflow-visible md:px-0"
           >
-            {["All", ...USED].map((t) => (
-              <button
+            {USED.map((t) => (
+              <Link
                 key={t}
-                type="button"
-                aria-pressed={topic === t}
-                onClick={() => setTopic(t)}
-                className={clsx(
-                  "shrink-0 rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-wide2 transition-colors",
-                  topic === t
-                    ? "border-gold bg-gold text-ink"
-                    : "border-cream/20 text-cream/70 hover:border-gold hover:text-gold"
-                )}
+                to={`/journal/topic/${topicSlug(t)}`}
+                className="shrink-0 rounded-full border border-cream/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide2 text-cream/70 transition-colors hover:border-gold hover:text-gold"
               >
                 {t}
-              </button>
+              </Link>
             ))}
-          </div>
+          </nav>
         </div>
       </div>
 
@@ -107,10 +118,17 @@ export default function Journal() {
             aria-live="polite"
             className="mb-8 text-xs uppercase tracking-wide2 text-sand"
           >
-            {topic === "All"
-              ? `${JOURNAL.length} articles`
-              : `${shown.length} ${shown.length === 1 ? "article" : "articles"} in ${topic}`}
+            {q
+              ? `${shown.length} ${shown.length === 1 ? "article" : "articles"} matching "${query.trim()}"`
+              : `${JOURNAL.length} articles`}
           </p>
+
+          {q && shown.length === 0 && (
+            <p className="mb-8 text-cream/60">
+              Nothing matches that yet. Try a broader word such as glass, window or cladding, or
+              browse by topic above.
+            </p>
+          )}
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {shown.map((a, i) => (

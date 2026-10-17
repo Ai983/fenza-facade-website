@@ -21,7 +21,7 @@ export default function Manufacturing() {
     <>
       <Seo
         title="Manufacturing — the aluminium line"
-        description="Inside Fenza's Gurugram fabrication line: servo-driven double-head cutting to ±0.1 mm, copy routing, corner crimping and end-milling, aluminium finishes and the reference standards our systems are tested against."
+        description="Inside Fenza's Gurugram fabrication line: cutting, copy routing, corner crimping, end-milling, aluminium finishes and reference standards."
         path="/manufacturing"
         image="/og/systems-hero.jpg"
         schema={[
@@ -33,7 +33,7 @@ export default function Manufacturing() {
       />
 
       <PageHero
-        image="mc_router"
+        image="manufacturing-hero"
         eyebrow="Manufacturing"
         title={
           <>

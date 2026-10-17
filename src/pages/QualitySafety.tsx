@@ -29,7 +29,7 @@ export default function QualitySafety() {
     <>
       <Seo
         title="Quality Control & Site Safety"
-        description="How Fenza Facade Engineering controls quality and safety — in-process checks, batch verification, machine condition monitoring and sign-off before despatch, with site safety planned before work begins across work at height, PPE, lifting, welfare and emergency preparedness."
+        description="How Fenza controls quality and safety: in-process checks, batch verification, machine monitoring and sign-off before despatch, plus planned site safety."
         path="/quality-safety"
         image="/og/quality-safety.jpg"
         schema={[

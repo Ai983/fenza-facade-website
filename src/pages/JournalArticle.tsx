@@ -162,7 +162,7 @@ export default function JournalArticle() {
         title={a.seoTitle}
         description={a.description}
         path={path}
-        image={a.og}
+        image={`/og/j-${a.slug}.jpg`}
         type="article"
         schema={[
           buildBreadcrumb([

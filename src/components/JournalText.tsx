@@ -1,8 +1,9 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { GLOSSARY } from "@/lib/glossary";
+import GlossLink from "./GlossLink";
 
-const BY_SLUG = new Set(GLOSSARY.map((t) => t.slug));
+const BY_SLUG = new Map(GLOSSARY.map((t) => [t.slug, t]));
 const LINK = /\{\{([^|}]+)\|([^}]+)\}\}/g;
 
 const cls =
@@ -21,12 +22,20 @@ export default function JournalText({ children }: { children: string }) {
   for (const m of children.matchAll(LINK)) {
     if (m.index! > last) out.push(children.slice(last, m.index));
     const [, target, label] = m;
-    const to = target.startsWith("/") ? target : BY_SLUG.has(target) ? `/glossary#${target}` : "/glossary";
-    out.push(
-      <Link key={i++} to={to} className={cls}>
-        {label}
-      </Link>
-    );
+    const term = BY_SLUG.get(target);
+    if (term) {
+      out.push(
+        <GlossLink key={i++} term={term}>
+          {label}
+        </GlossLink>
+      );
+    } else {
+      out.push(
+        <Link key={i++} to={target.startsWith("/") ? target : "/glossary"} className={cls}>
+          {label}
+        </Link>
+      );
+    }
     last = m.index! + m[0].length;
   }
   if (last < children.length) out.push(children.slice(last));

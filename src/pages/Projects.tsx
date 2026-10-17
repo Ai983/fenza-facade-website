@@ -39,8 +39,8 @@ export default function Projects() {
   return (
     <>
       <Seo
-        title="Project Record — Facades Led by Akhilesh Kumar Singh"
-        description="Ten facade and envelope developments led by Akhilesh Kumar Singh, Director — Facade Projects at Fenza Facade Engineering: DLF Cyber City, Rajiv Gandhi International Airport, Max Hospital, Krisumi Waterfall Residences, Adani Samsara Vilasa and more. His own career record — not Fenza's completed projects."
+        title="Facade Project Record"
+        description="Ten facade developments led by Akhilesh Kumar Singh, Director, including DLF Cyber City, Rajiv Gandhi International Airport and Max Hospital Saket."
         path="/projects"
         image="/og/projects.jpg"
         schema={[

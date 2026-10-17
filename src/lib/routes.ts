@@ -1,5 +1,5 @@
 import { SYSTEMS } from "./systems";
-import { JOURNAL } from "./journal";
+import { JOURNAL, TOPICS, topicSlug } from "./journal";
 import { LOCATION_INDEX } from "./location-index";
 
 /** Every crawlable route, single source for the router and the prerenderer. */
@@ -9,6 +9,8 @@ import { LOCATION_INDEX } from "./location-index";
 export const STATIC_ROUTES = [
   "/",
   "/systems",
+  "/system-selector",
+  "/compare-systems",
   "/sectors",
   "/projects",
   "/manufacturing",
@@ -29,6 +31,10 @@ export const getSystemPaths = (): string[] =>
 export const getJournalPaths = (): string[] =>
   JOURNAL.map((a) => `/journal/${a.slug}`);
 
+/** One page per topic that has articles: /journal/topic/<slug>. */
+export const getJournalTopicPaths = (): string[] =>
+  TOPICS.filter((t) => JOURNAL.some((a) => a.topic === t)).map((t) => `/journal/topic/${topicSlug(t)}`);
+
 export const getLocationPaths = (): string[] =>
   LOCATION_INDEX.map((l) => `/locations/${l.slug}`);
 
@@ -36,5 +42,6 @@ export const getAllRoutes = (): string[] => [
   ...STATIC_ROUTES,
   ...getSystemPaths(),
   ...getJournalPaths(),
+  ...getJournalTopicPaths(),
   ...getLocationPaths(),
 ];

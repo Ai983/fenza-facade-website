@@ -2,3 +2,4 @@
 // the image list) forms ONE separate chunk that only Journal visitors download. See JournalRoute.tsx.
 export { default as Journal } from "./Journal";
 export { default as JournalArticle } from "./JournalArticle";
+export { default as JournalTopic } from "./JournalTopic";

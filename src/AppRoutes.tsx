@@ -11,6 +11,8 @@ import About from "@/pages/About";
 import Resources from "@/pages/Resources";
 import Glossary from "@/pages/Glossary";
 import Testing from "@/pages/Testing";
+import SystemSelector from "@/pages/SystemSelector";
+import CompareSystems from "@/pages/CompareSystems";
 import JournalRoute from "@/pages/JournalRoute";
 import Locations from "@/pages/Locations";
 import LocationRoute from "@/pages/LocationRoute";
@@ -31,7 +33,10 @@ const AppRoutes = () => (
     <Route path="/resources" element={<Resources />} />
     <Route path="/glossary" element={<Glossary />} />
     <Route path="/testing" element={<Testing />} />
+    <Route path="/system-selector" element={<SystemSelector />} />
+    <Route path="/compare-systems" element={<CompareSystems />} />
     <Route path="/journal" element={<JournalRoute page="index" />} />
+    <Route path="/journal/topic/:topic" element={<JournalRoute page="topic" />} />
     <Route path="/journal/:slug" element={<JournalRoute page="article" />} />
     <Route path="/locations" element={<Locations />} />
     <Route path="/locations/:slug" element={<LocationRoute />} />
