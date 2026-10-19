@@ -28,6 +28,11 @@ export const CONTACT = {
   emailConfirmed: true,
   phone: "+91 98730 21854",
   phoneConfirmed: true,
+  // Sales line: Manpreet, Sales Head.
+  salesName: "Manpreet",
+  salesRole: "Sales Head",
+  salesPhone: "+91 88829 10969",
+  salesPhoneConfirmed: true,
   // WhatsApp number in international format without symbols (for wa.me links).
   whatsapp: "910000000000",
   whatsappConfirmed: false,
