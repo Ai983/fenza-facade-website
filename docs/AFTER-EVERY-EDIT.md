@@ -345,6 +345,7 @@ the copy is next reviewed; do not add new long ones.
   uses the correct `machine-*.webp` cut-outs. The `mc_*` files are the untouched originals.
 - **Journal topic pages and glossary tooltips.** `/journal/topic/<slug>` pages come from `TOPICS` in `lib/journal.ts` (copy in `TOPIC_COPY`; add copy when you add a topic). `GlossLink` shows a definition card on hover/focus, and on touch the first tap opens it, the second goes to the glossary. The card is client-only, so the HTML is a plain link.
 - **Invisible mobile menu bug (fixed 2026-10).** The closed phone menu in `Navbar.tsx` used `visibility: visible` on its inner screens, which overrides the parent's `invisible` and let hidden links catch taps. Keep the closed overlay `pointer-events-none` and its screens tied to `open`.
+- **System pages show Journal guides from a generated file.** `src/lib/system-guides.ts` is written by `scripts/make-system-guides.mjs` (`npm run build` runs it first; the audit fails if it is stale). It copies title, topic and card photo for the 3 most specific articles per system, using each article's `systems` field, so system pages never import the Journal. Do not edit it by hand.
 - **The Journal must stay OUT of the main script.** `lib/journal.ts`, `journal-articles/*` and
   `journal-images.json` hold ~20,000 words; the pages load on demand through `pages/JournalRoute.tsx`
   (the prerender registers them eagerly, `main.tsx` preloads them before hydrating a /journal URL).

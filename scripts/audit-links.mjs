@@ -341,6 +341,11 @@ if (fs.existsSync(jdir)) {
       if (feat(k) !== want) bad("resources.ts", `the featured Journal card has ${k} "${feat(k)}" but the first article says "${want}". Update FEATURED in src/lib/resources.ts`);
     }
   }
+  // src/lib/system-guides.ts is generated from the articles (system pages must not import the Journal).
+  const guidesFile = path.join(ROOT, "src/lib/system-guides.ts");
+  const { buildSystemGuidesSource } = await import(url.pathToFileURL(path.join(ROOT, "scripts/make-system-guides.mjs")).href);
+  if (!fs.existsSync(guidesFile) || fs.readFileSync(guidesFile, "utf8").replace(/\r\n/g, "\n") !== buildSystemGuidesSource())
+    bad("system-guides.ts", "is out of date: run node scripts/make-system-guides.mjs (npm run build does it)");
   const placeholders = Object.entries(manifest).filter(([, i]) => i.placeholder).map(([id]) => id);
   stats.journal = `${files.length} articles (${Math.min(...readTimes)}-${Math.max(...readTimes)} min reads), ${nImgs} inline images, ${nLinks} inline links, ${Object.keys(manifest).length} image slots`;
   if (placeholders.length) warn.push(`JOURNAL PHOTOS: ${placeholders.length} of ${Object.keys(manifest).length} image slots are still PLACEHOLDERS (site images standing in). Replace them with licensed photos in src/lib/journal-images.json before launch.`);

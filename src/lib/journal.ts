@@ -82,6 +82,7 @@ import windowDrainage from "./journal-articles/window-drainage-and-weep-holes";
 import solarControl from "./journal-articles/solar-control-glass-and-shading";
 import glassReplacement from "./journal-articles/replacing-damaged-facade-glass";
 import { journalImage } from "./journal-images";
+import { topicSlug } from "./topic-slug";
 
 export type Block =
   | { t: "p"; x: string }
@@ -134,9 +135,7 @@ export const TOPICS = [
 ] as const;
 export type Topic = (typeof TOPICS)[number];
 
-/** URL slug of a topic: "Windows & doors" -> "windows-doors". Topic pages live at /journal/topic/<slug>. */
-export const topicSlug = (t: string): string =>
-  t.toLowerCase().replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+export { topicSlug };
 
 export const topicFromSlug = (slug: string): Topic | undefined =>
   TOPICS.find((t) => topicSlug(t) === slug);

@@ -7,6 +7,7 @@ import SystemCard from "@/components/SystemCard";
 import EnquiryForm from "@/components/EnquiryForm";
 import AnatomyExplorer from "@/components/AnatomyExplorer";
 import NotFound from "./NotFound";
+import SystemGuides from "@/components/SystemGuides";
 import { SYSTEMS, getSystem, imgUrl, ogUrl, INDICATIVE_NOTE } from "@/lib/systems";
 import {
   buildBreadcrumb,
@@ -204,6 +205,8 @@ export default function SystemFamily() {
           </div>
         </div>
       </section>
+
+      <SystemGuides slug={system.slug} name={system.name} />
 
       {/* Related systems */}
       <section className="border-t border-cream/10 bg-ink-soft py-20 md:py-24">
