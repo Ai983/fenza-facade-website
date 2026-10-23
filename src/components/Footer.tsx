@@ -116,6 +116,16 @@ export default function Footer() {
                 <span className="text-cream/40">Phone — being confirmed</span>
               )}
             </li>
+            {CONTACT.salesPhoneConfirmed && (
+              <li>
+                <a
+                  href={`tel:${CONTACT.salesPhone.replace(/\s/g, "")}`}
+                  className="tap-safe inline-block transition-colors hover:text-gold"
+                >
+                  Sales ({CONTACT.salesName}): {CONTACT.salesPhone}
+                </a>
+              </li>
+            )}
             {CONTACT.whatsappConfirmed && (
               <li>
                 <a

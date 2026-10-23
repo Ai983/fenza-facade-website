@@ -111,6 +111,19 @@ export default function Contact() {
                         </span>
                       )}
                     </li>
+                    {CONTACT.salesPhoneConfirmed && (
+                      <li>
+                        <span className="block text-sm text-cream/60">
+                          Sales: {CONTACT.salesName}, {CONTACT.salesRole}
+                        </span>
+                        <a
+                          href={`tel:${CONTACT.salesPhone.replace(/\s/g, "")}`}
+                          className="link-underline"
+                        >
+                          {CONTACT.salesPhone}
+                        </a>
+                      </li>
+                    )}
                     {CONTACT.whatsappConfirmed && (
                       <li>
                         <a

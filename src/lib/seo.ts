@@ -55,15 +55,31 @@ export const organizationSchema = {
     addressRegion: "Haryana",
     addressCountry: "IN",
   },
-  ...(CONTACT.emailConfirmed || CONTACT.phoneConfirmed
+  ...(CONTACT.emailConfirmed || CONTACT.phoneConfirmed || CONTACT.salesPhoneConfirmed
     ? {
-        contactPoint: {
-          "@type": "ContactPoint",
-          contactType: "sales",
-          ...(CONTACT.emailConfirmed ? { email: CONTACT.email } : {}),
-          ...(CONTACT.phoneConfirmed ? { telephone: CONTACT.phone } : {}),
-          areaServed: "IN",
-        },
+        contactPoint: [
+          ...(CONTACT.salesPhoneConfirmed
+            ? [
+                {
+                  "@type": "ContactPoint",
+                  contactType: "sales",
+                  telephone: CONTACT.salesPhone,
+                  areaServed: "IN",
+                },
+              ]
+            : []),
+          ...(CONTACT.emailConfirmed || CONTACT.phoneConfirmed
+            ? [
+                {
+                  "@type": "ContactPoint",
+                  contactType: "customer service",
+                  ...(CONTACT.emailConfirmed ? { email: CONTACT.email } : {}),
+                  ...(CONTACT.phoneConfirmed ? { telephone: CONTACT.phone } : {}),
+                  areaServed: "IN",
+                },
+              ]
+            : []),
+        ],
       }
     : {}),
   sameAs: [] as string[],

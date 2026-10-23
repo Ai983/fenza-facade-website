@@ -291,9 +291,13 @@ the copy is next reviewed; do not add new long ones.
   LinkedIn company page, IndiaMART/JustDial listings with identical name, phone and address; then
   add the live profile URLs to `sameAs` in `organizationSchema`. Submit the sitemap in Google
   Search Console and Bing Webmaster Tools (ChatGPT search draws on Bing).
-- **Enquiry forms have no destination.** Without `VITE_ENQUIRY_ENDPOINT` (a Supabase Edge
-  Function or n8n webhook) a submit opens the visitor's mail app addressed to an *unconfirmed*
-  address. Do not launch until it is set in Vercel's environment variables.
+- **Where leads go.** `VITE_ENQUIRY_ENDPOINT` is set in Vercel to the n8n webhook
+  `https://primary-production-72e3f.up.railway.app/webhook/fenza-enquiry` (n8n workflow
+  "Fenza - Website Enquiry Pipeline"). It saves every submission to the n8n data table
+  "Fenza Enquiries", emails the lead to **sales@hagerstone.com** (reply-to = the enquirer) and
+  auto-acknowledges the enquirer. Both emails continue on error, so if Gmail auth lapses the
+  lead is only in the table. Without the variable (e.g. a local build) the contact form falls
+  back to opening the visitor's mail app and the catalogue form drops the lead.
 - Company registrations (CIN, GSTIN, PAN) show "to be added".
 - Engineering review of technical copy (glossary definitions, anatomy captions, machine captions,
   and the **Testing page** at `/testing`: test descriptions, order and the `STANDARDS_TABLE`).
