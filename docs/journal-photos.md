@@ -122,7 +122,7 @@ nothing may use slot `e331-2` until it is.
 - `quote-hero` -> `public/images/j-quote-hero.webp` (2000x1500) - Technical drawings and measuring tools laid out on a dark wooden table - https://unsplash.com/photos/a-wooden-table-topped-with-a-piece-of-paper-and-a-pair-of-scissors-OspMUpCBeqQ
 - `quote-1` -> `public/images/j-quote-1.webp` (1400x933) - Close-up of a dimensioned drawing with a pencil and scale rule - https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo
 
-## Later articles (photos chosen 2026-10-08 and 2026-10-13)
+## Later articles (photos chosen 2026-10-08, 2026-10-13 and 2026-10-23)
 
 ### /journal/acoustic-glazing-for-noisy-sites
 
@@ -370,4 +370,41 @@ nothing may use slot `e331-2` until it is.
 
 - `report-hero` -> `public/images/j-report-hero.webp` (2000x1333) - Pale concrete building with a green planted edge - https://unsplash.com/photos/a-modern-building-with-greenery-_31CHxjO0ks
 - `report-1` -> `public/images/j-report-1.webp` (1400x1050) - White building with a tall chimney in clear light - https://unsplash.com/photos/a-building-with-a-clock-tower-in-the-background-hL_E33kFSSQ
+
+## Later articles (photos chosen 2026-10-08)
+
+### /journal/spandrel-panels-and-shadow-boxes-in-curtain-wall
+
+- `spandrel-hero` -> `public/images/j-spandrel-hero.webp` (2000x1333) - Blue glass facade meeting a sharp corner under a pale sky - https://unsplash.com/photos/a-building-with-glass-walls-Y2ZoonSN6rw
+- `spandrel-1` -> `public/images/j-spandrel-1.webp` (1400x1050) - Frosted opaque glass band set against a stone-clad wall - https://unsplash.com/photos/a-building-that-has-a-sign-on-the-side-of-it-a__sw4lwLEE
+
+### /journal/window-wall-or-curtain-wall
+
+- `winwall-hero` -> `public/images/j-winwall-hero.webp` (2000x1333) - Balconies with glass railings stepping up against a clear sky - https://unsplash.com/photos/a-close-up-of-a-building-with-glass-balconies-LAVPK1C3Rg4
+- `winwall-1` -> `public/images/j-winwall-1.webp` (1400x1053) - Glass balustrade along a terrace in front of a panelled facade - https://unsplash.com/photos/a-very-tall-building-with-some-balconies-on-it-CxPFv_VM5G0
+
+### /journal/insect-screens-and-mesh-on-aluminium-windows
+
+- `mesh-hero` -> `public/images/j-mesh-hero.webp` (2000x1333) - Fine window mesh with apartment blocks and trees beyond - https://unsplash.com/photos/a-building-with-a-tree-in-the-front-wz2sKCxFpU0
+- `mesh-1` -> `public/images/j-mesh-1.webp` (1400x933) - Open awning window with a mesh screen seen from inside - https://unsplash.com/photos/an-open-window-looking-out-at-green-trees-and-buildings-6fHtzdnWBxw
+
+### /journal/matching-aluminium-colour-across-batches
+
+- `colour-hero` -> `public/images/j-colour-hero.webp` (2000x1333) - Bronze-toned metal fins catching evening light on a facade - https://unsplash.com/photos/a-tall-building-with-a-clock-on-the-side-of-it-8zrdvt86-p8
+- `colour-1` -> `public/images/j-colour-1.webp` (1400x933) - Yellow metal cladding panel against a deep blue sky - https://unsplash.com/photos/a-yellow-building-with-a-blue-sky-in-the-background-ii-oy6tuLm8
+
+### /journal/briefing-a-facade-consultant
+
+- `consult-hero` -> `public/images/j-consult-hero.webp` (2000x1333) - White architectural model of a building on a desk in warm light - https://unsplash.com/photos/white-concrete-building-with-brown-wooden-floor-jfUk6Dhqi5Y
+- `consult-1` -> `public/images/j-consult-1.webp` (1400x930) - Architectural rendering of a building with a green metal roof - https://unsplash.com/photos/green-and-white-building-during-daytime-s-K55zKSj7Q
+
+### /journal/aluminium-windows-for-villas-and-low-rise-homes
+
+- `villa-hero` -> `public/images/j-villa-hero.webp` (2000x1333) - Modern villa glowing at dusk behind large glass sliding doors - https://unsplash.com/photos/modern-house-exterior-glows-with-lights-4vioYQ9Nn9Y
+- `villa-1` -> `public/images/j-villa-1.webp` (1400x1050) - Close view of slim-framed sliding windows on a white house - https://unsplash.com/photos/exterior-view-of-a-building-with-large-windows-Q06H4eYXz4I
+
+### /journal/protecting-a-facade-during-construction
+
+- `protect-hero` -> `public/images/j-protect-hero.webp` (2000x1333) - New window with protective tape and film during construction - https://unsplash.com/photos/open-window-with-construction-happening-outside-E8fXT092H5o
+- `protect-1` -> `public/images/j-protect-1.webp` (1400x933) - Glass facade beside scaffolding on a building site - https://unsplash.com/photos/a-tall-building-with-scaffolding-around-its-windows-pGcBtMpWRKA
 

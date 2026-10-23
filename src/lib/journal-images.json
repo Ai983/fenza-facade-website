@@ -1440,5 +1440,152 @@
     "w": 1400,
     "h": 1050,
     "source": "https://unsplash.com/photos/a-building-with-a-clock-tower-in-the-background-hL_E33kFSSQ"
+  },
+  "spandrel-hero": {
+    "file": "j-spandrel-hero",
+    "alt": "Blue glass facade meeting a sharp corner under a pale sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-building-with-glass-walls-Y2ZoonSN6rw"
+  },
+  "spandrel-card": {
+    "file": "j-spandrel-panels-and-shadow-boxes-in-curtain-wall",
+    "alt": "Blue glass facade meeting a sharp corner under a pale sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-building-with-glass-walls-Y2ZoonSN6rw"
+  },
+  "spandrel-1": {
+    "file": "j-spandrel-1",
+    "alt": "Frosted opaque glass band set against a stone-clad wall",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/a-building-that-has-a-sign-on-the-side-of-it-a__sw4lwLEE"
+  },
+  "winwall-hero": {
+    "file": "j-winwall-hero",
+    "alt": "Balconies with glass railings stepping up against a clear sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-glass-balconies-LAVPK1C3Rg4"
+  },
+  "winwall-card": {
+    "file": "j-window-wall-or-curtain-wall",
+    "alt": "Balconies with glass railings stepping up against a clear sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-building-with-glass-balconies-LAVPK1C3Rg4"
+  },
+  "winwall-1": {
+    "file": "j-winwall-1",
+    "alt": "Glass balustrade along a terrace in front of a panelled facade",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/a-very-tall-building-with-some-balconies-on-it-CxPFv_VM5G0"
+  },
+  "mesh-hero": {
+    "file": "j-mesh-hero",
+    "alt": "Fine window mesh with apartment blocks and trees beyond",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-building-with-a-tree-in-the-front-wz2sKCxFpU0"
+  },
+  "mesh-card": {
+    "file": "j-insect-screens-and-mesh-on-aluminium-windows",
+    "alt": "Fine window mesh with apartment blocks and trees beyond",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-building-with-a-tree-in-the-front-wz2sKCxFpU0"
+  },
+  "mesh-1": {
+    "file": "j-mesh-1",
+    "alt": "Open awning window with a mesh screen seen from inside",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/an-open-window-looking-out-at-green-trees-and-buildings-6fHtzdnWBxw"
+  },
+  "colour-hero": {
+    "file": "j-colour-hero",
+    "alt": "Bronze-toned metal fins catching evening light on a facade",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-tall-building-with-a-clock-on-the-side-of-it-8zrdvt86-p8"
+  },
+  "colour-card": {
+    "file": "j-matching-aluminium-colour-across-batches",
+    "alt": "Bronze-toned metal fins catching evening light on a facade",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-tall-building-with-a-clock-on-the-side-of-it-8zrdvt86-p8"
+  },
+  "colour-1": {
+    "file": "j-colour-1",
+    "alt": "Yellow metal cladding panel against a deep blue sky",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-yellow-building-with-a-blue-sky-in-the-background-ii-oy6tuLm8"
+  },
+  "consult-hero": {
+    "file": "j-consult-hero",
+    "alt": "White architectural model of a building on a desk in warm light",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-concrete-building-with-brown-wooden-floor-jfUk6Dhqi5Y"
+  },
+  "consult-card": {
+    "file": "j-briefing-a-facade-consultant",
+    "alt": "White architectural model of a building on a desk in warm light",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-concrete-building-with-brown-wooden-floor-jfUk6Dhqi5Y"
+  },
+  "consult-1": {
+    "file": "j-consult-1",
+    "alt": "Architectural rendering of a building with a green metal roof",
+    "w": 1400,
+    "h": 930,
+    "source": "https://unsplash.com/photos/green-and-white-building-during-daytime-s-K55zKSj7Q"
+  },
+  "villa-hero": {
+    "file": "j-villa-hero",
+    "alt": "Modern villa glowing at dusk behind large glass sliding doors",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-house-exterior-glows-with-lights-4vioYQ9Nn9Y"
+  },
+  "villa-card": {
+    "file": "j-aluminium-windows-for-villas-and-low-rise-homes",
+    "alt": "Modern villa glowing at dusk behind large glass sliding doors",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-house-exterior-glows-with-lights-4vioYQ9Nn9Y"
+  },
+  "villa-1": {
+    "file": "j-villa-1",
+    "alt": "Close view of slim-framed sliding windows on a white house",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/exterior-view-of-a-building-with-large-windows-Q06H4eYXz4I"
+  },
+  "protect-hero": {
+    "file": "j-protect-hero",
+    "alt": "New window with protective tape and film during construction",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/open-window-with-construction-happening-outside-E8fXT092H5o"
+  },
+  "protect-card": {
+    "file": "j-protecting-a-facade-during-construction",
+    "alt": "New window with protective tape and film during construction",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/open-window-with-construction-happening-outside-E8fXT092H5o"
+  },
+  "protect-1": {
+    "file": "j-protect-1",
+    "alt": "Glass facade beside scaffolding on a building site",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/a-tall-building-with-scaffolding-around-its-windows-pGcBtMpWRKA"
   }
 }

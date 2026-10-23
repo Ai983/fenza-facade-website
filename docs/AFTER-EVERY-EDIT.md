@@ -221,7 +221,7 @@ Options: `CRAWL_URL=https://fenzafacade.com npm run crawl` (a deployed site),
    Aim for **1,300-1,800 words** (a 6-8 minute read); the audit fails anything that reads under 6 minutes.
 2. Add its photos to `src/lib/journal-images.json` (slots `<short>-hero`, `-card`, `-1`, `-2`) with real
    size, alt text, credit, source and licence (see the photo rules in section 8).
-3. Import it in `src/lib/journal.ts` and add it to `JOURNAL` (order = display order; the first is featured).
+3. Import it in `src/lib/journal.ts` and add it at the TOP of `JOURNAL` (newest first; the first is the featured article).
    If it is the newest, update `FEATURED` in `src/lib/resources.ts` to match (the audit tells you).
 4. Run `python scripts/make-journal-og.py` to make the article's 1200x630 share image (`public/og/j-<slug>.jpg`, built from its hero; the audit fails if it is missing). Add 3-5 `faq` items (real buyer questions; answers restate only what the article says). Add a line to `public/llms.txt`. Routes and the sitemap pick it up automatically.
 5. Link inside the text with `{{glossary-slug|label}}` or `{{/path|label}}`; the audit checks every link.

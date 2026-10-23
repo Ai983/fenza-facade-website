@@ -74,12 +74,12 @@ export interface ResourceSpotlight {
  * Set RESOURCE_SPOTLIGHT to null to drop the card.
  */
 const FEATURED = {
-  slug: "facades-for-indian-climates",
-  title: "Facades for India's climates: what changes from Delhi to Bengaluru",
-  teaser: "Glass, shading, drainage and finishes, matched to the local climate.",
-  /** The card image: its file and alt text, copied from journal-images.json (slot "climate-card"). */
-  image: "j-facades-for-indian-climates-v2",
-  alt: "Low sun flaring across a balconied brick and glass facade",
+  slug: "spandrel-panels-and-shadow-boxes-in-curtain-wall",
+  title: "Spandrel panels and shadow boxes in curtain wall",
+  teaser: "The opaque band between windows needs as much design as the glass.",
+  /** The card image: its file and alt text, copied from journal-images.json (slot "spandrel-card"). */
+  image: "j-spandrel-panels-and-shadow-boxes-in-curtain-wall",
+  alt: "Blue glass facade meeting a sharp corner under a pale sky",
 };
 export const RESOURCE_SPOTLIGHT: ResourceSpotlight | null = {
   eyebrow: "Journal",

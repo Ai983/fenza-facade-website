@@ -2,7 +2,7 @@
 //
 // ADDING AN ARTICLE
 //   1. Copy any file in src/lib/journal-articles/ and edit it (one article per file).
-//   2. Import it below and add it to JOURNAL (the order here is the display order; the first
+//   2. Import it below and add it at the TOP of JOURNAL (newest first; the first
 //      one is the featured article and the image card in the header Resources panel).
 //   3. Make its card thumbnail (720x480 WebP in public/images, key = `card`).
 //   4. Add a line for it to public/llms.txt.
@@ -75,6 +75,13 @@ import b_hoistingAndTransportingUnitisedFacadePanels from "./journal-articles/ho
 import b_surveyingAnExistingFacadeBeforeRefurbishment from "./journal-articles/surveying-an-existing-facade-before-refurbishment";
 import b_aluminiumFacadesAndEmbodiedCarbon from "./journal-articles/aluminium-facades-and-embodied-carbon";
 import b_readingAFacadeTestReport from "./journal-articles/reading-a-facade-test-report";
+import c_spandrelPanelsAndShadowBoxesInCurtainWall from "./journal-articles/spandrel-panels-and-shadow-boxes-in-curtain-wall";
+import c_windowWallOrCurtainWall from "./journal-articles/window-wall-or-curtain-wall";
+import c_insectScreensAndMeshOnAluminiumWindows from "./journal-articles/insect-screens-and-mesh-on-aluminium-windows";
+import c_matchingAluminiumColourAcrossBatches from "./journal-articles/matching-aluminium-colour-across-batches";
+import c_briefingAFacadeConsultant from "./journal-articles/briefing-a-facade-consultant";
+import c_aluminiumWindowsForVillasAndLowRiseHomes from "./journal-articles/aluminium-windows-for-villas-and-low-rise-homes";
+import c_protectingAFacadeDuringConstruction from "./journal-articles/protecting-a-facade-during-construction";
 import skylightDesign from "./journal-articles/skylight-design-and-drainage";
 import anchors from "./journal-articles/curtain-wall-anchors-and-slab-edges";
 import mockUps from "./journal-articles/facade-mock-up-review";
@@ -193,13 +200,28 @@ export const articlesByTopic = (t: Topic): Article[] => JOURNAL.filter((a) => a.
 
 /** Display order. Newest or most important first; the first is featured. */
 export const JOURNAL: Article[] = [
-  climates,
-  contractor,
-  monsoon,
-  maintenance,
-  drawings,
-  acoustic,
-  condensation,
+  c_spandrelPanelsAndShadowBoxesInCurtainWall,
+  c_windowWallOrCurtainWall,
+  c_insectScreensAndMeshOnAluminiumWindows,
+  c_matchingAluminiumColourAcrossBatches,
+  c_briefingAFacadeConsultant,
+  c_aluminiumWindowsForVillasAndLowRiseHomes,
+  c_protectingAFacadeDuringConstruction,
+  b_corrosionAndCoastalExposureForAluminiumFacades,
+  b_bracketsAndFastenersBehindAFacade,
+  b_designingAFacadeYouCanCleanAndMaintain,
+  b_uValuesForFacadesWhatTheNumberIncludes,
+  b_glassOnSiteHandlingStorageAndProtection,
+  b_birdFriendlyGlassOnFacades,
+  b_curvedAndColdBentGlassFacades,
+  b_balconySlidingDoorsTracksThresholdsAndDrainage,
+  b_windowHardwareHandlesHingesAndLocks,
+  b_stoneGfrcOrMetalCladding,
+  b_facadeLightingWithoutLeaks,
+  b_hoistingAndTransportingUnitisedFacadePanels,
+  b_surveyingAnExistingFacadeBeforeRefurbishment,
+  b_aluminiumFacadesAndEmbodiedCarbon,
+  b_readingAFacadeTestReport,
   a_windLoadOnFacadesWhatItMeans,
   a_firestoppingAtCurtainWallSlabEdges,
   a_howFacadeGlassThicknessIsChosen,
@@ -220,21 +242,13 @@ export const JOURNAL: Article[] = [
   a_valueEngineeringAFacadeWithoutLosingPerformance,
   a_framelessGlassDoorsHardwareFloorAndHeader,
   a_pergolasAndGlassCanopiesWeatherAndDrainage,
-  b_corrosionAndCoastalExposureForAluminiumFacades,
-  b_bracketsAndFastenersBehindAFacade,
-  b_designingAFacadeYouCanCleanAndMaintain,
-  b_uValuesForFacadesWhatTheNumberIncludes,
-  b_glassOnSiteHandlingStorageAndProtection,
-  b_birdFriendlyGlassOnFacades,
-  b_curvedAndColdBentGlassFacades,
-  b_balconySlidingDoorsTracksThresholdsAndDrainage,
-  b_windowHardwareHandlesHingesAndLocks,
-  b_stoneGfrcOrMetalCladding,
-  b_facadeLightingWithoutLeaks,
-  b_hoistingAndTransportingUnitisedFacadePanels,
-  b_surveyingAnExistingFacadeBeforeRefurbishment,
-  b_aluminiumFacadesAndEmbodiedCarbon,
-  b_readingAFacadeTestReport,
+  climates,
+  contractor,
+  monsoon,
+  maintenance,
+  drawings,
+  acoustic,
+  condensation,
   skylightDesign,
   anchors,
   mockUps,

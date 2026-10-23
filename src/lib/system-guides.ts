@@ -14,13 +14,13 @@ export interface SystemGuide {
 }
 
 export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[] }> = {
-  "casement-windows": { total: 15, items: [
+  "casement-windows": { total: 18, items: [
       {
-        "slug": "aluminium-extrusion-tolerances-explained",
-        "title": "Aluminium extrusion tolerances: what they mean for a facade",
-        "topic": "Elements",
-        "image": "/images/j-aluminium-extrusion-tolerances-explained.webp",
-        "alt": "Fine parallel metal ribs in raking light",
+        "slug": "insect-screens-and-mesh-on-aluminium-windows",
+        "title": "Insect screens and mesh on aluminium windows",
+        "topic": "Windows & doors",
+        "image": "/images/j-insect-screens-and-mesh-on-aluminium-windows.webp",
+        "alt": "Fine window mesh with apartment blocks and trees beyond",
         "w": 720,
         "h": 480
       },
@@ -34,31 +34,22 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
-        "slug": "window-drainage-and-weep-holes",
-        "title": "Window drainage and weep holes: where rain goes",
-        "topic": "Windows & doors",
-        "image": "/images/j-window-drainage-and-weep-holes.webp",
-        "alt": "Timber-lined window opening with a pale sky beyond",
+        "slug": "aluminium-extrusion-tolerances-explained",
+        "title": "Aluminium extrusion tolerances: what they mean for a facade",
+        "topic": "Elements",
+        "image": "/images/j-aluminium-extrusion-tolerances-explained.webp",
+        "alt": "Fine parallel metal ribs in raking light",
         "w": 720,
         "h": 480
       }
     ] },
-  "cladding": { total: 16, items: [
+  "cladding": { total: 19, items: [
       {
-        "slug": "terracotta-hpl-or-acp-cladding",
-        "title": "Terracotta, HPL or ACP cladding: choosing a facade skin",
-        "topic": "Cladding",
-        "image": "/images/j-terracotta-hpl-or-acp-cladding.webp",
-        "alt": "Sweeping terracotta-toned cladding against the sky",
-        "w": 720,
-        "h": 480
-      },
-      {
-        "slug": "perforated-metal-screens-on-facades",
-        "title": "Perforated metal screens on facades: shade, privacy and airflow",
-        "topic": "Cladding",
-        "image": "/images/j-perforated-metal-screens-on-facades.webp",
-        "alt": "Perforated gold-toned facade with a lace-like canopy",
+        "slug": "matching-aluminium-colour-across-batches",
+        "title": "Matching aluminium colour across batches and elevations",
+        "topic": "Finishes",
+        "image": "/images/j-matching-aluminium-colour-across-batches.webp",
+        "alt": "Bronze-toned metal fins catching evening light on a facade",
         "w": 720,
         "h": 480
       },
@@ -70,33 +61,42 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "alt": "Apartment building beside the sea in soft morning light",
         "w": 720,
         "h": 480
+      },
+      {
+        "slug": "stone-gfrc-or-metal-cladding",
+        "title": "Stone, GFRC or metal cladding: how to compare",
+        "topic": "Cladding",
+        "image": "/images/j-stone-gfrc-or-metal-cladding.webp",
+        "alt": "Stone-clad building with a stepped roofline",
+        "w": 720,
+        "h": 480
       }
     ] },
-  "curtain-wall": { total: 43, items: [
+  "curtain-wall": { total: 48, items: [
+      {
+        "slug": "hoisting-and-transporting-unitised-facade-panels",
+        "title": "Hoisting and transporting unitised facade panels",
+        "topic": "Enquiries",
+        "image": "/images/j-hoisting-and-transporting-unitised-facade-panels.webp",
+        "alt": "Crane reaching beside a blue glass tower at dusk",
+        "w": 720,
+        "h": 480
+      },
+      {
+        "slug": "reading-a-facade-test-report",
+        "title": "Reading a facade test report: what to look for",
+        "topic": "Testing",
+        "image": "/images/j-reading-a-facade-test-report.webp",
+        "alt": "Pale concrete building with a green planted edge",
+        "w": 720,
+        "h": 480
+      },
       {
         "slug": "firestopping-at-curtain-wall-slab-edges",
         "title": "Firestopping at curtain wall slab edges: the gap that matters",
         "topic": "Elements",
         "image": "/images/j-firestopping-at-curtain-wall-slab-edges.webp",
         "alt": "Blue glass facade meeting a clean corner under a clear sky",
-        "w": 720,
-        "h": 480
-      },
-      {
-        "slug": "facade-installation-sequence-on-site",
-        "title": "Facade installation sequence on site: what happens in what order",
-        "topic": "Enquiries",
-        "image": "/images/j-facade-installation-sequence-on-site.webp",
-        "alt": "Crane reflected in the glass of a rising facade",
-        "w": 720,
-        "h": 480
-      },
-      {
-        "slug": "double-skin-facades-explained",
-        "title": "Double-skin facades explained",
-        "topic": "Curtain wall",
-        "image": "/images/j-double-skin-facades-explained.webp",
-        "alt": "Layered glass panels held on bolted fixings",
         "w": 720,
         "h": 480
       }
@@ -132,20 +132,20 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
-        "slug": "perforated-metal-screens-on-facades",
-        "title": "Perforated metal screens on facades: shade, privacy and airflow",
-        "topic": "Cladding",
-        "image": "/images/j-perforated-metal-screens-on-facades.webp",
-        "alt": "Perforated gold-toned facade with a lace-like canopy",
-        "w": 720,
-        "h": 480
-      },
-      {
         "slug": "designing-a-facade-you-can-clean-and-maintain",
         "title": "Designing a facade you can clean and maintain",
         "topic": "Performance",
         "image": "/images/j-designing-a-facade-you-can-clean-and-maintain.webp",
         "alt": "Tower facade with stepped balconies against a teal sky",
+        "w": 720,
+        "h": 480
+      },
+      {
+        "slug": "facade-lighting-without-leaks",
+        "title": "Facade lighting without leaks: integrating fittings and cables",
+        "topic": "Elements",
+        "image": "/images/j-facade-lighting-without-leaks.webp",
+        "alt": "Gold edge lighting tracing stepped balconies at night",
         "w": 720,
         "h": 480
       }
@@ -192,20 +192,20 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
+        "slug": "stone-gfrc-or-metal-cladding",
+        "title": "Stone, GFRC or metal cladding: how to compare",
+        "topic": "Cladding",
+        "image": "/images/j-stone-gfrc-or-metal-cladding.webp",
+        "alt": "Stone-clad building with a stepped roofline",
+        "w": 720,
+        "h": 480
+      },
+      {
         "slug": "sealants-and-gaskets-in-facades",
         "title": "Sealants and gaskets in facades: what each one does",
         "topic": "Elements",
         "image": "/images/j-sealants-and-gaskets-in-facades.webp",
         "alt": "Window set in a sunlit brick wall",
-        "w": 720,
-        "h": 480
-      },
-      {
-        "slug": "terracotta-hpl-or-acp-cladding",
-        "title": "Terracotta, HPL or ACP cladding: choosing a facade skin",
-        "topic": "Cladding",
-        "image": "/images/j-terracotta-hpl-or-acp-cladding.webp",
-        "alt": "Sweeping terracotta-toned cladding against the sky",
         "w": 720,
         "h": 480
       }
@@ -239,7 +239,7 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       }
     ] },
-  "slide-and-fold-doors": { total: 2, items: [
+  "slide-and-fold-doors": { total: 3, items: [
       {
         "slug": "slide-and-fold-doors-what-to-check",
         "title": "Slide-and-fold doors: what to check before you specify",
@@ -257,9 +257,18 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "alt": "Curved apartment balconies with glass balustrades",
         "w": 720,
         "h": 480
+      },
+      {
+        "slug": "aluminium-windows-for-villas-and-low-rise-homes",
+        "title": "Aluminium windows for villas and low-rise homes: what to ask",
+        "topic": "Windows & doors",
+        "image": "/images/j-aluminium-windows-for-villas-and-low-rise-homes.webp",
+        "alt": "Modern villa glowing at dusk behind large glass sliding doors",
+        "w": 720,
+        "h": 480
       }
     ] },
-  "sliding-windows-doors": { total: 9, items: [
+  "sliding-windows-doors": { total: 11, items: [
       {
         "slug": "balcony-sliding-doors-tracks-thresholds-and-drainage",
         "title": "Balcony sliding doors: tracks, thresholds and drainage",
@@ -270,11 +279,11 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
-        "slug": "aluminium-extrusion-tolerances-explained",
-        "title": "Aluminium extrusion tolerances: what they mean for a facade",
-        "topic": "Elements",
-        "image": "/images/j-aluminium-extrusion-tolerances-explained.webp",
-        "alt": "Fine parallel metal ribs in raking light",
+        "slug": "insect-screens-and-mesh-on-aluminium-windows",
+        "title": "Insect screens and mesh on aluminium windows",
+        "topic": "Windows & doors",
+        "image": "/images/j-insect-screens-and-mesh-on-aluminium-windows.webp",
+        "alt": "Fine window mesh with apartment blocks and trees beyond",
         "w": 720,
         "h": 480
       },
@@ -317,7 +326,7 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       }
     ] },
-  "structural-glazing": { total: 14, items: [
+  "structural-glazing": { total: 15, items: [
       {
         "slug": "how-facade-glass-thickness-is-chosen",
         "title": "How facade glass thickness is chosen",
@@ -337,11 +346,11 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
-        "slug": "wind-load-on-facades-what-it-means",
-        "title": "Wind load on facades: what it means for glass and frames",
-        "topic": "Performance",
-        "image": "/images/j-wind-load-on-facades-what-it-means.webp",
-        "alt": "Dark glass towers rising into a stormy blue sky",
+        "slug": "spandrel-panels-and-shadow-boxes-in-curtain-wall",
+        "title": "Spandrel panels and shadow boxes in curtain wall",
+        "topic": "Curtain wall",
+        "image": "/images/j-spandrel-panels-and-shadow-boxes-in-curtain-wall.webp",
+        "alt": "Blue glass facade meeting a sharp corner under a pale sky",
         "w": 720,
         "h": 480
       }
