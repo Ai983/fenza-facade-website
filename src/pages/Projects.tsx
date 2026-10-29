@@ -40,7 +40,7 @@ export default function Projects() {
     <>
       <Seo
         title="Facade Project Record"
-        description="Ten facade developments led by Akhilesh Kumar Singh, Director, including DLF Cyber City, Rajiv Gandhi International Airport and Max Hospital Saket."
+        description="Eight facade developments led by Akhilesh Kumar Singh, Director, including Rajiv Gandhi International Airport, Max Hospital Saket and Krisumi Waterfall."
         path="/projects"
         image="/og/projects.jpg"
         schema={[
@@ -68,6 +68,20 @@ export default function Projects() {
           { name: "Projects", to: "/projects" },
         ]}
       />
+
+      {/* The disclaimer is required wherever PROJECTS renders (see lib/projects.ts). */}
+      <section className="border-t border-cream/10 bg-ink pt-14 md:pt-16">
+        <div className="container-content">
+          <Reveal>
+            <div className="max-w-3xl rounded-lg border border-gold/20 bg-cream/[0.03] p-6 md:p-7">
+              <span className="eyebrow">A note on these projects</span>
+              <p className="mt-3 text-pretty text-sm leading-relaxed text-cream/75">
+                {RECORD_DISCLAIMER}
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       {/* The record, grouped as the company profile groups it. */}
       <div className="bg-ink">

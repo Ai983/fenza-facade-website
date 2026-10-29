@@ -127,7 +127,7 @@ export default function Leadership() {
                 to="/projects"
                 className="link-underline mt-5 text-sm font-semibold"
               >
-                See the ten developments in the record →
+                See the developments in the record →
               </Link>
             </div>
           </Reveal>

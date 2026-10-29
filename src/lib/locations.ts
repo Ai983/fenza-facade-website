@@ -153,7 +153,7 @@ const CONTENT: Record<string, LocationContent> = {
       { slug: "slide-and-fold-doors", why: "Wide terrace openings in premium residences, stacking clear of the opening." },
       { slug: "railings", why: "Glass balustrades and aluminium railings for balconies, terraces and podiums." },
     ],
-    record: ["dlf-building-8", "dlf-wework", "krisumi-waterfall-residences", "adani-samsara-vilasa", "m3m-sector-79", "broadway-service-apartment"],
+    record: ["krisumi-waterfall-residences", "adani-samsara-vilasa", "m3m-sector-79", "broadway-service-apartment"],
     delivery:
       "Our fabrication line is in Gurugram, so the factory, the survey team and the site are all in the same city. That makes measured surveys, mock-up reviews and coordination with the architect and main contractor straightforward.",
     reading: [
@@ -175,7 +175,7 @@ const CONTENT: Record<string, LocationContent> = {
       {
         question: "Has Fenza's team worked on Gurugram projects before?",
         answer:
-          "The project record of Akhilesh Kumar Singh, Fenza's Director for facade projects, includes DLF Building 8 and DLF WeWork in Cyber City, Krisumi Waterfall Residences, Adani Samsara Vilasa, M3M Sector 79 and Broadway Service Apartment. This is his own career record, not Fenza's completed projects.",
+          "The project record of Akhilesh Kumar Singh, Fenza's Director for facade projects, includes Krisumi Waterfall Residences, Adani Samsara Vilasa, M3M Sector 79 and Broadway Service Apartment. This is his own career record, not Fenza's completed projects.",
       },
       {
         question: "How is wind load handled on tall facades in Gurugram?",

@@ -8,7 +8,6 @@
 // Facade Engineering Company Profile 2026, pages 37–41.
 
 export type ProjectGroup =
-  | "Commercial & IT workplaces"
   | "Aviation & healthcare"
   | "High-end residential"
   | "Residential & serviced apartments"
@@ -28,9 +27,11 @@ export interface ProjectRecord {
   group: ProjectGroup;
 }
 
-/** Profile ordering — keep it; the groups build from workplace to industrial. */
+/**
+ * Profile ordering — keep it. The profile's "Commercial & IT workplaces" group (the two DLF Cyber
+ * City projects) was removed from the site on request, 2026-10-29.
+ */
 export const PROJECT_GROUPS: ProjectGroup[] = [
-  "Commercial & IT workplaces",
   "Aviation & healthcare",
   "High-end residential",
   "Residential & serviced apartments",
@@ -38,27 +39,6 @@ export const PROJECT_GROUPS: ProjectGroup[] = [
 ];
 
 export const PROJECTS: ProjectRecord[] = [
-  {
-    slug: "dlf-building-8",
-    name: "DLF — Building 8",
-    location: "Cyber City, Gurgaon",
-    city: "Gurugram",
-    buildingType: "IT space",
-    scope:
-      "Stick curtain wall glazing, aluminium solid sheet, Galvalume & Shera board cladding",
-    quantity: "14,175 sq. m.",
-    group: "Commercial & IT workplaces",
-  },
-  {
-    slug: "dlf-wework",
-    name: "DLF — WeWork",
-    location: "Cyber City, Gurgaon",
-    city: "Gurugram",
-    buildingType: "IT space",
-    scope: "Kingspan dry cladding ventilated system",
-    quantity: "3,325 sq. m.",
-    group: "Commercial & IT workplaces",
-  },
   {
     slug: "rajiv-gandhi-international-airport",
     name: "Rajiv Gandhi International Airport",
@@ -143,11 +123,14 @@ export const PROJECTS: ProjectRecord[] = [
 
 /** The lead paragraph for the record, verbatim from profile page 08. */
 export const RECORD_LEAD =
-  "Facade and envelope work led by Akhilesh Kumar Singh across IT campuses, aviation, healthcare, industrial and high-end residential developments in Delhi NCR and beyond.";
+  "Facade and envelope work led by Akhilesh Kumar Singh across aviation, healthcare, industrial and high-end residential developments in Delhi NCR and beyond.";
 
-/** Must appear on every page that renders PROJECTS. Profile page 08 / 37. */
+/**
+ * Must appear on every page that renders PROJECTS. Wording supplied by the company, 2026-10-29; they
+ * asked for the earlier "Fenza is newly established…" sentence to be dropped.
+ */
 export const RECORD_DISCLAIMER =
-  "Project experience shown is Akhilesh Kumar Singh's own career record. Fenza Facade Engineering is newly established; its project portfolio is being built, and completed work will be published as Fenza's own as it is delivered.";
+  "These projects are from the 25+ year career of Akhilesh Kumar Singh, Director – Facade Projects, who was involved in their facade procurement.";
 
 /** Chip shown beside every group heading. */
 export const GROUP_NOTE = "Career record — not Fenza's completed projects";
@@ -164,7 +147,7 @@ export const GEOGRAPHY: GeographyEntry[] = [
     city: "Gurugram / Gurgaon",
     region: "Haryana",
     detail:
-      "DLF Cyber City · Sectors 36A, 60, 79 · Dwarka Expressway, Sector 83",
+      "Sectors 36A, 60, 79 · Dwarka Expressway, Sector 83",
     isFactory: true,
   },
   { city: "Noida", region: "Uttar Pradesh", detail: "Industrial / factory envelope" },
@@ -185,17 +168,15 @@ export const GEOGRAPHY_NOTE = "Locations shown approximately. Map not to scale."
 /**
  * One image per record, taken from the company profile's facade portfolio pages (29-38). The profile
  * mixes real photographs and architectural renders; the page labels them "Image from the company
- * profile". Third-party names (WeWork, Max) are visible in two of them: remove those two if the owners
- * object. Keys are project slugs.
+ * profile". A third-party name (Max) is visible in one of them: remove it if the owner objects.
+ * Keys are project slugs.
  */
 export const PROJECT_IMAGES: Record<string, { file: string; w: number; h: number; alt: string }> = {
-  "dlf-building-8": { file: "proj-dlf-building-8", w: 836, h: 914, alt: "Glass and aluminium-clad office building at DLF Cyber City, Gurgaon" },
   "anygraphics-factory": { file: "proj-anygraphics-factory", w: 522, h: 400, alt: "Render of the dark-clad Anygraphics factory building in Noida" },
   "adani-samsara-vilasa": { file: "proj-adani-samsara-vilasa", w: 822, h: 900, alt: "Render of a terraced residential building at dusk, Adani Samsara Vilasa" },
   "broadway-service-apartment": { file: "proj-broadway-service-apartment", w: 836, h: 916, alt: "Render of glass office towers and a retail podium on Dwarka Expressway" },
   "rajiv-gandhi-international-airport": { file: "proj-rajiv-gandhi-international-airport", w: 836, h: 913, alt: "Terminal approach and control tower at Rajiv Gandhi International Airport, Hyderabad" },
   "krisumi-waterfall-residences": { file: "proj-krisumi-waterfall-residences", w: 836, h: 914, alt: "Render of two residential towers at dusk, Krisumi Waterfall Residences" },
-  "dlf-wework": { file: "proj-dlf-wework", w: 822, h: 854, alt: "Curved aluminium-clad facade of the DLF WeWork building" },
   "max-hospital-saket": { file: "proj-max-hospital-saket", w: 899, h: 915, alt: "Render of a hospital facade lit at dusk, Max Hospital Saket" },
   "m3m-sector-79": { file: "proj-m3m-sector-79", w: 1000, h: 895, alt: "Looking up a vertical-finned tower at sunset, M3M Sector 79" },
   "dee-development": { file: "proj-dee-development", w: 833, h: 926, alt: "Render of a pale multi-storey industrial building in Bhuj" },
