@@ -30,9 +30,6 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-xs leading-relaxed text-cream/40">
-            {BRAND.legalName} is a separate legal entity within {BRAND.group}.
-          </p>
         </div>
 
         <div className="md:col-span-4">
@@ -145,7 +142,7 @@ export default function Footer() {
       <div className="border-t border-cream/10">
         <div className="container-content flex flex-col items-start justify-between gap-3 pb-24 pt-6 text-xs text-cream/40 sm:flex-row sm:items-center sm:pb-6">
           <p>
-            © {year} {BRAND.legalName}. Part of {BRAND.group}.
+            © {year} {BRAND.legalName}.
           </p>
           <p className="tracking-wide2 uppercase">
             Building envelopes, engineered.

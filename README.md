@@ -75,4 +75,4 @@ enquiry + RFQ forms post live; until then they draft a prefilled email.
 
 Encoded throughout: facade-only scope, no borrowed Hagerstone certifications, no
 capacity/facility figures, specs marked indicative, projects credited to
-Akhilesh Kumar Singh's career, and the group relationship stated only as backing.
+Akhilesh Kumar Singh's career, and no group affiliation mentioned.

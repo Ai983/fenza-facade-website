@@ -36,11 +36,6 @@ const HOME_FAQS = [
     answer: `Fenza takes on facade projects across India, including ${SERVED_SENTENCE}. Every facade is engineered and fabricated on Fenza's own aluminium line in Gurugram, Haryana.`,
   },
   {
-    question: "Is Fenza part of a larger group?",
-    answer:
-      "Yes — Fenza Facade Engineering is a separate legal entity within the Hagerstone group, focused exclusively on facades. Its registrations and certifications are held in its own name.",
-  },
-  {
     question: "Which facade standards does Fenza work to?",
     answer:
       "Fenza's systems are designed and tested against reference standards including IS 1948 and, as specified per project, ASTM E283, E330 and E331 and EN 12207, 12208 and 12210 for air, water and structural performance.",

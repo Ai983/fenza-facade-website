@@ -4,7 +4,7 @@
  * Structured data is emitted via react-helmet-async so it prerenders into the
  * static HTML. We keep claims strictly accurate (PRD §12): no certifications,
  * no capacity figures, projects credited to Akhilesh Kumar Singh's career, and
- * the group relationship stated only as backing.
+ * no group affiliation.
  */
 import { SITE_URL, BRAND, CONTACT } from "./site";
 import { LOCATION_INDEX, locationPlaces } from "./location-index";

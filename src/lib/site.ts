@@ -4,7 +4,7 @@
  * Accuracy guardrails (Fenza master brief / PRD §12) encoded here:
  *  - Unconfirmed address and WhatsApp details remain clearly flagged.
  *  - No borrowed certifications, no capacity figures, no misattributed projects.
- *  - Group relationship is stated as backing only.
+ *  - No group affiliation is mentioned (Hagerstone references removed on request, 2026-10-29).
  */
 
 export const SITE_URL = "https://fenzafacade.com";
@@ -15,7 +15,6 @@ export const BRAND = {
   short: "Fenza",
   tagline: "Facade engineering, manufactured.",
   descriptor: "Building envelopes designed, fabricated and delivered with precision.",
-  group: "the Hagerstone group",
   location: "Gurugram, Haryana, India",
 } as const;
 

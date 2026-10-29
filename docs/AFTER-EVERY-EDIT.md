@@ -63,7 +63,8 @@ weaken them.
   `INDICATIVE_NOTE` wherever specs appear.
 - **Tests and standards:** describe what a test *measures*. Never say or imply Fenza has *passed*
   one until a report in Fenza's name exists.
-- **The Hagerstone relationship** is stated only as backing / a separate legal entity within the group.
+- **No group affiliation.** The site does not mention Hagerstone or any parent group (removed at
+  the company's request, 2026-10-29). Do not add it back in copy, the footer, FAQs or schema.
 - **Contact details are unconfirmed** (`src/lib/site.ts`: `*Confirmed` flags). While a flag is
   `false` the site shows "being confirmed" and must **not** render a `tel:`, `mailto:` or
   `wa.me` link. The audit fails the build if a placeholder contact link goes live.

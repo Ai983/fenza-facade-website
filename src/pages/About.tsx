@@ -16,7 +16,7 @@ export default function About() {
     <>
       <Seo
         title="About Fenza"
-        description="Fenza Facade Engineering is a facade-only manufacturer serving projects across India from its Gurugram line, a separate legal entity within the Hagerstone group."
+        description="Fenza Facade Engineering is a facade-only manufacturer making curtain wall, glazing, windows and cladding on its own Gurugram line for projects across India."
         path="/about"
         image="/og/about-hero.jpg"
         schema={[
@@ -75,13 +75,9 @@ export default function About() {
                   <dt className="text-sand">Focus</dt>
                   <dd className="text-right text-cream">Building envelope only</dd>
                 </div>
-                <div className="flex justify-between border-b border-cream/10 py-3">
+                <div className="flex justify-between py-3">
                   <dt className="text-sand">Manufacturing</dt>
                   <dd className="text-right text-cream">{BRAND.location}</dd>
-                </div>
-                <div className="flex justify-between py-3">
-                  <dt className="text-sand">Group</dt>
-                  <dd className="text-right text-cream">Hagerstone group</dd>
                 </div>
               </dl>
             </Reveal>
@@ -155,25 +151,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* Group relationship note */}
       <section className="border-t border-cream/10 bg-ink-soft py-20 md:py-24">
         <div className="container-content max-w-3xl">
-          <Reveal>
-            <div className="rounded-lg border border-gold/20 bg-cream/[0.03] p-8">
-              <span className="eyebrow">Group relationship</span>
-              <p className="mt-4 text-pretty leading-relaxed text-cream/75">
-                {BRAND.legalName} is a separate legal entity within the Hagerstone
-                group. Registrations and certifications are held in Fenza's own
-                name and are being established; they are not shared with other
-                group companies. The group is stated as backing — not as a source
-                of transferable legal or technical credentials.
-              </p>
-            </div>
-          </Reveal>
-
           {/* Company details & registrations */}
-          <Reveal delay={100}>
-            <dl className="mt-8 rounded-lg border border-cream/10 bg-ink p-7 text-sm">
+          <Reveal>
+            <dl className="rounded-lg border border-cream/10 bg-ink p-7 text-sm">
               {[
                 { label: "Entity", value: BRAND.legalName },
                 { label: "Manufacturing", value: BRAND.location },

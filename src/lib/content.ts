@@ -177,8 +177,8 @@ export const MESSAGING_PILLARS = [
     body: "Akhilesh Kumar Singh, Director — Facade Projects, sets the engineering standard the line is built to.",
   },
   {
-    title: "Backed by a group",
-    body: "Part of the Hagerstone group's manufacturing capability — stated as backing, with Fenza's own registrations held in its own name.",
+    title: "Own line, own site teams",
+    body: "Systems are fabricated on Fenza's own aluminium line in Gurugram and installed by Fenza's own site teams.",
   },
 ];
 
