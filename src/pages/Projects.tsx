@@ -69,19 +69,17 @@ export default function Projects() {
         ]}
       />
 
-      {/* The disclaimer is required wherever PROJECTS renders (see lib/projects.ts). */}
-      <section className="border-t border-cream/10 bg-ink pt-14 md:pt-16">
+      {/* The disclaimer is required wherever PROJECTS renders (see lib/projects.ts). A quiet aside
+          under the hero line, in the heading serif, rather than a boxed notice. */}
+      <div className="border-t border-cream/10 bg-ink pt-14 md:pt-16">
         <div className="container-content">
           <Reveal>
-            <div className="max-w-3xl rounded-lg border border-gold/20 bg-cream/[0.03] p-6 md:p-7">
-              <span className="eyebrow">A note on these projects</span>
-              <p className="mt-3 text-pretty text-sm leading-relaxed text-cream/75">
-                {RECORD_DISCLAIMER}
-              </p>
-            </div>
+            <p className="max-w-2xl border-l border-gold/50 pl-5 text-pretty font-display text-lg italic leading-relaxed text-cream/70 md:text-xl">
+              {RECORD_DISCLAIMER}
+            </p>
           </Reveal>
         </div>
-      </section>
+      </div>
 
       {/* The record, grouped as the company profile groups it. */}
       <div className="bg-ink">
@@ -91,7 +89,7 @@ export default function Projects() {
           return (
             <section
               key={group}
-              className={`border-t border-cream/10 py-20 md:py-24 ${
+              className={`py-20 md:py-24 ${gi === 0 ? "" : "border-t border-cream/10 "}${
                 gi % 2 === 1 ? "bg-ink-soft" : "bg-ink"
               }`}
             >

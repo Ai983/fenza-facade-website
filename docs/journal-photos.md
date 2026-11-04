@@ -122,7 +122,7 @@ nothing may use slot `e331-2` until it is.
 - `quote-hero` -> `public/images/j-quote-hero.webp` (2000x1500) - Technical drawings and measuring tools laid out on a dark wooden table - https://unsplash.com/photos/a-wooden-table-topped-with-a-piece-of-paper-and-a-pair-of-scissors-OspMUpCBeqQ
 - `quote-1` -> `public/images/j-quote-1.webp` (1400x933) - Close-up of a dimensioned drawing with a pencil and scale rule - https://unsplash.com/photos/brown-pencil-on-white-printing-paper-fteR0e2BzKo
 
-## Later articles (photos chosen 2026-10-08, 2026-10-13 and 2026-10-23)
+## Later articles (photos chosen 2026-10-08, 2026-10-13, 2026-10-23 and 2026-11-04)
 
 ### /journal/acoustic-glazing-for-noisy-sites
 
@@ -407,4 +407,66 @@ nothing may use slot `e331-2` until it is.
 
 - `protect-hero` -> `public/images/j-protect-hero.webp` (2000x1333) - New window with protective tape and film during construction - https://unsplash.com/photos/open-window-with-construction-happening-outside-E8fXT092H5o
 - `protect-1` -> `public/images/j-protect-1.webp` (1400x933) - Glass facade beside scaffolding on a building site - https://unsplash.com/photos/a-tall-building-with-scaffolding-around-its-windows-pGcBtMpWRKA
+
+## Later articles (photos chosen 2026-10-08)
+
+### /journal/level-thresholds-for-aluminium-doors
+
+- `threshold-hero` -> `public/images/j-threshold-hero.webp` (2000x1333) - Sliding glass doors opening onto a terrace above the sea - https://unsplash.com/photos/brown-wooden-table-near-glass-window-S9WzYYBxL-E
+- `threshold-1` -> `public/images/j-threshold-1.webp` (1400x1053) - Wide glazed doors opening onto a pale timber deck - https://unsplash.com/photos/grey-and-white-wooden-house-6bztmLndk_0
+
+### /journal/privacy-glass-frosted-fritted-and-tinted
+
+- `privacy-hero` -> `public/images/j-privacy-hero.webp` (2000x1333) - Frosted glass panels softly blurring the light behind - https://unsplash.com/photos/a-close-up-of-a-glass-door-with-a-blurry-background-ozvM1a-1HLo
+- `privacy-1` -> `public/images/j-privacy-1.webp` (1400x933) - Fluted textured glass panels catching the light - https://unsplash.com/photos/abstract-pattern-of-vertical-silver-lines-PWtYYFtEzgs
+
+### /journal/facades-and-earthquake-movement
+
+- `seismic-hero` -> `public/images/j-seismic-hero.webp` (2000x1333) - Glass tower rising into low cloud - https://unsplash.com/photos/architectural-photography-of-building-FKqH1QhUqaw
+- `seismic-1` -> `public/images/j-seismic-1.webp` (1400x788) - Long glass facade receding into a pale sky - https://unsplash.com/photos/low-angle-view-of-building-mklT0zc47PI
+
+### /journal/dust-and-pollution-on-facades-in-indian-cities
+
+- `dust-hero` -> `public/images/j-dust-hero.webp` (2000x1333) - City skyline hazy at sunset with a chimney in the foreground - https://unsplash.com/photos/a-sunset-over-a-city-uVc9JTu1FhA
+- `dust-1` -> `public/images/j-dust-1.webp` (1400x1050) - Apartment blocks under a hazy morning sun - https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-lsOxPsKCftY
+
+### /journal/aluminium-or-upvc-windows
+
+- `upvc-hero` -> `public/images/j-upvc-hero.webp` (2000x1333) - Slim white window frame set in a pale wall at dusk - https://unsplash.com/photos/a-window-with-a-pink-curtain-PzZL30zKM78
+- `upvc-1` -> `public/images/j-upvc-1.webp` (1400x1053) - White window with a deep reveal in a pink wall - https://unsplash.com/photos/white-window-frame-on-pink-wall-QE8sXtoO2yc
+
+### /journal/shopfront-and-storefront-glazing
+
+- `shopfront-hero` -> `public/images/j-shopfront-hero.webp` (2000x1333) - Glazed shopfront with a tall frameless pane and timber interior - https://unsplash.com/photos/line-drawing-on-glass-storefront-QpN68BFGfYA
+- `shopfront-1` -> `public/images/j-shopfront-1.webp` (1400x933) - Glass-fronted ground floor below a modern office building - https://unsplash.com/photos/modern-building-with-glass-facade-reflecting-surroundings-eoYEo7yXqTE
+
+### /journal/facades-for-hospitals-and-healthcare
+
+- `hospital-hero` -> `public/images/j-hospital-hero.webp` (2000x1333) - Brick and glass healthcare building glowing at sunset - https://unsplash.com/photos/modern-brick-building-with-large-glass-windows-at-dusk-GBlrhQ2l1MM
+- `hospital-1` -> `public/images/j-hospital-1.webp` (1400x933) - White hospital building with a glazed stair core - https://unsplash.com/photos/modern-white-building-with-glass-stairwell-3VE_XaFFBHk
+
+### /journal/facades-for-hotels-and-hospitality
+
+- `hotel-hero` -> `public/images/j-hotel-hero.webp` (2000x1333) - Hotel terraces lit at dusk above a pool and garden - https://unsplash.com/photos/luxurious-hotel-building-and-pool-area-illuminated-at-night-4Y7DTHX1ins
+- `hotel-1` -> `public/images/j-hotel-1.webp` (1400x1053) - Curved hotel balconies with glass railings - https://unsplash.com/photos/beige-building-balcony-z638PTh6QWc
+
+### /journal/parapets-copings-and-roof-edges
+
+- `parapet-hero` -> `public/images/j-parapet-hero.webp` (2000x1333) - Standing-seam metal roof edge against a stormy sky - https://unsplash.com/photos/gray-and-white-wooden-house-under-white-clouds-JuM5hLwbRG8
+- `parapet-1` -> `public/images/j-parapet-1.webp` (1400x878) - Facade fins stepping up to a roof edge against the sky - https://unsplash.com/photos/high-angle-photography-of-grey-high-rise-building-paaNAauPGJM
+
+### /journal/comparing-facade-quotations
+
+- `quotes-hero` -> `public/images/j-quotes-hero.webp` (2000x1333) - Stacked drawing sets on a dark table - https://unsplash.com/photos/a-stack-of-flyers-on-a-table-BchliBX7Hjg
+- `quotes-1` -> `public/images/j-quotes-1.webp` (1400x933) - Building plans laid out on a timber desk - https://unsplash.com/photos/white-printer-paper-on-brown-wooden-table-USM4CvQMnbY
+
+### /journal/facade-handover-documents
+
+- `handover-hero` -> `public/images/j-handover-hero.webp` (2000x1333) - Glazed building lit warm at dusk - https://unsplash.com/photos/modern-glass-office-building-at-night-85Fhqwjo2xU
+- `handover-1` -> `public/images/j-handover-1.webp` (1400x918) - Clean glass facade with a fine grid of mullions - https://unsplash.com/photos/glass-office-building-at-dusk-gKMxcHB3U3E
+
+### /journal/corner-windows-and-frameless-glass-corners
+
+- `corner-hero` -> `public/images/j-corner-hero.webp` (2000x1333) - Frameless glass corner framing a pale sky - https://unsplash.com/photos/white-concrete-building-J_Rh65cy20o
+- `corner-1` -> `public/images/j-corner-1.webp` (1400x934) - Angular glass corner reflecting clouds - https://unsplash.com/photos/modern-glass-building-corner-reflection-_3rhFB6OkW4
 

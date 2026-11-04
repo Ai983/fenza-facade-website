@@ -1587,5 +1587,257 @@
     "w": 1400,
     "h": 933,
     "source": "https://unsplash.com/photos/a-tall-building-with-scaffolding-around-its-windows-pGcBtMpWRKA"
+  },
+  "threshold-hero": {
+    "file": "j-threshold-hero",
+    "alt": "Sliding glass doors opening onto a terrace above the sea",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/brown-wooden-table-near-glass-window-S9WzYYBxL-E"
+  },
+  "threshold-card": {
+    "file": "j-level-thresholds-for-aluminium-doors",
+    "alt": "Sliding glass doors opening onto a terrace above the sea",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/brown-wooden-table-near-glass-window-S9WzYYBxL-E"
+  },
+  "threshold-1": {
+    "file": "j-threshold-1",
+    "alt": "Wide glazed doors opening onto a pale timber deck",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/grey-and-white-wooden-house-6bztmLndk_0"
+  },
+  "privacy-hero": {
+    "file": "j-privacy-hero",
+    "alt": "Frosted glass panels softly blurring the light behind",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-glass-door-with-a-blurry-background-ozvM1a-1HLo"
+  },
+  "privacy-card": {
+    "file": "j-privacy-glass-frosted-fritted-and-tinted",
+    "alt": "Frosted glass panels softly blurring the light behind",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-close-up-of-a-glass-door-with-a-blurry-background-ozvM1a-1HLo"
+  },
+  "privacy-1": {
+    "file": "j-privacy-1",
+    "alt": "Fluted textured glass panels catching the light",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/abstract-pattern-of-vertical-silver-lines-PWtYYFtEzgs"
+  },
+  "seismic-hero": {
+    "file": "j-seismic-hero",
+    "alt": "Glass tower rising into low cloud",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/architectural-photography-of-building-FKqH1QhUqaw"
+  },
+  "seismic-card": {
+    "file": "j-facades-and-earthquake-movement",
+    "alt": "Glass tower rising into low cloud",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/architectural-photography-of-building-FKqH1QhUqaw"
+  },
+  "seismic-1": {
+    "file": "j-seismic-1",
+    "alt": "Long glass facade receding into a pale sky",
+    "w": 1400,
+    "h": 788,
+    "source": "https://unsplash.com/photos/low-angle-view-of-building-mklT0zc47PI"
+  },
+  "dust-hero": {
+    "file": "j-dust-hero",
+    "alt": "City skyline hazy at sunset with a chimney in the foreground",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-sunset-over-a-city-uVc9JTu1FhA"
+  },
+  "dust-card": {
+    "file": "j-dust-and-pollution-on-facades-in-indian-cities",
+    "alt": "City skyline hazy at sunset with a chimney in the foreground",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-sunset-over-a-city-uVc9JTu1FhA"
+  },
+  "dust-1": {
+    "file": "j-dust-1",
+    "alt": "Apartment blocks under a hazy morning sun",
+    "w": 1400,
+    "h": 1050,
+    "source": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-lsOxPsKCftY"
+  },
+  "upvc-hero": {
+    "file": "j-upvc-hero",
+    "alt": "Slim white window frame set in a pale wall at dusk",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-window-with-a-pink-curtain-PzZL30zKM78"
+  },
+  "upvc-card": {
+    "file": "j-aluminium-or-upvc-windows",
+    "alt": "Slim white window frame set in a pale wall at dusk",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-window-with-a-pink-curtain-PzZL30zKM78"
+  },
+  "upvc-1": {
+    "file": "j-upvc-1",
+    "alt": "White window with a deep reveal in a pink wall",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/white-window-frame-on-pink-wall-QE8sXtoO2yc"
+  },
+  "shopfront-hero": {
+    "file": "j-shopfront-hero",
+    "alt": "Glazed shopfront with a tall frameless pane and timber interior",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/line-drawing-on-glass-storefront-QpN68BFGfYA"
+  },
+  "shopfront-card": {
+    "file": "j-shopfront-and-storefront-glazing",
+    "alt": "Glazed shopfront with a tall frameless pane and timber interior",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/line-drawing-on-glass-storefront-QpN68BFGfYA"
+  },
+  "shopfront-1": {
+    "file": "j-shopfront-1",
+    "alt": "Glass-fronted ground floor below a modern office building",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/modern-building-with-glass-facade-reflecting-surroundings-eoYEo7yXqTE"
+  },
+  "hospital-hero": {
+    "file": "j-hospital-hero",
+    "alt": "Brick and glass healthcare building glowing at sunset",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-brick-building-with-large-glass-windows-at-dusk-GBlrhQ2l1MM"
+  },
+  "hospital-card": {
+    "file": "j-facades-for-hospitals-and-healthcare",
+    "alt": "Brick and glass healthcare building glowing at sunset",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-brick-building-with-large-glass-windows-at-dusk-GBlrhQ2l1MM"
+  },
+  "hospital-1": {
+    "file": "j-hospital-1",
+    "alt": "White hospital building with a glazed stair core",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/modern-white-building-with-glass-stairwell-3VE_XaFFBHk"
+  },
+  "hotel-hero": {
+    "file": "j-hotel-hero",
+    "alt": "Hotel terraces lit at dusk above a pool and garden",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/luxurious-hotel-building-and-pool-area-illuminated-at-night-4Y7DTHX1ins"
+  },
+  "hotel-card": {
+    "file": "j-facades-for-hotels-and-hospitality",
+    "alt": "Hotel terraces lit at dusk above a pool and garden",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/luxurious-hotel-building-and-pool-area-illuminated-at-night-4Y7DTHX1ins"
+  },
+  "hotel-1": {
+    "file": "j-hotel-1",
+    "alt": "Curved hotel balconies with glass railings",
+    "w": 1400,
+    "h": 1053,
+    "source": "https://unsplash.com/photos/beige-building-balcony-z638PTh6QWc"
+  },
+  "parapet-hero": {
+    "file": "j-parapet-hero",
+    "alt": "Standing-seam metal roof edge against a stormy sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/gray-and-white-wooden-house-under-white-clouds-JuM5hLwbRG8"
+  },
+  "parapet-card": {
+    "file": "j-parapets-copings-and-roof-edges",
+    "alt": "Standing-seam metal roof edge against a stormy sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/gray-and-white-wooden-house-under-white-clouds-JuM5hLwbRG8"
+  },
+  "parapet-1": {
+    "file": "j-parapet-1",
+    "alt": "Facade fins stepping up to a roof edge against the sky",
+    "w": 1400,
+    "h": 878,
+    "source": "https://unsplash.com/photos/high-angle-photography-of-grey-high-rise-building-paaNAauPGJM"
+  },
+  "quotes-hero": {
+    "file": "j-quotes-hero",
+    "alt": "Stacked drawing sets on a dark table",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/a-stack-of-flyers-on-a-table-BchliBX7Hjg"
+  },
+  "quotes-card": {
+    "file": "j-comparing-facade-quotations",
+    "alt": "Stacked drawing sets on a dark table",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/a-stack-of-flyers-on-a-table-BchliBX7Hjg"
+  },
+  "quotes-1": {
+    "file": "j-quotes-1",
+    "alt": "Building plans laid out on a timber desk",
+    "w": 1400,
+    "h": 933,
+    "source": "https://unsplash.com/photos/white-printer-paper-on-brown-wooden-table-USM4CvQMnbY"
+  },
+  "handover-hero": {
+    "file": "j-handover-hero",
+    "alt": "Glazed building lit warm at dusk",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/modern-glass-office-building-at-night-85Fhqwjo2xU"
+  },
+  "handover-card": {
+    "file": "j-facade-handover-documents",
+    "alt": "Glazed building lit warm at dusk",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/modern-glass-office-building-at-night-85Fhqwjo2xU"
+  },
+  "handover-1": {
+    "file": "j-handover-1",
+    "alt": "Clean glass facade with a fine grid of mullions",
+    "w": 1400,
+    "h": 918,
+    "source": "https://unsplash.com/photos/glass-office-building-at-dusk-gKMxcHB3U3E"
+  },
+  "corner-hero": {
+    "file": "j-corner-hero",
+    "alt": "Frameless glass corner framing a pale sky",
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/white-concrete-building-J_Rh65cy20o"
+  },
+  "corner-card": {
+    "file": "j-corner-windows-and-frameless-glass-corners",
+    "alt": "Frameless glass corner framing a pale sky",
+    "w": 720,
+    "h": 480,
+    "source": "https://unsplash.com/photos/white-concrete-building-J_Rh65cy20o"
+  },
+  "corner-1": {
+    "file": "j-corner-1",
+    "alt": "Angular glass corner reflecting clouds",
+    "w": 1400,
+    "h": 934,
+    "source": "https://unsplash.com/photos/modern-glass-building-corner-reflection-_3rhFB6OkW4"
   }
 }

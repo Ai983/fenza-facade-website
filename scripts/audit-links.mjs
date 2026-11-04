@@ -326,19 +326,19 @@ if (fs.existsSync(jdir)) {
     readTimes.push(mins || 0);
   }
   // The Resources panel's image card is written out in resources.ts (so the main script does not
-  // import the whole Journal). It must describe the FIRST article in JOURNAL exactly.
+  // import the whole Journal). It must describe the featured article (FEATURED_SLUG in journal.ts) exactly.
   const jsrc = fs.readFileSync(path.join(ROOT, "src/lib/journal.ts"), "utf8");
-  const firstName = /export const JOURNAL: Article\[\] = \[\s*(\w+),/.exec(jsrc)?.[1];
-  const firstFile = new RegExp(`import ${firstName} from "\\./journal-articles/([^"]+)"`).exec(jsrc)?.[1];
+  const firstFile = /export const FEATURED_SLUG = "([^"]+)"/.exec(jsrc)?.[1];
+  if (firstFile && !fs.existsSync(path.join(jdir, `${firstFile}.ts`))) bad("journal.ts", `FEATURED_SLUG "${firstFile}" is not an article`);
   const rsrc = fs.readFileSync(path.join(ROOT, "src/lib/resources.ts"), "utf8");
   const feat = (k) => new RegExp(`\\b${k}:\\s*"((?:[^"\\\\]|\\\\.)*)"`).exec(rsrc.slice(rsrc.indexOf("const FEATURED")))?.[1];
-  if (!firstFile) bad("resources.ts", "could not work out the first article in JOURNAL");
+  if (!firstFile) bad("journal.ts", "FEATURED_SLUG is missing");
   else {
     const fsrc = fs.readFileSync(path.join(jdir, `${firstFile}.ts`), "utf8");
     const art = (k) => new RegExp(`\\b${k}:\\s*"((?:[^"\\\\]|\\\\.)*)"`).exec(fsrc)?.[1];
     const card = manifest[art("card")];
     for (const [k, want] of [["slug", art("slug")], ["title", art("title")], ["teaser", art("teaser")], ["image", card?.file], ["alt", card?.alt]]) {
-      if (feat(k) !== want) bad("resources.ts", `the featured Journal card has ${k} "${feat(k)}" but the first article says "${want}". Update FEATURED in src/lib/resources.ts`);
+      if (feat(k) !== want) bad("resources.ts", `the featured Journal card has ${k} "${feat(k)}" but the featured article says "${want}". Update FEATURED in src/lib/resources.ts`);
     }
   }
   // src/lib/system-guides.ts is generated from the articles (system pages must not import the Journal).

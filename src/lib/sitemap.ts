@@ -28,7 +28,7 @@ export function buildSitemapXml(lastmod: string): string {
       : "";
     return `  <url>
     <loc>${loc(path)}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${art ? art.date : lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>${priority(path)}</priority>${images}
   </url>`;

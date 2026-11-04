@@ -6,7 +6,7 @@
 // itself still needs its own route (src/lib/routes.ts + src/AppRoutes.tsx).
 //
 // The header panel also has an optional "spotlight" — the image card on its
-// right. RESOURCE_SPOTLIGHT features the newest Journal article (checked by the audit); set it to
+// right. RESOURCE_SPOTLIGHT features the Journal's featured article (FEATURED_SLUG in journal.ts; checked by the audit); set it to
 // null and the panel drops back to entries only.
 
 import { GLOSSARY } from "./glossary";
@@ -74,12 +74,12 @@ export interface ResourceSpotlight {
  * Set RESOURCE_SPOTLIGHT to null to drop the card.
  */
 const FEATURED = {
-  slug: "spandrel-panels-and-shadow-boxes-in-curtain-wall",
-  title: "Spandrel panels and shadow boxes in curtain wall",
-  teaser: "The opaque band between windows needs as much design as the glass.",
-  /** The card image: its file and alt text, copied from journal-images.json (slot "spandrel-card"). */
-  image: "j-spandrel-panels-and-shadow-boxes-in-curtain-wall",
-  alt: "Blue glass facade meeting a sharp corner under a pale sky",
+  slug: "stick-vs-unitised-curtain-wall",
+  title: "Stick vs. unitised curtain wall: how to choose",
+  teaser: "Site time, quality control and cost: where the work happens.",
+  /** The card image: its file and alt text, copied from journal-images.json (slot "stick-card"). */
+  image: "j-stick-vs-unitised-curtain-wall-v2",
+  alt: "Glass facade modules glowing orange and deep blue in the evening light",
 };
 export const RESOURCE_SPOTLIGHT: ResourceSpotlight | null = {
   eyebrow: "Journal",

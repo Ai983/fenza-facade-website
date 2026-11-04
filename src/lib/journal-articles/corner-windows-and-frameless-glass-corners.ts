@@ -1,0 +1,92 @@
+import type { Article } from "../journal";
+
+const article: Article = {
+  slug: "corner-windows-and-frameless-glass-corners",
+  title: "Corner windows and frameless glass corners",
+  seoTitle: "Corner Windows and Frameless Glass Corners",
+  description: "How corner windows and frameless glass corners work: corner posts, butt joints, stepped glass units, wind at corners, drainage and replacement.",
+  excerpt: "Removing the post at a building corner changes how glass, frames and joints share the work. A clean corner is possible, but it has to be designed rather than assumed.",
+  teaser: "What changes when a facade corner loses its post, and what to check.",
+  topic: "Glazing",
+  date: "2026-11-04",
+  hero: "corner-hero",
+  card: "corner-card",
+  og: "/og/structural-glazing.jpg",
+  terms: ["structural-silicone", "structural-glazing", "sightline"],
+  systems: ["structural-glazing", "casement-windows"],
+  faq: [
+    {
+      question: "How are frameless glass corners joined on a facade?",
+      answer: "A frameless glass corner usually brings two panes together at the corner and seals the joint with silicone, sometimes over a slim concealed support. With double-glazed units, one pane of each unit is often extended or stepped so the corner reads as glass. The joint type, sealant and support are designed for the project's loads and movement.",
+    },
+    {
+      question: "Are corner windows without a post strong enough?",
+      answer: "They can be, when the corner is designed for it. Without a post, the glass edges, the remaining frame members and the supports at head and sill carry the loads that a post would have taken. Wind pressures are often higher near building corners, so glass size, support and fixing are checked by the facade engineer for that location.",
+    },
+    {
+      question: "Can a corner window open on a frameless glass corner?",
+      answer: "Yes, but the opening part is usually placed away from the glass-to-glass joint. A casement next to a frameless corner needs its own frame, seals and drainage, and the fixed glass at the corner needs a stable edge to close against. Placing an opening leaf right at the corner joint adds complexity and is decided case by case.",
+    },
+    {
+      question: "Do frameless glass corners leak or cause condensation?",
+      answer: "A well-designed corner should not, but corners are more sensitive than straight runs. The sealant joint is the main water line, so its design, application and maintenance matter. At double-glazed corners, the edge of each unit can be cooler than the centre, which can cause condensation in some conditions. Details are reviewed at drawing stage and on a mock-up.",
+    },
+  ],
+  body: [
+    { t: "p", x: "Few details change the look of a building as much as a corner without a visible post. Glass meets glass, the view wraps around the room and the facade reads as one continuous surface. That effect is popular on homes, offices and retail frontages. It also asks more of the glass, the joint and the frames on either side, because the member that normally carries load and closes the corner has been taken away. This article explains the common ways to build a glass corner and what to check before choosing one." },
+    { t: "p", x: "The principles behind bonded glass are covered in {{/journal/structural-glazing-explained|structural glazing explained}}. Here the focus is narrower: the corner itself, where two planes of glass turn and meet." },
+    { t: "h2", x: "Three ways to make a glass corner" },
+    { t: "p", x: "Most glass corners fall into one of three families. A framed corner uses a corner post or mullion, shaped to suit the angle, with glass held on both faces. A slim-post corner keeps a member but reduces its visible width so the {{sightline|sightline}} at the corner is minimal. A frameless corner removes the visible post entirely and joins the panes directly, usually with silicone." },
+    { t: "compare", cols: ["How it works", "What to consider"], rows: [
+      { k: "Framed corner post", v: [
+        "A shaped mullion carries both panes and closes the corner.",
+        "Most straightforward for loads, drainage and replacement; the post is visible.",
+      ] },
+      { k: "Slim corner post", v: [
+        "A reduced member, sometimes partly concealed behind glass edges.",
+        "A balance between appearance and support; depends on the system available.",
+      ] },
+      { k: "Frameless glass corner", v: [
+        "Panes meet at the corner and a sealed joint closes the gap.",
+        "Cleanest appearance; glass, joint and supports must be designed for the location.",
+      ] },
+    ] },
+    { t: "p", x: "The choice is not only visual. Each option changes how loads reach the structure, how water is kept out and how a broken pane is replaced. Agree the intended corner type early, because it affects the system, the glass order and the frame details on both faces." },
+    { t: "h2", x: "What the corner post was doing" },
+    { t: "p", x: "In a framed window or curtain wall, the corner post supports the glass edges, resists wind load, carries part of the weight and forms a continuous line for gaskets and drainage. When it is removed, those jobs move elsewhere. The glass edges become free or partly supported, the head and sill members at the corner carry more of the work, and the joint between panes becomes the weather seal." },
+    { t: "p", x: "That shift is why a frameless corner cannot simply be drawn by deleting a mullion. The facade engineer checks glass thickness and support for the new edge condition, the deflection at the free edge and the way the head and sill transfer load. Glass sizes near the corner are often limited by these checks, which shapes the panel layout on both elevations." },
+    { t: "img", id: "corner-1", cap: "When the corner post is removed, the glass edges and the joint between them take on work the post used to do." },
+    { t: "h2", x: "Wind and movement at the corner" },
+    { t: "p", x: "Wind pressures on a building are often higher near its corners than across the middle of an elevation. Codes usually define corner zones with their own design values. Glass and frames at a corner are therefore checked for that local pressure, not the general value used elsewhere. {{/journal/wind-load-on-facades-what-it-means|Wind load on facades}} explains how those values are set." },
+    { t: "p", x: "The two faces of a corner can also move differently. Each elevation responds to wind, temperature and building movement in its own way, and the joint between them has to accommodate that. The sealant width, the material chosen and the support behind the joint are designed for the expected movement. A joint that is too narrow or too rigid can tear or debond over time." },
+    { t: "h2", x: "Sealing a glass-to-glass joint" },
+    { t: "p", x: "At a frameless corner, a silicone joint closes the gap between panes. In some designs it is purely a weather seal, with the panes supported separately at head and sill. In others, {{structural-silicone|structural silicone}} bonds the glass to a slim support behind the corner, so the joint takes part in carrying load as in {{structural-glazing|structural glazing}}." },
+    { t: "p", x: "Either way, the joint needs clean, compatible substrates, a correct joint profile and controlled application. Ask for the sealant type, joint dimensions and any backing or support at the corner on the drawings. Check that the sealant manufacturer has reviewed compatibility with the glass edge, coatings and any spacer materials it touches. {{/journal/sealants-and-gaskets-in-facades|Sealants and gaskets in facades}} explains the different roles of each seal." },
+    { t: "h2", x: "Double-glazed units at a corner" },
+    { t: "p", x: "Most facade corners use double-glazed units, which makes the joint more complex. Each unit has a sealed edge with a spacer, and that edge would show at a simple butt joint. A common solution is a stepped unit, where one pane extends beyond the other so the outer panes meet at the corner and the spacer is set back and concealed." },
+    { t: "p", x: "Stepped units need careful detailing. The extended pane must be supported, the edge seal must be protected from sunlight and water, and the inner and outer joints both need to be designed. The coated surface and any ceramic edge banding should be specified so the corner looks consistent from outside. {{/journal/insulated-glass-units-what-is-inside|Insulated glass units}} describes the parts of the sealed edge." },
+    { t: "p", x: "Corners can be sensitive to condensation, because the edge of a unit is cooler than its centre and the corner concentrates edges. Check the thermal behaviour of the detail where the climate and indoor conditions make this a concern. {{/journal/condensation-on-windows-and-facades|Condensation on windows}} explains the usual causes." },
+    { t: "h2", x: "Opening windows near a glass corner" },
+    { t: "p", x: "Clients often want an opening window close to the corner for ventilation. The simplest arrangement keeps the frameless corner fixed and places the opening leaf in the next bay, with its own frame and seals. A {{/systems/casement-windows|casement window}} set beside the corner works well this way, because its compression seals close against a stable frame rather than a free glass edge." },
+    { t: "p", x: "Putting an opening leaf right at the corner means a moving edge meets either a fixed glass edge or another moving leaf. That arrangement is possible in some systems, but sealing, hardware, drainage and safety need specific design and testing. If the corner must open, raise it at concept stage so the system can be chosen around it." },
+    { t: "h2", x: "Drainage, sills and the head" },
+    { t: "p", x: "Water running down two faces of glass meets at the corner sill. The sill and head members at the corner should be continuous or properly joined, with a clear drainage path and no open end that lets water into the wall. Corner sill joints in aluminium frames need sealing and, where the system drains, outlets that are not blocked by the corner support. {{/journal/window-drainage-and-weep-holes|Window drainage and weep holes}} follows that route in more detail." },
+    { t: "p", x: "The head needs the same attention. Where the corner glass is supported at the top, the head member must allow for the movement of the structure above without loading the glass, and its own corner joint must keep water out. Flashings above the corner should turn the corner cleanly rather than stopping short on either face." },
+    { t: "h2", x: "Safety, impact and cleaning" },
+    { t: "p", x: "A corner is a place people walk close to, lean against and sometimes bump into, especially at low level. Where glass reaches the floor or sits near circulation routes, the applicable code decides whether safety glazing is required, and the facade consultant specifies the build-up. Exposed glass edges at the corner should be protected or finished so they are not a hazard and are not easily chipped." },
+    { t: "p", x: "Cleaning is also different at a corner. The joint and both faces need to be reached from outside, and the sealant should not be scraped with sharp tools or attacked by harsh cleaning products. Note the approved cleaning method for the corner in the maintenance guidance, and check during design that access equipment can reach it safely." },
+    { t: "h2", x: "Mock-up, installation and replacement" },
+    { t: "p", x: "A corner is one of the most useful parts of a facade to include in a mock-up. It shows the real sightline, the appearance of the joint, the edge of any stepped unit and how water behaves at the sill. Agree what will be inspected and, where specified, tested at the corner before production starts." },
+    { t: "ul", items: [
+      "Check that both faces are set out from the same reference so the corner closes cleanly.",
+      "Confirm the installation order of the two corner panes and the joint sealing.",
+      "Protect exposed glass edges at the corner during the rest of the works.",
+      "Record the glass references for both corner panes and the sealant used.",
+      "Agree how a single corner pane would be removed and replaced without disturbing its neighbour.",
+    ] },
+    { t: "p", x: "Replacement is worth planning at design stage. A broken corner pane may require cutting out the joint, supporting the adjacent glass and reapplying sealant under controlled conditions. {{/journal/replacing-damaged-facade-glass|Replacing damaged facade glass}} covers the general process. For the system most often used for frameless corners, see {{/systems/structural-glazing|structural glazing}}." },
+    { t: "note", x: "This guidance is general. Glass sizes, joint details, support arrangements and any tests for a corner are set per project and should be confirmed with the facade consultant and the facade engineer." },
+  ],
+};
+
+export default article;

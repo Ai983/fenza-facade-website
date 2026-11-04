@@ -2,8 +2,8 @@
 //
 // ADDING AN ARTICLE
 //   1. Copy any file in src/lib/journal-articles/ and edit it (one article per file).
-//   2. Import it below and add it at the TOP of JOURNAL (newest first; the first
-//      one is the featured article and the image card in the header Resources panel).
+//   2. Import it below and add it at the TOP of JOURNAL (newest first). The big featured card
+//      (and the header Resources panel's image card) is chosen separately: FEATURED_SLUG below.
 //   3. Make its card thumbnail (720x480 WebP in public/images, key = `card`).
 //   4. Add a line for it to public/llms.txt.
 //   5. npm run check.
@@ -88,6 +88,18 @@ import mockUps from "./journal-articles/facade-mock-up-review";
 import windowDrainage from "./journal-articles/window-drainage-and-weep-holes";
 import solarControl from "./journal-articles/solar-control-glass-and-shading";
 import glassReplacement from "./journal-articles/replacing-damaged-facade-glass";
+import d_levelThresholdsForAluminiumDoors from "./journal-articles/level-thresholds-for-aluminium-doors";
+import d_privacyGlassFrostedFrittedAndTinted from "./journal-articles/privacy-glass-frosted-fritted-and-tinted";
+import d_facadesAndEarthquakeMovement from "./journal-articles/facades-and-earthquake-movement";
+import d_dustAndPollutionOnFacadesInIndianCities from "./journal-articles/dust-and-pollution-on-facades-in-indian-cities";
+import d_aluminiumOrUpvcWindows from "./journal-articles/aluminium-or-upvc-windows";
+import d_shopfrontAndStorefrontGlazing from "./journal-articles/shopfront-and-storefront-glazing";
+import d_facadesForHospitalsAndHealthcare from "./journal-articles/facades-for-hospitals-and-healthcare";
+import d_facadesForHotelsAndHospitality from "./journal-articles/facades-for-hotels-and-hospitality";
+import d_parapetsCopingsAndRoofEdges from "./journal-articles/parapets-copings-and-roof-edges";
+import d_comparingFacadeQuotations from "./journal-articles/comparing-facade-quotations";
+import d_facadeHandoverDocuments from "./journal-articles/facade-handover-documents";
+import d_cornerWindowsAndFramelessGlassCorners from "./journal-articles/corner-windows-and-frameless-glass-corners";
 import { journalImage } from "./journal-images";
 import { topicSlug } from "./topic-slug";
 
@@ -200,6 +212,18 @@ export const articlesByTopic = (t: Topic): Article[] => JOURNAL.filter((a) => a.
 
 /** Display order. Newest or most important first; the first is featured. */
 export const JOURNAL: Article[] = [
+  d_levelThresholdsForAluminiumDoors,
+  d_privacyGlassFrostedFrittedAndTinted,
+  d_facadesAndEarthquakeMovement,
+  d_dustAndPollutionOnFacadesInIndianCities,
+  d_aluminiumOrUpvcWindows,
+  d_shopfrontAndStorefrontGlazing,
+  d_facadesForHospitalsAndHealthcare,
+  d_facadesForHotelsAndHospitality,
+  d_parapetsCopingsAndRoofEdges,
+  d_comparingFacadeQuotations,
+  d_facadeHandoverDocuments,
+  d_cornerWindowsAndFramelessGlassCorners,
   c_spandrelPanelsAndShadowBoxesInCurtainWall,
   c_windowWallOrCurtainWall,
   c_insectScreensAndMeshOnAluminiumWindows,
@@ -271,6 +295,14 @@ export const JOURNAL: Article[] = [
   finishes,
   quote,
 ];
+
+/**
+ * The article in the big card at the top of /journal and in the header Resources panel. Pick the most
+ * important guide with a strong hero photo; it does not have to be the newest. If you change it, update
+ * FEATURED in resources.ts to match (the audit tells you).
+ */
+export const FEATURED_SLUG = "stick-vs-unitised-curtain-wall";
+export const FEATURED_ARTICLE: Article = JOURNAL.find((a) => a.slug === FEATURED_SLUG) ?? JOURNAL[0];
 
 // ---------- helpers (used by the pages, the sitemap and the Resources panel) ----------
 

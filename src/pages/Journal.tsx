@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import JournalCard from "@/components/JournalCard";
 import { buildBreadcrumb, buildCollectionSchema } from "@/lib/seo";
-import { JOURNAL, TOPICS, topicSlug } from "@/lib/journal";
+import { FEATURED_ARTICLE, JOURNAL, TOPICS, topicSlug } from "@/lib/journal";
 
 // Topics that actually have articles, in the order defined in journal.ts.
 const USED = TOPICS.filter((t) => JOURNAL.some((a) => a.topic === t));
@@ -16,7 +16,9 @@ const USED = TOPICS.filter((t) => JOURNAL.some((a) => a.topic === t));
  */
 export default function Journal() {
   const [query, setQuery] = useState("");
-  const [featured, ...rest] = JOURNAL;
+  // The featured card is chosen in journal.ts (FEATURED_SLUG); the grid lists the rest, newest first.
+  const featured = FEATURED_ARTICLE;
+  const rest = useMemo(() => JOURNAL.filter((a) => a !== featured), [featured]);
   const q = query.trim().toLowerCase();
   const shown = useMemo(
     () =>

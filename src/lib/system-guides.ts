@@ -14,7 +14,16 @@ export interface SystemGuide {
 }
 
 export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[] }> = {
-  "casement-windows": { total: 18, items: [
+  "casement-windows": { total: 21, items: [
+      {
+        "slug": "aluminium-or-upvc-windows",
+        "title": "Aluminium or uPVC windows: how to compare",
+        "topic": "Windows & doors",
+        "image": "/images/j-aluminium-or-upvc-windows.webp",
+        "alt": "Slim white window frame set in a pale wall at dusk",
+        "w": 720,
+        "h": 480
+      },
       {
         "slug": "insect-screens-and-mesh-on-aluminium-windows",
         "title": "Insect screens and mesh on aluminium windows",
@@ -32,18 +41,27 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "alt": "Window handle with a blurred city beyond",
         "w": 720,
         "h": 480
-      },
-      {
-        "slug": "aluminium-extrusion-tolerances-explained",
-        "title": "Aluminium extrusion tolerances: what they mean for a facade",
-        "topic": "Elements",
-        "image": "/images/j-aluminium-extrusion-tolerances-explained.webp",
-        "alt": "Fine parallel metal ribs in raking light",
-        "w": 720,
-        "h": 480
       }
     ] },
-  "cladding": { total: 19, items: [
+  "cladding": { total: 22, items: [
+      {
+        "slug": "dust-and-pollution-on-facades-in-indian-cities",
+        "title": "Dust and pollution on facades in Indian cities",
+        "topic": "Performance",
+        "image": "/images/j-dust-and-pollution-on-facades-in-indian-cities.webp",
+        "alt": "City skyline hazy at sunset with a chimney in the foreground",
+        "w": 720,
+        "h": 480
+      },
+      {
+        "slug": "parapets-copings-and-roof-edges",
+        "title": "Parapets, copings and roof edges: where facades meet the roof",
+        "topic": "Elements",
+        "image": "/images/j-parapets-copings-and-roof-edges.webp",
+        "alt": "Standing-seam metal roof edge against a stormy sky",
+        "w": 720,
+        "h": 480
+      },
       {
         "slug": "matching-aluminium-colour-across-batches",
         "title": "Matching aluminium colour across batches and elevations",
@@ -52,27 +70,18 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "alt": "Bronze-toned metal fins catching evening light on a facade",
         "w": 720,
         "h": 480
-      },
-      {
-        "slug": "corrosion-and-coastal-exposure-for-aluminium-facades",
-        "title": "Corrosion and coastal exposure: protecting aluminium facades",
-        "topic": "Finishes",
-        "image": "/images/j-corrosion-and-coastal-exposure-for-aluminium-facades.webp",
-        "alt": "Apartment building beside the sea in soft morning light",
-        "w": 720,
-        "h": 480
-      },
-      {
-        "slug": "stone-gfrc-or-metal-cladding",
-        "title": "Stone, GFRC or metal cladding: how to compare",
-        "topic": "Cladding",
-        "image": "/images/j-stone-gfrc-or-metal-cladding.webp",
-        "alt": "Stone-clad building with a stepped roofline",
-        "w": 720,
-        "h": 480
       }
     ] },
-  "curtain-wall": { total: 48, items: [
+  "curtain-wall": { total: 56, items: [
+      {
+        "slug": "facade-handover-documents",
+        "title": "Facade handover documents: what to collect before you sign off",
+        "topic": "Enquiries",
+        "image": "/images/j-facade-handover-documents.webp",
+        "alt": "Glazed building lit warm at dusk",
+        "w": 720,
+        "h": 480
+      },
       {
         "slug": "hoisting-and-transporting-unitised-facade-panels",
         "title": "Hoisting and transporting unitised facade panels",
@@ -90,18 +99,9 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "alt": "Pale concrete building with a green planted edge",
         "w": 720,
         "h": 480
-      },
-      {
-        "slug": "firestopping-at-curtain-wall-slab-edges",
-        "title": "Firestopping at curtain wall slab edges: the gap that matters",
-        "topic": "Elements",
-        "image": "/images/j-firestopping-at-curtain-wall-slab-edges.webp",
-        "alt": "Blue glass facade meeting a clean corner under a clear sky",
-        "w": 720,
-        "h": 480
       }
     ] },
-  "frameless-glass-doors": { total: 2, items: [
+  "frameless-glass-doors": { total: 4, items: [
       {
         "slug": "frameless-glass-doors-hardware-floor-and-header",
         "title": "Frameless glass doors: hardware, floor and header",
@@ -112,11 +112,20 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
-        "slug": "choosing-facade-glass",
-        "title": "Choosing facade glass: toughened, laminated and double-glazed units",
+        "slug": "shopfront-and-storefront-glazing",
+        "title": "Shopfront and storefront glazing: what to plan",
         "topic": "Glazing",
-        "image": "/images/j-choosing-facade-glass.webp",
-        "alt": "Looking up glass towers with clouds reflected in every pane",
+        "image": "/images/j-shopfront-and-storefront-glazing.webp",
+        "alt": "Glazed shopfront with a tall frameless pane and timber interior",
+        "w": 720,
+        "h": 480
+      },
+      {
+        "slug": "privacy-glass-frosted-fritted-and-tinted",
+        "title": "Privacy glass on facades: frosted, fritted, tinted and switchable",
+        "topic": "Glazing",
+        "image": "/images/j-privacy-glass-frosted-fritted-and-tinted.webp",
+        "alt": "Frosted glass panels softly blurring the light behind",
         "w": 720,
         "h": 480
       }
@@ -161,7 +170,7 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       }
     ] },
-  "railings": { total: 2, items: [
+  "railings": { total: 3, items: [
       {
         "slug": "glass-balustrades-what-to-check",
         "title": "Glass balustrades: what to check before you specify",
@@ -179,9 +188,18 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "alt": "Balconies with glass railings in warm late light",
         "w": 720,
         "h": 480
+      },
+      {
+        "slug": "facades-for-hotels-and-hospitality",
+        "title": "Facades for hotels and hospitality buildings",
+        "topic": "Performance",
+        "image": "/images/j-facades-for-hotels-and-hospitality.webp",
+        "alt": "Hotel terraces lit at dusk above a pool and garden",
+        "w": 720,
+        "h": 480
       }
     ] },
-  "rain-screen-facade": { total: 8, items: [
+  "rain-screen-facade": { total: 9, items: [
       {
         "slug": "rain-screen-cladding-the-gap",
         "title": "Rain-screen cladding: why the gap behind the panel matters",
@@ -192,20 +210,20 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
+        "slug": "parapets-copings-and-roof-edges",
+        "title": "Parapets, copings and roof edges: where facades meet the roof",
+        "topic": "Elements",
+        "image": "/images/j-parapets-copings-and-roof-edges.webp",
+        "alt": "Standing-seam metal roof edge against a stormy sky",
+        "w": 720,
+        "h": 480
+      },
+      {
         "slug": "stone-gfrc-or-metal-cladding",
         "title": "Stone, GFRC or metal cladding: how to compare",
         "topic": "Cladding",
         "image": "/images/j-stone-gfrc-or-metal-cladding.webp",
         "alt": "Stone-clad building with a stepped roofline",
-        "w": 720,
-        "h": 480
-      },
-      {
-        "slug": "sealants-and-gaskets-in-facades",
-        "title": "Sealants and gaskets in facades: what each one does",
-        "topic": "Elements",
-        "image": "/images/j-sealants-and-gaskets-in-facades.webp",
-        "alt": "Window set in a sunlit brick wall",
         "w": 720,
         "h": 480
       }
@@ -239,7 +257,16 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       }
     ] },
-  "slide-and-fold-doors": { total: 3, items: [
+  "slide-and-fold-doors": { total: 4, items: [
+      {
+        "slug": "level-thresholds-for-aluminium-doors",
+        "title": "Level thresholds for aluminium doors: access versus weather",
+        "topic": "Windows & doors",
+        "image": "/images/j-level-thresholds-for-aluminium-doors.webp",
+        "alt": "Sliding glass doors opening onto a terrace above the sea",
+        "w": 720,
+        "h": 480
+      },
       {
         "slug": "slide-and-fold-doors-what-to-check",
         "title": "Slide-and-fold doors: what to check before you specify",
@@ -257,18 +284,9 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "alt": "Curved apartment balconies with glass balustrades",
         "w": 720,
         "h": 480
-      },
-      {
-        "slug": "aluminium-windows-for-villas-and-low-rise-homes",
-        "title": "Aluminium windows for villas and low-rise homes: what to ask",
-        "topic": "Windows & doors",
-        "image": "/images/j-aluminium-windows-for-villas-and-low-rise-homes.webp",
-        "alt": "Modern villa glowing at dusk behind large glass sliding doors",
-        "w": 720,
-        "h": 480
       }
     ] },
-  "sliding-windows-doors": { total: 11, items: [
+  "sliding-windows-doors": { total: 14, items: [
       {
         "slug": "balcony-sliding-doors-tracks-thresholds-and-drainage",
         "title": "Balcony sliding doors: tracks, thresholds and drainage",
@@ -279,20 +297,20 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       },
       {
-        "slug": "insect-screens-and-mesh-on-aluminium-windows",
-        "title": "Insect screens and mesh on aluminium windows",
+        "slug": "level-thresholds-for-aluminium-doors",
+        "title": "Level thresholds for aluminium doors: access versus weather",
         "topic": "Windows & doors",
-        "image": "/images/j-insect-screens-and-mesh-on-aluminium-windows.webp",
-        "alt": "Fine window mesh with apartment blocks and trees beyond",
+        "image": "/images/j-level-thresholds-for-aluminium-doors.webp",
+        "alt": "Sliding glass doors opening onto a terrace above the sea",
         "w": 720,
         "h": 480
       },
       {
-        "slug": "window-hardware-handles-hinges-and-locks",
-        "title": "Window hardware: handles, hinges and locks that last",
+        "slug": "aluminium-or-upvc-windows",
+        "title": "Aluminium or uPVC windows: how to compare",
         "topic": "Windows & doors",
-        "image": "/images/j-window-hardware-handles-hinges-and-locks.webp",
-        "alt": "Window handle with a blurred city beyond",
+        "image": "/images/j-aluminium-or-upvc-windows.webp",
+        "alt": "Slim white window frame set in a pale wall at dusk",
         "w": 720,
         "h": 480
       }
@@ -326,7 +344,16 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "h": 480
       }
     ] },
-  "structural-glazing": { total: 15, items: [
+  "structural-glazing": { total: 17, items: [
+      {
+        "slug": "corner-windows-and-frameless-glass-corners",
+        "title": "Corner windows and frameless glass corners",
+        "topic": "Glazing",
+        "image": "/images/j-corner-windows-and-frameless-glass-corners.webp",
+        "alt": "Frameless glass corner framing a pale sky",
+        "w": 720,
+        "h": 480
+      },
       {
         "slug": "how-facade-glass-thickness-is-chosen",
         "title": "How facade glass thickness is chosen",
@@ -342,15 +369,6 @@ export const SYSTEM_GUIDES: Record<string, { total: number; items: SystemGuide[]
         "topic": "Glazing",
         "image": "/images/j-structural-glazing-explained-v2.webp",
         "alt": "Glass pavilion glowing warm at dusk behind a nearly frameless glass wall",
-        "w": 720,
-        "h": 480
-      },
-      {
-        "slug": "spandrel-panels-and-shadow-boxes-in-curtain-wall",
-        "title": "Spandrel panels and shadow boxes in curtain wall",
-        "topic": "Curtain wall",
-        "image": "/images/j-spandrel-panels-and-shadow-boxes-in-curtain-wall.webp",
-        "alt": "Blue glass facade meeting a sharp corner under a pale sky",
         "w": 720,
         "h": 480
       }
