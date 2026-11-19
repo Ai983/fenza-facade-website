@@ -308,7 +308,15 @@ the copy is next reviewed; do not add new long ones.
   2. **The n8n copy**: webhook `https://primary-production-72e3f.up.railway.app/webhook/fenza-enquiry`
      (workflow "Fenza - Website Enquiry Pipeline"): data table "Fenza Enquiries", an email to
      sales@hagerstone.com and the acknowledgement email to the enquirer.
-  The visitor sees success if either step worked; if both fail they see the error message.
+  3. **A WhatsApp alert to the Sales Head (Manpreet, 918882910969)**, after the CRM step, sent
+     from the company WhatsApp line (gateway `wa-gateway-production-26c1.up.railway.app`, account
+     `hagerstone-biz`). Same layout as the Hagerstone website-lead alert from the n8n workflow
+     "Website Leads -> Hub CRM": "New Fenza Website Lead" (or "Repeat Fenza Website Enquiry"),
+     name, phone, email, city, system, source, time, message, a wa.me link and the CRM card link.
+     Needs `WA_GATEWAY_KEY` (the same `x-maytapi-key` that workflow uses); `WA_ALERT_TO`
+     (comma-separated, digits with country code) changes who gets it. An alert failure is logged
+     and never fails the enquiry.
+  The visitor sees success if step 1 or 2 worked; if both fail they see the error message.
   Failures are in Vercel > fenza-facade-website > Logs (search "[enquiry]"). The old
   `VITE_ENQUIRY_ENDPOINT` variable is no longer read.
 - Company registrations (CIN, GSTIN, PAN) show "to be added".
