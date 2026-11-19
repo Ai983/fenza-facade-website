@@ -1,10 +1,13 @@
 import { useState, type FormEvent } from "react";
 import clsx from "clsx";
 import { ENQUIRY_ENDPOINT, CONTACT } from "@/lib/site";
+import { getAttribution } from "@/lib/attribution";
 
 interface EnquiryFormProps {
   /** Carries the system context for enquiries from a system page. */
   defaultSystem?: string;
+  /** Carries the city for enquiries from a city page; becomes the lead's city in the CRM. */
+  city?: string;
   className?: string;
 }
 
@@ -19,6 +22,7 @@ const labelCls =
 
 export default function EnquiryForm({
   defaultSystem = "",
+  city,
   className,
 }: EnquiryFormProps) {
   const [status, setStatus] = useState<Status>("idle");
@@ -36,13 +40,16 @@ export default function EnquiryForm({
     }
 
     const data = {
+      intent: "enquiry",
       name: fd.get("name"),
       email: fd.get("email"),
       phone: fd.get("phone"),
       system: defaultSystem || undefined,
+      city,
       message: fd.get("message"),
       submittedAt: new Date().toISOString(),
       page: typeof window !== "undefined" ? window.location.pathname : "",
+      ...getAttribution(),
     };
 
     setStatus("sending");

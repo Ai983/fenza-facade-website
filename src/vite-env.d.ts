@@ -9,9 +9,3 @@ interface Window {
   __lenis?: LenisLike;
 }
 
-interface ImportMetaEnv {
-  readonly VITE_ENQUIRY_ENDPOINT?: string;
-}
-interface ImportMeta {
-  readonly env: ImportMetaEnv;
-}

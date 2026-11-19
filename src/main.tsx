@@ -4,7 +4,10 @@ import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
 import { preloadJournal } from "./pages/JournalRoute";
 import { preloadLocation } from "./pages/LocationRoute";
+import { captureAttribution } from "./lib/attribution";
 import "./index.css";
+
+captureAttribution();
 
 const tree = (
   <HelmetProvider>

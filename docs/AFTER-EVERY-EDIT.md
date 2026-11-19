@@ -97,7 +97,9 @@ weaken them.
 - [ ] **Keyboard only:** Tab reaches everything in a sensible order, focus is visible, no keyboard trap.
 - [ ] **Reduced motion:** with the OS "reduce motion" setting on, content is still fully visible
       and usable (the code branches on `prefers-reduced-motion`).
-- [ ] **Forms:** a test submit behaves (see section 8: the endpoint is not set yet).
+- [ ] **Forms:** on the deployed site a test submit shows "enquiry received" and the lead appears
+      in the CRM Pipeline under WEBSITE (see section 8, "Where leads go"). Locally the function
+      does not run: `npm run dev` drafts an email, and `npm run preview` shows the error message.
 
 ### 4.3 Text and content
 - [ ] Spelling and consistency: **British spellings** as used on the site (aluminium, colour,
@@ -292,13 +294,23 @@ the copy is next reviewed; do not add new long ones.
   LinkedIn company page, IndiaMART/JustDial listings with identical name, phone and address; then
   add the live profile URLs to `sameAs` in `organizationSchema`. Submit the sitemap in Google
   Search Console and Bing Webmaster Tools (ChatGPT search draws on Bing).
-- **Where leads go.** `VITE_ENQUIRY_ENDPOINT` is set in Vercel to the n8n webhook
-  `https://primary-production-72e3f.up.railway.app/webhook/fenza-enquiry` (n8n workflow
-  "Fenza - Website Enquiry Pipeline"). It saves every submission to the n8n data table
-  "Fenza Enquiries", emails the lead to **sales@hagerstone.com** (reply-to = the enquirer) and
-  auto-acknowledges the enquirer. Both emails continue on error, so if Gmail auth lapses the
-  lead is only in the table. Without the variable (e.g. a local build) the contact form falls
-  back to opening the visitor's mail app and the catalogue form drops the lead.
+- **Where leads go (2026-11-19).** Both forms (enquiry form on Home, Contact, system and city
+  pages; catalogue download on Resources) post to `/api/enquiry`, the serverless function in
+  `api/enquiry.ts`. It sends each lead to two places at once:
+  1. **The sales CRM**: `hagerstone-marketing-erp` (repo `Ai983/hagerstone-marketing-erp`),
+     intake `app/api/webhook/website-leads/route.ts`. The lead lands in Pipeline > **WEBSITE** >
+     New Lead with service line `facade_glazing` and a source like "Fenza website · Unitised
+     Curtain Wall page" or "Fenza website · Catalogue download", plus UTM tags, the city (city
+     pages), the landing page and the referring site in the notes. A repeat phone/email is added
+     to the existing lead's timeline instead of making a new card. Admins and the sales head get
+     an in-ERP notification. Needs `ERP_WEBHOOK_SECRET` in this Vercel project, equal to the ERP
+     project's `WEBHOOK_SECRET`; without it the CRM step fails (logged) and only step 2 happens.
+  2. **The n8n copy**: webhook `https://primary-production-72e3f.up.railway.app/webhook/fenza-enquiry`
+     (workflow "Fenza - Website Enquiry Pipeline"): data table "Fenza Enquiries", an email to
+     sales@hagerstone.com and the acknowledgement email to the enquirer.
+  The visitor sees success if either step worked; if both fail they see the error message.
+  Failures are in Vercel > fenza-facade-website > Logs (search "[enquiry]"). The old
+  `VITE_ENQUIRY_ENDPOINT` variable is no longer read.
 - Company registrations (CIN, GSTIN, PAN) show "to be added".
 - Engineering review of technical copy (glossary definitions, anatomy captions, machine captions,
   and the **Testing page** at `/testing`: test descriptions, order and the `STANDARDS_TABLE`).

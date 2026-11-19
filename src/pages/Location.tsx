@@ -316,7 +316,7 @@ export default function Location() {
           <div className="lg:col-span-7">
             <Reveal variant="scale">
               <div className="rounded-xl border border-cream/10 bg-cream/[0.03] p-6 md:p-8">
-                <EnquiryForm />
+                <EnquiryForm city={loc.name} />
               </div>
             </Reveal>
           </div>

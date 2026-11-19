@@ -88,7 +88,11 @@ export const NAV_PRIMARY: NavItem[] = NAV.filter(
   (n) => !["/contact", "/sectors"].includes(n.to)
 );
 
-/** Optional runtime endpoint for form submissions (Supabase / n8n webhook). */
-export const ENQUIRY_ENDPOINT = import.meta.env.VITE_ENQUIRY_ENDPOINT as
-  | string
-  | undefined;
+/**
+ * Where both forms post: the site's own serverless function (`api/enquiry.ts`), which creates
+ * the lead in the sales CRM and keeps a copy in n8n. It exists only on Vercel, so the dev server
+ * (no function there) leaves it unset and the enquiry form drafts an email instead.
+ */
+export const ENQUIRY_ENDPOINT: string | undefined = import.meta.env.PROD
+  ? "/api/enquiry"
+  : undefined;

@@ -6,6 +6,7 @@ import Reveal from "@/components/Reveal";
 import PageHero from "@/components/PageHero";
 import { buildBreadcrumb } from "@/lib/seo";
 import { ENQUIRY_ENDPOINT } from "@/lib/site";
+import { getAttribution } from "@/lib/attribution";
 
 const CATALOGUE_URL = "/downloads/fenza-product-catalogue.html";
 
@@ -30,16 +31,20 @@ function CatalogueGate() {
       email: fd.get("email"),
       phone: fd.get("phone"),
       submittedAt: new Date().toISOString(),
+      page: window.location.pathname,
+      ...getAttribution(),
     };
     if (ENQUIRY_ENDPOINT) {
       try {
-        await fetch(ENQUIRY_ENDPOINT, {
+        const res = await fetch(ENQUIRY_ENDPOINT, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(lead),
         });
-      } catch {
-        /* non-blocking: still let them read the catalogue */
+        if (!res.ok) console.error(`Catalogue lead not recorded: HTTP ${res.status}`);
+      } catch (err) {
+        // Non-blocking: they still get the catalogue. The server logs its own failures.
+        console.error("Catalogue lead not recorded", err);
       }
     }
     setUnlocked(true);

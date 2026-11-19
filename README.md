@@ -68,8 +68,10 @@ Contact details are flagged unconfirmed in `src/lib/site.ts` and rendered as
 
 Flip the `*Confirmed` flags to `true` once the real values are in.
 
-Set `VITE_ENQUIRY_ENDPOINT` to a Supabase Edge Function / n8n webhook to make the
-enquiry + RFQ forms post live; until then they draft a prefilled email.
+Both forms post to the site's own serverless function, `api/enquiry.ts`, which creates the
+lead in the sales CRM (hagerstone-marketing-erp) and keeps a copy in n8n. It needs
+`ERP_WEBHOOK_SECRET` in Vercel (see `.env.example`). The dev server has no function, so
+there the enquiry form drafts a prefilled email instead.
 
 ## Accuracy guardrails (PRD §12)
 
